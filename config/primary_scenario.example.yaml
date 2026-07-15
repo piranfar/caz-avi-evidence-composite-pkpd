@@ -1,0 +1,24 @@
+# Template only. Values marked REQUIRED must be populated from the frozen,
+# reviewed evidence package before scientific execution.
+scenario_id: ICU_NO_RRT_CONTINUOUS_INFUSION_V1
+source_studies:
+  - REQUIRED_SOURCE_IDENTIFIER
+virtual_population_size: 100000
+random_seed: 20260701
+population_specification_version: REQUIRED
+pk_model_version: REQUIRED
+regimen_version: REQUIRED
+mic_registry_version: REQUIRED
+free_fraction_policy: REQUIRED
+targets:
+  - component: ceftazidime
+    metric: fCss_over_MIC
+    threshold: 4.0
+    unit: ratio
+  - component: avibactam
+    metric: fCss_over_threshold
+    threshold: 1.0
+    unit: ratio
+toxicity_rule: REQUIRED_FROM_APPROVED_SPECIFICATION
+synthetic_assumptions: []
+validation_benchmarks: []
