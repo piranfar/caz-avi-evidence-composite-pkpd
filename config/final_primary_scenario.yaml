@@ -1,0 +1,75 @@
+schema_version: "1.0"
+status: FINAL_PUBLICATION_SPECIFICATION
+scenario_id: ICU_NON_RRT_CONTINUOUS_INFUSION_V1
+scenario_label: Critically ill adults without renal replacement therapy receiving continuous-infusion ceftazidime-avibactam
+
+population:
+  n_subjects: 100000
+  subjects_per_ekfc_class: 20000
+  ekfc_unit: mL/min
+  ekfc_classes:
+    - {id: EKFC_0_30, lower: 0, upper: 30}
+    - {id: EKFC_31_60, lower: 31, upper: 60}
+    - {id: EKFC_61_90, lower: 61, upper: 90}
+    - {id: EKFC_91_120, lower: 91, upper: 120}
+    - {id: EKFC_121_150, lower: 121, upper: 150}
+  random_seed: 20260707
+
+pharmacokinetics:
+  ceftazidime:
+    clearance_intercept_L_per_h: 5.0
+    renal_exponent: 0.70
+    reference_ekfc_mL_per_min: 70
+    iiv_cv_percent: 67.92
+    iiv_log_sd: 0.620
+    iiv_mapping: "sqrt(log(1 + (CV/100)^2))"
+    unbound_fraction: 0.90
+    unbound_fraction_qualifier: approximately
+  avibactam:
+    clearance_intercept_L_per_h: 5.9
+    renal_exponent: 0.89
+    reference_ekfc_mL_per_min: 70
+    iiv_cv_percent: 76.91
+    iiv_log_sd: 0.680
+    iiv_mapping: "sqrt(log(1 + (CV/100)^2))"
+    unbound_fraction: 1.0
+    unbound_fraction_qualifier: approximately
+  clearance_random_effect_correlation: 0.94
+  residual_error_in_primary_latent_exposure_pta: false
+
+pkpd_targets:
+  ceftazidime:
+    metric: fCss_over_MIC
+    threshold_operator: greater_than_or_equal
+    threshold: 4.0
+  avibactam:
+    metric: fCss_over_4_mg_per_L
+    threshold_operator: greater_than_or_equal
+    threshold: 1.0
+  joint_rule: both_components_required
+
+toxicity_screen:
+  analyte: ceftazidime_total
+  metric: Css
+  threshold_mg_per_L: 104
+  threshold_operator: greater_than
+  impermissibility_probability_percent: 15
+  evidence_state: PROVISIONAL
+
+mic_policy:
+  primary_distributions:
+    - LEE2022_KPC_KP
+    - LEE2022_OXA_KP
+  sensitivity_only_distributions:
+    - INDIA2022_OXA48_KP
+    - FR2024_OXA484_SERINE_ONLY
+  note: "Option A: Lee/ATLAS distributions are the only primary manuscript CFR inputs."
+
+provenance:
+  authoritative_manuscript_sha256: ed7f835742454e4e01ab3f36208b30a081eea345b9308e29c686b80eefcd3253
+  authoritative_supplement_sha256: b3a1030d689a5e4c18c597f5601e6e5168ec039a32bf9663277f65c99c4bedeb
+  source_document: docs/FINAL_ARTIFACTS.md
+
+legacy_reference_policy:
+  allow_silent_override: false
+  note: "Legacy RC1 settings such as fu_CAZ=0.85 or fu_AVI=0.92 must be placed in a separately named legacy-reference configuration and must not override this final specification."
