@@ -19,6 +19,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 python src/cazavi/cazavi_analyses.py all --verify
+python src/cazavi/reviewer_response_analyses.py
 python src/cazavi/make_figures.py
 ```
 
@@ -32,6 +33,11 @@ python src/cazavi/make_figures.py
 | Convergence at N = 50,000 | 0.169 pp against 0.167 recorded |
 | Deterministic sensitivity | same rank order; top driver 20.29 vs 19.75 |
 | Probabilistic sensitivity | all 8 parameters in exact rank order; robustness 20/20 |
+
+Two further analyses have no frozen counterpart, because they were added after
+the reviewed draft: the sweep across avibactam critical concentrations (1-8
+mg/L), and the renal-function boundary sensitivity that separates the lowest
+class at 15 mL/min/1.73 m2.
 
 ## What is and is not reproducible
 
@@ -51,7 +57,7 @@ data/inputs/         MIC distributions, published calibration anchors, PSA draws
 data/reference/      frozen RC1 tables; the reproduction target
 data/processed/      outputs of the current pipeline
 data/legacy_rc1/     original RC1 summary CSVs
-figures/             manuscript figures 1-5
+figures/             manuscript figures 1-6
 figures/legacy_rc1/  earlier figures; five are now supplementary figures S1-S5
 outputs/rc1/         frozen release-candidate workbooks and manifests
 references/          source bibliography; article PDFs are not redistributed
@@ -73,7 +79,7 @@ regimens, 11 MIC values.
 | Random-effect correlation | 0.94 | Cojutti 2024 |
 | Unbound fractions | 0.85 ceftazidime, 0.92 avibactam | Cojutti 2024 |
 | Ceftazidime target | fCss/MIC >= 4 | Cojutti 2024 |
-| Avibactam target | fCss >= 4 mg/L | EUCAST testing concentration |
+| Avibactam target | fCss >= 4 mg/L (1-8 in sensitivity) | continuous-infusion TDM target; 1 mg/L is the registrational threshold |
 | Exposure screen | total Css > 104 mg/L | Cojutti 2024 |
 
 ## Provenance policy

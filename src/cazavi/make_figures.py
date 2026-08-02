@@ -215,6 +215,37 @@ def fig_toxicity_gate():
     save(fig, "fig_toxicity_gate.png")
 
 
+def fig_avi_threshold():
+    """How the answer moves across the published range of avibactam targets."""
+    rows = read("avi_threshold_sweep_cfr.csv")
+    order = ["R1", "R8", "R10", "R12", "R13"]
+    classes = dict(SELECTED)
+    fig, ax = plt.subplots(figsize=(8.6, 5.2))
+    cmap = plt.get_cmap("viridis")
+    for i, reg in enumerate(order):
+        pts = sorted((float(r["avi_ct_mg_l"]), float(r["joint_cfr_pct"]))
+                     for r in rows if r["regimen"] == reg)
+        ax.plot([p[0] for p in pts], [p[1] for p in pts], "o-", lw=2, ms=6,
+                color=cmap(i / 4), label=f"{reg}  (EKFC {classes[reg]})")
+    ax.axvline(1, color=CAZ, ls="--", lw=1.3)
+    ax.axvline(4, color=AVI, ls="--", lw=1.3)
+    ax.text(1.05, 46, "registrational\nthreshold", fontsize=8.5, color=CAZ)
+    ax.text(4.1, 46, "primary target\n(continuous infusion)", fontsize=8.5, color=AVI)
+    ax.axhline(90, color="#999", ls=":", lw=1.2)
+    ax.set_xscale("log", base=2)
+    ax.set_xticks([1, 2, 4, 6, 8])
+    ax.set_xticklabels(["1", "2", "4", "6", "8"])
+    ax.set_xlabel("Avibactam critical concentration (mg/L)", fontsize=10)
+    ax.set_ylabel("Joint CFR (%), KPC-KP distribution", fontsize=10)
+    ax.set_ylim(40, 102)
+    ax.grid(alpha=.25, lw=.5)
+    ax.set_axisbelow(True)
+    ax.legend(fontsize=8.5, loc="lower left")
+    ax.set_title("Joint CFR across the published range of avibactam targets", fontsize=11.5)
+    fig.tight_layout()
+    save(fig, "fig_avi_threshold.png")
+
+
 if __name__ == "__main__":
     print("figures:")
     fig_pta_vs_mic()
@@ -222,3 +253,4 @@ if __name__ == "__main__":
     fig_dose_response()
     fig_cfr_distributions()
     fig_toxicity_gate()
+    fig_avi_threshold()
