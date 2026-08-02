@@ -1,0 +1,6 @@
+virtual_subjects,mean_abs_delta_joint_pta_pp,p95_abs_delta_pp,max_abs_delta_pp,interpretation
+1000,1.993,5.745,7.165,Exploratory
+5000,0.792,2.150,3.785,Exploratory
+10000,0.615,2.035,2.235,Development
+50000,0.167,0.510,0.625,Stable for summary
+100000,0.000,0.000,0.000,Reference

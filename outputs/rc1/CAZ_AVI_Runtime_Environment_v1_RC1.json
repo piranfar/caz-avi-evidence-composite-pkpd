@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-07-08T03:02:00.407616+00:00",
+  "execution_context": "OpenAI-managed container/runtime used within this ChatGPT session",
+  "execution_location_note": "The analyses were executed in the assistant-managed runtime, not inside the user project Git repository.",
+  "os": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "kernel": "4.4.0",
+  "architecture": "x86_64",
+  "python_version": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "cpu_count_logical": 56,
+  "hostname": "0e0d4fd6ffcc",
+  "physical_hardware_identity": "NOT_EXPOSED_BY_MANAGED_RUNTIME",
+  "git_commit": "NOT_AVAILABLE_OUTSIDE_USER_REPOSITORY",
+  "container_image_digest": "NOT_EXPOSED_BY_MANAGED_RUNTIME",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "python-docx": "1.2.0",
+    "matplotlib": "3.10.8"
+  }
+}

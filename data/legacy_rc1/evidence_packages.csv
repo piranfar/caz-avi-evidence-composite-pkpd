@@ -1,0 +1,7 @@
+id,source_package,composite_role,reusable_contribution
+S1,Cojutti et al. 2024,Core ICU non-RRT continuous-infusion PopPK/PD,EKFC clearance relationship; joint PTA/CFR; toxicity-oriented ceiling
+S2,Gatti et al. 2023,CVVHDF clinical PK/PD donor,"fCss, total clearance, CVVHDF intensity relationship"
+S3,Curtiaud et al. 2024,ECMO external clinical anchor,Ceftazidime and avibactam trough concentrations; ARC underexposure signal
+S4,O'Jeanson et al. 2025,CVVHDF PK and circuit-removal donor,"NCA PK, Vd, clearance, CVVHDF contribution"
+S5,Wölfl-Duchek et al. 2025,Healthy-volunteer plasma/CSF PK anchor,Two-compartment plasma/CSF behavior; target-site limitation
+S6,Aubry et al. 2025,In vitro KPC-3 bacterial-kill PD donor,Inoculum-effect PK/PD model and CZA + colistin interaction context

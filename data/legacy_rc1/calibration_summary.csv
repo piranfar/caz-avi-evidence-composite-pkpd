@@ -1,0 +1,3 @@
+endpoint,n_rows,bias_pp,mae_pp,rmse_pp,max_abs_delta_pp,pass_rows,review_rows,fail_rows
+CAZ PTA,72,0.62,0.97,2.08,8.38,69,3,0
+AVI attainment,72,-1.72,2.62,2.74,3.82,72,0,0

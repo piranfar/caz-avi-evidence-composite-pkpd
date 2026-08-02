@@ -1,0 +1,20 @@
+name: Reproducibility check
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Reproduce all analyses and verify against the frozen tables
+        run: python src/cazavi/cazavi_analyses.py all --verify
+      - name: Regenerate figures
+        run: python src/cazavi/make_figures.py
+      - name: Compute checksums
+        run: python src/verify_checksums.py > SHA256SUMS.txt

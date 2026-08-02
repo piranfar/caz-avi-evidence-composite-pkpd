@@ -1,0 +1,9 @@
+rank,parameter,description,mean_abs_rank_correlation,maximum_abs_rank_correlation
+1,cl_avi_mult,avibactam clearance,0.814,0.937
+2,omega_avi_mult,avibactam interindividual variability,0.499,0.607
+3,fu_avi,avibactam unbound fraction,0.249,0.284
+4,omega_caz_mult,ceftazidime interindividual variability,0.095,0.119
+5,rho,CAZ-AVI random-effect correlation,0.092,0.151
+6,cl_caz_mult,ceftazidime clearance,0.046,0.116
+7,tox_threshold,toxicity threshold,0.040,0.043
+8,fu_caz,ceftazidime unbound fraction,0.018,0.063
