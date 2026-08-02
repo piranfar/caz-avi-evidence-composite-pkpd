@@ -54,7 +54,6 @@ data/legacy_rc1/     original RC1 summary CSVs
 figures/             manuscript figures 1-5
 figures/legacy_rc1/  earlier figures; five are now supplementary figures S1-S5
 outputs/rc1/         frozen release-candidate workbooks and manifests
-manuscript/          manuscript, supplementary workbook, superseded pilot PDF
 references/          source bibliography; article PDFs are not redistributed
 docs/                reproducibility notes
 ```
@@ -83,6 +82,11 @@ Inputs are labelled as directly reported, inherited, donor-derived,
 user-specified, model-inferred, or scenario-generated. Missingness is retained
 as an evidence state rather than imputed, and donor evidence is restricted to
 sensitivity roles.
+
+## Manuscript
+
+The manuscript and supplementary workbook are not included here while they are
+in preparation. They will be added, with a persistent DOI, on publication.
 
 ## Citation
 

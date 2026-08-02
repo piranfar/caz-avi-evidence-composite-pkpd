@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 figures/regenerated/
+
+# manuscript held back until publication
+manuscript/
