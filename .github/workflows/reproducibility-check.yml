@@ -22,10 +22,12 @@ jobs:
           python src/cazavi/prescriptive_analyses.py
           python src/cazavi/structural_uncertainty.py
           python src/cazavi/critique_response.py
+          python src/cazavi/critique2_response.py
       - name: Regenerate figures
         run: |
           python src/cazavi/make_figures.py
           python src/cazavi/make_structural_figure.py
           python src/cazavi/make_v9_figures.py
+          python src/cazavi/v10_analyses.py
       - name: Compute checksums
         run: python src/verify_checksums.py > SHA256SUMS.txt

@@ -23,9 +23,11 @@ therapy, built from published evidence with explicit provenance labelling.
 2. The daily dose reaching target at the clinical breakpoint ranges from 1.71 to
    8.94 g/day across renal function, and the licensed maximum covers 99.2% of
    the lowest renal class but 57.2% at augmented clearance.
-3. Under the source model's clearance correlation of ρ = 0.94, avibactam
-   attainment is predictable from a measured ceftazidime concentration in 93.8%
-   of subjects, which quantifies what a second assay buys.
+3. A single ceftazidime assay confirms adequate avibactam exposure well and
+   excludes inadequate exposure poorly. Under the source model's clearance
+   correlation of ρ = 0.94 it reaches 97.2% sensitivity but 77.0% specificity,
+   wrongly reassuring 3.6% of the cohort; specificity falls to 21.4% at ρ = 0.50.
+   Accuracy alone (94.1%) is a misleading summary because attainment is common.
 
 ## Reproducing the results
 
@@ -41,9 +43,11 @@ python src/cazavi/scope_extension_analyses.py
 python src/cazavi/prescriptive_analyses.py
 python src/cazavi/structural_uncertainty.py
 python src/cazavi/critique_response.py
+python src/cazavi/critique2_response.py
 python src/cazavi/make_figures.py
 python src/cazavi/make_structural_figure.py
 python src/cazavi/make_v9_figures.py
+python src/cazavi/v10_analyses.py
 ```
 
 `--verify` compares every analysis against the frozen RC1 tables in
@@ -62,7 +66,9 @@ percentage points of joint target attainment across 121 regimen–MIC rows.
 | `scope_extension_analyses.py` | ICU renal mix, augmented clearance, variable protein binding, lung penetration |
 | `prescriptive_analyses.py` | The dose each subject needs, and the grid of renal class against MIC |
 | `structural_uncertainty.py` | The same simulation under four published population PK models |
-| `critique_response.py` | Tests of the eight objections raised in review, including the identity check |
+| `critique_response.py` | Tests of the first eight objections raised in review, including the identity check |
+| `critique2_response.py` | Free versus total avibactam target, three definitions of the limiting component, the second assay as a classifier, and the population weighting |
+| `v10_analyses.py` | Penetration drawn per subject, and the second-assay operating-characteristic figure |
 
 ## A note on one withdrawn result
 

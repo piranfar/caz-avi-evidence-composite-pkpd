@@ -1,0 +1,6 @@
+regimen,ekfc_class,avi_attainment_free_pct,avi_attainment_total_pct,difference_pp,joint_free_mic4,joint_total_mic4,joint_free_mic8,joint_total_mic8
+R1,0–30,74.9,78.0,3.0,67.2,68.0,35.9,35.9
+R8,31–60,89.4,91.4,2.0,88.3,89.7,62.1,62.2
+R10,61–90,88.4,90.6,2.2,87.8,89.6,65.0,65.0
+R12,91–120,88.4,90.6,2.2,88.0,90.1,68.1,68.2
+R13,121–150,81.2,84.2,3.0,80.8,83.5,57.2,57.3

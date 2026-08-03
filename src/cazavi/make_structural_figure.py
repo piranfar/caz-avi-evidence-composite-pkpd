@@ -26,7 +26,13 @@ from cazavi_analyses import DEFAULT_OUT as OUT, SELECTED_REGIMENS
 from reproduce_primary_run import REGIMENS
 from structural_uncertainty import CLASS_ORDER, MODELS
 
-FIGDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figures")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_REPO = os.path.dirname(os.path.dirname(_HERE))
+# in the repository, figures sit at the top level; standalone they sit beside the script
+FIGDIR = (os.path.join(_REPO, "figures")
+          if os.path.isdir(os.path.join(_REPO, "data", "processed"))
+          else os.path.join(_HERE, "figures"))
+os.makedirs(FIGDIR, exist_ok=True)
 COLOURS = {"M1_Cojutti_2024": "#1b3a6b", "M2_Chen_2025": "#3e8e7e",
            "M3_Registrational": "#c1663c", "M4_Bensman_2017": "#8a6ea8"}
 SHORT = {"M1_Cojutti_2024": "Cojutti 2024 (primary)", "M2_Chen_2025": "Chen 2025",
@@ -39,7 +45,6 @@ def read(name):
 
 
 def main():
-    os.makedirs(FIGDIR, exist_ok=True)
     pta = [r for r in read("structural_uncertainty_pta.csv") if r["bsv"] == "structural"]
     cross = [r for r in read("structural_escalation_crossing.csv")
              if r["bsv"] == "structural"]

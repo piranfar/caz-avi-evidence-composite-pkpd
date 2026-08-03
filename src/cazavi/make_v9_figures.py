@@ -30,7 +30,13 @@ from matplotlib.ticker import NullLocator
 
 from cazavi_analyses import DEFAULT_OUT as OUT
 
-FIGDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figures")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_REPO = os.path.dirname(os.path.dirname(_HERE))
+# in the repository, figures sit at the top level; standalone they sit beside the script
+FIGDIR = (os.path.join(_REPO, "figures")
+          if os.path.isdir(os.path.join(_REPO, "data", "processed"))
+          else os.path.join(_HERE, "figures"))
+os.makedirs(FIGDIR, exist_ok=True)
 CLASSES = ["0–30", "31–60", "61–90", "91–120", "121–150"]
 COLOURS = ["#1b3a6b", "#2f6f8f", "#3e8e7e", "#c1663c", "#8a6ea8"]
 LICENSED = 10.0
@@ -127,6 +133,5 @@ def second_assay():
 
 
 if __name__ == "__main__":
-    os.makedirs(FIGDIR, exist_ok=True)
     individualised()
     second_assay()
