@@ -468,8 +468,11 @@ def write_csv(rows, path):
     if not rows:
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    # lineterminator is set explicitly: the csv module defaults to CRLF, and
+    # .gitattributes marks *.csv as text, so a CRLF output would be rewritten to
+    # LF on checkout and the SHA-256 manifest would not match a fresh clone.
     with open(path, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(rows[0]))
+        w = csv.DictWriter(fh, fieldnames=list(rows[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     print(f"  wrote {len(rows):5} rows  {os.path.relpath(path, _ROOT)}")

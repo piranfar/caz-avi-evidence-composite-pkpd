@@ -45,12 +45,29 @@ from reproduce_primary_run import (
     TOX_THRESHOLD,
 )
 
-# Renal-function distribution of the source ICU cohort, which reported eGFR
-# 92 mL/min/1.73 m2 with an interquartile range of 50-113. Class weights are
-# obtained by interpolating that cumulative distribution; they describe one
-# published cohort and are not a general ICU distribution.
-ICU_WEIGHTS = {"0–30": 0.150, "31–60": 0.160, "61–90": 0.178,
-               "91–120": 0.309, "121–150": 0.203}
+# Renal-function weights for population-level CFR, derived rather than stated so
+# that the derivation is reproducible. The source ICU cohort reports eGFR with a
+# median of 92 and an interquartile range of 50-113 mL/min/1.73 m2. Those three
+# quantiles, anchored at the scenario's renal-function range of 0 to 150, give
+# four knots on the empirical cumulative distribution; the CDF is interpolated
+# linearly between them and evaluated at the class boundaries, and each class
+# weight is the increment across its interval. Median and interquartile range do
+# not by themselves determine bin probabilities, so the interpolation rule and
+# the anchors are part of the specification, not an implementation detail. These
+# describe one published cohort and are not a general ICU distribution.
+_CDF_KNOTS_X = (0.0, 50.0, 92.0, 113.0, 150.0)      # min, Q1, median, Q3, max
+_CDF_KNOTS_F = (0.00, 0.25, 0.50, 0.75, 1.00)
+_CLASS_EDGES = (0.0, 30.0, 60.0, 90.0, 120.0, 150.0)
+
+
+def _derive_icu_weights():
+    import numpy as _np
+    f = [float(_np.interp(x, _CDF_KNOTS_X, _CDF_KNOTS_F)) for x in _CLASS_EDGES]
+    names = list(EKFC_CLASSES)
+    return {n: f[i + 1] - f[i] for i, n in enumerate(names)}
+
+
+ICU_WEIGHTS = _derive_icu_weights()
 
 # Between-subject variability in protein binding, expressed as the range over
 # which the unbound fraction is sampled. The bounds are those the sensitivity

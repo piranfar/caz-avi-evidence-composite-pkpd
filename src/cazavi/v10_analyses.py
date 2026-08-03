@@ -114,6 +114,59 @@ def penetration_variability(seed=PRIMARY_SEED):
     return rows
 
 
+def penetration_dependence(seed=PRIMARY_SEED):
+    """Does the dependence imposed between the two penetration ratios matter?
+
+    The per-subject draw above ties the two components together, so a subject
+    with good ceftazidime penetration also has good avibactam penetration. That
+    is an assumption, not an observation. Drawing them independently and in
+    opposition bounds it.
+    """
+    dists = load_mic_distributions()
+    pop = draw_population(N_PER_CLASS, seed)
+    rows = []
+    for label, mode in (("comonotonic (used)", "same"), ("independent", "indep"),
+                        ("countermonotonic", "opposite")):
+        rng = np.random.default_rng(seed + 101)
+        rec = []
+        for regimen in SELECTED_REGIMENS:
+            cls, dose_g, interval = REGIMENS[regimen]
+            renal, z = pop[cls]
+            cl_caz, cl_avi = clearances(renal, z)
+            c_caz = dose_g * 1000.0 * CAZ_FRACTION / interval / cl_caz
+            c_avi = dose_g * 1000.0 * AVI_FRACTION / interval / cl_avi
+            u = rng.uniform(size=c_caz.size)
+            v = (u if mode == "same"
+                 else 1.0 - u if mode == "opposite"
+                 else rng.uniform(size=c_caz.size))
+            pc = CAZ_PEN[0] + u * (CAZ_PEN[1] - CAZ_PEN[0])
+            pa = AVI_PEN[0] + v * (AVI_PEN[1] - AVI_PEN[0])
+            avi_ok = c_avi * FU_AVI * pa >= AVI_CT
+            for mic in MIC_GRID:
+                caz_ok = (c_caz * FU_CAZ * pc) / mic >= CAZ_TARGET
+                rec.append({"regimen": regimen, "ekfc_class": cls, "dose_g": dose_g,
+                            "interval_h": interval, "mic_mg_l": mic,
+                            "caz_pta_pct": 100.0 * float(caz_ok.mean()),
+                            "avi_attainment_pct": 100.0 * float(avi_ok.mean()),
+                            "joint_pta_pct": 100.0 * float((caz_ok & avi_ok).mean()),
+                            "toxicity_pct": 0.0})
+        kpc = [c for c in compute_cfr(rec, dists)
+               if c["distribution_id"] == "LEE2022_KPC_KP"]
+        pw = sum(ICU_WEIGHTS[c["ekfc_class"]] * c["joint_cfr_pct"] for c in kpc)
+        p8 = [r["joint_pta_pct"] for r in rec if r["mic_mg_l"] == 8]
+        rows.append({"penetration_dependence": label,
+                     "population_joint_cfr_pct": round(pw, 1),
+                     "joint_pta_mic8_low_pct": round(min(p8), 1),
+                     "joint_pta_mic8_high_pct": round(max(p8), 1)})
+    print("\ndependence imposed between the two penetration ratios")
+    for r in rows:
+        print(f"  {r['penetration_dependence']:22} population CFR "
+              f"{r['population_joint_cfr_pct']:5.1f}%   joint PTA at MIC 8 "
+              f"{r['joint_pta_mic8_low_pct']:5.1f}-{r['joint_pta_mic8_high_pct']:.1f}%")
+    write_csv(rows, os.path.join(OUT, "penetration_dependence.csv"))
+    return rows
+
+
 def second_assay_figure():
     with open(os.path.join(OUT, "critique2_second_assay_operating.csv")) as fh:
         rows = list(csv.DictReader(fh))
@@ -167,4 +220,5 @@ def second_assay_figure():
 
 if __name__ == "__main__":
     penetration_variability()
+    penetration_dependence()
     second_assay_figure()

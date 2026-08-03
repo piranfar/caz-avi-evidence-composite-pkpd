@@ -68,7 +68,21 @@ percentage points of joint target attainment across 121 regimen–MIC rows.
 | `structural_uncertainty.py` | The same simulation under four published population PK models |
 | `critique_response.py` | Tests of the first eight objections raised in review, including the identity check |
 | `critique2_response.py` | Free versus total avibactam target, three definitions of the limiting component, the second assay as a classifier, and the population weighting |
-| `v10_analyses.py` | Penetration drawn per subject, and the second-assay operating-characteristic figure |
+| `v10_analyses.py` | Penetration drawn per subject, the dependence between the two penetration ratios, and the second-assay operating-characteristic figure |
+
+## Renal-function weighting
+
+The simulated population is equal-allocation — 20,000 subjects in each of five
+EKFC classes, renal function uniform on the class bounds — so every per-class
+result is unweighted. Only population-level CFR reweights those results, and
+the weights are derived in `scope_extension_analyses.py` rather than hard-coded:
+the source cohort's reported quartiles (50, 92, 113 mL/min/1.73 m²) are placed
+as knots on the empirical cumulative distribution, anchored at 0 and 150 to span
+the simulated range, interpolated linearly, and evaluated at each class
+boundary. A median and an interquartile range do not by themselves determine bin
+probabilities, so the interpolation rule and its anchors are part of the
+specification. The weights are 0.1500, 0.1595, 0.1786, 0.3092 and 0.2027 from
+the lowest class upward.
 
 ## A note on one withdrawn result
 
