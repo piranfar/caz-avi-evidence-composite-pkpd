@@ -1,0 +1,4 @@
+compartment,caz_penetration,avi_penetration,caz_css_floor_multiple_of_mic,caz_css_ceiling_mg_l,avi_css_floor_mg_l,window_closes_at_mic_mg_l,multiple_of_clinical_breakpoint,open_at_breakpoint
+plasma,1.0,1.0,4.71,104.0,4.35,22.1,2.76,yes
+central estimate,0.52,0.42,9.05,104.0,10.35,11.5,1.44,yes
+conservative,0.3,0.3,15.69,104.0,14.49,6.6,0.83,no

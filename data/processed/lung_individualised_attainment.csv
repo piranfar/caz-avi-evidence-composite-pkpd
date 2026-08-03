@@ -1,0 +1,31 @@
+compartment,ekfc_class,mic_mg_l,in_window_any_dose_pct,in_window_within_licensed_pct,median_daily_product_needed_g
+plasma,0–30,4.0,100.0,99.9,0.87
+plasma,0–30,8.0,100.0,99.2,1.71
+plasma,31–60,4.0,100.0,98.6,2.25
+plasma,31–60,8.0,100.0,92.0,4.1
+plasma,61–90,4.0,100.0,94.5,3.38
+plasma,61–90,8.0,100.0,80.0,5.88
+plasma,91–120,4.0,100.0,88.0,4.53
+plasma,91–120,8.0,100.0,68.1,7.42
+plasma,121–150,4.0,100.0,80.8,5.62
+plasma,121–150,8.0,100.0,57.2,8.94
+central estimate,0–30,4.0,100.0,98.4,1.8
+central estimate,0–30,8.0,100.0,92.9,3.28
+central estimate,31–60,4.0,100.0,84.1,4.98
+central estimate,31–60,8.0,100.0,64.5,7.9
+central estimate,61–90,4.0,100.0,64.0,7.73
+central estimate,61–90,8.0,100.0,42.2,11.35
+central estimate,91–120,4.0,100.0,47.4,10.49
+central estimate,91–120,8.0,100.0,27.7,14.38
+central estimate,121–150,4.0,100.0,34.6,13.18
+central estimate,121–150,8.0,100.0,18.9,17.41
+conservative,0–30,4.0,100.0,94.4,2.91
+conservative,0–30,8.0,0.0,0.0,5.69
+conservative,31–60,4.0,100.0,66.7,7.5
+conservative,31–60,8.0,0.0,0.0,13.67
+conservative,61–90,4.0,100.0,42.7,11.27
+conservative,61–90,8.0,0.0,0.0,19.61
+conservative,91–120,4.0,100.0,26.7,15.1
+conservative,91–120,8.0,0.0,0.0,24.75
+conservative,121–150,4.0,100.0,17.2,18.74
+conservative,121–150,8.0,0.0,0.0,29.79

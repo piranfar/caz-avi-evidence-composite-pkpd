@@ -1,0 +1,56 @@
+ekfc_class,regimen,mic_mg_l,joint_pta_pct,exceedance_pct,limiting_component,status
+0–30,R1,0.0625,74.9,9.3,avibactam,fails target
+0–30,R1,0.125,74.9,9.3,avibactam,fails target
+0–30,R1,0.25,74.9,9.3,avibactam,fails target
+0–30,R1,0.5,74.9,9.3,avibactam,fails target
+0–30,R1,1,74.9,9.3,avibactam,fails target
+0–30,R1,2,74.9,9.3,avibactam,fails target
+0–30,R1,4,67.2,9.3,ceftazidime,fails target
+0–30,R1,8,35.9,9.3,ceftazidime,fails target
+0–30,R1,16,14.6,9.3,ceftazidime,fails target
+0–30,R1,32,5.3,9.3,ceftazidime,fails target
+0–30,R1,64,2.0,9.3,ceftazidime,fails target
+31–60,R8,0.0625,89.4,9.2,avibactam,marginal
+31–60,R8,0.125,89.4,9.2,avibactam,marginal
+31–60,R8,0.25,89.4,9.2,avibactam,marginal
+31–60,R8,0.5,89.4,9.2,avibactam,marginal
+31–60,R8,1,89.4,9.2,avibactam,marginal
+31–60,R8,2,89.4,9.2,avibactam,marginal
+31–60,R8,4,88.3,9.2,avibactam,marginal
+31–60,R8,8,62.1,9.2,ceftazidime,fails target
+31–60,R8,16,21.7,9.2,ceftazidime,fails target
+31–60,R8,32,2.9,9.2,ceftazidime,fails target
+31–60,R8,64,0.2,9.2,ceftazidime,fails target
+61–90,R10,0.0625,88.4,10.7,avibactam,marginal
+61–90,R10,0.125,88.4,10.7,avibactam,marginal
+61–90,R10,0.25,88.4,10.7,avibactam,marginal
+61–90,R10,0.5,88.4,10.7,avibactam,marginal
+61–90,R10,1,88.4,10.7,avibactam,marginal
+61–90,R10,2,88.4,10.7,avibactam,marginal
+61–90,R10,4,87.8,10.7,avibactam,marginal
+61–90,R10,8,65.0,10.7,ceftazidime,fails target
+61–90,R10,16,23.6,10.7,ceftazidime,fails target
+61–90,R10,32,3.3,10.7,ceftazidime,fails target
+61–90,R10,64,0.1,10.7,ceftazidime,fails target
+91–120,R12,0.0625,88.4,12.2,avibactam,marginal
+91–120,R12,0.125,88.4,12.2,avibactam,marginal
+91–120,R12,0.25,88.4,12.2,avibactam,marginal
+91–120,R12,0.5,88.4,12.2,avibactam,marginal
+91–120,R12,1,88.4,12.2,avibactam,marginal
+91–120,R12,2,88.4,12.2,avibactam,marginal
+91–120,R12,4,88.0,12.2,avibactam,marginal
+91–120,R12,8,68.1,12.2,ceftazidime,fails target
+91–120,R12,16,26.0,12.2,ceftazidime,fails target
+91–120,R12,32,3.7,12.2,ceftazidime,fails target
+91–120,R12,64,0.2,12.2,ceftazidime,fails target
+121–150,R13,0.0625,81.2,7.2,avibactam,marginal
+121–150,R13,0.125,81.2,7.2,avibactam,marginal
+121–150,R13,0.25,81.2,7.2,avibactam,marginal
+121–150,R13,0.5,81.2,7.2,avibactam,marginal
+121–150,R13,1,81.2,7.2,avibactam,marginal
+121–150,R13,2,81.2,7.2,avibactam,marginal
+121–150,R13,4,80.8,7.2,avibactam,marginal
+121–150,R13,8,57.2,7.2,ceftazidime,fails target
+121–150,R13,16,17.5,7.2,ceftazidime,fails target
+121–150,R13,32,2.0,7.2,ceftazidime,fails target
+121–150,R13,64,0.1,7.2,ceftazidime,fails target

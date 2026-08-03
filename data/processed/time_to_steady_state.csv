@@ -1,0 +1,11 @@
+ekfc_class,clearance_stratum,clearance_l_h,half_life_h,time_to_95pct_steady_state_h
+0–30,median,1.51,16.6,71.6
+0–30,5th percentile (slowest clearers),0.264,94.9,409.9
+31–60,median,3.63,6.9,29.8
+31–60,5th percentile (slowest clearers),1.318,19.0,82.0
+61–90,median,5.209,4.8,20.8
+61–90,5th percentile (slowest clearers),1.862,13.4,58.1
+91–120,median,6.572,3.8,16.4
+91–120,5th percentile (slowest clearers),2.403,10.4,45.0
+121–150,median,7.901,3.2,13.7
+121–150,5th percentile (slowest clearers),2.854,8.8,37.9

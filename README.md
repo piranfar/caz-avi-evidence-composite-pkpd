@@ -1,8 +1,9 @@
-# Continuous-Infusion Ceftazidime–Avibactam: Dosing Window and Uncertainty
+# Continuous-Infusion Ceftazidime–Avibactam: What the Avibactam Target Costs
 
 Analysis code and data for the manuscript:
 
-**Continuous-Infusion Ceftazidime–Avibactam in Critically Ill Adults: A Narrow Dosing Window Bounded by Avibactam Exposure and Ceftazidime Toxicity**
+**What the Avibactam Target Costs: A Testing Convention, and What Individualised
+Dosing Recovers in Continuous-Infusion Ceftazidime–Avibactam**
 
 An uncertainty-aware pharmacometric evaluation of continuous-infusion
 ceftazidime–avibactam in critically ill adults without renal replacement
@@ -12,6 +13,20 @@ therapy, built from published evidence with explicit provenance labelling.
 > methodological transparency. It is not a dosing guideline and must not be used
 > for patient-level decisions.
 
+## What the analysis finds
+
+1. The single most influential quantity in the model is not pharmacokinetic. The
+   assumed avibactam critical concentration moves joint CFR by more than 40
+   percentage points across the range in published use, and the 4 mg/L value
+   adopted in continuous-infusion practice is a susceptibility-testing
+   convention rather than an exposure–response result.
+2. The daily dose reaching target at the clinical breakpoint ranges from 1.71 to
+   8.94 g/day across renal function, and the licensed maximum covers 99.2% of
+   the lowest renal class but 57.2% at augmented clearance.
+3. Under the source model's clearance correlation of ρ = 0.94, avibactam
+   attainment is predictable from a measured ceftazidime concentration in 93.8%
+   of subjects, which quantifies what a second assay buys.
+
 ## Reproducing the results
 
 ```bash
@@ -20,86 +35,47 @@ pip install -r requirements.txt
 
 python src/cazavi/cazavi_analyses.py all --verify
 python src/cazavi/reviewer_response_analyses.py
+python src/cazavi/dose_escalation_analyses.py
+python src/cazavi/avibactam_evidence_table.py
+python src/cazavi/scope_extension_analyses.py
+python src/cazavi/prescriptive_analyses.py
+python src/cazavi/structural_uncertainty.py
+python src/cazavi/critique_response.py
 python src/cazavi/make_figures.py
+python src/cazavi/make_structural_figure.py
+python src/cazavi/make_v9_figures.py
 ```
 
 `--verify` compares every analysis against the frozen RC1 tables in
-`data/reference/`. Expected agreement:
+`data/reference/`. The primary run reproduces those tables to within 0.06
+percentage points of joint target attainment across 121 regimen–MIC rows.
 
-| Analysis | Agreement |
+## What each script does
+
+| Script | Purpose |
 |---|---|
-| Primary 100,000-subject run | mean abs difference 0.060 pp joint PTA (121 rows) |
-| MIC-weighted CFR | 0.041 pp (33 rows) |
-| Convergence at N = 50,000 | 0.169 pp against 0.167 recorded |
-| Deterministic sensitivity | same rank order; top driver 20.29 vs 19.75 |
-| Probabilistic sensitivity | all 8 parameters in exact rank order; robustness 20/20 |
+| `reproduce_primary_run.py` | The primary Monte Carlo model, implemented from the published equations with nothing fitted |
+| `cazavi_analyses.py` | CFR, convergence, multi-seed, deterministic and probabilistic sensitivity |
+| `reviewer_response_analyses.py` | Analyses added at peer review |
+| `dose_escalation_analyses.py` | Dose sweep at the breakpoint, suppression proxy, accumulation half-life |
+| `avibactam_evidence_table.py` | Where the experimental support for an avibactam threshold actually sits |
+| `scope_extension_analyses.py` | ICU renal mix, augmented clearance, variable protein binding, lung penetration |
+| `prescriptive_analyses.py` | The dose each subject needs, and the grid of renal class against MIC |
+| `structural_uncertainty.py` | The same simulation under four published population PK models |
+| `critique_response.py` | Tests of the eight objections raised in review, including the identity check |
 
-Two further analyses have no frozen counterpart, because they were added after
-the reviewed draft: the sweep across avibactam critical concentrations (1-8
-mg/L), and the renal-function boundary sensitivity that separates the lowest
-class at 15 mL/min/1.73 m2.
+## A note on one withdrawn result
 
-## What is and is not reproducible
+An earlier draft reported a "therapeutic window" and the proportion of subjects
+placeable inside it. Individual clearance cancels from both sides of that
+placement test, so the proportion is an identity in the MIC — 100% or 0% for the
+whole cohort at once — and carries no simulated information. `critique_response.py`
+demonstrates this directly (`data/processed/critique_a_window_identity.csv`,
+where the distinct-value count is 1 in every row). The claim, its figure and its
+supplementary sheet were withdrawn; the robustness analyses that replaced it are
+in `critique_b`–`critique_f`.
 
-The original analysis code was not preserved. The model in `src/cazavi/` was
-reimplemented from the published equations and parameter values, with nothing
-fitted to the frozen outputs, and reproduces them to within Monte Carlo noise.
-Agreement is statistical, not bitwise: the original random-number stream cannot
-be recovered.
+## Licence
 
-## Layout
-
-```text
-src/cazavi/          verified pipeline: model, analyses, figures
-src/verify_checksums.py
-src/legacy/          superseded figure script, kept for reference
-data/inputs/         MIC distributions, published calibration anchors, PSA draws
-data/reference/      frozen RC1 tables; the reproduction target
-data/processed/      outputs of the current pipeline
-data/legacy_rc1/     original RC1 summary CSVs
-figures/             manuscript figures 1-6
-figures/legacy_rc1/  earlier figures; five are now supplementary figures S1-S5
-outputs/rc1/         frozen release-candidate workbooks and manifests
-references/          source bibliography; article PDFs are not redistributed
-docs/                reproducibility notes
-```
-
-## Model summary
-
-Critically ill adults without renal replacement therapy, continuous infusion,
-ceftazidime and avibactam simulated as separate components and evaluated
-jointly. 100,000 virtual subjects across five EKFC renal-function classes, 11
-regimens, 11 MIC values.
-
-| Parameter | Value | Source |
-|---|---|---|
-| CL ceftazidime | 5.0 x (EKFC/70)^0.70 L/h | Cojutti 2024 |
-| CL avibactam | 5.9 x (EKFC/70)^0.89 L/h | Cojutti 2024 |
-| Interindividual variability | 67.92% / 76.91% CV | Cojutti 2024 |
-| Random-effect correlation | 0.94 | Cojutti 2024 |
-| Unbound fractions | 0.85 ceftazidime, 0.92 avibactam | Cojutti 2024 |
-| Ceftazidime target | fCss/MIC >= 4 | Cojutti 2024 |
-| Avibactam target | fCss >= 4 mg/L (1-8 in sensitivity) | continuous-infusion TDM target; 1 mg/L is the registrational threshold |
-| Exposure screen | total Css > 104 mg/L | Cojutti 2024 |
-
-## Provenance policy
-
-Inputs are labelled as directly reported, inherited, donor-derived,
-user-specified, model-inferred, or scenario-generated. Missingness is retained
-as an evidence state rather than imputed, and donor evidence is restricted to
-sensitivity roles.
-
-## Manuscript
-
-The manuscript and supplementary workbook are not included here while they are
-in preparation. They will be added, with a persistent DOI, on publication.
-
-## Citation
-
-Cite the manuscript and the source articles listed in
-`references/source_articles.md`.
-
-## License
-
-Code under the MIT License; data and documentation under CC BY 4.0 unless
-otherwise stated. Source article PDFs are not included.
+Code is MIT (`LICENSE`). Data and documentation are CC BY 4.0
+(`LICENSE-DATA-DOCS.md`). Source article PDFs are not redistributed.

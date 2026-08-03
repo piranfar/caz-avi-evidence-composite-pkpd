@@ -1,0 +1,6 @@
+ekfc_class,dose_for_90pct_joint_pta_g,dose_at_15pct_exceedance_g,safety_limit_reached_first,exceedance_at_90pct_pta,joint_pta_at_licensed_max,exceedance_at_licensed_max
+0–30,4.63,1.77,yes,49.0,99.2,83.4
+31–60,9.46,5.89,yes,38.6,92.0,42.1
+61–90,13.26,8.45,yes,37.4,80.0,21.9
+91–120,16.59,10.78,yes,36.4,68.1,12.2
+121–150,19.73,12.99,yes,35.9,57.2,7.2

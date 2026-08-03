@@ -1,0 +1,11 @@
+cohort,ekfc_class,licensed_exceedance_pct,dose_for_90pct_pta_g,dose_at_ceiling_g,exceedance_at_pta_dose_pct,ceiling_first
+all EKFC,0–30,9.37,4.625,1.875,48.7,yes
+all EKFC,31–60,9.5,9.375,6.0,37.4,yes
+all EKFC,61–90,10.55,13.375,8.625,36.8,yes
+all EKFC,91–120,11.72,16.75,11.0,35.8,yes
+all EKFC,121–150,6.89,19.75,13.125,35.8,yes
+EKFC >= 15,0–30,0.28,5.75,3.75,37.9,yes
+EKFC >= 15,31–60,9.5,9.375,6.0,37.4,yes
+EKFC >= 15,61–90,10.55,13.375,8.625,36.8,yes
+EKFC >= 15,91–120,11.72,16.75,11.0,35.8,yes
+EKFC >= 15,121–150,6.89,19.75,13.125,35.8,yes

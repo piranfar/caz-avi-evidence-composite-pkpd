@@ -1,0 +1,9 @@
+claim,metric,verdict,M1_Cojutti_2024,M2_Chen_2025,M3_Registrational,M4_Bensman_2017
+The limiting component changes from avibactam to ceftazidime as the MIC rises,lowest MIC at which the limit changes hands,replicates,MIC 4,MIC 8,MIC 8,MIC 8
+"Avibactam attainment is capped below 100% at the target in use, independently of the MIC","highest avibactam attainment, licensed regimens",below 100% in every model; height varies,89.4%,99.3%,88.4%,74.8%
+Joint attainment at the clinical breakpoint under the licensed regimens,highest joint PTA at MIC 8 mg/L,varies with clearance,68.1%,93.4%,74.5%,60.2%
+Escalating the dose reaches the exposure ceiling before the 90% attainment target,renal classes in which the ceiling binds first,replicates,5/5 classes,5/5 classes,5/5 classes,3/3 classes
+Exceedance at the dose that would reach 90% attainment at the breakpoint,proportion above the exposure screen,replicates,36.1-49.1%,35.9-43.8%,35.8-55.3%,37.3-37.6%
+The plasma therapeutic window stays open above the clinical breakpoint,MIC at which the window closes,identical (no PK parameter enters),22.1 mg/L,22.1 mg/L,22.1 mg/L,22.1 mg/L
+Every simulated patient has a dose that places them inside the window at MIC 4-16 mg/L,"lowest proportion placeable, any renal class",identical,100.0%,100.0%,100.0%,100.0%
+Population-weighted joint CFR against the KPC-K. pneumoniae MIC distribution,"joint CFR, source-cohort renal mix",varies with clearance,84.3%,94.5%,84.3%,70.2%
