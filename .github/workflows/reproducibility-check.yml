@@ -23,6 +23,7 @@ jobs:
           python src/cazavi/structural_uncertainty.py
           python src/cazavi/critique_response.py
           python src/cazavi/critique2_response.py
+          python src/cazavi/add_icu_elf_scenario.py
       - name: Regenerate figures
         run: |
           python src/cazavi/make_figures.py

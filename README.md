@@ -23,11 +23,14 @@ therapy, built from published evidence with explicit provenance labelling.
 2. The daily dose reaching target at the clinical breakpoint ranges from 1.71 to
    8.94 g/day across renal function, and the licensed maximum covers 99.2% of
    the lowest renal class but 57.2% at augmented clearance.
-3. A single ceftazidime assay confirms adequate avibactam exposure well and
-   excludes inadequate exposure poorly. Under the source model's clearance
-   correlation of ρ = 0.94 it reaches 97.2% sensitivity but 77.0% specificity,
-   wrongly reassuring 3.6% of the cohort; specificity falls to 21.4% at ρ = 0.50.
-   Accuracy alone (94.1%) is a misleading summary because attainment is common.
+3. A single ceftazidime assay predicts avibactam target attainment well in one
+   direction and poorly in the other. Against an attainment prevalence of 84.5%
+   and the source-model clearance correlation of ρ = 0.94, the positive
+   predictive value is 95.8% and the negative predictive value 83.6%; a direct
+   avibactam assay changes the classification in 5.9% of subjects.
+4. Applying epithelial lining fluid penetration measured in critically ill
+   adults with nosocomial pneumonia (0.41 for ceftazidime, 0.44 for avibactam)
+   reduces population-weighted joint CFR from 84.3% to 45.9%.
 
 ## Reproducing the results
 
@@ -48,6 +51,7 @@ python src/cazavi/make_figures.py
 python src/cazavi/make_structural_figure.py
 python src/cazavi/make_v9_figures.py
 python src/cazavi/v10_analyses.py
+python src/cazavi/add_icu_elf_scenario.py
 ```
 
 `--verify` compares every analysis against the frozen RC1 tables in
@@ -68,6 +72,7 @@ percentage points of joint target attainment across 121 regimen–MIC rows.
 | `structural_uncertainty.py` | The same simulation under four published population PK models |
 | `critique_response.py` | Tests of the first eight objections raised in review, including the identity check |
 | `critique2_response.py` | Free versus total avibactam target, three definitions of the limiting component, the second assay as a classifier, and the population weighting |
+| `add_icu_elf_scenario.py` | Site-of-infection scenarios using the epithelial lining fluid penetration ratios measured in the randomized ICU pneumonia trial |
 | `v10_analyses.py` | Penetration drawn per subject, the dependence between the two penetration ratios, and the second-assay operating-characteristic figure |
 
 ## Renal-function weighting
@@ -99,3 +104,21 @@ in `critique_b`–`critique_f`.
 
 Code is MIT (`LICENSE`). Data and documentation are CC BY 4.0
 (`LICENSE-DATA-DOCS.md`). Source article PDFs are not redistributed.
+
+## Figures in the published manuscript
+
+Two of the six manuscript figures are produced by `make_figures.py`; the other
+four are produced by the scripts in `src/figures_js/`, which render SVG through
+Node and are not part of the Python CI job.
+
+| Manuscript figure | Produced by | File |
+|---|---|---|
+| Figure 1 | `src/figures_js/make_pta_single_column.mjs` | `figures/fig_pta_vs_mic_single_column.png` |
+| Figure 2 | `src/cazavi/make_figures.py` | `figures/fig_avi_threshold.png` |
+| Figure 3 | `src/cazavi/make_figures.py` | `figures/fig_avi_evidence.png` |
+| Figure 4 | `src/figures_js/make_lung_penetration_icu_figure.mjs` | `figures/fig_lung_penetration_icu_updated.png` |
+| Figure 5 | `src/figures_js/make_individualised_dose_figure.mjs` | `figures/fig_individualised_dose_redesigned.png` |
+| Figure 6 | `src/figures_js/make_second_assay_figure.mjs` | `figures/fig_second_assay_redesigned.png` |
+
+The remaining PNGs in `figures/` support the supplementary tables rather than
+the manuscript body.

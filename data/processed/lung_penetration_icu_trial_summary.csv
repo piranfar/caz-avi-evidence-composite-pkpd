@@ -1,0 +1,5 @@
+scenario,scenario_label,caz_elf_to_plasma_ratio,avi_elf_to_plasma_ratio,joint_pta_mic8_low_pct,joint_pta_mic8_high_pct,joint_cfr_low_pct,joint_cfr_high_pct,population_weighted_joint_cfr_pct
+plasma,Plasma,1.0,1.0,35.9,68.1,73.5,88.6,84.3
+icu_trial,"ELF, ICU pneumonia trial",0.41,0.44,10.4,16.8,36.6,52.4,45.9
+healthy_volunteer,"ELF, healthy-volunteer estimate",0.52,0.42,15.3,27.7,34.4,50.7,44.0
+conservative,"ELF, conservative scenario",0.3,0.3,3.8,7.0,18.2,31.6,26.7
