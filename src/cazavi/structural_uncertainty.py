@@ -27,10 +27,13 @@ variability at the primary model's estimates, so any difference is attributable
 to model structure alone. The full layer additionally uses each model's own
 reported variability where the source reports it.
 
-The three qualitative claims the paper makes are then checked in every model:
-which component limits attainment and where the limit changes hands, whether
-the exposure ceiling is reached before the attainment target under escalation,
-and whether the plasma therapeutic window stays open above the breakpoint.
+The qualitative claims the paper makes are then checked in every model: which
+component limits attainment and where the limit changes hands, whether the
+exposure screen is reached before the attainment target under escalation, and
+how far population CFR moves. A "therapeutic window" row was reported here in
+earlier drafts and has been withdrawn: individual clearance cancels from its
+placement test, so it is an identity rather than a simulation result and cannot
+be corroborated by varying the model.
 
 Sources retrieved from PubMed; DOIs are recorded with each model.
 
@@ -412,21 +415,13 @@ def robustness_ledger(pta, cross, window_rows, cfr):
                  "metric": "proportion above the exposure screen",
                  "verdict": "replicates", **per_model(exceed_at_target)})
 
-    # 5. the therapeutic window
-    win = window_is_model_free()
-    rows.append({"claim": "The plasma therapeutic window stays open above the clinical "
-                          "breakpoint",
-                 "metric": "MIC at which the window closes",
-                 "verdict": "identical (no PK parameter enters)",
-                 **per_model(lambda m: f"{win['window_closes_at_mic_mg_l']} mg/L")})
-
-    def placeable(m):
-        vals = [r["in_window_any_dose_pct"] for r in window_rows if r["model"] == m.key]
-        return f"{min(vals):.1f}%" if vals else "n/a"
-    rows.append({"claim": "Every simulated patient has a dose that places them inside the "
-                          "window at MIC 4-16 mg/L",
-                 "metric": "lowest proportion placeable, any renal class",
-                 "verdict": "identical", **per_model(placeable)})
+    # 5. WITHDRAWN. Two rows here previously reported that a "therapeutic window"
+    # closes at the same MIC under all four models and that every subject can be
+    # placed inside it. Both are identities, not simulation results: individual
+    # clearance cancels from the placement test, so the statistic takes one value
+    # for the whole cohort and cannot be corroborated by varying the model. The
+    # manuscript withdrew the claim; the ledger must not reinstate it. The
+    # evidence for the withdrawal is kept in critique_response.py, test A.
 
     # 6. population CFR
     def pop_cfr(m):
