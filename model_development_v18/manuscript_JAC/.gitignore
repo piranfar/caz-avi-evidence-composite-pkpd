@@ -1,0 +1,10 @@
+# Manuscript PROSE is never published here — author's instruction, 12 Aug 2026.
+#
+# Unpublished article text posted to a public repository can be read as prior publication
+# by some journals, and the JAC draft is unsubmitted. Figures and tables ARE published:
+# they are produced by public code from results already reported in MODEL2_REPORT.md, so
+# they expose nothing the repository does not already contain. The prose is different.
+#
+# The leading slash matters — it blocks .md files in THIS directory only, so drafting
+# notes stay local while tables/*.md still publish.
+/*.md

@@ -1,0 +1,10 @@
+| Correlation scenario | Assay CV | Infer (%) | Measure (%) | Gain (pp) | 95% interval (pp) | P(gain > 0) |
+|---|---|---|---|---|---|---|
+| 0.94 (published) | 0% | 94.4 | 100.0 | 5.6 | 1.6 to 13.4 | 100.0% |
+| 0.94 (published) | 20% | 91.9 | 95.2 | 3.1 | -1.2 to 12.1 | 89.1% |
+| 0.703 (Model 1) | 0% | 88.3 | 100.0 | 11.7 | 3.6 to 21.8 | 100.0% |
+| 0.703 (Model 1) | 20% | 87.4 | 95.2 | 7.7 | 0.7 to 19.1 | 98.6% |
+| agnostic, U(0.38, 0.98) | 0% | 88.7 | 100.0 | 11.3 | 3.6 to 22.4 | 100.0% |
+| agnostic, U(0.38, 0.98) | 20% | 88.2 | 95.2 | 6.8 | 0.0 to 19.5 | 97.8% |
+
+Avibactam target fixed at 4 mg/L. Accuracy is correct classification of avibactam target attainment. Interval is the 2.5th to 97.5th percentile across parameter draws. The final column is the proportion of draws in which measuring was better, not a P value.
