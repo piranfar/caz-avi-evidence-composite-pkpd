@@ -55,8 +55,36 @@ python src/cazavi/add_icu_elf_scenario.py
 ```
 
 `--verify` compares every analysis against the frozen RC1 tables in
-`data/reference/`. The primary run reproduces those tables to within 0.06
-percentage points of joint target attainment across 121 regimen–MIC rows.
+`data/reference/`. Across the 121 regimen–MIC rows of the primary run, the
+agreement with those tables is:
+
+| Quantity | mean abs. difference | largest difference |
+|---|---|---|
+| Ceftazidime PTA | 0.054 pp | 0.320 pp |
+| Avibactam attainment | 0.041 pp | 0.085 pp |
+| **Joint PTA** | **0.060 pp** | **0.320 pp** |
+| Exposure-screen exceedance | 0.140 pp | 0.355 pp |
+
+An earlier version of this file described the joint-target agreement as "within
+0.06 percentage points". That is the *mean* absolute difference; the largest
+single-row difference is 0.320 pp. Both are given above, because "within" reads
+as a bound and only the maximum is one.
+
+### Running on Windows
+
+Use Python's UTF-8 mode:
+
+```bash
+set PYTHONUTF8=1        # cmd
+$env:PYTHONUTF8=1       # PowerShell
+```
+
+The scripts print Greek letters and en-dashes and write them into their CSV
+output. Without UTF-8 mode a Windows console raises `UnicodeEncodeError` part-way
+through, and the CSVs are written in the local code page instead of UTF-8, so
+they no longer match the archived files byte-for-byte even though every number in
+them is identical. With `PYTHONUTF8=1` the outputs reproduce the committed files
+exactly. No code change is needed, and none has been made.
 
 ### Verifying the files themselves
 
