@@ -1,0 +1,163 @@
+{
+  "model_id": "CAZ_AVI_EVIDENCE_COMPOSITE_V1_RC1",
+  "model_title": "Ceftazidime-Avibactam Six-Study Evidence-Composite Model",
+  "release_type": "RELEASE_CANDIDATE",
+  "freeze_status": "TECHNICALLY_FROZEN_PENDING_USER_APPROVAL",
+  "generated_at_utc": "2026-07-08T03:02:00.427602+00:00",
+  "active_target": "ceftazidime-avibactam",
+  "simulation": {
+    "primary_n": 100000,
+    "primary_seed": 20260707,
+    "ekfc_classes": 5,
+    "subjects_per_class": 20000
+  },
+  "calibration": {
+    "rows": 72,
+    "overall_pass_rows": 69,
+    "review_rows": 3,
+    "fail_rows": 0,
+    "decision": "PROVISIONAL_PASS_WITH_TARGETED_REVIEW"
+  },
+  "convergence": {
+    "n_50000_mean_abs_delta_joint_pta_pp": 0.1674,
+    "n_50000_max_abs_delta_joint_pta_pp": 0.625,
+    "decision": "STABLE_FOR_SUMMARY; 100000 retained for final outputs"
+  },
+  "multi_seed": {
+    "seeds": [
+      20260707,
+      20260708,
+      20260709,
+      20260710,
+      20260711
+    ],
+    "decision": "ACCEPTABLE_WITH_TARGETED_REVIEW"
+  },
+  "mic_distributions": [
+    {
+      "id": "LEE2022_KPC_KP",
+      "role": "PRIMARY",
+      "status": "LOCKED"
+    },
+    {
+      "id": "LEE2022_OXA_KP",
+      "role": "PRIMARY",
+      "status": "LOCKED"
+    },
+    {
+      "id": "INDIA2022_OXA48_KP",
+      "role": "SENSITIVITY_DONOR",
+      "status": "LOCKED_WITH_USER_REVIEW_REQUIRED"
+    },
+    {
+      "id": "FR2024_OXA484_SERINE_ONLY",
+      "role": "FRENCH_VARIANT_SENSITIVITY",
+      "status": "LOCKED_WITH_USER_REVIEW_REQUIRED"
+    },
+    {
+      "id": "FRENCH_OXA48_2021_BROAD",
+      "role": "ORIGINAL_PUBLICATION_DISTRIBUTION",
+      "status": "UNRESOLVED_NONBLOCKING_MISSINGNESS"
+    }
+  ],
+  "psa": {
+    "outer_lhs_draws": 300,
+    "inner_subjects_per_draw": 50000,
+    "baseline_robust": 0,
+    "baseline_conditionally_robust": 7,
+    "baseline_fragile": 13,
+    "interval_type": "SCENARIO_BASED_NOT_FORMAL_POSTERIOR"
+  },
+  "dominant_uncertainty_drivers": [
+    "AVI clearance",
+    "AVI IIV",
+    "AVI unbound fraction",
+    "CAZ IIV",
+    "CAZ-AVI random-effect correlation"
+  ],
+  "provenance_policy": {
+    "origin_classes": [
+      "REPORTED_DIRECT",
+      "REPORTED_INHERITED",
+      "DONOR_POOL",
+      "USER_INPUT",
+      "MODEL_INFERRED"
+    ],
+    "transformation_classes": [
+      "NONE",
+      "UNIT_CONVERSION",
+      "PARAMETER_MAPPING",
+      "EQUATION_APPLICATION",
+      "DISTRIBUTION_FITTING",
+      "CATEGORICAL_HARMONIZATION",
+      "IMPUTATION",
+      "SCENARIO_GENERATION"
+    ],
+    "review_states": [
+      "UNREVIEWED",
+      "SYSTEM_NORMALIZED",
+      "USER_REVIEW_REQUIRED",
+      "USER_APPROVED",
+      "USER_REJECTED"
+    ]
+  },
+  "runtime_environment_file": "CAZ_AVI_Runtime_Environment_v1_RC1.json",
+  "artifacts": [
+    {
+      "filename": "First_Monte_Carlo_Run_100000.xlsx",
+      "exists": true,
+      "size_bytes": 22700,
+      "sha256": "1020691e257e631f832696e9b48b40ac1248a549ba52b7d362f5f1cdbc773f28"
+    },
+    {
+      "filename": "CAZ_AVI_First_Run_Calibration_Comparison_v1.xlsx",
+      "exists": true,
+      "size_bytes": 35480,
+      "sha256": "d1b6ff5e4928b306de321803a9a0ed8adffa12bedcb2b8402abeb3ecab5192da"
+    },
+    {
+      "filename": "CAZ_AVI_Convergence_Multiseed_Reproducibility_v1.xlsx",
+      "exists": true,
+      "size_bytes": 94908,
+      "sha256": "655ea52e980b6f47b46cb0c8c240677705be8fbc073e7dcd0c77ea0388ee0e3d"
+    },
+    {
+      "filename": "CAZ_AVI_MIC_Registry_and_CFR_v2_French_OXA484.xlsx",
+      "exists": true,
+      "size_bytes": 153789,
+      "sha256": "a043c5bba71839a5615e510e9c810d0e5f0168f21598f6e902f3b47f95f46e1e"
+    },
+    {
+      "filename": "CAZ_AVI_Global_Sensitivity_Analysis_v1.xlsx",
+      "exists": true,
+      "size_bytes": 207162,
+      "sha256": "04fa9378f2541c70d05b2672b49c6b3e3511199b1d2be7e8e6aeabeace22a7cb"
+    },
+    {
+      "filename": "CAZ_AVI_Probabilistic_Sensitivity_Analysis_v1.xlsx",
+      "exists": true,
+      "size_bytes": 790394,
+      "sha256": "496312f26e3f12eadbabb1066303b9e8b2c66ecee967997a0252fb495e33594e"
+    },
+    {
+      "filename": "CAZ_AVI_Six_Study_First_Run_Validation_Report_v0.1.docx",
+      "exists": true,
+      "size_bytes": 45368,
+      "sha256": "204f809606704fd83b2dd572db896e99ce86855e5f6c7c6e36d619c1fb9fd727"
+    }
+  ],
+  "release_limitations": [
+    "No Git commit can be recorded because the analyses were executed outside the user project repository.",
+    "Managed runtime does not expose a stable physical hardware identifier or container image digest.",
+    "PSA parameter bounds are plausible scenario ranges, not publication-derived confidence intervals or posterior distributions.",
+    "The broad French OXA-48-like 2021 CAZ-AVI MIC distribution remains unresolved and is preserved as explicit missingness.",
+    "Clinical use requires external clinical validation and is not authorized by this modeling report."
+  ],
+  "approval_required": [
+    "Approve donor MIC distributions",
+    "Approve MIC bin harmonization",
+    "Approve toxicity threshold policy",
+    "Approve PK/PD target policy",
+    "Approve release candidate as Model v1"
+  ]
+}

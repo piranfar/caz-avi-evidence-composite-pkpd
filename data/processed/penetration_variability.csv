@@ -1,0 +1,5 @@
+scenario,joint_pta_mic8_low_pct,joint_pta_mic8_high_pct,joint_cfr_low_pct,joint_cfr_high_pct,population_joint_cfr_pct
+plasma,35.9,68.1,73.5,88.6,84.3
+fixed central (0.52 / 0.42),15.3,27.7,34.4,50.7,44.0
+fixed conservative (0.30 / 0.30),3.8,7.0,18.2,31.6,26.7
+drawn per subject (0.30-0.52 / 0.30-0.42),10.8,16.7,26.2,41.7,35.6

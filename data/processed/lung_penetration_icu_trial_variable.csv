@@ -1,0 +1,4 @@
+penetration_dependence,caz_ratio_range,avi_ratio_range,joint_pta_mic8_low_pct,joint_pta_mic8_high_pct,joint_cfr_low_pct,joint_cfr_high_pct,population_weighted_joint_cfr_pct
+comonotonic (used),0.30-0.52,0.30-0.44,10.9,16.8,27.5,43.0,37.0
+independent,0.30-0.52,0.30-0.44,10.3,16.8,27.5,42.8,36.7
+countermonotonic,0.30-0.52,0.30-0.44,10.3,16.2,27.4,42.8,36.6

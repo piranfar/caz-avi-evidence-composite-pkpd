@@ -1,0 +1,7 @@
+subgroup,n,mic_mg_l,caz_pta_pct,avi_attainment_pct,joint_pta_pct,median_css_caz
+whole class (121–150),20000,2,99.2,81.2,81.2,42.2
+whole class (121–150),20000,4,90.6,81.2,80.8,42.2
+whole class (121–150),20000,8,57.3,81.2,57.2,42.2
+augmented clearance (>=130),13825,2,99.1,79.9,79.9,41.2
+augmented clearance (>=130),13825,4,89.7,79.9,79.6,41.2
+augmented clearance (>=130),13825,8,55.7,79.9,55.6,41.2

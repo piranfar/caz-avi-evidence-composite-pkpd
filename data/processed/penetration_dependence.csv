@@ -1,0 +1,4 @@
+penetration_dependence,population_joint_cfr_pct,joint_pta_mic8_low_pct,joint_pta_mic8_high_pct
+comonotonic (used),35.6,10.8,16.7
+independent,35.4,10.2,16.7
+countermonotonic,35.4,10.2,16.2

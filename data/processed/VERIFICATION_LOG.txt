@@ -1,0 +1,36 @@
+  wrote   121 rows  data/processed/primary_pta_results.csv
+
+primary PTA vs RC1
+    caz_pta_pct                  n= 121  mean |Δ|   0.054  max   0.320
+    avi_attainment_pct           n= 121  mean |Δ|   0.041  max   0.085
+    joint_pta_pct                n= 121  mean |Δ|   0.060  max   0.320
+    toxicity_pct                 n= 121  mean |Δ|   0.140  max   0.355
+  wrote    44 rows  data/processed/cfr_all_distributions.csv
+
+CFR vs RC1
+    caz_cfr_pct                  n=  33  mean |Δ|   0.025  max   0.056
+    joint_cfr_pct                n=  33  mean |Δ|   0.041  max   0.082
+  wrote     5 rows  data/processed/convergence_summary.csv
+    N=  1000  mean |Δ| 2.014 pp  max 7.155 pp
+    N=  5000  mean |Δ| 0.806 pp  max 3.830 pp
+    N= 10000  mean |Δ| 0.619 pp  max 2.230 pp
+    N= 50000  mean |Δ| 0.169 pp  max 0.605 pp
+    N=100000  mean |Δ| 0.000 pp  max 0.000 pp
+  wrote   605 rows  data/processed/multiseed_detail.csv
+  wrote    88 rows  data/processed/multiseed_summary.csv
+  wrote    19 rows  data/processed/gsa_sensitivity_ranking.csv
+  wrote   380 rows  data/processed/gsa_detail.csv
+  wrote     9 rows  data/processed/gsa_toxicity_gate_crossings.csv
+
+    top OAT drivers (max |Δ joint CFR|, pp):
+      1. AVI_CT_6          20.29
+      2. AVI_CT_2          17.75
+      3. AVI_CL_HIGH        8.30
+      4. AVI_CL_LOW         7.44
+      5. IIV_LOW            5.12
+  wrote     8 rows  data/processed/psa_parameter_ranking.csv
+  wrote    20 rows  data/processed/psa_probabilities.csv
+
+    robustness: {'Fragile': 13, 'Conditionally robust': 7}
+
+PSA parameter ranking vs RC1

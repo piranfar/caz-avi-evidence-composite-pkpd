@@ -1,0 +1,34 @@
+name: Reproducibility check
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Reproduce all analyses and verify against the frozen tables
+        run: python src/cazavi/cazavi_analyses.py all --verify
+      - name: Run the extended analyses
+        run: |
+          python src/cazavi/dose_escalation_analyses.py
+          python src/cazavi/avibactam_evidence_table.py
+          python src/cazavi/scope_extension_analyses.py
+          python src/cazavi/prescriptive_analyses.py
+          python src/cazavi/structural_uncertainty.py
+          python src/cazavi/critique_response.py
+          python src/cazavi/critique2_response.py
+          python src/cazavi/add_icu_elf_scenario.py
+      - name: Regenerate figures
+        run: |
+          python src/cazavi/make_figures.py
+          python src/cazavi/make_structural_figure.py
+          python src/cazavi/make_v9_figures.py
+          python src/cazavi/v10_analyses.py
+      - name: Compute checksums
+        run: python src/verify_checksums.py > SHA256SUMS.txt

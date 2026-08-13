@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript."
+title: "Continuous-Infusion Ceftazidime–Avibactam in Critically Ill Adults: A Narrow Dosing Window Bounded by Avibactam Exposure and Ceftazidime Toxicity"
+authors:
+  - family-names: Piranfar
+    given-names: Vahhab
+abstract: "An uncertainty-aware pharmacometric evaluation of continuous-infusion ceftazidime-avibactam in critically ill adults, showing a dosing window bounded by an MIC-independent avibactam ceiling and by ceftazidime exposure."
+keywords:
+  - ceftazidime-avibactam
+  - pharmacokinetics
+  - pharmacodynamics
+  - Monte Carlo simulation
+  - probability of target attainment
+  - uncertainty analysis
+  - antimicrobial pharmacometrics
+repository-code: "https://github.com/piranfar/caz-avi-evidence-composite-pkpd"
+license: MIT
+version: "2.0.0"
+date-released: "2026-08-02"

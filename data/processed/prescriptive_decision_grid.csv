@@ -1,0 +1,56 @@
+ekfc_class,regimen,mic_mg_l,licensed_joint_pta_pct,licensed_exceedance_pct,limiting_component,in_window_any_dose_pct,median_placing_dose_g_day,p90_placing_dose_g_day,placing_dose_within_licensed_pct,action
+0–30,R1,0.0625,74.9,9.3,avibactam,100.0,0.68,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,0.125,74.9,9.3,avibactam,100.0,0.68,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,0.25,74.9,9.3,avibactam,100.0,0.68,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,0.5,74.9,9.3,avibactam,100.0,0.68,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,1,74.9,9.3,avibactam,100.0,0.68,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,2,74.9,9.3,avibactam,100.0,0.69,2.08,100.0,measure and titrate within the licensed range
+0–30,R1,4,67.2,9.3,ceftazidime,100.0,0.87,2.39,99.9,measure and titrate within the licensed range
+0–30,R1,8,35.9,9.3,ceftazidime,100.0,1.71,4.52,99.2,measure and titrate within the licensed range
+0–30,R1,16,14.6,9.3,ceftazidime,100.0,3.41,9.05,92.2,measure and titrate within the licensed range
+0–30,R1,32,5.3,9.3,ceftazidime,0.0,6.82,18.09,0.0,outside the window at any dose; use a different agent
+0–30,R1,64,2.0,9.3,ceftazidime,0.0,13.65,36.19,0.0,outside the window at any dose; use a different agent
+31–60,R8,0.0625,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,0.125,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,0.25,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,0.5,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,1,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,2,89.4,9.2,avibactam,100.0,2.05,5.13,98.7,measure and titrate within the licensed range
+31–60,R8,4,88.3,9.2,avibactam,100.0,2.25,5.33,98.6,measure and titrate within the licensed range
+31–60,R8,8,62.1,9.2,ceftazidime,100.0,4.1,9.22,92.0,measure and titrate within the licensed range
+31–60,R8,16,21.7,9.2,ceftazidime,100.0,8.2,18.45,62.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+31–60,R8,32,2.9,9.2,ceftazidime,0.0,16.4,36.89,0.0,outside the window at any dose; use a different agent
+31–60,R8,64,0.2,9.2,ceftazidime,0.0,32.8,73.79,0.0,outside the window at any dose; use a different agent
+61–90,R10,0.0625,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,0.125,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,0.25,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,0.5,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,1,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,2,88.4,10.7,avibactam,100.0,3.23,7.96,94.7,measure and titrate within the licensed range
+61–90,R10,4,87.8,10.7,avibactam,100.0,3.38,8.1,94.5,measure and titrate within the licensed range
+61–90,R10,8,65.0,10.7,ceftazidime,100.0,5.88,13.13,80.0,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+61–90,R10,16,23.6,10.7,ceftazidime,100.0,11.77,26.25,40.0,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+61–90,R10,32,3.3,10.7,ceftazidime,0.0,23.53,52.49,0.0,outside the window at any dose; use a different agent
+61–90,R10,64,0.1,10.7,ceftazidime,0.0,47.07,104.98,0.0,outside the window at any dose; use a different agent
+91–120,R12,0.0625,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,0.125,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,0.25,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,0.5,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,1,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,2,88.4,12.2,avibactam,100.0,4.39,10.61,88.4,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,4,88.0,12.2,avibactam,100.0,4.53,10.71,88.0,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,8,68.1,12.2,ceftazidime,100.0,7.42,16.54,68.1,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,16,26.0,12.2,ceftazidime,100.0,14.85,33.01,26.0,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+91–120,R12,32,3.7,12.2,ceftazidime,0.0,29.69,66.02,0.0,outside the window at any dose; use a different agent
+91–120,R12,64,0.2,12.2,ceftazidime,0.0,59.38,132.05,0.0,outside the window at any dose; use a different agent
+121–150,R13,0.0625,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,0.125,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,0.25,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,0.5,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,1,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,2,81.2,7.2,avibactam,100.0,5.53,13.19,81.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,4,80.8,7.2,avibactam,100.0,5.62,13.24,80.8,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,8,57.2,7.2,ceftazidime,100.0,8.94,19.66,57.2,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,16,17.5,7.2,ceftazidime,100.0,17.85,39.18,17.5,measure and titrate; the placing dose exceeds the licensed maximum for most patients
+121–150,R13,32,2.0,7.2,ceftazidime,0.0,35.7,78.35,0.0,outside the window at any dose; use a different agent
+121–150,R13,64,0.1,7.2,ceftazidime,0.0,71.39,156.7,0.0,outside the window at any dose; use a different agent

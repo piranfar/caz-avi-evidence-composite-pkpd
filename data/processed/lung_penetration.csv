@@ -1,0 +1,16 @@
+compartment,regimen,ekfc_class,joint_pta_mic4_pct,joint_pta_mic8_pct,joint_cfr_pct
+plasma,R1,0–30,67.2,35.9,73.5
+plasma,R8,31–60,88.3,62.1,88.6
+plasma,R10,61–90,87.8,65.0,87.7
+plasma,R12,91–120,88.0,68.1,87.8
+plasma,R13,121–150,80.8,57.2,80.5
+central estimate,R1,0–30,34.6,15.3,38.5
+central estimate,R8,31–60,50.2,23.5,50.7
+central estimate,R10,61–90,48.2,25.4,48.0
+central estimate,R12,91–120,47.4,27.7,47.1
+central estimate,R13,121–150,34.6,18.9,34.4
+conservative,R1,0–30,18.4,7.0,26.8
+conservative,R8,31–60,26.9,5.2,31.6
+conservative,R10,61–90,26.7,6.2,29.2
+conservative,R12,91–120,26.7,7.0,28.1
+conservative,R13,121–150,17.2,3.8,18.2

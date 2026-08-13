@@ -1,0 +1,6 @@
+ekfc_class,selected_regimen,dose_g,interval_h,joint_pta_mic4_percent,toxicity_percent
+0-30,R1,0.625,12,67.05,8.92
+31-60,R8,2.5,12,88.28,9.34
+61-90,R10,2.5,8,87.76,10.89
+91-120,R12,2.5,6,88.07,12.32
+121-150,R13,2.5,6,80.81,7.33
