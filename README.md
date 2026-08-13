@@ -2,8 +2,8 @@
 
 Analysis code and data for the manuscript:
 
-**What the Avibactam Target Costs: A Testing Convention, and What Individualised
-Dosing Recovers in Continuous-Infusion Ceftazidime–Avibactam**
+**Avibactam Target Selection Drives Joint Target Attainment During
+Continuous-Infusion Ceftazidime–Avibactam: A Pharmacometric Simulation**
 
 An uncertainty-aware pharmacometric evaluation of continuous-infusion
 ceftazidime–avibactam in critically ill adults without renal replacement
@@ -58,6 +58,20 @@ python src/cazavi/add_icu_elf_scenario.py
 `data/reference/`. The primary run reproduces those tables to within 0.06
 percentage points of joint target attainment across 121 regimen–MIC rows.
 
+### Verifying the files themselves
+
+`SHA256SUMS.txt` records a SHA-256 hash for all 167 tracked files, so a clone can be
+checked for completeness and integrity before anything is run:
+
+```bash
+sha256sum -c SHA256SUMS.txt          # Linux / macOS
+```
+
+The hashes are computed on the stored bytes. `.gitattributes` disables line-ending
+translation (`* -text`) so a checkout reproduces those bytes on Windows as well; without
+that, git would rewrite LF to CRLF and most files would fail verification for no reason
+other than the platform.
+
 ## What each script does
 
 | Script | Purpose |
@@ -102,8 +116,42 @@ in `critique_b`–`critique_f`.
 
 ## Licence
 
-Code is MIT (`LICENSE`). Data and documentation are CC BY 4.0
-(`LICENSE-DATA-DOCS.md`). Source article PDFs are not redistributed.
+Two licences apply, because the repository holds two different kinds of material.
+
+| Material | Licence | File |
+|---|---|---|
+| Data summaries, documentation, figures | **CC BY-NC 4.0** | `LICENSE` (full text), `LICENSE-DATA-DOCS.md` |
+| Analysis code | **MIT** | `model_development_v18/LICENSE` |
+
+The NonCommercial condition applies to the data and documentation, not to the code: MIT is
+kept for the scripts because Creative Commons licences are not intended for software and
+because the code was released under MIT in earlier versions of this repository.
+
+Neither licence covers third-party source articles or publisher PDFs, which are **not
+redistributed here**. Every external source is identified by DOI in
+`model_development_v18/data_external/` so it can be obtained through the reader's own
+institutional access.
+
+## `model_development_v18/` — work beyond the manuscript
+
+A separate line of work sits under `model_development_v18/`. It is **not** part of the
+manuscript's analysis and nothing in the article depends on it; it is included because it
+documents how the manuscript's assumptions were tested after submission.
+
+| Contents | What it is |
+|---|---|
+| `code/`, `outputs/` | Two models built on the primary simulation, with their outputs and a unit-test suite |
+| `data_external/` | The external evidence base — extracted numeric data and per-source provenance for every published source relied on |
+| `MODEL1_REPORT.md` | A joint mixed-effects estimate of the ceftazidime–avibactam clearance correlation from openly licensed patient-level data |
+| `MODEL2_REPORT.md` | A decision layer over the primary simulation: value of information, misselection and regret, limiting-component probability |
+| `PREREGISTRATION.md` | A prediction registered before the data needed to test it were held |
+| `REPRODUCTION_CHECK.md`, `PROJECT_AUDIT_REPORT.md` | Verification of the primary package against its own frozen outputs |
+| `figures/`, `manuscript_JAC/` | Figures and tables generated from those analyses |
+
+These reports record findings that run against the project's own argument as well as for
+it, including a structural limitation in the joint-target assumption and a
+concentration-dependence problem in the epithelial-lining-fluid scaling. They are kept
+because a record that carries only convenient results is not a record.
 
 ## Figures in the published manuscript
 
