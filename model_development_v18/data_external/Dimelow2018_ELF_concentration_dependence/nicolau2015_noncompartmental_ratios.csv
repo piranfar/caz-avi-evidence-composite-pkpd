@@ -1,0 +1,13 @@
+source,cohort,n,analyte,parameter,elf_over_plasma_ratio,notes
+Nicolau 2015 JAC 70:2862-9,2000 mg CAZ + 500 mg AVI,22,ceftazidime,AUCtau,0.313,"non-compartmental; total drug; ELF from composite median profile, urea-corrected"
+Nicolau 2015 JAC 70:2862-9,2000 mg CAZ + 500 mg AVI,22,avibactam,AUCtau,0.349,non-compartmental; total drug
+Nicolau 2015 JAC 70:2862-9,3000 mg CAZ + 1000 mg AVI,20,ceftazidime,AUCtau,0.324,non-compartmental; total drug
+Nicolau 2015 JAC 70:2862-9,3000 mg CAZ + 1000 mg AVI,20,avibactam,AUCtau,0.320,non-compartmental; total drug
+Nicolau 2015 JAC 70:2862-9,both,42,ceftazidime,Cmax,0.23-0.26,reported as a range across cohorts
+Nicolau 2015 JAC 70:2862-9,both,42,avibactam,Cmax,0.28-0.35,reported as a range across cohorts
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,ceftazidime,ratio at plasma 15.3 mg/L,0.52,"saturable Michaelis-Menten; THIS is the value the package applies as a constant"
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,ceftazidime,ratio at plasma 70 mg/L,0.321,same model, higher concentration
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,ceftazidime,ratio as plasma approaches 0,0.633,analytic limit Emax/EC50
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,avibactam,ratio at plasma 1 mg/L,0.47,power model
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,avibactam,ratio at plasma 2.4 mg/L,0.42,"THIS is the value the package applies as a constant"
+Dimelow 2018 Drugs R D 18:221-30,reanalysis of the same 42 subjects,42,avibactam,ratio at plasma 12 mg/L,0.332,same model, higher concentration

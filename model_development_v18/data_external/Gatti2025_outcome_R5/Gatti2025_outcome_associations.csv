@@ -1,0 +1,43 @@
+record_type,phase,variable,outcome,n_or_value,statistic,or_estimate,ci_low,ci_high,p_value,note
+cohort,overall,n_patients,,218,count,,,,,116 pre-intervention + 102 post-intervention; from 690 KPC-Kp culture-positive screened
+cohort,pre,n_patients,,116,count,,,,,1 Jan 2018 - 28 Feb 2021; standard of care
+cohort,post,n_patients,,102,count,,,,,1 Mar 2021 - 31 Oct 2024; TDM-guided multidisciplinary intervention
+cohort,overall,age_median,,65.5,years,,56.3,74.0,,IQR
+cohort,overall,male_pct,,66.5,pct,,,,,145/218
+cohort,overall,baseline_CLcr_median,,68.0,mL/min/1.73m2,,23.3,101.0,,IQR; CKD-EPI
+cohort,overall,CRRT,,23,count_10.6pct,,,,,
+cohort,overall,intermittent_haemodialysis,,15,count_6.9pct,,,,,
+cohort,overall,augmented_renal_clearance,,22,count_10.1pct,,,,,
+cohort,overall,MIC_ge4,,98,count_44.9pct,,,,,all 218 isolates susceptible to CAZ-AVI
+outcome,pre,microbiological_eradication,,53.0,pct,,,,,53/100 with follow-up cultures
+outcome,post,microbiological_eradication,,81.0,pct,,,,<0.001,68/84 with follow-up cultures
+outcome,pre,clinical_cure,,48.3,pct,,,,,56/116
+outcome,post,clinical_cure,,70.6,pct,,,,<0.001,72/102
+outcome,pre,resistance_development_90d,,15.5,pct,,,,,18/116
+outcome,post,resistance_development_90d,,5.9,pct,,,,0.02,6/102
+outcome,pre,mortality_30d,,22.4,pct,,,,,26/116
+outcome,post,mortality_30d,,13.7,pct,,,,0.10,14/102; trend only, not significant
+treatment,pre,continuous_infusion,,31.9,pct,,,,<0.001,37/116
+treatment,post,continuous_infusion,,96.1,pct,,,,<0.001,98/102
+treatment,pre,combination_therapy,,67.2,pct,,,,<0.001,78/116
+treatment,post,combination_therapy,,15.7,pct,,,,<0.001,16/102
+treatment,pre,treatment_duration_median,,14,days,,10,16,0.01,IQR
+treatment,post,treatment_duration_median,,10,days,,7,15,0.01,IQR
+tdm,post,patients_with_TDM_ECPA,,75,count_73.5pct,,,,,145 TDM-guided advices total
+tdm,post,fCss_median_CAZ,,37.8,mg/L,,23.5,60.8,,IQR
+tdm,post,fCss_median_AVI,,9.3,mg/L,,4.7,15.5,,IQR
+tdm,post,aggressive_target_attained,,81.3,pct,,,,,61/75; non-attained 14/75 (18.7%)
+multivariate,pre,CRRT,microbiological_failure,,OR,5.20,1.21,22.34,0.027,independent PREDICTOR of failure
+multivariate,pre,MIC_ge4_mg_L,microbiological_failure,,OR,3.08,1.10,8.64,0.032,independent predictor of failure
+multivariate,post,aggressive_joint_PKPD_attained,microbiological_failure,,OR,0.03,0.005,0.20,<0.001,PROTECTIVE -- the R5 headline number
+multivariate,post,bloodstream_infection,microbiological_failure,,OR,0.09,0.02,0.53,0.008,protective
+multivariate,pre,none_significant,resistance_development_90d,,,,,,,no variable significant at multivariate in pre-phase
+multivariate,pre,MIC_ge4_mg_L,resistance_development_90d,,OR,4.52,0.93,22.01,0.06,not significant
+multivariate,post,aggressive_joint_PKPD_attained,resistance_development_90d,,OR,0.07,0.01,0.69,0.023,PROTECTIVE -- the R5 headline number
+multivariate,pre,ICU_admission,clinical_failure,,OR,3.55,1.18,10.69,0.024,predictor of clinical failure
+multivariate,pre,augmented_renal_clearance,clinical_failure,,OR,8.34,1.00,69.27,0.049,predictor; CI lower bound at unity -- fragile
+multivariate,post,aggressive_joint_PKPD_attained,clinical_failure,,OR,0.08,0.02,0.34,<0.001,PROTECTIVE
+multivariate,post,HAP_VAP,clinical_failure,,OR,11.61,1.55,87.06,0.017,predictor of clinical failure; very wide CI
+target_def,both,aggressive_joint_PKPD_target,,,definition,,,,,"fCssCAZ/MIC > 4 AND fCssAVI/CT > 1 where CT = 4 mg/L (EUCAST); non-attainment = one or neither"
+protein_binding,both,free_fraction_CAZ,,0.90,multiplier,,,,,assumed 10pct protein binding; NOTE differs from Cojutti 2024's 0.85
+protein_binding,both,free_fraction_AVI,,0.93,multiplier,,,,,assumed 7pct protein binding; NOTE differs from Cojutti 2024's 0.92

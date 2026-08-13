@@ -1,0 +1,31 @@
+record_type,parameter,drug,value,unit,rse_pct,project_uses_this,note
+fixed_effect,CL_typical,CAZ,5.0,L/h,6.36,yes (cl0_caz),CL_CAZ = 5.0*(EKFC/70)^0.70
+fixed_effect,EKFC_exponent,CAZ,0.70,unitless,14.0,yes (exp_caz),power covariate on EKFC/70
+fixed_effect,CL_typical,AVI,5.9,L/h,7.4,yes (cl0_avi),CL_AVI = 5.9*(EKFC/70)^0.89
+fixed_effect,EKFC_exponent,AVI,0.89,unitless,12.3,yes (exp_avi),power covariate on EKFC/70
+fixed_effect,V1,CAZ,18.0,L,,no,FIXED not estimated; taken from Li 2019 PopPK. See caveat in README
+fixed_effect,V2,AVI,18.1,L,,no,FIXED not estimated; taken from Li 2019 PopPK
+fixed_effect,F,AVI,0.2,fraction,,no,fraction of infused drug representative of avibactam (4:1 vial ratio)
+random_effect,Omega_CL_CV,CAZ,67.92,pct_CV,33.3,yes (omega_caz),labelled Omega but REPORTED AS CV% -- see README
+random_effect,Omega_CL_CV,AVI,76.91,pct_CV,30.1,yes (omega_avi),labelled Omega but REPORTED AS CV% -- see README
+correlation,CL_CAZ_CL_AVI,both,0.94,unitless,23.8,YES -- THE ANCHOR (C1_cojutti),the between-drug clearance correlation Model 1 was built to test
+error_model,b1_proportional,CAZ,0.31,unitless,6.79,no,
+error_model,b2_proportional,AVI,0.33,unitless,8.61,no,
+basemodel,Omega_CL_CV_no_covariate,CAZ,~90,pct_CV,,no,"Discussion: ""close to 90%"" before eGFR covariate; falls to 67.92 with it"
+basemodel,Omega_CL_CV_no_covariate,AVI,~110,pct_CV,,no,"Discussion: ""close to 110%"" before eGFR covariate; falls to 76.91 with it"
+cohort,n_patients,both,112,count,,no,critically ill ICU; RRT patients EXPLICITLY EXCLUDED
+cohort,n_concentration_pairs,both,185,count,,no,paired CssCAZ and CssAVI per occasion -- both compounds measured
+cohort,age_median,both,64,years,,no,range 18-92
+cohort,weight_median,both,74,kg,,no,range 35-122
+cohort,eGFR_median_CKDEPI2021,both,92,mL/min,,no,range 8-215 -- wide renal-function spread
+cohort,SOFA_median,both,5.0,score,,no,IQR 3.0-8.8
+cohort,APACHE_II_median,both,15,score,,no,IQR 13-20
+cohort,fCss_median,CAZ,42.3,mg/L,,no,IQR 27.0-73.5; total Css median 42.3 range 12.6-423
+cohort,fCss_median,AVI,9.5,mg/L,,no,IQR 5.1-15.7; total Css median 9.5 range 2.0-66.6
+cohort,CAZ_AVI_ratio_median,both,4.8,ratio,,no,IQR 4.0-5.7 -- vial ratio is 4:1
+ratio_by_egfr,CssCAZ_CssAVI_ratio,both,3.47,ratio,,no,eGFR <=30 mL/min; IQR 2.92-4.18
+ratio_by_egfr,CssCAZ_CssAVI_ratio,both,5.47,ratio,,no,eGFR >120 mL/min; IQR 4.60-6.49; P<0.001 across classes
+protein_binding,free_fraction_multiplier,CAZ,0.85,fraction,,no,ASSUMED literature value; only total concentrations measured
+protein_binding,free_fraction_multiplier,AVI,0.92,fraction,,no,ASSUMED literature value; only total concentrations measured
+safety,n_patients_CssCAZ_over_104,CAZ,21,count,,no,on 24 occasions; 104 mg/L is the neurotoxicity-associated threshold the project uses
+safety,neurotoxicity_threshold,CAZ,104,mg/L,,no,the exposure ceiling used throughout this project's Model 2

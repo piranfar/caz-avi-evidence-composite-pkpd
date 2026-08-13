@@ -1,0 +1,33 @@
+record_type,drug,parameter,unit,value,note
+structural,CAZ,CL_typical,L/h,2.96,one-compartment; CL = 2.96*(CrCL/71.3)^0.44*exp(eta)
+structural,CAZ,V_typical,L,17.76,
+structural,CAZ,CrCL_on_CL_exponent,unitless,0.44,power covariate; CrCL normalised to cohort median 71.3 mL/min
+structural,CAZ,IIV_CL_basemodel,pct_CV,72.73,before CrCL covariate inclusion
+structural,CAZ,IIV_CL_finalmodel,pct_CV,55.71,after CrCL covariate inclusion; substantial unexplained IIV remains
+structural,AVI,CL_typical,L/h,3.09,one-compartment; CL = 3.09*(CrCL/71.3)^0.41*exp(eta)
+structural,AVI,V_typical,L,18.25,
+structural,AVI,CrCL_on_CL_exponent,unitless,0.41,power covariate; CrCL normalised to cohort median 71.3 mL/min
+structural,AVI,IIV_CL_basemodel,pct_CV,82.40,before CrCL covariate inclusion
+structural,AVI,IIV_CL_finalmodel,pct_CV,66.69,after CrCL covariate inclusion; substantial unexplained IIV remains
+model,both,residual_error_model,n/a,proportional,
+model,both,structural_choice,n/a,one-compartment,"CAZ OFV 963.6 (1-cmt) vs 984.8 (2-cmt); AVI 688.7 vs 735.2"
+model,both,all_fixed_effects_RSE,pct,<30,authors report all fixed-effect RSEs below 30%
+model,both,software,n/a,Phoenix NLME 8.1,FOCE + extended least squares
+cohort,n/a,n_patients,count,45,prospective single-centre; Fujian Medical University Union Hospital
+cohort,n/a,n_concentrations,count,91,33 trough + 31 peak + others; sparse sampling 1-3 samples per patient at steady state
+cohort,n/a,median_age,years,59,range 18-94
+cohort,n/a,median_CrCL,mL/min,71.3,cohort median; used as the normalisation constant in both models
+cohort,n/a,n_renal_insufficiency,count,29,CrCL < 90 mL/min; 64.4% of cohort
+cohort,n/a,n_ARC,count,7,augmented renal clearance, CrCL >= 130 mL/min
+cohort,n/a,n_CRRT,count,15,33.3% of cohort; CRRT was NOT a significant covariate on CL (median CrCL in CRRT patients 69.3)
+cohort,n/a,critically_ill_definition,n/a,APACHE II > 15,non-critically ill defined as APACHE II <= 15
+protein_binding,CAZ,free_fraction_assumed,fraction,0.90,used for PTA simulation; assumed not measured
+protein_binding,AVI,free_fraction_assumed,fraction,0.92,used for PTA simulation; assumed not measured
+pkpd_target,CAZ,noncritically_ill,n/a,50%T>MIC,
+pkpd_target,AVI,noncritically_ill,n/a,50%T>1 mg/L,
+pkpd_target,CAZ,critically_ill,n/a,100%T>4xMIC,
+pkpd_target,AVI,critically_ill,n/a,100%T>4 mg/L,
+comparison,CAZ,CL_healthy_volunteers,L/h,8.14,cited comparator; this cohort markedly lower due to renal impairment
+comparison,AVI,CL_healthy_volunteers,L/h,13.93,cited comparator
+comparison,CAZ,V_healthy_volunteers,L,19.98,cited comparator; close to this cohort's 17.76
+comparison,AVI,V_healthy_volunteers,L,24.22,cited comparator; close to this cohort's 18.25

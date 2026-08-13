@@ -1,0 +1,32 @@
+patient_no,infection_type,pathogen,mic_mg_l,mic_assumed,egfr_mL_min,caz_avi_daily_dose_g,free_caz_css_mg_l,free_css_over_mic,exposure_band,dose_recommendation,rec_accepted,mortality_30d
+1,Intra-abdominal,XDR-PA,256.00,no,44,6/1.5,89.8,0.35,below_4xMIC,Maintenance,Y,N
+2,Pneumonia,XDR-PA,8.00,no,62,4/1,7.2,0.90,below_4xMIC,Treatment stopped,NA,Y
+3,Pneumonia,negative culture,8.00,yes,25,1/0.25,24.9,3.11,below_4xMIC,Maintenance,N,N
+4,Pneumonia + UTI,XDR-PA,8.00,yes,60,3/0.75,30.2,3.77,below_4xMIC,Maintenance,Y,N
+5,Undetermined,negative culture,8.00,yes,114,2/0.5,31.6,3.95,below_4xMIC,Maintenance,Y,Y
+6,Tracheobronchitis,Susceptible PA,8.00,yes,137,6/1.5,35.1,4.39,4_to_10xMIC,Treatment stopped,NA,N
+7,Pneumonia,ESBL-K. pneumoniae,8.00,yes,160,6/1.5,40.8,5.10,4_to_10xMIC,Reduction,Y,N
+8,Pneumonia,XDR-PA,8.00,yes,60,4/1,45.9,5.74,4_to_10xMIC,Reduction,Y,N
+9,Pneumonia,negative culture,8.00,yes,106,4/1,52.5,6.57,4_to_10xMIC,Reduction,Y,Y
+10,Pneumonia,negative culture,8.00,yes,80,3/0.75,53.0,6.62,4_to_10xMIC,Maintenance,Y,Y
+11,Intra-abdominal,XDR-PA,8.00,no,56,4/1,53.0,6.62,4_to_10xMIC,Reduction,Y,Y
+12,Undetermined,XDR-PA,8.00,yes,99,3/0.75,54.2,6.78,4_to_10xMIC,Maintenance,Y,N
+13,SSTI,XDR-PA,8.00,yes,44,6/1.5,55.8,6.98,4_to_10xMIC,Reduction,Y,N
+14,Pneumonia,negative culture,8.00,yes,78,6/1.5,56.6,7.08,4_to_10xMIC,Reduction,Y,N
+15,Pneumonia,XDR-PA,8.00,yes,54,3/0.75,66.1,8.27,4_to_10xMIC,Treatment stopped,NA,N
+16,SSTI,XDR-PA,4.00,no,10,1/0.25,34.8,8.69,4_to_10xMIC,Maintenance,N,N
+17,Pneumonia,XDR-PA,6.00,no,103,6/1.5,60.8,10.13,above_10xMIC,Reduction,Y,N
+18,Sepsis (unknown source),XDR-PA,4.00,no,9,1/0.25,41.2,10.31,above_10xMIC,Maintenance,Y,Y
+19,UTI,XDR-PA,4.00,no,45,3/0.75,49.0,12.24,above_10xMIC,Maintenance,Y,N
+20,Pneumonia + UTI,XDR-PA,4.00,no,81,4/1,49.2,12.30,above_10xMIC,Reduction,Y,N
+21,Pneumonia,XDR-PA,4.00,no,114,6/1.5,50.8,12.69,above_10xMIC,Reduction,Y,N
+22,Pneumonia,XDR-PA,4.00,no,93,4/1,60.1,15.02,above_10xMIC,Reduction,Y,N
+23,Tracheobronchitis,XDR-PA,3.00,no,97,2/0.5,45.6,15.19,above_10xMIC,Maintenance,Y,N
+24,UTI + osteomyelitis,XDR-PA,4.00,no,95,6/1.5,61.6,15.41,above_10xMIC,Maintenance,Y,N
+25,Pneumonia,ESBL-K. pneumoniae,2.00,no,84,4/1,31.2,15.60,above_10xMIC,Reduction,Y,N
+26,Pneumonia,XDR-PA,2.00,no,113,6/1.5,42.2,21.12,above_10xMIC,Reduction,Y,N
+27,Pneumonia,XDR-PA,2.00,no,51,4/1,45.5,22.74,above_10xMIC,Reduction,Y,N
+28,Bacteraemia,XDR-PA,6.00,no,43,3/0.75,172.4,28.73,above_10xMIC,Maintenance,Y,N
+29,Pneumonia,ESBL-K. pneumoniae,0.38,no,70,2/0.5,37.2,97.97,above_10xMIC,Reduction,N,Y
+30,Pneumonia,ESBL-K. pneumoniae,0.38,no,70,2/0.5,42.2,111.17,above_10xMIC,Reduction,N,N
+31,Pneumonia,ESBL-K. pneumoniae,0.38,no,70,6/1.5,97.6,256.79,above_10xMIC,Reduction,Y,N

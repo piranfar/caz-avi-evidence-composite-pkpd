@@ -1,0 +1,15 @@
+# Article PDFs and publisher supplementary files are NEVER published here.
+#
+# Every folder in data_external/ has a README_provenance.md recording the licence of
+# its source. Most are not openly licensed (publisher "all rights reserved", or a
+# licence that could not be confirmed), and the two that are CC BY are kept out for
+# consistency rather than tracked selectively. What IS published is the extracted
+# numeric data (facts, not copyrightable) and the provenance documentation.
+#
+# The article PDFs are held in the author's local working copy only. Anyone
+# reproducing this work should obtain them from the DOIs cited in each
+# README_provenance.md, through their own institutional access.
+
+*.pdf
+*.docx
+*.doc

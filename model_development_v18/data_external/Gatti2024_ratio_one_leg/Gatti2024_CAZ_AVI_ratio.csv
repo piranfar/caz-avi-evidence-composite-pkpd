@@ -1,0 +1,46 @@
+record_type,variable,stratum,value,unit,note
+cohort,n_patients,all,107,count,"CI ceftazidime/avibactam, Bologna, Mar 2021 - Aug 2023; CRRT patients EXCLUDED"
+cohort,n_TDM_assessments,all,188,count,"median 2 per patient (IQR 1-2); first at day 3 (IQR 2-5)"
+cohort,age_median,all,63.0,years,IQR 54.5-72.0
+cohort,male_pct,all,64.5,pct,69/107
+cohort,ICU_admission,all,46.7,pct,50/107
+cohort,CLcr_median,all,88.0,mL/min/1.73m2,IQR 43.0-109.5; CKD-EPI
+cohort,serum_urea_median,all,51,mg/dL,IQR 31-88
+cohort,started_full_dose,all,85.0,pct,91/107
+cohort,targeted_treatment,all,76.6,pct,82/107
+concentration,Css_median,CAZ,61.1,mg/L,IQR 35.2-82.9; TOTAL not free
+concentration,Css_median,AVI,12.1,mg/L,IQR 6.7-19.4; TOTAL not free
+concentration,AVI_below_4mg_L,all,~9,pct,"authors note this would be much higher with standard 2-h infusion rather than CI"
+clearance,total_CL_median,CAZ,4.27,L/h,IQR 2.61-6.96; CL = infusion rate / Css
+clearance,total_CL_median,AVI,5.57,L/h,IQR 2.94-9.77; consistently HIGHER than ceftazidime
+ratio,CAZ_to_AVI_median,all,4.67,ratio,"IQR 3.93-5.70; VIAL RATIO IS 4:1"
+ratio,CAZ_to_AVI_min,all,1.29,ratio,minimum observed across 188 assessments
+ratio,CAZ_to_AVI_max,all,13.46,ratio,maximum observed across 188 assessments
+ratio,pct_above_5to1,all,41.0,pct,77/188
+ratio,pct_above_6to1,all,19.1,pct,36/188
+ratio,pct_above_5to1,CLcr>80,59.3,pct,"vs 23.8% in CLcr<80; P<0.001"
+ratio,pct_above_5to1,CLcr<80,23.8,pct,
+ratio,pct_above_6to1,CLcr>80,32.1,pct,"vs 6.3% in CLcr<80; P<0.001"
+ratio,pct_above_6to1,CLcr<80,6.3,pct,
+roc,CLcr_cutoff_for_ratio_gt5,,75,mL/min/1.73m2,"sens 77.8% (65.5-87.3), spec 58.0% (46.5-68.9), AUC 0.694 (0.611-0.768), P<0.001"
+roc,CLcr_cutoff_for_ratio_gt6,,78,mL/min/1.73m2,"sens 86.7% (69.3-96.2), spec 51.8% (42.2-61.2), AUC 0.694 (0.612-0.768), P<0.001"
+roc,urea_cutoff_for_ratio_gt5,,<=51,mg/dL,"sens 72.4% (59.1-83.3), spec 59.4% (46.9-71.1), AUC 0.685 (0.597-0.764), P<0.001"
+roc,urea_cutoff_for_ratio_gt6,,<=45,mg/dL,"sens 81.5% (61.9-93.7), spec 62.0% (51.7-71.5), AUC 0.717 (0.630-0.793), P<0.001"
+CL_by_CLcr,CAZ_median_CL,0-20,1.24,L/h,IQR 1.02-4.41
+CL_by_CLcr,CAZ_median_CL,21-40,1.85,L/h,IQR 1.59-3.58
+CL_by_CLcr,CAZ_median_CL,41-60,3.15,L/h,IQR 2.12-4.42
+CL_by_CLcr,CAZ_median_CL,61-80,4.74,L/h,IQR 3.80-6.46
+CL_by_CLcr,CAZ_median_CL,81-100,4.52,L/h,IQR 3.55-8.27
+CL_by_CLcr,CAZ_median_CL,101-120,5.26,L/h,IQR 3.87-6.73
+CL_by_CLcr,CAZ_median_CL,>120,8.39,L/h,IQR 6.28-11.57
+CL_by_CLcr,AVI_median_CL,0-20,2.73,L/h,IQR 1.21-6.89
+CL_by_CLcr,AVI_median_CL,21-40,2.02,L/h,IQR 1.45-4.04
+CL_by_CLcr,AVI_median_CL,41-60,3.03,L/h,IQR 2.50-5.27
+CL_by_CLcr,AVI_median_CL,61-80,5.14,L/h,IQR 3.82-8.46
+CL_by_CLcr,AVI_median_CL,81-100,6.07,L/h,IQR 4.58-13.11
+CL_by_CLcr,AVI_median_CL,101-120,6.72,L/h,IQR 5.29-9.26
+CL_by_CLcr,AVI_median_CL,>120,13.02,L/h,IQR 7.25-16.89
+mechanism,AVI_tubular_secretion_share,,~27,pct,"avibactam cleared by glomerular filtration AND active tubular secretion; ceftazidime by filtration ONLY"
+mechanism,AVI_transporters,,OAT1 and OAT3,,"substrate; ratio variability may reflect differing tubular secretion and OAT drug-drug interactions"
+comparator,healthy_volunteer_CL,CAZ,8.14,L/h,"Merdjan 2015 phase I; avibactam CL 1.71-fold higher than ceftazidime"
+comparator,healthy_volunteer_CL,AVI,13.93,L/h,Merdjan 2015 phase I

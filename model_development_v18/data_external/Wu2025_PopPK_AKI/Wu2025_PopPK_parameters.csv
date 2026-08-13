@@ -1,0 +1,33 @@
+record_type,drug,parameter,unit,estimate,rse_pct,bootstrap_median,bootstrap_ci_low,bootstrap_ci_high,note
+structural,CAZ,CL_typical,L/h,1.60,6.9,1.60,1.40,1.84,one-compartment; CL = 1.60*(CrCL/47.27)^0.705*exp(eta)
+structural,CAZ,V_typical,L,15.90,6.3,15.61,13.58,17.67,
+structural,CAZ,CrCL_on_CL_exponent,unitless,0.705,11.0,0.69,0.545,0.833,power covariate on CrCL/47.27
+structural,CAZ,IIV_CL_omega2,unitless,0.144,15.5,0.130,0.063,0.216,final model; base-model CV was 76.6%
+structural,CAZ,IIV_V_omega2,unitless,0.012,75.0,0.022,0.002,0.172,
+structural,CAZ,residual_proportional_sigma2,unitless,0.023,18.9,0.019,0.005,0.037,
+structural,AVI,CL_typical,L/h,2.74,9.0,2.76,2.33,3.29,one-compartment; CL = 2.74*(CrCL/47.27)^0.792*(CRP/87.4)^-0.214*exp(eta)
+structural,AVI,V_typical,L,28.00,11.0,27.51,21.86,33.93,
+structural,AVI,CrCL_on_CL_exponent,unitless,0.792,10.0,0.799,0.617,1.015,power covariate on CrCL/47.27
+structural,AVI,CRP_on_CL_exponent,unitless,-0.214,12.0,-0.214,-0.294,-0.055,power covariate on CRP/87.4
+structural,AVI,IIV_CL_omega2,unitless,0.170,15.0,0.154,0.072,0.282,final model; base-model CV was 92.2%
+structural,AVI,IIV_V_omega2,unitless,0.050,26.0,0.049,0.006,0.113,
+structural,AVI,residual_proportional_sigma2,unitless,0.054,40.0,0.049,0.016,0.101,
+exposure,CAZ,AUCss_24h,ug.h/mL,2938.0,,,670.1,11860.3,median (range); Monte Carlo n=164 patients' own regimens
+exposure,CAZ,Css_max,ug/mL,171.2,,,61.1,549,median (range)
+exposure,CAZ,Css_min,ug/mL,88.0,,,4.1,441.2,median (range)
+exposure,AVI,AUCss_24h,ug.h/mL,429.9,,,89.6,1814.5,median (range)
+exposure,AVI,Css_max,ug/mL,25.2,,,8.9,82.7,median (range)
+exposure,AVI,Css_min,ug/mL,12.6,,,0.5,68.8,median (range)
+aki_tte,CAZ,EC50_AUCss24h,ug.h/mL,7450,45.6,,,,sigmoidal Emax on ceftazidime AUCss24h; Gompertz baseline hazard (OFV 349.215)
+aki_tte,CAZ,lambda_gompertz,unitless,,52.7,,,,high RSE noted by authors; risk-alert tool not decision-making criterion
+aki_tte,n/a,MV_effect,unitless,,,,,,mechanical ventilation associated with ~2x AKI risk at same AUCss24h
+aki_tte,n/a,AKI_incidence_observed,pct,,,,13.3,33.0,range across cited real-world studies, not this cohort specifically
+dosing_recommendation,CAZAVI,dose,n/a,2.5 g q8h,,,,,CrCL >80 mL/min, MV and non-MV
+dosing_recommendation,CAZAVI,dose,n/a,1.25 g q8h,,,,,CrCL 50-80 mL/min, MV and non-MV
+dosing_recommendation,CAZAVI,dose,n/a,0.94 g q12h (MV) / 1.25 g q8h (non-MV),,,,,CrCL 30-50 mL/min
+dosing_recommendation,CAZAVI,dose,n/a,0.94 g q24h (MV) / 0.94 g q12h-q24h (non-MV),,,,,CrCL 15-30 mL/min
+dosing_recommendation,CAZAVI,dose,n/a,0.94 g q48h (MV) / 0.94 g q24h-q48h (non-MV),,,,,CrCL 6-15 mL/min
+demographics,n/a,n_PopPK_development,count,31,,,,,median age 67 (36-83); 64.5% male; 87.1% mechanical ventilation
+demographics,n/a,n_PopPK_validation,count,32,,,,,independent external validation cohort
+demographics,n/a,n_AKI_analysis_total,count,159,,,,,AKI=48; non-AKI=111; from 164 PK-eligible of 186 retrospectively screened
+demographics,n/a,median_CrCL,mL/min,47.8,,,,,cohort-wide, per Discussion section text

@@ -1,0 +1,65 @@
+record_type,drug,parameter,unit,estimate,rse_pct,bsv_cv_pct,note
+structural,CAZ,CL,L/h,6.95,1.7,42.3,two-compartment; CrCL piecewise
+structural,CAZ,V1,L,10.5,13.1,105,central volume
+structural,CAZ,Q,L/h,31.5,18.8,259,see eta-block: BSV order confirmed CL/V1/V2/Q
+structural,CAZ,V2,L,7.57,9.0,110,peripheral volume
+covariate,CAZ,CrCL_slope1_below100,per mL/min,0.0103036,0.409,,"CrCL < 100 mL/min: near-proportional"
+covariate,CAZ,CrCL_slope2_at_or_above100,per mL/min,0.001252,8.84,,"CrCL >= 100: shallow; 12.5% CL increase per +100 mL/min above 100"
+covariate,CAZ,indication_cIAI_on_CL,factor,1.16,2.2,,16% higher CL vs healthy/cUTI
+covariate,CAZ,indication_NP_on_CL,factor,0.999,2.4,,
+covariate,CAZ,race_ASN_on_CL,factor,-0.161,11.8,,non-Japanese non-Chinese Asian: 16% lower CL
+covariate,CAZ,race_CHN_on_CL,factor,-0.0855,27.0,,Chinese: 9% lower CL
+covariate,CAZ,WT_on_V,exponent,1.01,12.6,,"50 kg: -24% V; 94 kg: +26% V vs 70 kg median"
+covariate,CAZ,race_Asian_on_V,factor,-0.27,18.6,,27% lower V
+covariate,CAZ,NPv_on_V,factor,0.297,45.4,,+29.7% V if ventilator present on PK day
+structural,AVI,CL,L/h,10.2,1.8,59.1,two-compartment
+structural,AVI,V1,L,11.1,9.9,107.1,
+structural,AVI,Q,L/h,5.44,13.9,,SEE README -- BSV assignment between Q and V2 is AMBIGUOUS in the scraped table
+structural,AVI,V2,L,6.91,6.5,,SEE README -- BSV ambiguity; eta-block implies Q=252.2% and V2=122.2%
+covariate,AVI,CrCL_power_below80,exponent,1.05,2.4,,approximately linear
+covariate,AVI,CrCL_linear_at_or_above80,per mL/min,0.00279,3.7,,+27.9% CL per +100 mL/min above 80
+covariate,AVI,CL_ESRD_off_dialysis,L/h,0.0678,8.3,,
+covariate,AVI,CL_on_dialysis,L/h,20.8,9.6,,
+covariate,AVI,APACHE_II_on_CL,factor,-0.197,8.7,,19.7% lower CL if APACHE II > 10
+covariate,AVI,race_ASN_on_CL,factor,-0.0865,20.2,,8.65% lower CL (9.5% higher AUC)
+covariate,AVI,WT_on_V,exponent,1.08,7.8,,"51 kg: -29% V; 95 kg: +39% V vs 70 kg"
+covariate,AVI,ARC_scaling_on_CL,factor,0.992,17.4,,ARC defined as measured CrCL >= 140 mL/min
+random_effect,CAZ,eta_CL_variance,unitless,0.179,3.3,,shrinkage 11.4%; sqrt = CV 42.3%
+random_effect,CAZ,eta_V1_variance,unitless,1.10,10.2,,shrinkage 31.2%
+random_effect,CAZ,eta_V2_variance,unitless,1.21,8.8,,shrinkage 17.5%
+random_effect,CAZ,eta_Q_variance,unitless,6.70,15.5,,shrinkage 27.46%
+correlation_within,CAZ,r_V1_CL,unitless,-0.42,,,within-drug; covariance -0.189
+correlation_within,CAZ,r_V2_CL,unitless,0.82,,,within-drug; covariance 0.383
+correlation_within,CAZ,r_V2_V1,unitless,-0.84,,,within-drug; covariance -0.972
+correlation_within,CAZ,r_Q_CL,unitless,0.81,,,within-drug; covariance 0.883
+correlation_within,CAZ,r_Q_V1,unitless,-0.24,,,within-drug; covariance -0.643
+correlation_within,CAZ,r_Q_V2,unitless,0.61,,,within-drug; covariance 1.73
+random_effect,AVI,eta_CL_variance,unitless,0.349,2.0,,shrinkage 7.29%
+random_effect,AVI,eta_V1_variance,unitless,1.147,6.0,,shrinkage 28.15%
+random_effect,AVI,eta_third_variance,unitless,1.494,7.0,,shrinkage 13.52%; see README ambiguity
+random_effect,AVI,eta_Q_variance,unitless,6.359,8.1,,shrinkage 14.18%
+correlation_within,AVI,r_V1_CL,unitless,0.20,,,within-drug
+correlation_within,AVI,r_third_CL,unitless,0.85,,,within-drug
+correlation_within,AVI,r_third_V1,unitless,-0.33,,,within-drug
+correlation_within,AVI,r_Q_CL,unitless,0.83,,,within-drug
+correlation_within,AVI,r_Q_V1,unitless,-0.36,,,within-drug
+correlation_within,AVI,r_Q_third,unitless,0.99,,,within-drug; range stated as -0.36 < r < 0.99
+CROSS_DRUG,both,CAZ_AVI_correlation,unitless,NOT REPORTED,,,"*** KEY *** acknowledged and accounted for, but NEVER quantified. See README"
+residual,CAZ,proportional_phase1,variance,0.04,0.5,,shrinkage 2.9%
+residual,CAZ,additive_phase1,variance,26489,7.5,,shrinkage 2.9%
+residual,CAZ,proportional_phase2_3,variance,0.114,2.1,,shrinkage 9.5%
+residual,CAZ,additive_phase2_3,variance,18.4,447,,RSE 447% -- essentially unidentifiable
+residual,AVI,proportional_phase1,variance,0.173,0.1,,
+residual,AVI,additive_phase1,variance,44.6,0.5,,
+residual,AVI,proportional_phase2,variance,0.492,3.0,,
+residual,AVI,proportional_phase3,variance,0.363,1.1,,
+cohort,CAZ,n_subjects,count,1975,,,"9155 observations; 86 healthy (4.4%), 696 cUTI, 781 cIAI, 412 NP"
+cohort,AVI,n_subjects,count,2249,,,"13735 observations; 345 phase I healthy/renal-impaired, 705 cUTI, 786 cIAI, 413 NP"
+cohort,CAZ,CrCL_range,mL/min,8 to 488,,,Cockcroft-Gault
+cohort,AVI,CrCL_range,mL/min,11 to 610,,,
+protein_binding,CAZ,free_fraction,fraction,0.85,,,"verbatim: free = 85% of total. SAME as Cojutti 2024 and this project's primary model"
+protein_binding,AVI,free_fraction,fraction,0.92,,,"verbatim: free = 92% of total. SAME as Cojutti 2024 and this project's primary model"
+target,CAZ,pkpd_target,,50% fT > 8 mg/L,,,registrational target; MIC 8 = surveillance-based breakpoint
+target,AVI,pkpd_target,,50% fT > 1 mg/L,,,registrational target; see Das2019 folder for full derivation
+target,both,sensitivity,,60% fT retained >90% PTA,,,"data not shown in paper"
+exposure_response,both,result,,NONE IDENTIFIED,,,"see README -- ceiling effect, not absence of relationship"

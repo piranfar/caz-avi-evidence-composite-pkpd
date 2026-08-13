@@ -1,0 +1,32 @@
+drug,theta,parameter_description,point_estimate,bootstrap_median,ci90_low,ci90_high,note
+CAZ,theta1,CL (L/h),6.95,6.83,6.46,7.08,
+CAZ,theta2,Vc (L),10.5,8.20,3.28,10.7,"wide -- point estimate sits at the upper CI bound"
+CAZ,theta3,Q (L/h),31.5,15.4,7.94,78.6,"very wide; the one parameter the paper says differed from bootstrap median by >20%"
+CAZ,theta4,Vp (L),7.57,8.43,7.41,11.8,
+CAZ,theta5,Population (cIAI) effect on CL,1.16,1.16,1.11,1.21,
+CAZ,theta6,Population (NP) effect on CL,0.999,0.995,0.941,1.05,
+CAZ,theta7,Race (ASN) effect on CL,-0.161,-0.147,-0.187,-0.104,
+CAZ,theta8,Race (CHN) on CL,-0.0855,-0.0803,-0.116,-0.0332,
+CAZ,theta9,Population (cUTI) effect on Vc,1.03,1.12,0.845,1.56,
+CAZ,theta10,Population (cIAI or NP) effect on Vc,1.14,1.22,0.978,1.72,
+CAZ,theta11,Population (cUTI/acute pyelonephritis) effect on Vc,-0.185,-0.243,-0.454,-0.0655,
+CAZ,theta12,"Race (Asian, Chinese, or Japanese) effect on Vc",-0.27,-0.283,-0.444,-0.158,
+CAZ,theta13,WT effect on Vc,1.01,1.16,0.845,1.79,
+CAZ,theta14,Population (presence of ventilator) effect on Vc,0.297,0.324,0.0839,0.684,
+AVI,theta1,CL (L/h),10.2,10.2,9.80,10.7,
+AVI,theta2,Vc (L),11.1,10.8,8.84,12.1,
+AVI,theta3,Q (L/h),5.44,5.73,4.80,7.06,
+AVI,theta4,Vp (L),6.91,7.06,6.56,7.86,
+AVI,theta5,Relative CL estimate for ESRD patients,0.0678,0.065,0,0.105,"lower CI bound is zero"
+AVI,theta6,CL estimate for dialysis patients,20.8,20.2,6.73,23.5,
+AVI,theta7,Power CrCL (<80 mL/min) on CL,1.05,1.06,0.985,1.14,
+AVI,theta8,Linear CrCL (>=80 mL/min) on CL,0.00279,0.00281,0.00234,0.00342,
+AVI,theta9,"Population effect on Vc (cIAI) Phase 2",1.92,2.05,1.09,3.66,
+AVI,theta10,"Population effect on CL (cIAI) Phase 2",0.406,0.430,0.288,0.652,
+AVI,theta11,Population effect on Vc (cUTI),0.434,0.431,0.290,0.604,
+AVI,theta12,"Population effect on Vc (cIAI Phase 3, NP)",0.329,0.326,0.185,0.451,
+AVI,theta13,Scaling factor for CrCL in subjects with CrCL >80 mL/min,0.992,1.005,0.649,1.34,
+AVI,theta14,WT on Vc,1.08,1.18,0.969,0.144,"AS PRINTED -- upper bound 0.144 is BELOW the lower bound 0.969; an evident typo in the source table"
+AVI,theta15,APACHE II on CL,-0.197,-0.196,-0.239,-0.164,
+AVI,theta22,"ASIAN (non-Chinese, non-Japanese) on CL",-0.0865,-0.0914,-0.125,-0.0577,
+AVI,theta28,Presence of ventilator (POP5) on Vc,0.175,0.182,-0.00484,0.396,"CI spans zero"

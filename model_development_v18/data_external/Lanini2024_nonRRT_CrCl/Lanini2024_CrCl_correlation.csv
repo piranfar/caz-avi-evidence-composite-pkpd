@@ -1,0 +1,20 @@
+record_type,variable,statistic,value,ci_low,ci_high,note
+cohort,n_total,count,52,,,standard dose 2.0/0.5g q8h continuous infusion; TDM at day 3; dialysis and renally-adjusted-dose patients EXCLUDED
+cohort,age_years,median_IQR,68.5,57.5,77.5,
+cohort,CrCl_mL_min_1.73m2,median_IQR,72.90,56.82,140.02,Cockcroft-Gault; day 3
+cohort,free_CAZ_mg_L,median_IQR,47.40,29.32,78.89,derived from total conc using 10% protein binding (literature value)
+cohort,free_AVI_mg_L,median_IQR,8.63,4.82,18.93,derived from total conc using 7% protein binding (literature value)
+cohort,CrCl_gt130_n_pct,count_pct,16,,,30.77% of n=52 (augmented renal clearance threshold)
+regression,free_CAZ_vs_CrCl,pearson_r,-0.627,,,P<0.001
+regression,free_CAZ_vs_CrCl,R2,0.3936,,,
+regression,free_CAZ_vs_CrCl,slope_per_10mL_min,0.927,0.902,0.952,i.e. ~7.31% decrease in free-CAZ per 10 mL/min CrCl increase
+regression,free_AVI_vs_CrCl,pearson_r,-0.619,,,P<0.001
+regression,free_AVI_vs_CrCl,R2,0.3832,,,
+regression,free_AVI_vs_CrCl,slope_per_10mL_min,0.907,0.877,0.940,i.e. ~9.23% decrease in free-AVI per 10 mL/min CrCl increase
+regression,CAZ_AVI_ratio_vs_CrCl,pearson_r,0.354,,,P=0.010
+regression,CAZ_AVI_ratio_vs_CrCl,R2,0.1250,,,
+regression,CAZ_AVI_ratio_vs_CrCl,slope_per_10mL_min,1.209,1.005,1.037,i.e. ~2.09% increase in CAZ:AVI ratio per 10 mL/min CrCl increase
+risk,free_CAZ_below32mgL_CrCl_lt130,proportion,0.0556,0.0068,0.1867,2 of 36 patients; target = 4x EUCAST MIC breakpoint 8 mg/L
+risk,free_CAZ_below32mgL_CrCl_ge130,proportion,0.6875,0.4134,0.8898,11 of 16 patients; Fisher P<0.001 vs CrCl<130 group
+risk,free_AVI_below4mgL_CrCl_lt130,proportion,0.0556,0.0068,0.1867,2 of 36 patients
+risk,free_AVI_below4mgL_CrCl_ge130,proportion,0.5625,0.2988,0.8025,9 of 16 patients; Fisher P<0.001 vs CrCl<130 group

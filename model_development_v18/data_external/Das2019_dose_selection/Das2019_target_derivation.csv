@@ -1,0 +1,18 @@
+record_type,component,item,value,unit,attributed_to,note
+target,CAZ,joint_PKPD_target,50% fT > 8,mg/L,,"MIC 8 mg/L chosen because CAZ-AVI MIC <=8 covers >=90% of Enterobacterales and 92-96% of P. aeruginosa in surveillance"
+target,AVI,joint_PKPD_target,50% fT > 1,mg/L,,THE REGULATORY TARGET -- explicitly stated; see derivation rows below
+target,joint,definition_verbatim,"ceftazidime 50% fT > 8 mg/liter and avibactam 50% fT > 1 mg/liter",,,"quoted verbatim from Das 2019"
+derivation,AVI,pkpd_index,%fT>CT,,in vitro hollow fiber + in vivo mouse,"index is time above a critical threshold CT, not Cmax or AUC"
+derivation,AVI,hollow_fibre_minimum_CT,0.5,mg/L,Coleman et al. (ref 63),"minimum CT appropriate for Enterobacteriaceae; strains: K. pneumoniae SHV-5/CTX-M-15/KPC-2, E. cloacae derepressed AmpC, C. freundii stably derepressed AmpC; CAZ-AVI MICs <=0.125 to 4 mg/L"
+derivation,AVI,murine_CT_best_predictor,1.0,mg/L,Berkhout et al. (ref 64),"7 ceftazidime-resistant P. aeruginosa strains, stably derepressed AmpC and/or TEM-24, dose-fractionation, neutropenic thigh and lung"
+derivation,AVI,murine_fT_over_CT_efficacy_range,20 to 50,pct,Berkhout et al. (ref 64),"range associated with efficacy across thigh and lung models, as summarised BY DAS -- see README for how this compares with Berkhout's own published ranges"
+derivation,AVI,why_50pct_chosen,conservative round value,,,"verbatim: 'taking a conservative approach to ensure that the CT was appropriate for both Enterobacteriaceae and P. aeruginosa, 50% fT>CT of 1 mg/liter was considered a robust avibactam target' AND 'consistent with the 50% fT>MIC required for efficacy of ceftazidime alone'"
+dosing,both,normal_CLcr_gt80,2000 + 500 mg q8h,,,2-h IV infusion; joint PTA 94.9% at MIC 8 (cIAI)
+dosing,both,mild_CLcr_51_80,2000 + 500 mg q8h,,,joint PTA 99.0%
+dosing,both,moderate_CLcr_31_50,1000 + 250 mg q8h,,,"APPROVED MODIFIED regimen; phase 3 protocol originally used q12h. Joint PTA 99.3%"
+dosing,both,severe_upper_CLcr_16_30,750 + 187.5 mg q12h,,,"APPROVED MODIFIED; phase 3 protocol originally 1000+250 q24h. Joint PTA 99.0%"
+dosing,both,severe_lower_CLcr_6_15,750 + 187.5 mg q24h,,,"APPROVED MODIFIED; phase 3 protocol originally 500+125 q24h. Joint PTA 99.3%"
+dosing,both,ESRD_CLcr_lt6,750 + 187.5 mg q48h,,,"APPROVED MODIFIED; phase 3 protocol originally 500+125 q48h. Joint PTA 99.6%"
+dosing,both,avibactam_dose_ratio,1/4 of ceftazidime dose,,,maintained across all renal bands
+dosing,both,adjustment_criterion,>90% PTA,,,"dosage adjustments selected on achieving >90% PTA and on the assumption that renal function would remain stable"
+pta,both,subgroup_robustness,>95,pct,,"against MICs <=8 mg/L regardless of older age, obesity, augmented renal clearance, or severity of infection"

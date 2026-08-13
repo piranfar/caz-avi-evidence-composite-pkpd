@@ -1,0 +1,28 @@
+quantity,analyte,value,range_or_iiv,units,notes
+Cmin after 5th dose (median),aztreonam,53.6,1.5-176,mg/L,same patients as the other two analytes
+Cmin after 5th dose (median),ceftazidime,57.9,1.2-175,mg/L,"max 175 exceeds the project's 104 mg/L neurotoxicity screen"
+Cmin after 5th dose (median),avibactam,10.9,0.4-46.3,mg/L,"spans below to >10x the project's C_T of 4 mg/L"
+ratio of median Cmin,CAZ:AVI,5.31,n/a,ratio,"vial ratio is 4:1; cf Gatti 2024 median 4.67:1 (1.29-13.46)"
+base model Vd,ceftazidime,26.3,114%,L,percentage is interindividual variability
+base model Vd,avibactam,40.2,98.7%,L,
+base model Vd,aztreonam,45.9,52.9%,L,
+base model CL,ceftazidime,3.2,82.0%,L/h,
+base model CL,avibactam,4.9,76.4%,L/h,
+base model CL,aztreonam,3.3,82.6%,L/h,
+final model Vd,ceftazidime,28.5,67.0%,L,
+final model Vd,avibactam,41.6,88.5%,L,
+final model Vd,aztreonam,32.0,61.0%,L,
+final model theta1,ceftazidime,2.5,39.0%,L/h,CL = theta1*(CKD-EPI/50)^beta + theta2
+final model theta1,avibactam,3.5,45.7%,L/h,
+final model theta1,aztreonam,1.8,62.4%,L/h,
+final model theta2,ceftazidime,NA,NA,L/h,not estimated for ceftazidime
+final model theta2,avibactam,0.7,113%,L/h,
+final model theta2,aztreonam,0.9,91.2%,L/h,
+final model beta,ceftazidime,1.2,25.0%,dimensionless,
+final model beta,avibactam,1.3,34.7%,dimensionless,
+final model beta,aztreonam,1.2,37.7%,dimensionless,
+unbound fraction used,ceftazidime,0.90,n/a,fraction,protein binding 10%
+unbound fraction used,avibactam,0.95,n/a,fraction,protein binding 5%
+unbound fraction used,aztreonam,0.50,n/a,fraction,protein binding 50%
+avibactam target concentrations simulated,avibactam,"1, 2, 4",n/a,mg/L,"C_T treated as uncertain, not fixed"
+cross-drug CL correlation,CAZ vs AVI,NOT REPORTED,n/a,n/a,"individual estimates exist for both drugs in all 41 patients; correlation never computed"

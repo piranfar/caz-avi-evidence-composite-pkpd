@@ -1,0 +1,14 @@
+record_type,model,strains,endpoint,value,unit,note
+index,both,,PK/PD index for avibactam,%fT>C_T,,"established that avibactam efficacy tracks TIME ABOVE A THRESHOLD, not Cmax or AUC"
+threshold,both,,critical concentration C_T,1,mg/L,"the C_T that became the regulatory target concentration"
+stasis,lung,4 P. aeruginosa strains,%fT>C_T for stasis,0 to 21.4,pct,"range across strains"
+stasis,lung,4 P. aeruginosa strains,%fT>C_T for stasis (mean),20.1,pct,"range 16.1-23.5"
+stasis,thigh,6 P. aeruginosa strains,%fT>C_T for stasis,14.1 to 62.5,pct,"thigh model consistently MORE STRINGENT than lung"
+dosing_effect,lung,2 strains,avibactam q2h vs q8h daily dose for static effect,2.7 and 10.1,fold reduction,"q2h significantly more efficacious per unit daily dose"
+dosing_effect,lung,2 strains,%fT>C_T yielding bacteriostasis q2h,21.6,pct,"similar for both schedules despite different daily doses -- the evidence that %fT>C_T is the driving index"
+dosing_effect,lung,2 strains,%fT>C_T yielding bacteriostasis q8h,18.5,pct,
+regimens_tested,both,,dosing intervals studied,q2h / q8h / q12h,,"*** ALL INTERMITTENT -- CONTINUOUS INFUSION WAS NEVER TESTED *** (basis of route R3)"
+ceftazidime_background,both,,ceftazidime regimen during AVI fractionation,fixed q2h,,"dose chosen to produce +1 to +2 log10 CFU growth alone, i.e. no bacteriostatic effect without avibactam"
+model_fit,both,,fitted Emax/Hill equation published?,NO,,"exposure-response reported only as scatter plots with r-squared values; no closed-form equation, no EC50, no slope parameters (basis of route R3)"
+regulatory_downstream,both,,value adopted by Das 2019 as the target,50,pct,"Das rounds UP to 50% fT>C_T of 1 mg/L 'taking a conservative approach'; this 50% is NOT a Berkhout finding"
+discrepancy,both,,range as summarised by Das 2019,20 to 50,pct,"*** DOES NOT MATCH *** Berkhout's own published bounds (lung 0-21.4, thigh 14.1-62.5). Do not attribute 20-50% to Berkhout"

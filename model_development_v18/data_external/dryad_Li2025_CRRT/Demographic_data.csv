@@ -1,0 +1,22 @@
+subjectID,age_cat,sex_code,weight_cat,diagnosis,ALT_U_L,AST_U_L,HCT,ALB_g_L,SCr_umol_L,apache_ii,SOFA,urine_24h_mL
+1,1,1,1,Acute severe pancreatitis,37,52,0.27,34.5,31.6,18,20,66
+2,0,1,3,Acute severe pancreatitis,22,83,0.50,27,72.7,18,12,153
+3,1,1,0,Acute severe pancreatitis,4,9,0.37,32.7,73,19,12,89
+4,1,1,0,Acute severe pancreatitis,27,32,0.47,41.7,60.8,22,15,25
+5,0,1,3,Acute severe pancreatitis,55,93,0.29,30,151.5,5,16,870
+6,1,0,1,Acute severe pancreatitis,158,193,0.49,45.8,68.9,10,15,50
+7,0,1,3,Sepsis,37,71,0.26,26.9,163.2,9,17,0
+8,1,1,1,Acute severe pancreatitis,125,76,0.25,24.2,82.5,14,15,1720
+9,1,0,2,Sepsis,32,57,0.22,32.8,47.6,18,16,15
+10,0,1,1,Sepsis,22,66,0.38,27.7,139.7,17,15,510
+11,1,1,2,Acute severe pancreatitis,106,168,0.36,26.7,78.4,21,16,15
+12,0,1,0,Acute severe pancreatitis,8,19,0.29,28.4,27.7,15,15,505
+13,1,1,3,Acute pancreatitis,23,43,0.21,26,287,28,14,0
+14,0,1,3,Acute severe pancreatitis,24,34,0.25,28.5,190.3,15,15,20
+15,1,0,1,Acute severe pancreatitis,3,15,0.3,30.4,75,5,13,110
+16,1,0,2,Acute severe pancreatitis,17,39,0.26,29.9,128.4,18,13,75
+17,1,0,1,Acute severe pancreatitis,21,58,0.26,25.5,94.3,19,17,10
+18,1,0,1,Acute severe pancreatitis,11,21,0.27,32.1,47.7,20,13,10
+19,1,1,2,Acute severe pancreatitis,53,41,0.19,23.8,192.4,12,8,5
+20,0,1,2,Acute severe pancreatitis,26,29,0.3,27.9,203.7,12,8,170
+21,0,1,2,Acute severe pancreatitis,19,17,0.28,30.4,53.2,27,18,120

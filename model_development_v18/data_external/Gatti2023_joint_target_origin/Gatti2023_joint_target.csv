@@ -1,0 +1,14 @@
+record_type,item,value,ci_low,ci_high,p_value,note
+definition,joint_target_optimal,"fCss_CAZ/MIC >= 4 AND fCss_AVI/CT > 1",,,,"CT = 4.0 mg/L (EUCAST fixed avibactam testing concentration). Equivalent to 100%T>4xMIC and 100%T>CT under continuous infusion"
+definition,joint_target_quasi_optimal,only one of the two achieved,,,,
+definition,joint_target_suboptimal,neither achieved,,,,
+cohort,n_patients,58,,,,"2-year retrospective; CI ceftazidime-avibactam; TDM of BOTH ceftazidime and avibactam"
+cohort,monotherapy,36,,,,
+cohort,combination_therapy,22,,,,
+cohort,BSI_share_pct,74.2,,,,primary or secondary bloodstream infections
+cohort,microbiological_failure_n,5,,,,"8.6%; 3 in mono- and 2 in combo therapy"
+association,combo_therapy_in_ICU,more frequent,,,0.023,
+association,combo_therapy_for_pneumonia,more frequent,,,0.001,
+association,combo_therapy_for_IAI_and_BSI,less frequent,,,0.04,
+multivariate,suboptimal_or_quasioptimal_joint_target,11.11,1.31,93.98,0.023,"*** THE ONLY independent predictor of microbiological failure *** -- very wide CI, 5 events"
+multivariate,monotherapy,not associated,,,0.99,"monotherapy was NOT a predictor of failure"
