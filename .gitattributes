@@ -1,8 +1,15 @@
+# Files are checked out EXACTLY as stored, with no line-ending translation.
+#
+# This matters here. SHA256SUMS.txt commits to the hash of every tracked file, and those
+# hashes were computed on the stored (LF) bytes. Marking text files as `text` — as this
+# file previously did — makes git rewrite LF to CRLF when checking out on Windows, so the
+# working copy no longer matches the manifest and 132 of 166 files fail verification for
+# no reason other than the platform someone cloned on. `-text` prevents that, so the
+# checksums verify identically on Linux, macOS and Windows.
+* -text
+
+# Binary formats: never translated, never diffed as text.
 *.xlsx binary
-*.pdf binary
-*.png binary
+*.pdf  binary
+*.png  binary
 *.docx binary
-*.json text
-*.csv text
-*.md text
-*.py text
