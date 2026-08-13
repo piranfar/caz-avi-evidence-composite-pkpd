@@ -1,0 +1,16 @@
+
+penetration treated as fixed against drawn per subject
+  scenario                                        joint PTA at MIC 8   population CFR
+  plasma                                                  35.9–68.1%            84.3%
+  fixed central (0.52 / 0.42)                             15.3–27.7%            44.0%
+  fixed conservative (0.30 / 0.30)                          3.8–7.0%            26.7%
+  drawn per subject (0.30-0.52 / 0.30-0.42)               10.8–16.7%            35.6%
+  wrote     4 rows  outputs\penetration_variability.csv
+
+dependence imposed between the two penetration ratios
+  comonotonic (used)     population CFR  35.6%   joint PTA at MIC 8  10.8-16.7%
+  independent            population CFR  35.4%   joint PTA at MIC 8  10.2-16.7%
+  countermonotonic       population CFR  35.4%   joint PTA at MIC 8  10.2-16.2%
+  wrote     3 rows  outputs\penetration_dependence.csv
+
+  wrote fig_second_assay.png

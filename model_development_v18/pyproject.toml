@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hujam-caz-avi"
+version = "1.0.0"
+description = "Uncertainty-integrated joint target attainment for continuous-infusion ceftazidime-avibactam, with a decision-analytic layer (value of information, misselection/regret, triage) portable to other beta-lactam/beta-lactamase-inhibitor pairs"
+readme = "SOFTWARE.md"
+license = { text = "MIT" }
+authors = [{ name = "Vahhab Piranfar" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.7"]
+dev = ["matplotlib>=3.7"]
+
+[project.urls]
+Repository = "https://github.com/piranfar/caz-avi-evidence-composite-pkpd"
+
+[tool.setuptools]
+package-dir = { "hujam" = "code" }
+packages = ["hujam"]
+
+[tool.setuptools.package-data]
+hujam = ["recovered_inputs/*.csv"]

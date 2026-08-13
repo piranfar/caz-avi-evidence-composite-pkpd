@@ -1,0 +1,146 @@
+======================================================================
+MODEL 1 AND PRIMARY-MODEL TEST SUITE
+======================================================================
+
+Model 1 structural model
+  PASS  closed form matches 400-dose superposition
+  PASS  steady state: C(0) equals C(tau)
+  PASS  mass balance AUC/tau = Dose/(CL*tau)  [CL=2.5, V=20.0, T=2.0]
+  PASS  mass balance AUC/tau = Dose/(CL*tau)  [CL=4.0, V=35.0, T=1.0]
+  PASS  mass balance AUC/tau = Dose/(CL*tau)  [CL=1.5, V=12.0, T=3.0]
+  PASS  linearity: doubling the dose doubles the concentration
+  PASS  doubling clearance halves the exposure
+  PASS  all concentrations strictly positive
+  PASS  peak occurs at the end of the infusion
+
+Dose conversion and infusion rate
+  PASS  ceftazidime dose is 2000 mg per administration
+  PASS  avibactam dose is 500 mg per administration
+  PASS  product ratio is 4:1
+  PASS  infusion rate = dose / duration
+  PASS  primary model ceftazidime fraction 0.8
+  PASS  primary model avibactam fraction 0.2
+  PASS  primary model fractions sum to 1
+  PASS  2.5 g q8h gives 250 mg/h ceftazidime
+  PASS  2.5 g q8h gives 62.5 mg/h avibactam
+
+Model 1 variance structure
+  PASS  correlation round-trips at r=-0.9
+  PASS  Omega is symmetric at r=-0.9
+  PASS  Omega is positive definite at r=-0.9
+  PASS  Omega has unit diagonal at r=-0.9
+  PASS  correlation round-trips at r=-0.3
+  PASS  Omega is symmetric at r=-0.3
+  PASS  Omega is positive definite at r=-0.3
+  PASS  Omega has unit diagonal at r=-0.3
+  PASS  correlation round-trips at r=0.0
+  PASS  Omega is symmetric at r=0.0
+  PASS  Omega is positive definite at r=0.0
+  PASS  Omega has unit diagonal at r=0.0
+  PASS  correlation round-trips at r=0.5
+  PASS  Omega is symmetric at r=0.5
+  PASS  Omega is positive definite at r=0.5
+  PASS  Omega has unit diagonal at r=0.5
+  PASS  correlation round-trips at r=0.703
+  PASS  Omega is symmetric at r=0.703
+  PASS  Omega is positive definite at r=0.703
+  PASS  Omega has unit diagonal at r=0.703
+  PASS  correlation round-trips at r=0.95
+  PASS  Omega is symmetric at r=0.95
+  PASS  Omega is positive definite at r=0.95
+  PASS  Omega has unit diagonal at r=0.95
+  PASS  volume correlation is fixed at 1 by construction
+  PASS  null model correlation is zero
+  PASS  null model Omega is the identity
+  PASS  correlated draws reproduce the target correlation
+  PASS  the volume deviate is independent of clearance
+
+Clearance transformation
+  PASS  zero deviates give the typical value
+  PASS  clearance is lognormal: exp of a positive deviate raises it
+  PASS  clearance stays positive for extreme deviates
+  PASS  CV round-trips through omega at CV=0.1
+  PASS  CV round-trips through omega at CV=0.2042
+  PASS  CV round-trips through omega at CV=0.6792
+  PASS  CV round-trips through omega at CV=0.7691
+  PASS  omega 0.2022 corresponds to a CV near 20.4 percent
+  PASS  primary CL at the reference renal function equals the intercept
+  PASS  primary CL rises with renal function
+  PASS  omega from CV uses sqrt(ln(1+CV^2))
+
+Free versus total concentration
+  PASS  ceftazidime unbound fraction is 0.85
+  PASS  avibactam unbound fraction is 0.92
+  PASS  free is below total for both analytes
+  PASS  free ceftazidime = 0.85 x total
+  PASS  free avibactam = 0.92 x total
+  PASS  the exposure screen uses TOTAL, not free, ceftazidime
+
+Renal-function classes
+  PASS  five classes are defined
+  PASS  classes span 0 to 150
+  PASS  classes are ordered and non-overlapping
+  PASS  every class has positive width
+  PASS  every regimen maps to a defined class
+  PASS  eleven regimens are evaluated
+
+MIC weighting, PTA and CFR
+  PASS  four MIC distributions are present
+  PASS  FR2024_OXA484_SERINE_ONLY weights sum to 1
+  PASS  FR2024_OXA484_SERINE_ONLY weights are non-negative
+  PASS  FR2024_OXA484_SERINE_ONLY MICs lie on the simulated grid
+  PASS  INDIA2022_OXA48_KP weights sum to 1
+  PASS  INDIA2022_OXA48_KP weights are non-negative
+  PASS  INDIA2022_OXA48_KP MICs lie on the simulated grid
+  PASS  LEE2022_KPC_KP weights sum to 1
+  PASS  LEE2022_KPC_KP weights are non-negative
+  PASS  LEE2022_KPC_KP MICs lie on the simulated grid
+  PASS  LEE2022_OXA_KP weights sum to 1
+  PASS  LEE2022_OXA_KP weights are non-negative
+  PASS  LEE2022_OXA_KP MICs lie on the simulated grid
+  PASS  CFR lies between the smallest and largest PTA
+  PASS  CFR with all weight on one MIC equals that PTA
+  PASS  ceftazidime PTA rule fCss/MIC >= 4
+  PASS  avibactam PTA rule fCss >= 4 mg/L
+  PASS  joint PTA is the conjunction
+  PASS  joint PTA never exceeds either component
+  PASS  avibactam attainment does not depend on MIC
+
+Limiting-component classification
+  PASS  lower ceftazidime attainment makes ceftazidime limiting
+  PASS  lower avibactam attainment makes avibactam limiting
+  PASS  equal attainment is classified as neither
+  PASS  classification is antisymmetric
+
+Exposure constraint
+  PASS  the screen is a strict inequality at 104 mg/L
+  PASS  exceedance percentage is bounded by 0 and 100
+  PASS  the permissibility ceiling is 15 percent
+  PASS  a regimen at exactly the ceiling is permissible
+
+ELF transformation
+  PASS  icu_trial: ELF is the plasma concentration times the ratio
+  PASS  icu_trial: ratios lie strictly between 0 and 1
+  PASS  icu_trial: ELF is below plasma for both analytes
+  PASS  healthy_volunteer: ELF is the plasma concentration times the ratio
+  PASS  healthy_volunteer: ratios lie strictly between 0 and 1
+  PASS  healthy_volunteer: ELF is below plasma for both analytes
+  PASS  conservative: ELF is the plasma concentration times the ratio
+  PASS  conservative: ratios lie strictly between 0 and 1
+  PASS  conservative: ELF is below plasma for both analytes
+  PASS  a ratio of 1 leaves the concentration unchanged
+  PASS  the ELF transformation is monotone in the ratio
+
+Numerical sanity guards
+  PASS  21 subjects were loaded
+  PASS  238 observations were loaded
+  PASS  all observed concentrations are strictly positive
+  PASS  all sampling times lie within one dosing interval
+  PASS  every subject has both analytes measured
+  PASS  ceftazidime concentrations exceed avibactam in every subject (consistent with the 4:1 product)
+  PASS  no concentration is implausibly high (>1000 mg/L)
+  PASS  the objective function is finite at the reference point
+  PASS  a singular Omega is rejected rather than crashing
+
+======================================================================
+ALL CHECKS PASSED

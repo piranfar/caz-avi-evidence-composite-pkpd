@@ -1,0 +1,5 @@
+n_draws,n_seeds,evpi_mean_pp,evpi_range_pp,misselection_mean_pct,misselection_range_pct
+250,3,0.956,0.137,49.28,3.92
+500,3,0.964,0.068,48.31,4.64
+1000,3,0.979,0.095,47.77,5.94
+2000,3,1.004,0.08,47.49,4.84

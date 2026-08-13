@@ -1,0 +1,54 @@
+==============================================================================
+TRIAGE MONITORING RULE — which patients need the avibactam assay?
+==============================================================================
+
+  rho = 0.94 (published 0.94), avibactam assay CV 20%
+    infer in everyone : accuracy 92.15%
+    measure everyone  : accuracy 94.92%   (gain 2.77 pp, for an assay in every patient)
+
+      band  % measured   accuracy   % of the gain   gain per 100 assays
+      0.05       24.2%     95.28%          113.0%                12.92
+       0.1       19.1%     95.27%          112.6%                16.31
+      0.15       15.4%     94.95%          101.1%                18.21
+       0.2       12.5%     94.70%           92.1%                20.42
+      0.25       10.0%     94.50%           84.8%                23.48
+       0.3        7.8%     94.03%           67.9%                24.13
+       0.4        3.8%     93.25%           39.7%                29.18
+       0.5        0.0%     92.15%            0.0%                    —
+
+    NOTE: selective measurement BEATS measuring everyone. Peak accuracy 95.29% at band 0.025 (28.9% measured), against 94.92% when everyone is measured.
+    Assaying a patient whose inference was already confident can
+    only introduce assay error, so measuring everyone is not the
+    optimum.
+
+    90% of the benefit is reached by measuring 12.5% of patients (band 0.2)
+    ceftazidime concentration window per renal class at that band:
+      0–30      (R1 ) measure avibactam when total ceftazidime Css is   12.9 to   18.8 mg/L
+      31–60     (R8 ) measure avibactam when total ceftazidime Css is   16.2 to   23.6 mg/L
+      61–90     (R10) measure avibactam when total ceftazidime Css is   17.8 to   25.9 mg/L
+      91–120    (R12) measure avibactam when total ceftazidime Css is   19.0 to   27.6 mg/L
+      121–150   (R13) measure avibactam when total ceftazidime Css is   19.7 to   28.7 mg/L
+
+  rho = 0.703 (Model 1 0.703), avibactam assay CV 20%
+    infer in everyone : accuracy 87.41%
+    measure everyone  : accuracy 94.92%   (gain 7.51 pp, for an assay in every patient)
+
+      band  % measured   accuracy   % of the gain   gain per 100 assays
+      0.05       52.5%     94.75%           97.7%                13.97
+       0.1       39.8%     94.37%           92.7%                17.47
+      0.15       31.4%     93.86%           85.9%                20.52
+       0.2       25.0%     93.18%           76.8%                23.06
+      0.25       19.7%     92.53%           68.2%                25.99
+       0.3       15.0%     91.79%           58.3%                29.12
+       0.4        7.2%     89.83%           32.2%                33.43
+       0.5        0.0%     87.41%            0.0%                    —
+
+    90% of the benefit is reached by measuring 39.8% of patients (band 0.1)
+    ceftazidime concentration window per renal class at that band:
+      0–30      (R1 ) measure avibactam when total ceftazidime Css is    6.0 to   29.6 mg/L
+      31–60     (R8 ) measure avibactam when total ceftazidime Css is    6.6 to   32.8 mg/L
+      61–90     (R10) measure avibactam when total ceftazidime Css is    7.4 to   36.6 mg/L
+      91–120    (R12) measure avibactam when total ceftazidime Css is    7.9 to   39.1 mg/L
+      121–150   (R13) measure avibactam when total ceftazidime Css is    8.8 to   43.7 mg/L
+
+  wrote outputs\model2_triage_curve.csv (42 rows)

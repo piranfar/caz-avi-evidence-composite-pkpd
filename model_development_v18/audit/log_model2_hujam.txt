@@ -1,0 +1,139 @@
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:317: RankWarning: Polyfit may be poorly conditioned
+  np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
+============================================================================
+MODEL 2 — HU-JAM
+============================================================================
+  REGRESSION TEST against the frozen v16 primary PTA table
+    rows compared 121
+    max |delta| caz_pta      0.000e+00 pp
+    max |delta| avi_pta      0.000e+00 pp
+    max |delta| joint_pta    0.000e+00 pp
+    max |delta| exceedance   0.000e+00 pp
+    PASS - the engine reproduces v16 exactly
+
+  outer draws 2000, virtual subjects 20,000, seed 20260811
+  primary MIC distribution LEE2022_KPC_KP
+
+  [ 1/18] C1_cojutti   x T1_point_1      misselection  75.1%   EVPI  0.162 pp
+  [ 2/18] C1_cojutti   x T2_point_4      misselection   5.3%   EVPI  0.070 pp
+  [ 3/18] C1_cojutti   x T3_discrete     misselection  52.1%   EVPI  1.441 pp
+  [ 4/18] C1_cojutti   x T4_uniform      misselection  50.2%   EVPI  0.964 pp
+  [ 5/18] C1_cojutti   x T5_triangular   misselection  63.2%   EVPI  0.460 pp
+  [ 6/18] C1_cojutti   x T6_lognormal    misselection  65.0%   EVPI  0.732 pp
+  [ 7/18] C2_model1    x T1_point_1      misselection  74.9%   EVPI  0.158 pp
+  [ 8/18] C2_model1    x T2_point_4      misselection   4.6%   EVPI  0.060 pp
+  [ 9/18] C2_model1    x T3_discrete     misselection  51.9%   EVPI  1.468 pp
+  [10/18] C2_model1    x T4_uniform      misselection  48.7%   EVPI  0.979 pp
+  [11/18] C2_model1    x T5_triangular   misselection  62.2%   EVPI  0.487 pp
+  [12/18] C2_model1    x T6_lognormal    misselection  64.3%   EVPI  0.746 pp
+  [13/18] C3_agnostic  x T1_point_1      misselection  75.4%   EVPI  0.132 pp
+  [14/18] C3_agnostic  x T2_point_4      misselection   4.2%   EVPI  0.051 pp
+  [15/18] C3_agnostic  x T3_discrete     misselection  51.6%   EVPI  1.511 pp
+  [16/18] C3_agnostic  x T4_uniform      misselection  47.0%   EVPI  1.028 pp
+  [17/18] C3_agnostic  x T5_triangular   misselection  60.3%   EVPI  0.554 pp
+  [18/18] C3_agnostic  x T6_lognormal    misselection  65.6%   EVPI  0.663 pp
+  wrote outputs\model2_integrated_attainment.csv (198 rows)
+  wrote outputs\model2_limiting_probability.csv (2178 rows)
+  wrote outputs\model2_regimen_optimality.csv (198 rows)
+  wrote outputs\model2_misselection_regret.csv (90 rows)
+  wrote outputs\model2_evppi.csv (510 rows)
+
+  Exchange-rate (lambda) sensitivity
+    lambda  0.0  0–30       net benefit picks R2     15% ceiling picks R1     <-- differ
+    lambda  0.0  31–60      net benefit picks R8     15% ceiling picks R8     
+    lambda  0.0  61–90      net benefit picks R10    15% ceiling picks R10    
+    lambda  0.0  91–120     net benefit picks R12    15% ceiling picks R12    
+    lambda  0.0  121–150    net benefit picks R13    15% ceiling picks R13    
+    lambda  0.5  0–30       net benefit picks R2     15% ceiling picks R1     <-- differ
+    lambda  0.5  31–60      net benefit picks R8     15% ceiling picks R8     
+    lambda  0.5  61–90      net benefit picks R10    15% ceiling picks R10    
+    lambda  0.5  91–120     net benefit picks R12    15% ceiling picks R12    
+    lambda  0.5  121–150    net benefit picks R13    15% ceiling picks R13    
+    lambda  1.0  0–30       net benefit picks R2     15% ceiling picks R1     <-- differ
+    lambda  1.0  31–60      net benefit picks R8     15% ceiling picks R8     
+    lambda  1.0  61–90      net benefit picks R10    15% ceiling picks R10    
+    lambda  1.0  91–120     net benefit picks R12    15% ceiling picks R12    
+    lambda  1.0  121–150    net benefit picks R13    15% ceiling picks R13    
+    lambda  2.0  0–30       net benefit picks R1     15% ceiling picks R1     
+    lambda  2.0  31–60      net benefit picks R7     15% ceiling picks R8     <-- differ
+    lambda  2.0  61–90      net benefit picks R10    15% ceiling picks R10    
+    lambda  2.0  91–120     net benefit picks R11    15% ceiling picks R12    <-- differ
+    lambda  2.0  121–150    net benefit picks R13    15% ceiling picks R13    
+    lambda  4.0  0–30       net benefit picks R1     15% ceiling picks R1     
+    lambda  4.0  31–60      net benefit picks R7     15% ceiling picks R8     <-- differ
+    lambda  4.0  61–90      net benefit picks R9     15% ceiling picks R10    <-- differ
+    lambda  4.0  91–120     net benefit picks R11    15% ceiling picks R12    <-- differ
+    lambda  4.0  121–150    net benefit picks R13    15% ceiling picks R13    
+  wrote outputs\model2_lambda_sensitivity.csv (25 rows)
+
+  Convergence check (three independent seeds)
+    M=  250  EVPI  0.957 (range 0.119)   misselection 49.28% (range 4.08)
+    M=  500  EVPI  0.964 (range 0.043)   misselection 48.11% (range 4.36)
+    M= 1000  EVPI  0.986 (range 0.057)   misselection 47.70% (range 5.82)
+    M= 2000  EVPI  1.004 (range 0.073)   misselection 47.33% (range 4.76)
+  wrote outputs\model2_convergence.csv (4 rows)
+  wrote outputs\model2_scenario_register.csv (19 rows)

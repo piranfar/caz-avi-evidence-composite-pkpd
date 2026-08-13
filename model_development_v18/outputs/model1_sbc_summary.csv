@@ -1,0 +1,4 @@
+scenario,n_replicates,rho_true,mean_estimate,bias,relative_bias_pct,sd,rmse,p2.5,p97.5,pct_below_0.94
+correctly specified,25,0.7031,0.7212,0.0181,2.57,0.1202,0.1191,0.4565,0.8806,100.0
+two-compartment truth,25,0.7031,0.724,0.0209,2.97,0.1245,0.1237,0.4496,0.8901,100.0
+"correct, rho = 0.94",25,0.94,0.9499,0.0099,1.05,0.0285,0.0296,0.9055,1.0,40.0

@@ -1,0 +1,56 @@
+  structural self-check passed (max relative difference 7.1e-10)
+==============================================================================
+MODEL 1 - joint ceftazidime/avibactam population PK, CRRT cohort
+==============================================================================
+  subjects 21   observations 238 (5.7 per analyte per subject)
+  POPULATION: CRRT, intermittent 8-hourly infusion - NOT the primary scenario
+  Variance model reduced to a shared volume deviate; the 4-deviate model
+  estimated the volume correlation at the 1.000 boundary.
+
+  fitting full model (cross-drug clearance correlation estimated) ...
+    OFV -722.356   converged=False   nfev=20000
+  fitting null model (correlation fixed at zero) ...
+    OFV -709.944   converged=False   nfev=20000
+
+==============================================================================
+RESULTS
+==============================================================================
+
+  Fixed effects            estimate     RSE
+    CL ceftazidime (L/h)        2.572     4.5%
+    CL avibactam (L/h)          3.223     3.2%
+    V ceftazidime (L)          19.977     6.9%
+    V avibactam (L)            27.029     5.6%
+
+  Between-subject variability
+    CL ceftazidime           omega 0.2022   CV  20.4%
+    CL avibactam             omega 0.1411   CV  14.2%
+    V ceftazidime            omega 0.2673   CV  27.2%
+    V avibactam              omega 0.1994   CV  20.1%
+
+  CROSS-DRUG CLEARANCE CORRELATION  <-- the quantity of interest
+    corr(eta_CL_caz, eta_CL_avi) = 0.703
+    95% CI  0.381 to 0.873   (Fisher z scale, SE 0.241)
+    The interval EXCLUDES the assumed value of 0.94.
+    corr(eta_V_caz, eta_V_avi) = 1 by construction (shared volume deviate)
+
+  Residual error (proportional)
+    ceftazidime   10.0%      avibactam    9.3%
+
+  Model comparison (likelihood ratio, 1 df: the clearance correlation)
+    OFV full   -722.36   OFV null   -709.94   dOFV   12.41   p = 0.0004265
+    BIC full   -662.16   BIC null   -655.22
+
+  Shrinkage of the standard-normal deviates
+    z CL ceftazidime           -0.4%
+    z CL avibactam              0.7%
+    z V shared                  8.7%
+
+  Empirical correlation of the individual clearance deviates: 0.731
+
+  Comparison with the assumed value
+    Cojutti 2024 (non-RRT, continuous infusion): rho = 0.940  (RSE 23.8%)
+    This model   (CRRT, intermittent infusion) : rho = 0.703
+
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_joint_popk_parameters.csv
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_individual_parameters.csv

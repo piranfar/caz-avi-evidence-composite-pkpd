@@ -1,0 +1,49 @@
+dosing_policy,rho_scenario,rho,pct_measured,accuracy_R2_rule_pct,accuracy_Gatti_rule_pct,difference_pp
+renally-adjusted grid (this project),published 0.94,0.94,0,92.156,92.156,0.0
+renally-adjusted grid (this project),published 0.94,0.94,5,93.324,92.351,0.973
+renally-adjusted grid (this project),published 0.94,0.94,10,94.091,92.545,1.546
+renally-adjusted grid (this project),published 0.94,0.94,12.5,94.353,92.62,1.733
+renally-adjusted grid (this project),published 0.94,0.94,20,94.764,92.874,1.89
+renally-adjusted grid (this project),published 0.94,0.94,25,94.882,93.012,1.87
+renally-adjusted grid (this project),published 0.94,0.94,30,94.958,93.164,1.794
+renally-adjusted grid (this project),published 0.94,0.94,40,94.991,93.38,1.611
+renally-adjusted grid (this project),published 0.94,0.94,50,94.999,93.71,1.289
+renally-adjusted grid (this project),published 0.94,0.94,60,95.0,93.872,1.128
+renally-adjusted grid (this project),published 0.94,0.94,80,95.0,94.333,0.667
+renally-adjusted grid (this project),published 0.94,0.94,100,95.0,95.0,0.0
+renally-adjusted grid (this project),Model 1 0.703,0.703,0,87.5,87.5,0.0
+renally-adjusted grid (this project),Model 1 0.703,0.703,5,89.172,88.07,1.102
+renally-adjusted grid (this project),Model 1 0.703,0.703,10,90.538,88.564,1.974
+renally-adjusted grid (this project),Model 1 0.703,0.703,12.5,91.081,88.824,2.257
+renally-adjusted grid (this project),Model 1 0.703,0.703,20,92.375,89.529,2.846
+renally-adjusted grid (this project),Model 1 0.703,0.703,25,92.995,89.906,3.089
+renally-adjusted grid (this project),Model 1 0.703,0.703,30,93.461,90.198,3.263
+renally-adjusted grid (this project),Model 1 0.703,0.703,40,94.101,90.722,3.379
+renally-adjusted grid (this project),Model 1 0.703,0.703,50,94.548,91.42,3.128
+renally-adjusted grid (this project),Model 1 0.703,0.703,60,94.736,91.869,2.867
+renally-adjusted grid (this project),Model 1 0.703,0.703,80,94.878,92.956,1.922
+renally-adjusted grid (this project),Model 1 0.703,0.703,100,94.889,94.889,0.0
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,0,93.26,93.26,0.0
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,5,94.417,93.569,0.848
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,10,95.14,93.823,1.317
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,12.5,95.324,93.951,1.373
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,20,95.655,94.321,1.334
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,25,95.755,94.555,1.2
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,30,95.772,94.766,1.006
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,40,95.78,95.119,0.661
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,50,95.779,95.449,0.33
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,60,95.779,95.611,0.168
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,80,95.779,95.78,-0.001
+FIXED 2.5 g q8h in every class (Gatti's cohort),published 0.94,0.94,100,95.779,95.779,0.0
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,0,89.191,89.191,0.0
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,5,90.822,89.979,0.843
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,10,92.135,90.718,1.417
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,12.5,92.699,91.094,1.605
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,20,93.928,92.095,1.833
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,25,94.501,92.741,1.76
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,30,94.947,93.318,1.629
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,40,95.453,94.31,1.143
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,50,95.655,95.008,0.647
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,60,95.751,95.457,0.294
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,80,95.765,95.759,0.006
+FIXED 2.5 g q8h in every class (Gatti's cohort),Model 1 0.703,0.703,100,95.765,95.765,0.0

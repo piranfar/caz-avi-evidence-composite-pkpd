@@ -1,0 +1,51 @@
+==========================================================================
+MODEL 1 — estimator validation and misspecification check
+==========================================================================
+  25 replicates per scenario, observed design reused exactly
+
+  A. correctly specified (one compartment simulated, one fitted)
+    [correctly specified]   1/25  rho_hat 0.6613
+    [correctly specified]   2/25  rho_hat 0.7582
+    [correctly specified]   3/25  rho_hat 0.6701
+    [correctly specified]   4/25  rho_hat 0.6351
+    [correctly specified]   5/25  rho_hat 0.8373
+    [correctly specified]   6/25  rho_hat 0.6893
+    [correctly specified]   7/25  rho_hat 0.7886
+    [correctly specified]   8/25  rho_hat 0.7421
+    [correctly specified]   9/25  rho_hat 0.7436
+    [correctly specified]  10/25  rho_hat 0.4955
+    [correctly specified]  11/25  rho_hat 0.8107
+    [correctly specified]  12/25  rho_hat 0.3980
+    [correctly specified]  13/25  rho_hat 0.7651
+    [correctly specified]  14/25  rho_hat 0.8081
+    [correctly specified]  15/25  rho_hat 0.6646
+    [correctly specified]  16/25  rho_hat 0.7664
+    [correctly specified]  17/25  rho_hat 0.7993
+    [correctly specified]  18/25  rho_hat 0.7764
+    [correctly specified]  19/25  rho_hat 0.5622
+    [correctly specified]  20/25  rho_hat 0.5441
+    [correctly specified]  21/25  rho_hat 0.8738
+    [correctly specified]  22/25  rho_hat 0.7530
+    [correctly specified]  23/25  rho_hat 0.8907
+    [correctly specified]  24/25  rho_hat 0.7613
+    [correctly specified]  25/25  rho_hat 0.8352
+
+  B. misspecified (two compartments simulated, one fitted)
+    [two-compartment truth]   1/25  rho_hat 0.6883
+    [two-compartment truth]   2/25  rho_hat 0.8434
+    [two-compartment truth]   3/25  rho_hat 0.6047
+    [two-compartment truth]   4/25  rho_hat 0.6910
+    [two-compartment truth]   5/25  rho_hat 0.7379
+    [two-compartment truth]   6/25  rho_hat 0.8196
+    [two-compartment truth]   7/25  rho_hat 0.8833
+    [two-compartment truth]   8/25  rho_hat 0.5049
+    [two-compartment truth]   9/25  rho_hat 0.7897
+    [two-compartment truth]  10/25  rho_hat 0.7051
+    [two-compartment truth]  11/25  rho_hat 0.8228
+    [two-compartment truth]  12/25  rho_hat 0.8024
+    [two-compartment truth]  13/25  rho_hat 0.9003
+    [two-compartment truth]  14/25  rho_hat 0.7977
+    [two-compartment truth]  15/25  rho_hat 0.7218
+    [two-compartment truth]  16/25  rho_hat 0.6806
+    [two-compartment truth]  17/25  rho_hat 0.7564
+    [two-compartment truth]  18/25  rho_hat 0.6144

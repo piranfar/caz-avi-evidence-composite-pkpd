@@ -1,0 +1,7 @@
+analysis,variant,corr_CL,ofv,note
+reference,as fitted,0.7031,-722.356,infusion duration read as hours from the dataset
+infusion duration,all 1 h,0.7812,-716.04,tests the categorical-versus-hours ambiguity in the source
+infusion duration,all 2 h,0.7436,-646.831,tests the categorical-versus-hours ambiguity in the source
+infusion duration,all 3 h,0.7648,-524.047,tests the categorical-versus-hours ambiguity in the source
+residual error,shared across analytes,0.7044,-722.125,dOFV +0.23 on 1 df
+leave-one-subject-out,range over 21 refits,0.651 to 0.756,,median 0.700; most influential subject 7

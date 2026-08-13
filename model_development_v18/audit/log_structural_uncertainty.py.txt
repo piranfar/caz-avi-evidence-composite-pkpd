@@ -1,0 +1,97 @@
+  wrote     4 rows  outputs\structural_models.csv
+  wrote    18 rows  outputs\structural_typical_clearances.csv
+  wrote   836 rows  outputs\structural_uncertainty_pta.csv
+  wrote    36 rows  outputs\structural_escalation_crossing.csv
+  wrote    54 rows  outputs\structural_window.csv
+  wrote    38 rows  outputs\structural_limiting_component.csv
+  wrote    32 rows  outputs\structural_uncertainty_cfr.csv
+  wrote     1 rows  outputs\structural_window_invariance.csv
+  wrote     8 rows  outputs\structural_robustness_ledger.csv
+
+four population PK models, one simulation
+  M1_Cojutti_2024      Critically ill adults, continuous infusion, TDM (Italy)
+  M2_Chen_2025         Adults with carbapenem-resistant K. pneumoniae, ICU and ward (China)
+  M3_Registrational    Phase 1-3 adults across cIAI, cUTI and nosocomial pneumonia
+  M4_Bensman_2017      Adults with cystic fibrosis, preserved renal function (USA)
+
+typical ceftazidime clearance by renal class (L/h), and ratio to the primary model
+  class                     M1                M2                M3                M4
+  0–30             1.71 (1.00)       1.49 (0.87)       0.97 (0.57)                 -
+  31–60            3.71 (1.00)       2.43 (0.65)       2.92 (0.79)                 -
+  61–90            5.27 (1.00)       3.03 (0.57)       4.83 (0.92)       7.53 (1.43)
+  91–120           6.66 (1.00)       3.52 (0.53)       6.50 (0.98)       7.53 (1.13)
+  121–150          7.94 (1.00)       3.93 (0.49)       7.01 (0.88)       7.53 (0.95)
+
+joint PTA at the clinical breakpoint (MIC 8 mg/L), licensed regimens, structural layer
+  class     regimen          M1        M2        M3        M4
+  0–30      R1            35.9%     39.2%     61.1%         -
+  31–60     R8            62.1%     83.5%     74.5%         -
+  61–90     R10           65.0%     89.9%     69.7%     42.0%
+  91–120    R12           68.1%     93.4%     70.0%     60.2%
+  121–150   R13           57.2%     90.9%     64.7%     59.6%
+
+avibactam attainment ceiling (MIC-independent), structural layer
+  M1_Cojutti_2024       74.9- 89.4%
+  M2_Chen_2025          74.2- 99.3%
+  M3_Registrational     74.7- 88.4%
+  M4_Bensman_2017       59.4- 74.8%
+
+where the limit changes hands (avibactam -> ceftazidime), structural layer
+  M1_Cojutti_2024      MIC 4, 8 mg/L
+  M2_Chen_2025         MIC 8 mg/L
+  M3_Registrational    MIC 8 mg/L
+  M4_Bensman_2017      MIC 8 mg/L
+
+under escalation at MIC 8: is the exposure ceiling reached before 90% PTA?
+  model               class       dose for 90%  exceed there  dose at ceiling  ceiling first
+  M1_Cojutti_2024     0–30             4.625 g         49.1%            1.875            yes
+  M1_Cojutti_2024     31–60             9.25 g         37.5%              6.0            yes
+  M1_Cojutti_2024     61–90            13.25 g         37.5%            8.625            yes
+  M1_Cojutti_2024     91–120          16.625 g         36.7%           10.875            yes
+  M1_Cojutti_2024     121–150          19.75 g         36.1%             13.0            yes
+  M2_Chen_2025        0–30              3.75 g         43.8%              2.0            yes
+  M2_Chen_2025        31–60            6.125 g         37.5%              4.0            yes
+  M2_Chen_2025        61–90            7.625 g         37.3%              5.0            yes
+  M2_Chen_2025        91–120            8.75 g         36.3%             5.75            yes
+  M2_Chen_2025        121–150           9.75 g         35.9%              6.5            yes
+  M3_Registrational   0–30               3.0 g         55.3%            0.875            yes
+  M3_Registrational   31–60              7.5 g         39.5%            4.625            yes
+  M3_Registrational   61–90            12.25 g         38.2%            7.875            yes
+  M3_Registrational   91–120            16.0 g         36.2%             10.5            yes
+  M3_Registrational   121–150         17.375 g         35.8%             11.5            yes
+  M4_Bensman_2017     61–90           19.125 g         37.6%           12.375            yes
+  M4_Bensman_2017     91–120          19.125 g         37.4%           12.375            yes
+  M4_Bensman_2017     121–150         19.125 g         37.3%             12.5            yes
+
+population-weighted joint CFR, LEE2022_KPC_KP
+  model                  structural   full BSV   exceedance
+  M1_Cojutti_2024             84.3%      84.3%        10.0%
+  M2_Chen_2025                94.5%      95.4%        33.0%
+  M3_Registrational           84.3%      84.3%        15.2%
+  M4_Bensman_2017             70.2%      94.8%         7.0%
+
+the plasma therapeutic window contains no pharmacokinetic parameter
+  floor 4.71 x MIC, ceiling 104 mg/L, avibactam floor 4.35 mg/L
+  closes at MIC 22.1 mg/L (2.8x the clinical breakpoint) in every model
+  M1_Cojutti_2024      some dose lands in the window for 100.0-100.0% of subjects at MIC 4-16
+  M2_Chen_2025         some dose lands in the window for 100.0-100.0% of subjects at MIC 4-16
+  M3_Registrational    some dose lands in the window for 100.0-100.0% of subjects at MIC 4-16
+  M4_Bensman_2017      some dose lands in the window for 100.0-100.0% of subjects at MIC 4-16
+
+claim-by-claim, across the four models
+  [                   replicates]  The limiting component changes from avibactam to ceftazidime as the MIC rises
+                M1 MIC 4  M2 MIC 8  M3 MIC 8  M4 MIC 8
+  [below 100% in every model; height varies]  Avibactam attainment is capped below 100% at the target in use, independently of the MIC
+                M1 89.4%  M2 99.3%  M3 88.4%  M4 74.8%
+  [        varies with clearance]  Joint attainment at the clinical breakpoint under the licensed regimens
+                M1 68.1%  M2 93.4%  M3 74.5%  M4 60.2%
+  [                   replicates]  Escalating the dose reaches the exposure ceiling before the 90% attainment target
+                M1 5/5 classes  M2 5/5 classes  M3 5/5 classes  M4 3/3 classes
+  [                   replicates]  Exceedance at the dose that would reach 90% attainment at the breakpoint
+                M1 36.1-49.1%  M2 35.9-43.8%  M3 35.8-55.3%  M4 37.3-37.6%
+  [identical (no PK parameter enters)]  The plasma therapeutic window stays open above the clinical breakpoint
+                M1 22.1 mg/L  M2 22.1 mg/L  M3 22.1 mg/L  M4 22.1 mg/L
+  [                    identical]  Every simulated patient has a dose that places them inside the window at MIC 4-16 mg/L
+                M1 100.0%  M2 100.0%  M3 100.0%  M4 100.0%
+  [        varies with clearance]  Population-weighted joint CFR against the KPC-K. pneumoniae MIC distribution
+                M1 84.3%  M2 94.5%  M3 84.3%  M4 70.2%

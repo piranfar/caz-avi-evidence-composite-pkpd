@@ -1,0 +1,5 @@
+tau_scenario,tau_between,rho_scenario,target_scenario,median_prediction_interval_width_pp,max_prediction_interval_width_pp,mean_misselection_pct,mean_evpi_pp,mean_expected_regret_pp
+off (primary analysis),0.0,C1_cojutti,T4_uniform,25.4,47.79,50.4,0.955,1.81
+estimated tau,0.4244,C1_cojutti,T4_uniform,48.02,80.12,45.0,2.945,3.987
+leave-one-out low (0.158),0.1577,C1_cojutti,T4_uniform,29.28,55.86,48.4,1.386,2.172
+leave-one-out high (0.515),0.515,C1_cojutti,T4_uniform,56.64,85.65,44.0,3.492,4.607

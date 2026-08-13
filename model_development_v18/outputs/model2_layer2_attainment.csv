@@ -1,0 +1,45 @@
+rho_scenario,target_scenario,regimen,ekfc_class,joint_cfr_median,joint_cfr_p2.5,joint_cfr_p97.5,prediction_interval_width_pp,p_permissible_pct,p_joint_cfr_ge_80_pct,tau_scenario,tau_between
+C1_cojutti,T4_uniform,R1,0–30,86.97,69.17,95.95,26.78,81.3,76.8,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R2,0–30,93.97,80.17,98.41,18.24,32.6,97.7,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R5,31–60,70.58,42.63,90.41,47.79,99.9,30.1,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R6,31–60,82.3,57.4,95.05,37.65,99.1,54.8,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R7,31–60,92.27,72.73,98.13,25.4,93.3,90.1,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R8,31–60,96.03,81.27,99.01,17.74,70.3,98.2,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R9,61–90,89.92,68.15,97.75,29.6,95.9,79.6,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R10,61–90,95.94,80.68,99.09,18.41,67.4,97.9,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R11,91–120,93.13,73.74,98.55,24.81,90.1,90.4,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R12,91–120,96.75,82.13,99.2,17.07,61.3,98.4,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R13,121–150,93.67,72.44,98.74,26.3,85.8,88.6,off (primary analysis),0.0
+C1_cojutti,T4_uniform,R1,0–30,86.13,48.73,98.43,49.7,71.4,68.3,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R2,0–30,93.57,66.82,99.37,32.55,41.7,88.3,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R5,31–60,70.08,15.93,96.05,80.12,98.8,33.2,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R6,31–60,81.28,29.61,98.1,68.48,95.0,52.9,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R7,31–60,91.76,52.45,99.24,46.78,80.6,78.6,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R8,31–60,95.52,66.91,99.52,32.61,60.4,89.8,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R9,61–90,89.24,42.76,99.08,56.32,85.5,71.9,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R10,61–90,95.54,65.62,99.54,33.93,59.0,89.5,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R11,91–120,92.68,51.05,99.33,48.28,77.2,80.2,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R12,91–120,96.4,66.24,99.58,33.33,55.6,90.7,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R13,121–150,93.25,51.39,99.41,48.02,72.2,79.8,estimated tau,0.4243721302889714
+C1_cojutti,T4_uniform,R1,0–30,86.47,65.19,96.48,31.29,78.8,73.5,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R2,0–30,93.72,78.8,98.66,19.86,37.0,96.6,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R5,31–60,69.06,35.91,91.77,55.86,100.0,30.1,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R6,31–60,81.23,51.39,95.74,44.35,99.2,53.2,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R7,31–60,91.94,69.14,98.42,29.28,91.3,86.4,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R8,31–60,95.83,79.41,99.14,19.73,68.2,97.0,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R9,61–90,89.49,63.84,98.1,34.26,95.2,77.2,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R10,61–90,95.8,78.18,99.22,21.04,66.2,96.2,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R11,91–120,92.83,69.71,98.77,29.06,88.0,86.7,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R12,91–120,96.62,79.38,99.3,19.92,60.5,97.1,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R13,121–150,93.4,68.39,98.93,30.54,83.1,85.4,leave-one-out low (0.158),0.1577
+C1_cojutti,T4_uniform,R1,0–30,86.11,42.26,98.9,56.64,68.8,66.5,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R2,0–30,93.42,59.81,99.51,39.7,42.7,85.4,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R5,31–60,70.21,11.7,97.35,85.65,97.7,35.0,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R6,31–60,81.21,22.38,98.66,76.28,92.5,52.0,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R7,31–60,91.57,44.36,99.41,55.05,77.0,76.2,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R8,31–60,95.43,59.24,99.6,40.36,58.8,87.5,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R9,61–90,89.34,33.94,99.3,65.35,82.7,69.6,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R10,61–90,95.48,58.08,99.62,41.54,57.9,86.9,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R11,91–120,92.49,41.64,99.47,57.83,73.9,77.8,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R12,91–120,96.3,58.22,99.64,41.42,54.4,87.9,leave-one-out high (0.515),0.515
+C1_cojutti,T4_uniform,R13,121–150,93.01,42.43,99.51,57.08,68.8,77.7,leave-one-out high (0.515),0.515

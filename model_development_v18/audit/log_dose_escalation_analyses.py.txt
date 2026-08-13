@@ -1,0 +1,32 @@
+  wrote    75 rows  outputs\dose_escalation_mic8.csv
+  wrote     5 rows  outputs\dose_escalation_crossings.csv
+  wrote    75 rows  outputs\dose_escalation_mic4.csv
+  wrote    33 rows  outputs\resistance_suppression_targets.csv
+  wrote    10 rows  outputs\time_to_steady_state.csv
+
+dose needed at the breakpoint (MIC 8 mg/L)
+  class        90% joint PTA   15% exceedance  safety first?  exceed. at 90% PTA
+  0–30                  4.63             1.77            yes                49.0
+  31–60                 9.46             5.89            yes                38.6
+  61–90                13.26             8.45            yes                37.4
+  91–120               16.59            10.78            yes                36.4
+  121–150              19.73            12.99            yes                35.9
+
+at the licensed maximum (10 g/day)
+  0–30       joint PTA  99.2%   exceedance  83.4%
+  31–60      joint PTA  92.0%   exceedance  42.1%
+  61–90      joint PTA  80.0%   exceedance  21.9%
+  91–120     joint PTA  68.1%   exceedance  12.2%
+  121–150    joint PTA  57.2%   exceedance   7.2%
+
+stricter ceftazidime target (KPC-KP, selected regimens)
+  fCss/MIC >= 4: joint CFR  73.5– 88.6%
+  fCss/MIC >= 6: joint CFR  71.4– 87.4%
+  fCss/MIC >= 8: joint CFR  68.5– 85.6%
+
+time to 95% of steady state
+  0–30       slowest clearers: t1/2   94.9 h  ->   409.9 h
+  31–60      slowest clearers: t1/2   19.0 h  ->    82.0 h
+  61–90      slowest clearers: t1/2   13.4 h  ->    58.1 h
+  91–120     slowest clearers: t1/2   10.4 h  ->    45.0 h
+  121–150    slowest clearers: t1/2    8.8 h  ->    37.9 h

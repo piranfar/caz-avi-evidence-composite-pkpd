@@ -1,0 +1,48 @@
+================================================================================
+BREAKING-POINT ANALYSIS — how wrong would each input have to be?
+================================================================================
+
+  Baseline choice at the point estimates (net benefit, lambda = 1, target 4 mg/L)
+    0–30      R2
+    31–60     R8
+    61–90     R10
+    91–120    R12
+    121–150   R13
+
+  Decision A — which regimen
+
+  parameter    class       flip at    change   in SEs   vs tau  becomes
+  --------------------------------------------------------------------------
+  cl0_caz      91–120         0.78    -22.0%      3.9     0.59  R11
+  cl0_caz      31–60          0.76    -24.0%      4.3     0.65  R7
+  cl0_avi      91–120         0.78    -22.0%      3.4     0.59  R11
+  cl0_avi      31–60          0.71    -29.0%      4.6     0.81  R7
+  exp_caz      0–30           1.66     66.0%      3.6           R1
+  exp_caz      31–60          1.81     81.0%      4.2           R7
+  exp_avi      0–30           1.54     54.0%      3.5           R1
+  exp_avi      91–120         0.32    -68.0%      9.3           R11
+  omega_caz    —             never  no error in the scanned range (0.30x to 4x) changes any choice
+  omega_avi    91–120         0.55    -45.0%      2.0           R11
+  omega_avi    31–60          0.52    -48.0%      2.2           R7
+  rho          —             never  no error in the scanned range (0.30x to 4x) changes any choice
+  fu_caz       —             never  no error in the scanned range (0.30x to 4x) changes any choice
+  fu_avi       91–120         1.29     29.0%                    R11
+  fu_avi       31–60          1.40     40.0%                    R7
+  avi_target   91–120         0.78    -22.0%                    R11
+  avi_target   31–60          0.71    -29.0%                    R7
+  tox_threshold 91–120         0.78    -22.0%                    R11
+  tox_threshold 31–60          0.76    -24.0%                    R7
+
+  Decision B — measure avibactam, or infer it
+
+    assay CV   0%  measuring wins at every correlation from 0.30 to 0.99 (gain 3.45 to 15.01 pp)
+    assay CV  10%  measuring wins at every correlation from 0.30 to 0.99 (gain 1.82 to 12.48 pp)
+    assay CV  20%  measuring wins at every correlation from 0.30 to 0.99 (gain 1.38 to 10.09 pp)
+    assay CV  30%  measuring wins at every correlation from 0.30 to 0.99 (gain 1.44 to 7.65 pp)
+
+  wrote outputs\model2_breaking_points.csv (114 rows)
+
+  Comparators: 'in SEs' is the required error divided by the parameter's
+  published relative standard error; 'vs tau' divides it by the
+  between-study SD of 0.424 on the log clearance scale, i.e. by the spread
+  across the four published population PK models.

@@ -1,0 +1,29 @@
+==============================================================================
+MODEL 2, decision problem B — is a separate avibactam assay worth running?
+==============================================================================
+  outer draws 1000, virtual subjects 20,000, selected regimens R1, R8, R10, R12, R13
+
+rho          target         assayCV   infer%  measure%  gain pp  P(gain>0)  EVPPI rho
+-------------------------------------------------------------------------------------
+C1_cojutti   T2_point_4          0%     95.7     100.0     4.27     100.0%     0.0000
+C1_cojutti   T2_point_4         20%     92.1      95.2     3.03      80.6%     0.0000
+C2_model1    T2_point_4          0%     88.3     100.0    11.66     100.0%     0.0000
+C2_model1    T2_point_4         20%     87.4      95.2     7.66      98.6%     0.0000
+C3_agnostic  T2_point_4          0%     88.7     100.0    11.30     100.0%     0.0000
+C3_agnostic  T2_point_4         20%     88.2      95.2     6.75      97.8%     0.0000
+C1_cojutti   T4_uniform          0%     99.3     100.0     0.67      94.8%     0.0000
+C1_cojutti   T4_uniform         20%     97.5      98.3     0.44      74.0%     0.0000
+C2_model1    T4_uniform          0%     96.3     100.0     3.65      96.3%     0.0000
+C2_model1    T4_uniform         20%     96.5      98.3     1.50      86.1%     0.0000
+C3_agnostic  T4_uniform          0%     97.0     100.0     2.97      96.0%     0.0000
+C3_agnostic  T4_uniform         20%     97.0      98.3     1.23      83.2%     0.0000
+
+  wrote outputs\model2_monitoring_decision.csv (12 rows)
+
+  READING
+  The accuracy gain is the break-even quantity: measuring avibactam is
+  worth it when the cost of the assay, expressed in percentage points of
+  correctly classified patients, falls below this gain. No monetary cost
+  is assumed, because none would be defensible.
+  An EVPPI for rho near zero means the monitoring decision does not depend
+  on resolving rho — the same strategy wins across its plausible range.

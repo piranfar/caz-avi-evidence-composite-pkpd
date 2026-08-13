@@ -1,0 +1,66 @@
+  wrote    10 rows  outputs\safety_optimal_dose.csv
+  wrote    10 rows  outputs\monotherapy_ceiling.csv
+  wrote    11 rows  outputs\therapeutic_window.csv
+  wrote    15 rows  outputs\individualised_attainment.csv
+  wrote     3 rows  outputs\lung_therapeutic_window.csv
+  wrote    30 rows  outputs\lung_individualised_attainment.csv
+  wrote    55 rows  outputs\prescriptive_decision_grid.csv
+
+safety-optimal daily dose (product, g/day)
+  class       MIC    dose  vs licensed  joint PTA  exceed
+  0–30          4    1.75        below      80.9%   14.8%
+  0–30          8    1.75        below      51.4%   14.8%
+  31–60         4    5.88        below      92.2%   14.6%
+  31–60         8    5.88        below      71.5%   14.6%
+  61–90         4    8.50        below      91.1%   14.9%
+  61–90         8    8.50        below      72.1%   14.9%
+  91–120        4   10.75        above      90.1%   14.7%
+  91–120        8   10.75        above      72.0%   14.7%
+  121–150       4   12.88        above      89.3%   14.7%
+  121–150       8   12.88        above      72.0%   14.7%
+
+highest MIC reached at the safety-optimal dose
+  at >=90%   0–30: none | 31–60: 4 | 61–90: 4 | 91–120: 4 | 121–150: none
+  at >=80%   0–30: 4 | 31–60: 4 | 61–90: 4 | 91–120: 4 | 121–150: 4
+
+therapeutic window: total ceftazidime Css between 4.7 x MIC and 104 mg/L
+  avibactam floor 4.35 mg/L
+  window closes at MIC 22.1 mg/L (2.8 times the clinical breakpoint)
+
+proportion that can be placed in the window by adjusting dose
+  class       MIC   any dose  within licensed  median g/day
+  0–30          4     100.0%            99.9%          0.87
+  0–30          8     100.0%            99.2%          1.71
+  0–30         16     100.0%            92.2%          3.41
+  31–60         4     100.0%            98.6%          2.25
+  31–60         8     100.0%            92.0%          4.10
+  31–60        16     100.0%            62.2%          8.20
+  61–90         4     100.0%            94.5%          3.38
+  61–90         8     100.0%            80.0%          5.88
+  61–90        16     100.0%            40.0%         11.77
+  91–120        4     100.0%            88.0%          4.53
+  91–120        8     100.0%            68.1%          7.42
+  91–120       16     100.0%            26.0%         14.85
+  121–150       4     100.0%            80.8%          5.62
+  121–150       8     100.0%            57.2%          8.94
+  121–150      16     100.0%            17.5%         17.85
+
+the same window at the site of infection
+  compartment              floor  closes at MIC  vs breakpoint  open there
+  plasma                  4.71x          22.1          2.76x         yes
+  central estimate        9.05x          11.5          1.44x         yes
+  conservative           15.69x           6.6          0.83x          no
+
+proportion placeable in the window at the site of infection
+  compartment           MIC        any dose   within licensed
+  plasma                  4    100.0-100.0%        80.8-99.9%
+  plasma                  8    100.0-100.0%        57.2-99.2%
+  central estimate        4    100.0-100.0%        34.6-98.4%
+  central estimate        8    100.0-100.0%        18.9-92.9%
+  conservative            4    100.0-100.0%        17.2-94.4%
+  conservative            8        0.0-0.0%          0.0-0.0%
+
+prescriptive grid: what each cell tells a clinician to do
+   24 of 55 cells   measure and titrate within the licensed range
+   21 of 55 cells   measure and titrate; the placing dose exceeds the licensed maximum for most patients
+   10 of 55 cells   outside the window at any dose; use a different agent

@@ -1,0 +1,15 @@
+parameter,estimate,ci_low,ci_high,ci_method,note
+CL_caz_L_h,2.5723,,,,
+CL_avi_L_h,3.2234,,,,
+V_caz_L,19.9770,,,,
+V_avi_L,27.0298,,,,
+omega_CL_caz,0.2022,,,,
+omega_CL_avi,0.1411,,,,
+omega_V_caz,0.2673,,,,
+omega_V_avi,0.1994,,,,
+corr_CL_caz_avi,0.7031,0.3797,0.8740,profile likelihood,
+sigma_prop_caz,0.0997,,,,
+sigma_prop_avi,0.0926,,,,
+OFV,-722.3558,,,,"converged on tolerance: True, 2 rounds"
+dOFV_vs_no_correlation,12.4122,,,,"1 df, p = 0.0004265"
+vpc_coverage_pct,82.7,,,,"nominal 90%, seed 20260811"

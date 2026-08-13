@@ -1,0 +1,36 @@
+==============================================================================
+DESIGN ANALYSIS — what simulated patients can and cannot settle
+==============================================================================
+
+1. The attenuation identity
+   residual error in the source model: 31% and 33% (Cojutti Table 2, b1 and b2)
+   attenuation factor for a SINGLE observation per patient: 0.804
+   so if the true correlation were 0.940, a naive two-stage analysis of
+   one sample per patient would return about 0.756
+   and if the true correlation were 0.703, about 0.565
+
+   This is why the earlier two-stage estimates in this project (0.560 to
+   0.598) were biased low, and why only a mixed-effects estimate is
+   comparable with the published 0.94.
+
+2. Could a Bologna-shaped dataset settle it?
+   112 patients, 185 samples: median 1 occasion, some with 2
+     true rho 0.940 -> estimate 0.940 (SD 0.031, bias -0.000); power to exclude 0.703: 100.0%
+     true rho 0.703 -> estimate 0.703 (SD 0.063, bias -0.000); power to exclude 0.940: 100.0%
+
+3. What a prospective study would need
+     small TDM cohort                 n= 30  SD 0.054   power  92.4%
+     moderate TDM cohort              n= 60  SD 0.036   power  99.8%
+     Bologna-sized, 2 samples each    n=112  SD 0.024   power 100.0%
+     large TDM cohort                 n=200  SD 0.016   power 100.0%
+     Model 1 cohort (21, rich)        n= 21  SD 0.108   power  95.0%
+
+  wrote outputs\model1_design_analysis.csv
+
+4. Falsifiable prediction, stated in advance
+   If the Bologna cohort is re-analysed with a joint mixed-effects model,
+   and if the correlation there is what the two RRT cohorts suggest rather
+   than the published 0.94, the estimate should fall near 0.70 with a 95%
+   interval roughly 0.60 to 0.79. If instead the published value is right,
+   the estimate should fall near 0.94 with an interval excluding 0.70.
+   The design analysis above says that dataset CAN tell those apart.

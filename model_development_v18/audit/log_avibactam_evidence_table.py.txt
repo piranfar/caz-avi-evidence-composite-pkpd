@@ -1,0 +1,12 @@
+  wrote 11 rows  outputs/avibactam_threshold_evidence.csv
+
+  dynamic in vitro evidence spans 0.25–0.5 mg/L
+  registrational threshold        1 mg/L  (2–4x the experimental range)
+  continuous-infusion target      4 mg/L  (8–16x the experimental range)
+
+  joint CFR at each threshold (selected regimens, KPC-KP):
+    1 mg/L:  93.4– 98.6%  <- registrational
+    2 mg/L:  89.5– 97.6%
+    4 mg/L:  73.5– 88.6%  <- primary target of this analysis
+    6 mg/L:  58.1– 74.7%
+    8 mg/L:  44.0– 60.7%

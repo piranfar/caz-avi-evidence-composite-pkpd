@@ -1,0 +1,32 @@
+  wrote     4 rows  outputs\population_weighted_cfr.csv
+  wrote    30 rows  outputs\variable_protein_binding.csv
+  wrote     6 rows  outputs\arc_subgroup.csv
+  wrote    15 rows  outputs\lung_penetration.csv
+  wrote    55 rows  outputs\decision_grid.csv
+
+population-weighted CFR (source-cohort renal mix)
+  FR2024_OXA484_SERINE_ONLY    joint  85.1%   exceedance  10.0%
+  INDIA2022_OXA48_KP           joint  82.0%   exceedance  10.0%
+  LEE2022_KPC_KP               joint  84.3%   exceedance  10.0%
+  LEE2022_OXA_KP               joint  83.9%   exceedance  10.0%
+
+protein binding fixed vs sampled (joint PTA, MIC 4)
+  R1    fixed  67.2%   sampled  67.0%   (-0.2)
+  R8    fixed  88.3%   sampled  88.2%   (-0.1)
+  R10   fixed  87.8%   sampled  87.7%   (-0.1)
+  R12   fixed  88.0%   sampled  87.9%   (-0.1)
+  R13   fixed  80.8%   sampled  80.7%   (-0.1)
+
+augmented renal clearance
+  whole class (121–150)              MIC 4: joint PTA  80.8%   median Css  42.2
+  whole class (121–150)              MIC 8: joint PTA  57.2%   median Css  42.2
+  augmented clearance (>=130)        MIC 4: joint PTA  79.6%   median Css  41.2
+  augmented clearance (>=130)        MIC 8: joint PTA  55.6%   median Css  41.2
+
+lung penetration (joint CFR, KPC-KP)
+  plasma             CFR  73.5– 88.6%   joint PTA at MIC 8  35.9– 68.1%
+  central estimate   CFR  34.4– 50.7%   joint PTA at MIC 8  15.3– 27.7%
+  conservative       CFR  18.2– 31.6%   joint PTA at MIC 8   3.8–  7.0%
+
+decision grid
+  {'fails target': 27, 'marginal': 28}

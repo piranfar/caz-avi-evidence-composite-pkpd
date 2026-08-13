@@ -1,0 +1,64 @@
+  structural self-check passed (max relative difference 7.1e-10)
+==============================================================================
+MODEL 1 FINALISATION
+==============================================================================
+  21 subjects, 238 observations
+
+1. Convergence
+  fitting full model ...
+    OFV -722.3558   rounds 2   stopped on tolerance: True
+  fitting null (correlation fixed at 0) ...
+    OFV -709.9436   rounds 2   stopped on tolerance: True
+    dOFV against the null 12.412 on 1 df, p = 0.0004265
+    correlation estimate 0.7031
+
+2. Profile likelihood for the clearance correlation
+   (the Hessian-based interval is replaced by this)
+    rho 0.050   OFV  -711.2477   dOFV  11.1082
+    rho 0.150   OFV  -713.6972   dOFV   8.6586
+    rho 0.250   OFV  -715.9441   dOFV   6.4117
+    rho 0.350   OFV  -717.9812   dOFV   4.3746
+    rho 0.450   OFV  -719.7736   dOFV   2.5822
+    rho 0.550   OFV  -721.2381   dOFV   1.1177
+    rho 0.650   OFV  -722.1901   dOFV   0.1658
+    rho 0.703   OFV  -722.3558   dOFV   0.0000
+    rho 0.750   OFV  -722.1861   dOFV   0.1697
+    rho 0.800   OFV  -721.4932   dOFV   0.8626
+    rho 0.850   OFV  -719.8959   dOFV   2.4599
+    rho 0.880   OFV  -718.1709   dOFV   4.1849
+    rho 0.910   OFV  -715.3949   dOFV   6.9609
+    rho 0.940   OFV  -710.5716   dOFV  11.7842
+    rho 0.960   OFV  -704.8661   dOFV  17.4897
+
+    profile-likelihood 95% interval: 0.380 to 0.874
+    excludes 0.94: YES
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_profile_likelihood.csv (15 rows)
+
+3. Goodness-of-fit diagnostics
+    caz: CWRES mean -0.067, SD 1.003, 5.9% beyond +/-2
+    avi: CWRES mean +0.024, SD 1.002, 6.7% beyond +/-2
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_diagnostics.csv (238 rows)
+
+4. Visual predictive check (1000 replicates, seed 20260811)
+    observations inside the simulated 5th-95th interval: 82.7% (nominal 90%)
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_vpc.csv (16 rows)
+
+5. Sensitivity analyses
+    infusion duration all 1 h -> corr 0.781
+    infusion duration all 2 h -> corr 0.744
+    infusion duration all 3 h -> corr 0.765
+    shared residual error -> corr 0.704, dOFV +0.23
+    leave-one-subject-out correlation: min 0.651, median 0.700, max 0.756
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_sensitivity.csv (6 rows)
+
+6. Figures
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\figures\model1_gof.png
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\figures\model1_vpc.png
+
+7. Final parameter table
+  wrote E:\Github Project\IJAA_submission_package_v16\model_development_v18\outputs\model1_final_parameters.csv (14 rows)
+
+==============================================================================
+  correlation 0.703, profile-likelihood 95% interval 0.380 to 0.874
+  assumed value 0.94 is EXCLUDED
+==============================================================================

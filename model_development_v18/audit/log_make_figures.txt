@@ -1,0 +1,11 @@
+C:\Users\vahab\AppData\Local\Temp\claude\E--Github-Project-IJAA-submission-package-v16\0c9fd865-b6c4-4f04-aed1-9d362f21c440\scratchpad\repro\make_figures.py:203: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  a.legend(fontsize=8)
+C:\Users\vahab\AppData\Local\Temp\claude\E--Github-Project-IJAA-submission-package-v16\0c9fd865-b6c4-4f04-aed1-9d362f21c440\scratchpad\repro\make_figures.py:204: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  fig.tight_layout()
+figures:
+  scratchpad\repro\figures\fig_pta_vs_mic.png
+  scratchpad\repro\figures\fig_oat_tornado.png
+  scratchpad\repro\figures\fig_dose_response.png
+  scratchpad\repro\figures\fig_cfr_distributions.png
+  scratchpad\repro\figures\fig_toxicity_gate.png
+  scratchpad\repro\figures\fig_avi_threshold.png

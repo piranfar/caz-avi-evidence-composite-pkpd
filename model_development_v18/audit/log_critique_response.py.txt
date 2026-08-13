@@ -1,0 +1,77 @@
+
+A. Is the therapeutic window a simulation result?
+   need_caz = 4.0*MIC/0.85*CL ; cap_caz = 104.0*CL
+   clearance appears on both sides and cancels, leaving
+     placeable  <=>  MIC <= 104.0*0.85/4.0 = 22.1 mg/L
+   every subject in every class therefore gives the same answer: CONFIRMED
+     MIC   4.0  placeable  100.0%  (1 distinct subject-level value)
+     MIC   8.0  placeable  100.0%  (1 distinct subject-level value)
+     MIC  16.0  placeable  100.0%  (1 distinct subject-level value)
+     MIC  22.0  placeable  100.0%  (1 distinct subject-level value)
+     MIC  23.0  placeable    0.0%  (1 distinct subject-level value)
+     MIC  32.0  placeable    0.0%  (1 distinct subject-level value)
+   VERDICT: the 100% figure is an identity, not a population statistic.
+            What is NOT an identity: whether the placing dose is licensed.
+     0–30      within licensed at MIC 8:  99.2%  median  1.72 g/day  (2 distinct values -> genuine)
+     31–60     within licensed at MIC 8:  91.8%  median  4.18 g/day  (2 distinct values -> genuine)
+     61–90     within licensed at MIC 8:  79.3%  median  5.98 g/day  (2 distinct values -> genuine)
+     91–120    within licensed at MIC 8:  67.5%  median  7.57 g/day  (2 distinct values -> genuine)
+     121–150   within licensed at MIC 8:  56.6%  median  8.98 g/day  (2 distinct values -> genuine)
+  wrote    30 rows  outputs\critique_a_window_identity.csv
+
+B. Does excluding EKFC < 15 (who would be on RRT) overturn the ordering?
+   cohort      class      licensed exceed   dose 90%  dose ceiling  exceed there  ceiling first
+   all EKFC    0–30                 9.37%      4.625         1.875         48.7%            yes
+   all EKFC    31–60                9.50%      9.375           6.0         37.4%            yes
+   all EKFC    61–90               10.55%     13.375         8.625         36.8%            yes
+   all EKFC    91–120              11.72%      16.75          11.0         35.8%            yes
+   all EKFC    121–150              6.89%      19.75        13.125         35.8%            yes
+   EKFC >= 15  0–30                 0.28%       5.75          3.75         37.9%            yes
+   EKFC >= 15  31–60                9.50%      9.375           6.0         37.4%            yes
+   EKFC >= 15  61–90               10.55%     13.375         8.625         36.8%            yes
+   EKFC >= 15  91–120              11.72%      16.75          11.0         35.8%            yes
+   EKFC >= 15  121–150              6.89%      19.75        13.125         35.8%            yes
+   all EKFC     population exceedance  9.83%   ceiling binds first in 5/5 classes
+   EKFC >= 15   population exceedance  8.46%   ceiling binds first in 5/5 classes
+  wrote    10 rows  outputs\critique_b_rrt_exclusion.csv
+
+C. Is the ordering a drug property or a variance property?
+   CV  10.0%  ceiling binds first in 1/5 classes   exceedance at the attaining dose   0.0– 22.1%
+   CV  20.0%  ceiling binds first in 1/5 classes   exceedance at the attaining dose   0.0– 24.3%
+   CV  30.0%  ceiling binds first in 1/5 classes   exceedance at the attaining dose   1.5– 28.4%
+   CV  45.0%  ceiling binds first in 3/5 classes   exceedance at the attaining dose  13.8– 37.3%
+   CV  67.9%  ceiling binds first in 5/5 classes   exceedance at the attaining dose  35.8– 48.7%
+   VERDICT: if the ordering disappears at low CV it is a variance result,
+            not a statement about ceftazidime–avibactam.
+  wrote     5 rows  outputs\critique_c_variance.csv
+
+D. How far can the ceiling and the cut-off move before the ordering fails?
+     ceiling | cut 5% | cut 15% | cut 30%
+         80  |   5/5   |   5/5   |   5/5  
+        104  |   5/5   |   5/5   |   5/5  
+        150  |   5/5   |   5/5   |   1/5  
+        200  |   5/5   |   1/5   |   0/5  
+        300  |   1/5   |   0/5   |   0/5  
+        500  |   1/5   |   0/5   |   0/5  
+  wrote    18 rows  outputs\critique_d_ceiling_sensitivity.csv
+
+E. Under rho = 0.94, what does the second assay add?
+   rho 0.94  predicting avibactam status from measured ceftazidime misclassifies  6.17% of subjects   (AVI:CAZ Css ratio CV 34.3%)
+   rho 0.75  predicting avibactam status from measured ceftazidime misclassifies 12.05% of subjects   (AVI:CAZ Css ratio CV 55.5%)
+   rho 0.50  predicting avibactam status from measured ceftazidime misclassifies 16.68% of subjects   (AVI:CAZ Css ratio CV 77.8%)
+   rho 0.00  predicting avibactam status from measured ceftazidime misclassifies 22.84% of subjects   (AVI:CAZ Css ratio CV 118.4%)
+   VERDICT: a low misclassification rate at rho = 0.94 means the paper's own
+            correlation makes the second assay largely predictable.
+  wrote     4 rows  outputs\critique_e_second_assay.csv
+
+F. Avibactam in renal impairment, given it carries no ceiling
+   class    reg     median CAZ  median AVI   p95 AVI   AVI/CAZ
+   0–30     R1            27.4         7.9      69.2     0.295
+   31–60    R8            45.1        10.4      33.2     0.230
+   61–90    R10           47.2         9.9      31.2     0.209
+   91–120   R12           49.8         9.7      30.0     0.195
+   121–150  R13           42.0         7.8      23.8     0.187
+   The licensed regimens are renally adjusted, which is why avibactam does not
+   run away in the low classes; the asymmetry is that no published avibactam
+   exposure limit exists to test against.
+  wrote     5 rows  outputs\critique_f_avibactam_exposure.csv

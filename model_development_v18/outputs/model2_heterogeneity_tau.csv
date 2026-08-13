@@ -1,0 +1,7 @@
+quantity,value,interpretation,note
+tau_study_log_scale,0.4244,between-study CV 44.4%,"ANOVA method of moments, 4 studies, 3 shared renal classes, 2 analytes. UNRELIABLE with fewer than about five studies."
+residual_study_by_cell_sd,0.1388,CV 13.9%,"study-by-cell interaction, retained as the residual term"
+tau_without_M1_Cojutti_2024,0.5106,between-study CV 54.6%,"leave-one-study-out, n=3"
+tau_without_M2_Chen_2025,0.1577,between-study CV 15.9%,"leave-one-study-out, n=3"
+tau_without_M3_Registrational,0.515,between-study CV 55.1%,"leave-one-study-out, n=3"
+tau_without_M4_Bensman_2017,0.4118,between-study CV 43.0%,"leave-one-study-out, n=3"

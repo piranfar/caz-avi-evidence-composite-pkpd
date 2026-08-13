@@ -1,0 +1,16 @@
+================================================================================
+MODEL 2, LAYER 2 — with and without between-study heterogeneity
+================================================================================
+
+  tau = 0.4244 (between-study CV 44.4%), leave-one-out range 0.1577 to 0.5150
+
+    off (primary analysis)             tau 0.0000   PI width  25.47 pp   misselection  50.2%   EVPI  0.964 pp
+    estimated tau                      tau 0.4244   PI width  47.98 pp   misselection  44.7%   EVPI  2.954 pp
+    leave-one-out low (0.158)          tau 0.1577   PI width  29.59 pp   misselection  48.1%   EVPI  1.396 pp
+    leave-one-out high (0.515)         tau 0.5150   PI width  56.82 pp   misselection  43.8%   EVPI  3.512 pp
+  wrote outputs\model2_layer2_attainment.csv (44 rows)
+  wrote outputs\model2_layer2_summary.csv (4 rows)
+
+  Including between-study heterogeneity widens the median prediction
+  interval from 25.5 to 48.0 percentage points (1.9-fold).
+  Report both. With four non-exchangeable studies, tau is a scenario.

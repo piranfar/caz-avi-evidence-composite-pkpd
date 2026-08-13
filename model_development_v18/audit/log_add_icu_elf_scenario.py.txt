@@ -1,0 +1,13 @@
+plasma            CAZ/AVI 1.00/1.00; MIC 8 PTA 35.9-68.1%; CFR 73.5-88.6%; weighted CFR 84.3%
+icu_trial         CAZ/AVI 0.41/0.44; MIC 8 PTA 10.4-16.8%; CFR 36.6-52.4%; weighted CFR 45.9%
+healthy_volunteer CAZ/AVI 0.52/0.42; MIC 8 PTA 15.3-27.7%; CFR 34.4-50.7%; weighted CFR 44.0%
+conservative      CAZ/AVI 0.30/0.30; MIC 8 PTA 3.8-7.0%; CFR 18.2-31.6%; weighted CFR 26.7%
+comonotonic (used) variable CAZ/AVI 0.30-0.52/0.30-0.44; MIC 8 PTA 10.9-16.8%; weighted CFR 37.0%
+independent       variable CAZ/AVI 0.30-0.52/0.30-0.44; MIC 8 PTA 10.3-16.8%; weighted CFR 36.7%
+countermonotonic  variable CAZ/AVI 0.30-0.52/0.30-0.44; MIC 8 PTA 10.3-16.2%; weighted CFR 36.6%
+ICU ELF individualized dose at MIC 8
+  0–30: 4.16 g/day; 87.3% at or below 10 g/day
+  31–60: 10.00 g/day; 50.0% at or below 10 g/day
+  61–90: 14.35 g/day; 28.3% at or below 10 g/day
+  91–120: 18.11 g/day; 16.8% at or below 10 g/day
+  121–150: 21.78 g/day; 10.4% at or below 10 g/day

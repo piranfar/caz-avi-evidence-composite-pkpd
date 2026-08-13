@@ -1,0 +1,35 @@
+  wrote    75 rows  outputs\avi_threshold_sweep_pta.csv
+  wrote    25 rows  outputs\avi_threshold_sweep_cfr.csv
+  wrote    15 rows  outputs\avi_threshold_limiting_component.csv
+  wrote     5 rows  outputs\rrt_floor_sensitivity.csv
+  wrote     5 rows  outputs\monte_carlo_precision.csv
+  wrote    11 rows  outputs\full_regimen_grid.csv
+
+avibactam threshold: limiting component and joint PTA
+    CT  MIC  AVI lim  CAZ lim      joint PTA range
+     1    2        0        3     92.2–99.7
+     1    4        0        5     68.7–94.5
+     1    8        0        5     35.9–68.2
+     2    2        4        1     91.0–98.7
+     2    4        0        5     68.7–94.5
+     2    8        0        5     35.9–68.2
+     4    2        5        0     74.9–89.4
+     4    4        4        1     67.2–88.3
+     4    8        0        5     35.9–68.1
+     6    2        5        0     58.7–75.2
+     6    4        5        0     57.7–75.1
+     6    8        0        5     35.9–65.5
+     8    2        5        0     44.2–61.0
+     8    4        5        0     44.2–61.0
+     8    8        4        1     35.2–56.4
+
+joint CFR by avibactam threshold (KPC-KP, selected regimens)
+  CT 1 mg/L: joint CFR  93.4– 98.6%   avibactam attainment  99.2–100.0%
+  CT 2 mg/L: joint CFR  89.5– 97.6%   avibactam attainment  93.3– 98.7%
+  CT 4 mg/L: joint CFR  73.5– 88.6%   avibactam attainment  74.9– 89.4%
+  CT 6 mg/L: joint CFR  58.1– 74.7%   avibactam attainment  58.7– 75.2%
+  CT 8 mg/L: joint CFR  44.0– 60.7%   avibactam attainment  44.2– 61.0%
+
+sub-dialysis renal function in the lowest class
+  R1: 49.7% below 15 mL/min/1.73 m2; they contribute 98.7% of exceedances
+      exposure-screen exceedance  all 9.28%  ->  restricted 0.25%
