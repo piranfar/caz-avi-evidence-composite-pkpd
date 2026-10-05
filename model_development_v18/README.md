@@ -1,6 +1,7 @@
 # model_development_v18 — index
 
-Development directory for the continuation of the CAZ-AVI IJAA manuscript.
+Development directory for the analyses that followed the evidence-composite manuscript in the
+repository root.
 **Nothing in `IJAA_submission_package_v16` outside this directory has been modified** — verified by
 checksum against `FILE_INVENTORY.csv` after every change in this directory.
 
@@ -18,7 +19,6 @@ checksum against `FILE_INVENTORY.csv` after every change in this directory.
   12 August 2026.
 - **NOVELTY_ROUTES.md:** every route except R5 (blocked on the Bologna reply) is checked or done —
   R7, R2, R1, R6, R4, R3.
-- **Manuscript text:** **not yet revised.** Phase 6 has not started.
 
 ---
 
@@ -36,7 +36,7 @@ checksum against `FILE_INVENTORY.csv` after every change in this directory.
 | 7 | **`MODEL1_REPORT.md`** | The clearance-correlation estimate: 0.703, excludes the assumed 0.94 |
 | 8 | **`MODEL2_REPORT.md`** | The decision layer: value of information, misselection/regret, triage |
 | 9 | `SOFTWARE.md` | The installable package, and how to adapt it to another drug pair |
-| 10 | `NOVELTY_ROUTES.md` | What else could raise the paper's ceiling, ranked, live-updated |
+| 10 | `NOVELTY_ROUTES.md` | Further analysis routes considered, and their status |
 
 ---
 
@@ -53,8 +53,8 @@ model_development_v18/
 ├── MODEL2_REPORT.md                 Model 2: the decision-analytic layer
 ├── MODEL2_SPECIFICATION.md          Model 2's design, written before implementation
 ├── SOFTWARE.md                      the installable package (R6)
-├── NOVELTY_STRATEGY.md              why the paper's spine changed, and to what
-├── NOVELTY_ROUTES.md                live register of further novelty routes, ranked
+├── NOVELTY_STRATEGY.md              why the analysis plan changed, and to what
+├── NOVELTY_ROUTES.md                register of further analysis routes and their status
 ├── pyproject.toml, LICENSE          packaging metadata (installs as `hujam`)
 │
 ├── audit/
@@ -195,8 +195,8 @@ See `SOFTWARE.md` and the PR description for exactly what that subset is. **Four
 exclusion list as of 12 August 2026** — none is openly licensed, so all four stay local-only:
 `data_external/Tian2025_CVVH/Tian2025_EJCMID_s10096-025-05343-x_SUBSCRIPTION-ACCESS.pdf`,
 `data_external/Wu2025_PopPK_AKI/Wu2025_JAC_dkaf275_SUBSCRIPTION-ACCESS.pdf`,
-`data_external/Lanini2024_nonRRT_CrCl/Lanini2024_IJAA_107351_SUBSCRIPTION-ACCESS.pdf` (retrieved after
-a ScienceDirect CAPTCHA the user solved themselves — Claude never attempts that), and
+`data_external/Lanini2024_nonRRT_CrCl/Lanini2024_IJAA_107351_SUBSCRIPTION-ACCESS.pdf` (retrieved through the
+author's institutional subscription), and
 `data_external/Fresan2023_CI_TDM/Fresan2023_JAC_dkac439_FREE-TO-READ.pdf` (**free to read is not the
 same as openly licensed** — this one carries OUP's "All rights reserved" standard model, so it is
 excluded on copyright grounds even though no subscription was needed to obtain it). See each folder's
@@ -208,9 +208,6 @@ text**, so all three are excluded pending verification. `OJeanson2024_CVVHDF/` (
 `Gatti2025_outcome_R5/` (CC BY 4.0) have no such restriction, and `Chen2025_PopPK_CRKP/`,
 `Cojutti2024_ANCHOR_PopPK/`, `Das2019_dose_selection/`, `Coleman2014_hollowfibre_T7/` and
 `Berkhout2016_murine_index/` hold no PDFs at all — only extracted facts.
-
-**4. The manuscript text is untouched.** Phase 6 (manuscript revision) has not started. Every number
-above is verified and frozen, but none of it is in the manuscript yet.
 
 ---
 

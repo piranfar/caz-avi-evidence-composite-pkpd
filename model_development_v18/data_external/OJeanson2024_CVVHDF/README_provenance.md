@@ -17,8 +17,7 @@ PMC no PMCID assigned at time of retrieval; Scopus EID 2-s2.0-85211985518.
 > license (http://creativecommons.org/licenses/by/4.0/)"
 
 Retrieved 12 August 2026 via Elsevier's official Article Retrieval API
-(`api.elsevier.com/content/article/pii/S0924857924003108`), using an API key the user holds and
-authorized for this research. No login, no paywall bypass, no scraping — this is the publisher's own
+(`api.elsevier.com/content/article/pii/S0924857924003108`), using the author's own API key. No login, no paywall bypass, no scraping — this is the publisher's own
 documented API, and the article is genuinely open access regardless of API-key use. Archived here as
 `OJeanson2024_IJAA_107394_CC-BY.pdf` (604,027 bytes, matches the size Elsevier's own metadata reports
 for the file). CC BY permits redistribution, including commercial, with attribution — no non-commercial

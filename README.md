@@ -174,7 +174,7 @@ documents how the manuscript's assumptions were tested after submission.
 | `MODEL2_REPORT.md` | A decision layer over the primary simulation: value of information, misselection and regret, limiting-component probability |
 | `PREREGISTRATION.md` | A prediction registered before the data needed to test it were held |
 | `REPRODUCTION_CHECK.md`, `PROJECT_AUDIT_REPORT.md` | Verification of the primary package against its own frozen outputs |
-| `figures/`, `manuscript_JAC/` | Figures and tables generated from those analyses |
+| `figures/`, `model2_figures_tables/` | Figures and tables generated from those analyses |
 
 These reports record findings that run against the project's own argument as well as for
 it, including a structural limitation in the joint-target assumption and a

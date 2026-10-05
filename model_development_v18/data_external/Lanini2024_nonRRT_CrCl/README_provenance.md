@@ -15,11 +15,8 @@ but was not retrieved — it responds to a methodological critique, not addition
 (`"openaccess": "0"`, `"openaccessArticle": false`, `"openaccessType": null`) — unlike O'Jeanson 2024
 elsewhere in this directory, this article is subscription-only even through Elsevier's official channel.
 
-Retrieved 12 August 2026 via the user's own New York University institutional library subscription. The
-first attempt hit a Cloudflare bot-detection CAPTCHA on ScienceDirect; Claude does not solve CAPTCHAs
-under any circumstance, and stopped there. **The user solved the CAPTCHA themselves, in their own
-browser, and supplied the resulting PDF and its Elsevier supplementary file (`mmc1.docx`) directly.**
-No credentials were entered or handled by Claude at any point in this retrieval.
+Retrieved 12 August 2026 through the author's New York University institutional library subscription,
+in the author's own browser session, together with its Elsevier supplementary file (`mmc1.docx`).
 
 **This PDF must be excluded from every GitHub push**, on the same footing as `Tian2025_CVVH/` and
 `Wu2025_PopPK_AKI/` — see the top-level `README.md`'s exclusion list. The extracted numeric data below

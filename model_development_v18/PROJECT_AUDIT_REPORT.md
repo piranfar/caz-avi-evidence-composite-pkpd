@@ -44,7 +44,6 @@ established from timestamps, content and checksums.
 |---|---|---|---|
 | **Manuscript** | `Piranfar_CAZ-AVI_IJAA_Original_Article_v17.docx` | 11 Aug 10:07 | **v17, despite the folder being named v16** |
 | Manuscript PDF | `Piranfar_CAZ-AVI_IJAA_Original_Article_v17.pdf` | 11 Aug 10:08 | |
-| **Editorial Manager submission** | `IJAA-S-26-02124_3.pdf` | 11 Aug 10:16 | 24 pp, system-generated; carries manuscript number **IJAA-S-26-02124**, revision `_3` |
 | Tables | `Tables_IJAA.docx` | 5 Aug 17:26 | Tables 1-6 with data, not legends only |
 | Supplementary | `Supplementary_Tables_S1-S21_v13.xlsx` | 4 Aug 14:43 | 22 sheets |
 | Figures | `Figures/Figure_1..6_*.png` | 5 Aug | byte-identical to `revision_support/figures/` sources |
@@ -53,10 +52,6 @@ established from timestamps, content and checksums.
 | Graphical abstract | `Graphical_Abstract_..._v21_300dpi_Print.png` / `.pdf` | 5 Aug 15:03 | |
 | Analysis code | `revision_support/*.py`, `*.mjs` | 2-4 Aug | 32 Python + 6 Node scripts |
 | Frozen outputs | `revision_support/outputs/*.csv` | 2-4 Aug | 60 CSVs + `VERIFICATION_LOG.txt` |
-
-**The manuscript is under active submission to IJAA** (manuscript number IJAA-S-26-02124, at least
-three versions). Any revision must be coordinated with that submission; this is not a
-pre-submission draft.
 
 ### 2.2 Superseded and duplicate material — retained, not authoritative
 
@@ -193,7 +188,7 @@ outputs, every printed digit must match.
 **9 — Minor. Three inconsistent author affiliations.** The manuscript states *"Department of
 Microbiology, Iran University of Medical Science, Tehran, Iran; Farname Inc, Th, Canada"* — with
 "Th" evidently a placeholder — the cover letter states *"Independent Researcher, New York, United
-States"*, and the Editorial Manager record states *"Farname Inc, Jersey City, NJ, United States"*.
+States"*, and the submission record states *"Farname Inc, Jersey City, NJ, United States"*.
 These must be reconciled.
 
 **10 — Minor. The ELF penetration ratio choice is undocumented.** Table 3 uses 0.41/0.44 from the

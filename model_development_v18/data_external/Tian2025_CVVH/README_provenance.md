@@ -10,17 +10,15 @@ doi:10.1007/s10096-025-05343-x
 
 ## Legal basis for use — DIFFERENT FROM EVERY OTHER FILE IN THIS DIRECTORY
 
-**This is NOT an open-access article.** It was retrieved 12 August 2026 via the user's own New York
-University institutional library subscription, accessed through the user's personal, already
-logged-in browser session (Claude only navigated pages the user was already authenticated on; no
-credentials of any kind were entered or handled). The page confirmed "Access provided by NEW YORK
-UNIVERSITY LIBRARIES" before the PDF was downloaded.
+**This is NOT an open-access article.** It was retrieved 12 August 2026 through the author's New York
+University institutional library subscription, in the author's own authenticated browser session. The
+page confirmed "Access provided by NEW YORK UNIVERSITY LIBRARIES" before the PDF was downloaded.
 
-This is legitimate personal access for the user's own scholarly research, exactly as reading the paper
+This is legitimate personal access for the author's own scholarly research, exactly as reading the paper
 in a library would be — **but it is not a licence to redistribute the PDF.** Consequently:
 
 - The PDF (`Tian2025_EJCMID_s10096-025-05343-x_SUBSCRIPTION-ACCESS.pdf`) is kept in this **local
-  development directory only**, for the user's own reference and for building the extracted-data CSV
+  development directory only**, for the author's own reference and for building the extracted-data CSV
   below.
 - **This PDF, and this PDF alone in `data_external/`, must be excluded from every GitHub push**, on
   the same footing as `audit/extracted/` and `correspondence/` (see the top-level `README.md`). It is

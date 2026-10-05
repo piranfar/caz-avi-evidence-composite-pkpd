@@ -9,9 +9,9 @@ studies and a parametric time-to-event analysis.*
 
 ## Legal basis for use — subscription access, same footing as Tian2025_CVVH/
 
-Retrieved 12 August 2026 via the user's own New York University institutional library subscription
-(Oxford Academic / British Society for Antimicrobial Chemotherapy journal), through the user's
-personal, already-authenticated browser session. No credentials were entered or handled by Claude.
+Retrieved 12 August 2026 through the author's New York University institutional library subscription
+(Oxford Academic / British Society for Antimicrobial Chemotherapy journal), in the author's own
+authenticated browser session.
 
 **This PDF must be excluded from every GitHub push**, exactly like
 `Tian2025_CVVH/Tian2025_EJCMID_..._SUBSCRIPTION-ACCESS.pdf` — see the top-level `README.md`'s

@@ -21,8 +21,7 @@
 > simulation study on published parameters has a novelty ceiling, what have comparable bodies of work
 > actually done about it?*
 
-**Decision taken (author, this session):** abandon the current IJAA submission
-(IJAA-S-26-02124) rather than revise it; build both new models; maximise novelty.
+**Decision taken (author):** build both new models.
 
 ---
 
@@ -172,8 +171,7 @@ This is precisely the population of the primary scenario. If obtained:
 
 That combination is unambiguously a top-tier contribution. Two things make it plausible: the same
 group already publishes complete patient-level tables in their 2023 paper, so they are demonstrably
-willing to share; and **abandoning the current submission removes the time pressure** that made a
-2-3 month wait impossible.
+willing to share; and **without a fixed deadline**, a 2-3 month wait for their data is acceptable.
 
 Priority order for data requests:
 1. **Bologna** (Gatti `milo.gatti2@unibo.it`, Pea) — the primary-scenario population.

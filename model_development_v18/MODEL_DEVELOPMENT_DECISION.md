@@ -17,9 +17,8 @@
 
 > ## SUPERSEDED IN PART — see §6, added after author review
 >
-> The author has since decided to **abandon the current IJAA submission** rather than revise it, and
-> to build **both** models. Removing the submission deadline changed the feasibility of Candidate A,
-> and a subsequent identifiability test changed its verdict. **§2 Candidate A is superseded by §6.**
+> The author has since decided to build **both** models. Without a fixed deadline the feasibility of
+> Candidate A changed, and a subsequent identifiability test changed its verdict. **§2 Candidate A is superseded by §6.**
 > Everything else in this document stands. See also `NOVELTY_STRATEGY.md`.
 
 ---
@@ -289,11 +288,9 @@ a frozen design is regenerated).
 
 ## 5. What is needed before Phase 4 begins
 
-**Two questions only the author can answer:**
+**One question only the author can answer:**
 
-1. **The manuscript is under active submission** (IJAA-S-26-02124, revision 3). Should this revision
-   be prepared as a new version of that submission, or held until the editor responds?
-2. **Should the data request to the Benítez-Cano group be sent?** It is drafted and ready. If sent
+1. **Should the data request to the Benítez-Cano group be sent?** It is drafted and ready. If sent
    and granted, Candidate A and true Candidate B become feasible and the scope changes substantially.
    If not sent, the plan above stands unchanged.
 
@@ -309,9 +306,8 @@ a frozen design is regenerated).
 
 Two things.
 
-**The submission deadline is gone.** The author has abandoned IJAA-S-26-02124. A three-month wait
-for author-provided data, previously impossible, is now acceptable — which changes what is worth
-attempting.
+**The deadline is gone.** A three-month wait for author-provided data, previously impossible, is now
+acceptable — which changes what is worth attempting.
 
 **An identifiability test was run, and Candidate A passed it.** §2 rejected a new population PK model
 on the grounds that 29 patients from two mismatched cohorts could not support one. That reasoning

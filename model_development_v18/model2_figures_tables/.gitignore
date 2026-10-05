@@ -1,0 +1,3 @@
+# Prose drafts are kept out of this directory; figures and tables are published.
+# The leading slash blocks .md files in this directory only, so tables/*.md still publish.
+/*.md

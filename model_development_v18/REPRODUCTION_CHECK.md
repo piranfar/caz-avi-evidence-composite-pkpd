@@ -312,7 +312,7 @@ repository match this package could not be verified locally and must be checked 
 | 7 | **Moderate** | Not a Git repository; no provenance for post-freeze edits | initialise Git; commit the frozen state before further work |
 | 8 | **Minor** | Manuscript prints 67.1% where the frozen output holds 67.2% | correct to match the frozen output |
 | 9 | **Minor** | `revision_support/primary_pta_results.csv` is a regenerated output masquerading as the frozen reference | remove or rename; keep references in `data/reference/` only |
-| 10 | **Minor** | Three inconsistent author affiliations across manuscript, cover letter and Editorial Manager record | reconcile before resubmission |
+| 10 | **Minor** | Three inconsistent author affiliations across manuscript, cover letter and submission record | reconcile |
 
 ---
 

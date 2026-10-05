@@ -1,4 +1,4 @@
-"""The three tables for the JAC draft, built from analysis outputs rather than typed.
+"""The three Model 2 tables, built from analysis outputs rather than typed.
 
   Table 1  clearance correlation -> induced attainment correlation, against the
            Frechet-Hoeffding bound and the fraction of it reached
@@ -6,8 +6,7 @@
            scenario and assay imprecision
   Table 3  EVPPI ranking across uncertain inputs, for both decisions
 
-Each is written as CSV (for the submission system) and as Markdown (to paste into the
-draft). Nothing is hand-entered: every cell traces to a file in outputs/, so the tables
+Each is written as CSV and as Markdown. Nothing is hand-entered: every cell traces to a file in outputs/, so the tables
 cannot drift from the analysis the way typed ones do.
 
 Writes only into model_development_v18/.
@@ -24,7 +23,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "outputs")
-OUT = os.path.join(HERE, "..", "manuscript_JAC", "tables")
+OUT = os.path.join(HERE, "..", "model2_figures_tables", "tables")
 
 
 def read(name):
@@ -130,7 +129,7 @@ def table3():
 
 
 def main():
-    print("Building JAC tables")
+    print("Building Model 2 tables")
     table1()
     table2()
     table3()

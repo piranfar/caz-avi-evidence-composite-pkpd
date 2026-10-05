@@ -1,4 +1,4 @@
-"""Publication figures for the JAC draft.
+"""Figures for the Model 2 analyses.
 
 Three figures, each generated from data rather than redrawn by hand:
 
@@ -53,7 +53,7 @@ import model2_monitoring as M      # noqa: E402
 import reproduce_primary_run as P  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT_DIR = os.path.join(HERE, "..", "manuscript_JAC", "figures")
+OUT_DIR = os.path.join(HERE, "..", "model2_figures_tables", "figures")
 DATA = os.path.join(HERE, "..", "outputs")
 
 BLUE, ORANGE = "#2a78d6", "#eb6834"

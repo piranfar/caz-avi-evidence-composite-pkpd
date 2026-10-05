@@ -52,7 +52,7 @@ used standalone without that dependency satisfied.
 That model exists in **two different locations depending on which repository you cloned**, and this
 package finds either automatically, preferring the first:
 
-1. `revision_support/reproduce_primary_run.py` — the local development layout of the full IJAA
+1. `revision_support/reproduce_primary_run.py` — the local development layout of the full
    submission package. Its frozen reference table (`revision_support/outputs/primary_pta_results.csv`)
    is matched to floating-point precision (tolerance 0.0) — verified repeatedly throughout this
    project.
