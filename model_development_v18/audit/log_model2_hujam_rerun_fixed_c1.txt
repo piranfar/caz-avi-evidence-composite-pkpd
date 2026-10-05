@@ -1,68 +1,68 @@
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
-E:\Github Project\IJAA_submission_package_v16\model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
+model_development_v18\code\model2_hujam.py:327: RankWarning: Polyfit may be poorly conditioned
   np.polyval(np.polyfit(xs, Uc[:, k], degree), xs)
 ============================================================================
 MODEL 2 — HU-JAM

@@ -2,7 +2,7 @@
 
 Development directory for the analyses that followed the evidence-composite manuscript in the
 repository root.
-**Nothing in `IJAA_submission_package_v16` outside this directory has been modified** — verified by
+**Nothing in the v16 package outside this directory has been modified** — verified by
 checksum against `FILE_INVENTORY.csv` after every change in this directory.
 
 **Status, updated 12 August 2026:**

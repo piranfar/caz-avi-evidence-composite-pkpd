@@ -2,12 +2,12 @@
 
 **Project:** Avibactam Target Selection Drives Joint Target Attainment During Continuous-Infusion
 Ceftazidime-Avibactam: A Pharmacometric Simulation
-**Package audited:** `E:\Github Project\IJAA_submission_package_v16`
+**Package audited:** the v16 manuscript package
 **Date of check:** 11 August 2026
 **Auditor environment:** Windows 11 Pro 26200, Python 3.14.6, NumPy 2.5.0, SciPy 1.18.0,
 pandas 3.0.3, Matplotlib 3.11.1 (installed during audit), Node.js v24.16.0,
 `@napi-rs/canvas` ^1.0.5, `sharp` ^0.35.3 (installed during audit).
-**Rule observed:** nothing in `IJAA_submission_package_v16` was modified. Every reproduction run was
+**Rule observed:** nothing in the v16 package was modified. Every reproduction run was
 performed on a copy of `revision_support/` in a scratch sandbox. The only additions to the package
 are inside `model_development_v18/`.
 
@@ -37,8 +37,8 @@ and `inputs/`. **None of the three exists anywhere in the package, or anywhere o
 ```
 FileNotFoundError: Could not locate a data directory containing 'reference' and 'inputs'. Looked in:
   E:\Github Project\data
-  E:\Github Project\IJAA_submission_package_v16\data
-  E:\Github Project\IJAA_submission_package_v16\CAZ_AVI_Local_First_Reconstruction_v1\data
+  <package root>\data
+  <package root>\CAZ_AVI_Local_First_Reconstruction_v1\data
 ```
 
 Four files are missing:
@@ -328,4 +328,4 @@ repository match this package could not be verified locally and must be checked 
 > third party downloading it cannot run ten of the twelve analysis scripts, and the published
 > checksum manifest fails on four of fifty-five artifacts. These are packaging and documentation
 > defects. They do not cast doubt on the reported results, but they do defeat the reproducibility
-> claim the paper makes for itself, and they must be fixed before any resubmission.
+> claim the paper makes for itself, and they must be fixed.

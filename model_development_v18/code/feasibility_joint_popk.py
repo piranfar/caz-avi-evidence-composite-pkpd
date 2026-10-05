@@ -10,7 +10,7 @@ from scipy.optimize import least_squares
 from scipy import stats
 
 sys.stdout.reconfigure(encoding="utf-8")
-D = r"E:/Github Project/IJAA_submission_package_v16/model_development_v18/data_external/dryad_Li2025_CRRT"
+D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data_external", "dryad_Li2025_CRRT")
 
 TAU = 8.0
 

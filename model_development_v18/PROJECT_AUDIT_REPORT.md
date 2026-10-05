@@ -2,8 +2,8 @@
 
 **Manuscript:** Avibactam Target Selection Drives Joint Target Attainment During Continuous-Infusion
 Ceftazidime-Avibactam: A Pharmacometric Simulation
-**Author:** Vahhab Piranfar · **Target journal:** International Journal of Antimicrobial Agents
-**Package audited:** `E:\Github Project\IJAA_submission_package_v16` (156 files, 66.9 MB)
+**Author:** Vahhab Piranfar
+**Package audited:** the v16 manuscript package (156 files, 66.9 MB)
 **Audit date:** 11 August 2026
 **Companion documents:** `FILE_INVENTORY.csv`, `RESULT_PROVENANCE_MATRIX.csv`, `REPRODUCTION_CHECK.md`
 
@@ -42,13 +42,13 @@ established from timestamps, content and checksums.
 
 | Deliverable | Authoritative file | Modified | Note |
 |---|---|---|---|
-| **Manuscript** | `Piranfar_CAZ-AVI_IJAA_Original_Article_v17.docx` | 11 Aug 10:07 | **v17, despite the folder being named v16** |
-| Manuscript PDF | `Piranfar_CAZ-AVI_IJAA_Original_Article_v17.pdf` | 11 Aug 10:08 | |
-| Tables | `Tables_IJAA.docx` | 5 Aug 17:26 | Tables 1-6 with data, not legends only |
+| **Manuscript** | `Piranfar_CAZ-AVI_*_Original_Article_v17.docx` | 11 Aug 10:07 | **v17, despite the folder being named v16** |
+| Manuscript PDF | `Piranfar_CAZ-AVI_*_Original_Article_v17.pdf` | 11 Aug 10:08 | |
+| Tables | `Tables_*.docx` | 5 Aug 17:26 | Tables 1-6 with data, not legends only |
 | Supplementary | `Supplementary_Tables_S1-S21_v13.xlsx` | 4 Aug 14:43 | 22 sheets |
 | Figures | `Figures/Figure_1..6_*.png` | 5 Aug | byte-identical to `revision_support/figures/` sources |
-| Cover letter | `Cover_Letter_IJAA_v16.docx` / `.pdf` | 5 Aug 17:31 | |
-| Highlights | `Highlights_IJAA.docx` / `.pdf` | 5 Aug | |
+| Cover letter | `Cover_Letter_*_v16.docx` / `.pdf` | 5 Aug 17:31 | |
+| Highlights | `Highlights_*.docx` / `.pdf` | 5 Aug | |
 | Graphical abstract | `Graphical_Abstract_..._v21_300dpi_Print.png` / `.pdf` | 5 Aug 15:03 | |
 | Analysis code | `revision_support/*.py`, `*.mjs` | 2-4 Aug | 32 Python + 6 Node scripts |
 | Frozen outputs | `revision_support/outputs/*.csv` | 2-4 Aug | 60 CSVs + `VERIFICATION_LOG.txt` |
@@ -59,7 +59,7 @@ established from timestamps, content and checksums.
   `Supplementary_Tables_S1-S9 V5.xlsx` (9 sheets, superseded by the 22-sheet v13 workbook).
 - `revision_support/outputs/v3_before_*.docx`, `v3_final.md`, `v3_readable.md` — pre-edit snapshots.
 - `revision_support/مقاله_فارسی_v5.md` — a 67 kB Persian-language version, with its builder
-  `build_persian_docx.py`. Not part of the IJAA submission.
+  `build_persian_docx.py`. Not part of the manuscript package.
 - `revision_support/apply_*.py`, `fix_v9.py`, `trim_v9.py`, `sync_*.py`, `organize_repo.py` — 15
   one-shot manuscript-editing scripts. **These are document-mutation history, not analysis code**,
   and should not be shipped as "analysis code" in a reproducibility repository.
@@ -142,7 +142,7 @@ Full detail in `REPRODUCTION_CHECK.md`. Summary:
 
 ## 5. Discrepancies requiring disclosure before any result is relied upon
 
-Ordered by severity. Items 1-4 must be fixed before resubmission; 5-10 should be.
+Ordered by severity. Items 1-4 must be fixed; 5-10 should be.
 
 **1 — Critical. The reproducibility claim is not currently satisfiable by a reader.**
 The manuscript states that code and frozen outputs are available for reproduction. A reader who
@@ -273,7 +273,7 @@ obtaining data from authors.
 
 **Before any new modelling work:**
 
-1. Initialise Git in `IJAA_submission_package_v16`, commit the current state untouched as the
+1. Initialise Git in the v16 package, commit the current state untouched as the
    baseline, and work only in `model_development_v18/` thereafter.
 2. Verify whether `https://github.com/piranfar/caz-avi-evidence-composite-pkpd` contains the missing
    `data/inputs/` and `data/reference/` directories. If it does, this audit's item 1 is a packaging

@@ -1,6 +1,6 @@
 """Is the ELF penetration ratio the project applies valid at the concentrations it applies it to?
 
-The submission package applies FIXED ELF/plasma penetration ratios of 0.52 (ceftazidime)
+The primary analysis applies FIXED ELF/plasma penetration ratios of 0.52 (ceftazidime)
 and 0.42 (avibactam), cited to Dimelow 2018 (Drugs R D 18:221-30, doi 10.1007/s40268-018-0241-0).
 Those numbers are in the source and are quoted correctly.
 
