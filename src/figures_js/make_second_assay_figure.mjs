@@ -5,7 +5,7 @@ import { createCanvas } from "@napi-rs/canvas";
 import sharp from "sharp";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const csvPath = path.join(here, "outputs", "critique2_second_assay_operating.csv");
+const csvPath = path.join(here, "outputs", "targets_second_assay_operating.csv");
 const outPath = path.join(here, "figures", "fig_second_assay_redesigned.png");
 
 function parseCsv(text) {

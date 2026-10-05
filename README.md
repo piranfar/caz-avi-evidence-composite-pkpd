@@ -39,14 +39,14 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 python src/cazavi/cazavi_analyses.py all --verify
-python src/cazavi/reviewer_response_analyses.py
+python src/cazavi/threshold_analyses.py
 python src/cazavi/dose_escalation_analyses.py
 python src/cazavi/avibactam_evidence_table.py
 python src/cazavi/scope_extension_analyses.py
 python src/cazavi/prescriptive_analyses.py
 python src/cazavi/structural_uncertainty.py
-python src/cazavi/critique_response.py
-python src/cazavi/critique2_response.py
+python src/cazavi/robustness_checks.py
+python src/cazavi/target_checks.py
 python src/cazavi/make_figures.py
 python src/cazavi/make_structural_figure.py
 python src/cazavi/make_v9_figures.py
@@ -106,14 +106,14 @@ other than the platform.
 |---|---|
 | `reproduce_primary_run.py` | The primary Monte Carlo model, implemented from the published equations with nothing fitted |
 | `cazavi_analyses.py` | CFR, convergence, multi-seed, deterministic and probabilistic sensitivity |
-| `reviewer_response_analyses.py` | Analyses added at peer review |
+| `threshold_analyses.py` | Avibactam threshold sweep, the lowest renal class with and without patients likely to need renal replacement therapy, and Monte Carlo precision |
 | `dose_escalation_analyses.py` | Dose sweep at the breakpoint, suppression proxy, accumulation half-life |
 | `avibactam_evidence_table.py` | Where the experimental support for an avibactam threshold actually sits |
 | `scope_extension_analyses.py` | ICU renal mix, augmented clearance, variable protein binding, lung penetration |
 | `prescriptive_analyses.py` | The dose each subject needs, and the grid of renal class against MIC |
 | `structural_uncertainty.py` | The same simulation under four published population PK models |
-| `critique_response.py` | Tests of the first eight objections raised in review, including the identity check |
-| `critique2_response.py` | Free versus total avibactam target, three definitions of the limiting component, the second assay as a classifier, and the population weighting |
+| `robustness_checks.py` | Robustness checks of the window and the exposure ceiling, including the identity check |
+| `target_checks.py` | Free versus total avibactam target, three definitions of the limiting component, the second assay as a classifier, and the population weighting |
 | `add_icu_elf_scenario.py` | Site-of-infection scenarios using the epithelial lining fluid penetration ratios measured in the randomized ICU pneumonia trial |
 | `v10_analyses.py` | Penetration drawn per subject, the dependence between the two penetration ratios, and the second-assay operating-characteristic figure |
 
@@ -136,11 +136,11 @@ the lowest class upward.
 An earlier draft reported a "therapeutic window" and the proportion of subjects
 placeable inside it. Individual clearance cancels from both sides of that
 placement test, so the proportion is an identity in the MIC — 100% or 0% for the
-whole cohort at once — and carries no simulated information. `critique_response.py`
-demonstrates this directly (`data/processed/critique_a_window_identity.csv`,
+whole cohort at once — and carries no simulated information. `robustness_checks.py`
+demonstrates this directly (`data/processed/robustness_a_window_identity.csv`,
 where the distinct-value count is 1 in every row). The claim, its figure and its
 supplementary sheet were withdrawn; the robustness analyses that replaced it are
-in `critique_b`–`critique_f`.
+in `robustness_b`–`robustness_f`.
 
 ## Licence
 

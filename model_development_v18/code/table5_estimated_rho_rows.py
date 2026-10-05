@@ -1,7 +1,7 @@
 """Non-RRT continuous-infusion comparator: classification of avibactam attainment from a single
 ceftazidime concentration, at the source-model correlation and at the CRRT estimate and its bounds.
 
-The classifier is the one defined in critique2_response.py (second_assay_proper):
+The classifier is the one defined in target_checks.py (second_assay_proper):
 a population of critically ill adults without renal replacement therapy, simulated from Cojutti et al
 (J Antimicrob Chemother 2024;79:2801-8), receiving continuous infusion, with the measured ceftazidime
 steady-state concentration carrying 0%, 10% or 20% error. Only the assumed correlation changes
@@ -59,7 +59,7 @@ def css(regimen, cl_caz, cl_avi):
 
 
 def operating_characteristics(rho, role, cv, rng):
-    """The classifier exactly as defined in critique2_response.second_assay_proper."""
+    """The classifier exactly as defined in target_checks.second_assay_proper."""
     pop = draw_population(N_PER_CLASS, PRIMARY_SEED)
     tp = fp = tn = fn = 0
     for regimen in SELECTED_REGIMENS:

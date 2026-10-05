@@ -102,7 +102,7 @@ def individualised():
 
 
 def second_assay():
-    rows = sorted(read("critique_e_second_assay.csv"), key=lambda r: float(r["rho"]))
+    rows = sorted(read("robustness_e_second_assay.csv"), key=lambda r: float(r["rho"]))
     rho = [float(r["rho"]) for r in rows]
     miss = [float(r["avibactam_status_misclassified_pct"]) for r in rows]
     cv = [float(r["avi_caz_ratio_cv_pct"]) for r in rows]

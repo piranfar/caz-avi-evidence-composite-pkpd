@@ -168,7 +168,7 @@ def penetration_dependence(seed=PRIMARY_SEED):
 
 
 def second_assay_figure():
-    with open(os.path.join(OUT, "critique2_second_assay_operating.csv")) as fh:
+    with open(os.path.join(OUT, "targets_second_assay_operating.csv")) as fh:
         rows = list(csv.DictReader(fh))
     rhos = sorted({float(r["rho"]) for r in rows})
     cvs = sorted({float(r["assay_cv_pct"]) for r in rows})

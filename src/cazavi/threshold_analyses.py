@@ -1,9 +1,9 @@
-"""Analyses added in response to peer review.
+"""Avibactam threshold, lowest renal class and Monte Carlo precision.
 
-Three questions the reviewed draft could not answer:
+Three questions the primary analysis leaves open:
 
-1. The avibactam target. The draft used fCss >= 4 mg/L, the target adopted by the
-   continuous-infusion TDM literature, and reported that avibactam limits joint
+1. The avibactam target. The primary analysis uses fCss >= 4 mg/L, the target adopted by
+   the continuous-infusion TDM literature, and finds that avibactam limits joint
    attainment. But 4 mg/L is the fixed avibactam concentration used in
    susceptibility testing, whereas the registrational PK/PD analyses used a
    threshold of 1 mg/L. Since the one-at-a-time analysis already ranked this
@@ -22,7 +22,7 @@ Three questions the reviewed draft could not answer:
    so the reported precision needs quantifying.
 
 Usage:
-    python reviewer_response_analyses.py
+    python threshold_analyses.py
 """
 
 from __future__ import annotations

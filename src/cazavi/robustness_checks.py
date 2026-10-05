@@ -1,8 +1,6 @@
-"""Test the eight objections raised against the v8 manuscript.
+"""Robustness checks of the therapeutic window and the exposure ceiling.
 
-Each is either confirmed, partly confirmed, or refuted by computation rather
-than by argument. Nothing here is written into the manuscript; this establishes
-what is true first.
+Each question is settled by computation: confirmed, partly confirmed, or refuted.
 
 A  Is the therapeutic window a simulation result or an identity?
 B  Does restricting the cohort to EKFC >= 15 overturn "the ceiling binds first"?
@@ -13,7 +11,7 @@ E  Under rho = 0.94, how much does the second assay add?
 F  What does avibactam do in renal impairment, given it carries no ceiling?
 
 Usage:
-    python critique_response.py
+    python robustness_checks.py
 """
 
 from __future__ import annotations
@@ -106,7 +104,7 @@ def test_a():
     for cls, pct, med, nd in lic:
         print(f"     {cls:9} within licensed at MIC 8: {pct:5.1f}%  "
               f"median {med:5.2f} g/day  ({nd} distinct values -> genuine)")
-    write_csv(rows, os.path.join(OUT, "critique_a_window_identity.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_a_window_identity.csv"))
     return degenerate
 
 
@@ -144,7 +142,7 @@ def test_b():
         n_first = sum(1 for r in rows if r["cohort"] == label and r["ceiling_first"] == "yes")
         print(f"   {label:12} population exceedance {w:5.2f}%   ceiling binds first in "
               f"{n_first}/5 classes")
-    write_csv(rows, os.path.join(OUT, "critique_b_rrt_exclusion.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_b_rrt_exclusion.csv"))
     return rows
 
 
@@ -172,7 +170,7 @@ def test_c():
               f"{min(exs):5.1f}–{max(exs):5.1f}%" if exs else "")
     print("   VERDICT: if the ordering disappears at low CV it is a variance result,")
     print("            not a statement about ceftazidime–avibactam.")
-    write_csv(rows, os.path.join(OUT, "critique_c_variance.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_c_variance.csv"))
     return rows
 
 
@@ -196,7 +194,7 @@ def test_d():
                      if r["exposure_ceiling_mg_l"] == tox and r["exceedance_cutoff_pct"] == c)
                 for c in (5.0, 15.0, 30.0)]
         print(f"   {tox:8.0f}  | " + " | ".join(f"  {v}/5  " for v in vals))
-    write_csv(rows, os.path.join(OUT, "critique_d_ceiling_sensitivity.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_d_ceiling_sensitivity.csv"))
     return rows
 
 
@@ -232,7 +230,7 @@ def test_e():
               f"(AVI:CAZ Css ratio CV {100.0*float(np.std(r)/np.mean(r)):4.1f}%)")
     print("   VERDICT: a low misclassification rate at rho = 0.94 means the paper's own")
     print("            correlation makes the second assay largely predictable.")
-    write_csv(rows, os.path.join(OUT, "critique_e_second_assay.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_e_second_assay.csv"))
     return rows
 
 
@@ -258,7 +256,7 @@ def test_f():
     print("   The licensed regimens are renally adjusted, which is why avibactam does not")
     print("   run away in the low classes; the asymmetry is that no published avibactam")
     print("   exposure limit exists to test against.")
-    write_csv(rows, os.path.join(OUT, "critique_f_avibactam_exposure.csv"))
+    write_csv(rows, os.path.join(OUT, "robustness_f_avibactam_exposure.csv"))
     return rows
 
 

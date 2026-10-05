@@ -21,8 +21,8 @@ jobs:
           python src/cazavi/scope_extension_analyses.py
           python src/cazavi/prescriptive_analyses.py
           python src/cazavi/structural_uncertainty.py
-          python src/cazavi/critique_response.py
-          python src/cazavi/critique2_response.py
+          python src/cazavi/robustness_checks.py
+          python src/cazavi/target_checks.py
           python src/cazavi/add_icu_elf_scenario.py
       - name: Regenerate figures
         run: |

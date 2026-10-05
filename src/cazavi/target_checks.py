@@ -1,4 +1,4 @@
-"""Test the second round of objections, where computation can settle them.
+"""Target definition, limiting component, second assay and population weighting.
 
 1  Free versus total avibactam. The 4 mg/L value is a total concentration in a
    broth well. The model applies it to a free concentration. How much does that
@@ -21,7 +21,7 @@
    reported distribution.
 
 Usage:
-    python critique2_response.py
+    python target_checks.py
 """
 
 from __future__ import annotations
@@ -88,7 +88,7 @@ def free_vs_total(pop):
     d = [r["difference_pp"] for r in rows]
     print(f"   Reading 4 mg/L as a total rather than a free concentration raises "
           f"avibactam attainment by {min(d):.1f}–{max(d):.1f} pp.")
-    write_csv(rows, os.path.join(OUT, "critique2_free_vs_total.csv"))
+    write_csv(rows, os.path.join(OUT, "targets_free_vs_total.csv"))
     return rows
 
 
@@ -153,7 +153,7 @@ def limiting_definitions(pop):
               f"  {'/'.join(sorted(c)):>11}  {agree}/{len(sel)}")
     n_agree = sum(1 for r in rows if r["definitions_agree"])
     print(f"   The three definitions agree in {n_agree} of {len(rows)} regimen-MIC cells.")
-    write_csv(rows, os.path.join(OUT, "critique2_limiting_definitions.csv"))
+    write_csv(rows, os.path.join(OUT, "targets_limiting_definitions.csv"))
     return rows
 
 
@@ -216,7 +216,7 @@ def second_assay_proper(seed=PRIMARY_SEED, assay_cv=(0.0, 0.10, 0.20)):
               f"{r['sensitivity_pct']:7.1f}%{r['specificity_pct']:7.1f}%"
               f"{r['ppv_pct']:7.1f}%{r['npv_pct']:7.1f}%"
               f"{r['false_reassurance_pct']:18.1f}%")
-    write_csv(rows, os.path.join(OUT, "critique2_second_assay_operating.csv"))
+    write_csv(rows, os.path.join(OUT, "targets_second_assay_operating.csv"))
     return rows
 
 
@@ -257,7 +257,7 @@ def population_weighting(dists, seed=PRIMARY_SEED):
         print(f"   {r['distribution_id']:28} source-cohort weights "
               f"{r['source cohort (used)']:5.1f}%   continuous draw "
               f"{r['continuous lognormal']:5.1f}%   Δ {r['difference_pp']:+.1f} pp")
-    write_csv(rows, os.path.join(OUT, "critique2_population_weighting.csv"))
+    write_csv(rows, os.path.join(OUT, "targets_population_weighting.csv"))
     return rows
 
 

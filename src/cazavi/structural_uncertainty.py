@@ -2,7 +2,7 @@
 
 Every number in this paper so far comes from one set of clearance equations.
 That is the ordinary situation in pharmacometric simulation and it is also the
-first thing a reviewer will press on, so it is worth settling rather than
+first thing a reader will press on, so it is worth settling rather than
 conceding.
 
 Four independently derived adult population PK models for this combination are
@@ -421,7 +421,7 @@ def robustness_ledger(pta, cross, window_rows, cfr):
     # clearance cancels from the placement test, so the statistic takes one value
     # for the whole cohort and cannot be corroborated by varying the model. The
     # manuscript withdrew the claim; the ledger must not reinstate it. The
-    # evidence for the withdrawal is kept in critique_response.py, test A.
+    # evidence for the withdrawal is kept in robustness_checks.py, test A.
 
     # 6. population CFR
     def pop_cfr(m):

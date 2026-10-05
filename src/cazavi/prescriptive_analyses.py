@@ -26,7 +26,7 @@ screen are both proportional to their clearance, so clearance cancels and the
 test reduces to MIC <= TOX_THRESHOLD * FU_CAZ / CAZ_TARGET. Every subject
 returns the same answer and the proportion is 100% or 0% for the whole cohort at
 once. The `in_window_any_dose_pct` columns below are retained only so the
-withdrawal can be checked; see critique_response.py, test A.
+withdrawal can be checked; see robustness_checks.py, test A.
 
 Usage:
     python prescriptive_analyses.py
