@@ -1,0 +1,17 @@
+  wrote model_development_v18\outputs\crrt_parameter_uncertainty_draws.csv (500 rows)
+  standard errors on the estimation scale: log_CL_caz 0.0458, log_CL_avi 0.0317, log_V_caz 0.0694, log_V_avi 0.0563, log_omega_CL_caz 0.1620, log_omega_CL_avi 0.1680, log_omega_V_caz 0.2052, log_omega_V_avi 0.2513, atanh_corr_CL 0.2354, atanh_corr_V 0.3784, log_sigma_caz 0.0817, log_sigma_avi 0.0827, atanh_corr_residual 0.1192
+  wrote model_development_v18\outputs\crrt_parameter_uncertainty.csv (5 rows)
+    {'quantity': 'below_target_pct_2p5_g_q8h', 'n_draws': 500, 'fixed_parameter_note': 'see crrt_classifier.csv', 'median': 0.005, 'p2_5': 0.0, 'p97_5': 0.22, 'mean': 0.029, 'status': 'done'}
+    {'quantity': 'wrongly_reassured_pct_2p5_g_q8h', 'n_draws': 500, 'fixed_parameter_note': 'see crrt_classifier.csv', 'median': 0.005, 'p2_5': 0.0, 'p97_5': 0.208, 'mean': 0.029, 'status': 'done'}
+    {'quantity': 'below_target_pct_1p25_g_q8h', 'n_draws': 500, 'fixed_parameter_note': 'see crrt_classifier.csv', 'median': 4.425, 'p2_5': 0.787, 'p97_5': 11.566, 'mean': 4.906, 'status': 'done'}
+    {'quantity': 'wrongly_reassured_pct_1p25_g_q8h', 'n_draws': 500, 'fixed_parameter_note': 'see crrt_classifier.csv', 'median': 4.168, 'p2_5': 0.782, 'p97_5': 9.221, 'mean': 4.412, 'status': 'done'}
+    {'quantity': 'rho_of_draws', 'n_draws': 500, 'fixed_parameter_note': '', 'median': 0.593, 'p2_5': 0.165, 'p97_5': 0.815, 'mean': 0.557, 'status': 'done'}
+  wrote model_development_v18\outputs\crrt_unbound_fraction_sensitivity.csv (8 rows)
+    {'regimen': '2.5 g q8h', 'analysis': 'attainment', 'fu_avi_true': 0.73, 'fu_avi_classifier': '', 'below_target_pct': 0.06, 'registrational_attainment_pct': 100.0, 'false_reassurance': ''}
+    {'regimen': '1.25 g q8h', 'analysis': 'attainment', 'fu_avi_true': 0.73, 'fu_avi_classifier': '', 'below_target_pct': 21.425, 'registrational_attainment_pct': 100.0, 'false_reassurance': ''}
+    {'regimen': '0.94 g q12h', 'analysis': 'attainment', 'fu_avi_true': 0.73, 'fu_avi_classifier': '', 'below_target_pct': 99.981, 'registrational_attainment_pct': 100.0, 'false_reassurance': ''}
+    {'regimen': '2.5 g q12h', 'analysis': 'attainment', 'fu_avi_true': 0.73, 'fu_avi_classifier': '', 'below_target_pct': 26.761, 'registrational_attainment_pct': 100.0, 'false_reassurance': ''}
+    {'regimen': '1.25 g q8h', 'analysis': 'classification, recalibrated', 'fu_avi_true': 0.73, 'fu_avi_classifier': 0.73, 'below_target_pct': np.float64(21.528), 'registrational_attainment_pct': '', 'false_reassurance': np.float64(15.959)}
+    {'regimen': '1.25 g q8h', 'analysis': 'classification, not recalibrated', 'fu_avi_true': 0.73, 'fu_avi_classifier': 0.92, 'below_target_pct': np.float64(21.415), 'registrational_attainment_pct': '', 'false_reassurance': np.float64(21.244)}
+    {'regimen': '2.5 g q12h', 'analysis': 'classification, recalibrated', 'fu_avi_true': 0.73, 'fu_avi_classifier': 0.73, 'below_target_pct': np.float64(26.763), 'registrational_attainment_pct': '', 'false_reassurance': np.float64(16.702)}
+    {'regimen': '2.5 g q12h', 'analysis': 'classification, not recalibrated', 'fu_avi_true': 0.73, 'fu_avi_classifier': 0.92, 'below_target_pct': np.float64(26.723), 'registrational_attainment_pct': '', 'false_reassurance': np.float64(25.266)}

@@ -1,15 +1,23 @@
 parameter,estimate,ci_low,ci_high,ci_method,note
-CL_caz_L_h,2.5723,,,,
-CL_avi_L_h,3.2234,,,,
-V_caz_L,19.9770,,,,
-V_avi_L,27.0298,,,,
-omega_CL_caz,0.2022,,,,
-omega_CL_avi,0.1411,,,,
-omega_V_caz,0.2673,,,,
-omega_V_avi,0.1994,,,,
-corr_CL_caz_avi,0.7031,0.3797,0.8740,profile likelihood,
-sigma_prop_caz,0.0997,,,,
-sigma_prop_avi,0.0926,,,,
-OFV,-722.3558,,,,"converged on tolerance: True, 2 rounds"
-dOFV_vs_no_correlation,12.4122,,,,"1 df, p = 0.0004265"
-vpc_coverage_pct,82.7,,,,"nominal 90%, seed 20260811"
+CL_caz_L_h,2.575721,,,,
+CL_avi_L_h,3.227623,,,,
+V_caz_L,20.064148,,,,
+V_avi_L,27.360017,,,,
+omega_CL_caz,0.204985,,,,
+omega_CL_avi,0.139108,,,,
+omega_V_caz,0.266575,,,,
+omega_V_avi,0.193612,,,,
+corr_CL_caz_avi,0.588391,0.206075,0.815449,profile likelihood,
+corr_V_caz_avi,0.703354,,,,
+sigma_prop_caz,0.099754,,,,
+sigma_prop_avi,0.093241,,,,
+corr_residual_caz_avi,0.626607,,,,
+OFV,-756.647169,,,,"converged on tolerance: True, 2 rounds"
+dOFV_vs_no_correlation,7.870398,,,,"clearance correlation fixed at 0; 1 df, p = 0.005025"
+dOFV_rho_0.94,18.064778,,,,"clearance correlation fixed at 0.94; 1 df, p = 2.135e-05"
+dOFV_vs_no_residual_correlation,34.291363,,,,"residual correlation fixed at 0; 1 df, p = 4.745e-09"
+dOFV_vs_shared_volume,4.059274,,,,"shared volume deviate; 1 df, p = 0.04393"
+vpc_coverage_pct,86.554622,,,,"206 of 238 observations inside the simulated 90% interval; nominal 90%, seed 20260811"
+vpc_coverage_caz_pct,88.235294,,,,ceftazidime observations
+vpc_coverage_avi_pct,84.873950,,,,avibactam observations
+vpc_coverage_mean_over_bins_pct,82.654221,,,,unweighted mean over sampling-time bins

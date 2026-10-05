@@ -172,6 +172,7 @@ documents how the manuscript's assumptions were tested after submission.
 | `data_external/` | The external evidence base — extracted numeric data and per-source provenance for every published source relied on |
 | `MODEL1_REPORT.md` | A joint mixed-effects estimate of the ceftazidime–avibactam clearance correlation from openly licensed patient-level data |
 | `MODEL2_REPORT.md` | A decision layer over the primary simulation: value of information, misselection and regret, limiting-component probability |
+| `CRRT_ANALYSIS.md` | The clearance correlation during continuous renal replacement therapy, a virtual CRRT population, and classification of avibactam attainment from a ceftazidime concentration |
 | `PREREGISTRATION.md` | A prediction registered before the data needed to test it were held |
 | `REPRODUCTION_CHECK.md`, `PROJECT_AUDIT_REPORT.md` | Verification of the primary package against its own frozen outputs |
 | `figures/`, `model2_figures_tables/` | Figures and tables generated from those analyses |

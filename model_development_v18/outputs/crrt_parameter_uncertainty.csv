@@ -1,0 +1,6 @@
+quantity,n_draws,fixed_parameter_note,median,p2_5,p97_5,mean,status
+below_target_pct_2p5_g_q8h,500,see crrt_classifier.csv,0.005000,0.000000,0.220250,0.029130,done
+wrongly_reassured_pct_2p5_g_q8h,500,see crrt_classifier.csv,0.005000,0.000000,0.207875,0.028630,done
+below_target_pct_1p25_g_q8h,500,see crrt_classifier.csv,4.425000,0.787375,11.565875,4.906230,done
+wrongly_reassured_pct_1p25_g_q8h,500,see crrt_classifier.csv,4.167500,0.782375,9.221000,4.412340,done
+rho_of_draws,500,,0.593313,0.165149,0.815185,0.556922,done

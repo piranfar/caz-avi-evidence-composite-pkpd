@@ -108,7 +108,7 @@ concentrations. The one dataset with true continuous infusion and individual pat
 both analytes in non-RRT patients — which is exactly what Model 1 would need.
 
 **3. The correlation question is still empirically thin.** There remains exactly **one** published
-CAZ–AVI clearance correlation (Cojutti's 0.94). Model 1's 0.703 comes from a CRRT cohort and is not
+CAZ–AVI clearance correlation (Cojutti's 0.94). Model 1's 0.588 comes from a CRRT cohort and is not
 comparable. Knowing that Li 2019 declined to compute one strengthens the *argument* about the gap; it
 does not fill it.
 

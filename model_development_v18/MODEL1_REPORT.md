@@ -1,17 +1,143 @@
 # MODEL 1 — joint ceftazidime/avibactam population PK model
 
-**FINAL. Definitive record of the fitted model.** Where this document and any other document in
+**Current model: section 0 (October 2026).** Sections 1 to 8 are the record of the earlier model;
+where they differ from section 0, section 0 is correct. Where this document and any other document in
 `model_development_v18/` disagree, this one is correct.
 
-**Code:** `code/joint_popk_nlme.py`, `code/model1_finalise.py`, `code/test_model1.py`
+**Code:** `code/joint_popk_nlme.py`, `code/model1_finalise.py`, `code/model1_sbc.py`, `code/test_model1.py`
 **Outputs:** `outputs/model1_final_parameters.csv`, `model1_profile_likelihood.csv`,
 `model1_diagnostics.csv`, `model1_vpc.csv`, `model1_sensitivity.csv`,
-`model1_individual_parameters.csv`
+`model1_individual_parameters.csv`, `model1_parameter_covariance.csv`, `model1_sbc_summary.csv`
 **Figures:** `figures/model1_gof.png`, `figures/model1_vpc.png`
-**Logs:** `audit/log_model1_finalise.txt`, `audit/log_test_model1.txt`
+**Logs:** `audit/log_model1_joint_popk.txt`, `audit/log_model1_finalise.txt`, `audit/log_model1_sbc.txt`,
+`audit/log_test_model1.txt`
 **Data:** Dryad `10.5061/dryad.fxpnvx16s` (CC0), 21 patients, 238 observations.
 
 ---
+
+## 0. Current model (October 2026)
+
+One compartment per drug, as in section 1, with two changes:
+
+- the two volumes have **separate deviates** with their own correlation r_V, instead of one shared
+  deviate;
+- the residual errors of the two drugs measured **in the same sample** are correlated (c), as in the
+  joint model of O'Jeanson et al (Int J Antimicrob Agents 2026;67:107946).
+
+```
+z = [z_CL_caz, z_CL_avi, z_V_caz, z_V_avi]    corr(z_CL_caz, z_CL_avi) = rho,  corr(z_V_caz, z_V_avi) = r_V
+ln C_obs = ln C_pred + sigma * eps            corr(eps_caz, eps_avi) = c within a sample
+```
+
+Both concentrations come from one plasma sample, so error in sampling time, handling and the assay
+run moves them together. With c fixed at 0 the model can only put that shared error into the random
+effects: the earlier model placed it in the volume correlation (estimated at the boundary, 1.000) and
+in ρ.
+
+### Estimates (`outputs/model1_final_parameters.csv`)
+
+| Parameter | Estimate |
+|---|---|
+| CL ceftazidime | 2.576 L/h |
+| CL avibactam | 3.228 L/h |
+| V ceftazidime | 20.06 L |
+| V avibactam | 27.36 L |
+| ω CL ceftazidime | 0.2050 (CV 20.7%) |
+| ω CL avibactam | 0.1391 (CV 14.0%) |
+| ω V ceftazidime | 0.2666 (CV 27.1%) |
+| ω V avibactam | 0.1936 (CV 19.5%) |
+| **ρ, clearance correlation** | **0.588 (95% profile-likelihood interval 0.206 to 0.815)** |
+| r_V, volume correlation | 0.703 |
+| σ ceftazidime, σ avibactam (proportional) | 0.0998, 0.0932 |
+| c, residual correlation | 0.627 |
+| OFV | −756.647 |
+
+r_V happens to equal the earlier estimate of ρ (0.703); the two are different parameters.
+
+| Restriction (likelihood-ratio test, 1 df) | ΔOFV | P |
+|---|---|---|
+| ρ = 0 | 7.87 | 0.005 |
+| **ρ = 0.94** | **18.06** | **2.1 × 10⁻⁵** |
+| c = 0 | 34.29 | 4.7 × 10⁻⁹ |
+| shared volume deviate | 4.06 | 0.044 |
+
+The profile-likelihood interval excludes 0.94. In data simulated at ρ = 0.94 the test rejected
+0.94 in 3 of 50 replicates (empirical type I error 6.0%, Monte Carlo SE
+3.4), so the chi-square P values are calibrated.
+
+### Evaluation
+
+| Analyte | CWRES mean | CWRES SD | \|CWRES\| > 2 |
+|---|---|---|---|
+| Ceftazidime | −0.065 | 1.002 | 5.9% |
+| Avibactam | +0.067 | 1.002 | 5.0% |
+
+Visual predictive check, 1,000 replicates (seed 20260811): 206 of 238 observations
+(86.6%) inside the simulated 90% interval; ceftazidime 88.2%, avibactam
+84.9%. The unweighted mean over sampling-time bins, the statistic quoted in section 3, is
+82.7%.
+
+### Sensitivity analyses (`outputs/model1_sensitivity.csv`)
+
+| Analysis | Variant | ρ |
+|---|---|---|
+| reference | as fitted | 0.588 |
+| infusion duration | all 1 h | 0.686 |
+| infusion duration | all 2 h | 0.595 |
+| infusion duration | all 3 h | 0.452 |
+| variance structure | shared volume deviate | 0.656 (ΔOFV +4.06) |
+| variance structure | 3 deviates, no residual correlation | 0.703 (ΔOFV +34.29) |
+| residual error | SD shared across drugs | 0.588 (ΔOFV +0.16) |
+| leave-one-subject-out | range over 21 refits | 0.511 to 0.653 (median 0.587; most influential subject 5) |
+
+ΔOFV is against the reference fit. Every variant stays below 0.94.
+
+### Estimator checks (`code/model1_sbc.py`, `outputs/model1_sbc_summary.csv`)
+
+50 data sets per scenario, simulated on the observed design and refitted with the
+primary estimator. The replicate file holds 2 rows written twice when an interrupted run was
+resumed; the copies are identical, and the summary counts each replicate once.
+
+| Scenario | True ρ | Mean estimate | Bias (MCSE) | SD | 95% range |
+|---|---|---|---|---|---|
+| correctly specified | 0.588 | 0.584 | −0.004 (0.023) | 0.163 | 0.240 to 0.868 |
+| correct, ρ = 0.94 | 0.940 | 0.936 | −0.004 (0.006) | 0.040 | 0.846 to 0.988 |
+| two-compartment truth | 0.588 | 0.566 | −0.023 (0.024) | 0.167 | 0.171 to 0.804 |
+
+Simulating with two-compartment kinetics shifted the mean estimate by −0.019 (SE 0.033) against the
+correctly specified scenario.
+
+### What changed against the earlier model
+
+- ρ fell from 0.703 (interval 0.380 to 0.874) to 0.588 (0.206 to 0.815). Both intervals exclude 0.94.
+  Without the residual correlation the current code reproduces 0.703 (row "3 deviates, no residual
+  correlation" above).
+- The correction box below argued that two-stage estimates (0.560 to 0.598) were attenuated against
+  0.703. With the residual correlation estimated, the mixed-effects estimate is close to them: the
+  non-compartmental estimate in this cohort is 0.560 (Fisher 95% interval 0.169 to 0.799;
+  `outputs/crrt_data_checks.csv`) and the Gatti 2023 occasions give 0.598. Most of the earlier gap
+  came from correlated residual error, not from regression dilution.
+- Section 4 at the current values (`outputs/table5_estimated_rho_rows.csv`, the manuscript's
+  classifier, ceftazidime measured without error). As section 5 says, the CRRT estimate is not
+  carried into the non-RRT primary analysis; these rows show what it would imply if it applied there.
+
+| ρ | Role | Specificity | NPV | Wrongly reported as attaining |
+|---|---|---|---|---|
+| 0.940 | 0.94, source model (non-RRT) | 77.0% | 83.6% | 3.6% |
+| 0.815 | upper bound | 55.6% | 74.2% | 6.9% |
+| 0.588 | CRRT estimate | 28.6% | 65.5% | 11.2% |
+| 0.206 | lower bound | 11.3% | 56.4% | 13.8% |
+
+- The estimator results in section 6 belong to the earlier model; `outputs/model1_sbc_*.csv` now hold
+  the run above. Outputs of the earlier model are in the repository history.
+- The limitations in section 5 apply unchanged.
+
+The CRRT analysis built on this model is described in `CRRT_ANALYSIS.md`.
+
+---
+
+> Sections 1 to 8 below are the record of the earlier model (August 2026), which shared one volume
+> deviate and fixed the residual correlation at 0.
 
 ## ⚠ Correction to earlier numbers in this project
 

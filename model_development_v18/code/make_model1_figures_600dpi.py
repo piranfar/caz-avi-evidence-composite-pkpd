@@ -3,8 +3,8 @@
 WHY THIS EXISTS SEPARATELY FROM model1_finalise.py
 
 `model1_finalise.py` writes `model1_gof.png` and `model1_vpc.png` at 300 dpi with an in-figure
-title, which is right for a working diagnostic and wrong for a journal. Elsevier wants 600 dpi
-for combination art, no title inside the image (the caption carries it), and a vector copy for
+title, which is right for a working diagnostic and wrong for print. Print needs 600 dpi for
+combination art, no title inside the image (the caption carries it), and a vector copy for
 production. Re-running the fit to change a font size would also be wasteful and would put the
 estimates at risk of drifting.
 
@@ -163,9 +163,11 @@ def main() -> int:
         n = sum(1 for x in diag if x["analyte"] == an)
         cw = np.array([float(x["cwres"]) for x in diag if x["analyte"] == an])
         print(f"  {LABELS[an]:12s} n={n:4d}  CWRES mean {cw.mean():+.3f}  SD {cw.std(ddof=1):.3f}")
-    cov = [float(x["pct_obs_within_sim_90"]) for x in vpc if x.get("pct_obs_within_sim_90")]
-    if cov:
-        print(f"  VPC coverage of the nominal 90% interval: {np.mean(cov):.1f}%")
+    n_in = [int(x["n_obs_within_sim_90"]) for x in vpc if x.get("n_obs_within_sim_90")]
+    n_all = [int(x["n_obs"]) for x in vpc if x.get("n_obs_within_sim_90")]
+    if n_in:
+        print(f"  VPC: {sum(n_in)} of {sum(n_all)} observations inside the simulated 90% interval "
+              f"({100.0 * sum(n_in) / sum(n_all):.1f}%)")
     figure7(diag)
     figure8(vpc)
     return 0

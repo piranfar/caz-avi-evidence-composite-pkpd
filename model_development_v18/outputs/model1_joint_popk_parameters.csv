@@ -1,16 +1,17 @@
 parameter,estimate,rse_pct,ci_low,ci_high,note
-CL ceftazidime (L/h),2.5723,4.5,,,"CRRT cohort, intermittent infusion; does not transfer to the primary scenario"
-CL avibactam (L/h),3.2233,3.2,,,"CRRT cohort, intermittent infusion; does not transfer to the primary scenario"
-V ceftazidime (L),19.9768,6.9,,,"CRRT cohort, intermittent infusion; does not transfer to the primary scenario"
-V avibactam (L),27.0295,5.6,,,"CRRT cohort, intermittent infusion; does not transfer to the primary scenario"
-omega_CL_caz,0.2022,,,,CV 20.4%
-omega_CL_avi,0.1411,,,,CV 14.2%
-omega_V_caz,0.2673,,,,CV 27.2%
-omega_V_avi,0.1994,,,,CV 20.1%
-corr_CL_caz_avi,0.7031,,0.3805,0.8731,CROSS-DRUG clearance correlation; assumed 0.94 in the primary model
-corr_V_caz_avi,1.0000,,,,fixed by construction: shared volume deviate
-sigma_prop_caz,0.0997,,,,proportional residual error
-sigma_prop_avi,0.0926,,,,proportional residual error
-OFV_full,-722.356,,,,
-OFV_null_no_crossdrug,-709.944,,,,
-dOFV,12.412,,,,"likelihood ratio, 1 df, p = 0.0004265"
+CL ceftazidime (L/h),2.575721,4.6,,,
+CL avibactam (L/h),3.227623,3.2,,,
+V ceftazidime (L),20.064148,6.9,,,
+V avibactam (L),27.360017,5.6,,,
+omega_CL_caz,0.204985,,,,CV 20.7%
+omega_CL_avi,0.139108,,,,CV 14.0%
+omega_V_caz,0.266575,,,,CV 27.1%
+omega_V_avi,0.193612,,,,CV 19.5%
+corr_CL_caz_avi,0.588391,,0.210553,0.813284,Wald interval on the Fisher z scale
+corr_V_caz_avi,0.703354,,,,separate volume deviates
+sigma_prop_caz,0.099754,,,,proportional residual error
+sigma_prop_avi,0.093241,,,,proportional residual error
+corr_residual_caz_avi,0.626607,,,,correlation of the 2 drugs' residual errors in the same sample
+OFV_full,-756.647169,,,,
+OFV_null_no_crossdrug,-748.776771,,,,
+dOFV,7.870398,,,,"likelihood ratio, 1 df, p = 0.005025"

@@ -55,6 +55,30 @@ Model 1 variance structure
   PASS  correlated draws reproduce the target correlation
   PASS  the volume deviate is independent of clearance
 
+Model 1 primary model (4 deviates, residual correlation)
+  PASS  build_omega4 round-trips r_cl=0.0, r_v=0.0
+  PASS  build_omega4 is a positive definite correlation matrix at r_cl=0.0, r_v=0.0
+  PASS  clearance and volume blocks are uncorrelated at r_cl=0.0, r_v=0.0
+  PASS  build_omega4 round-trips r_cl=0.59, r_v=0.7
+  PASS  build_omega4 is a positive definite correlation matrix at r_cl=0.59, r_v=0.7
+  PASS  clearance and volume blocks are uncorrelated at r_cl=0.59, r_v=0.7
+  PASS  build_omega4 round-trips r_cl=-0.4, r_v=0.9
+  PASS  build_omega4 is a positive definite correlation matrix at r_cl=-0.4, r_v=0.9
+  PASS  clearance and volume blocks are uncorrelated at r_cl=-0.4, r_v=0.9
+  PASS  build_omega4 round-trips r_cl=0.94, r_v=0.2
+  PASS  build_omega4 is a positive definite correlation matrix at r_cl=0.94, r_v=0.2
+  PASS  clearance and volume blocks are uncorrelated at r_cl=0.94, r_v=0.2
+  PASS  whitened pairs give the exact bivariate normal likelihood at c=0.0
+  PASS  whitened pairs give the exact bivariate normal likelihood at c=0.3
+  PASS  whitened pairs give the exact bivariate normal likelihood at c=0.63
+  PASS  whitened pairs give the exact bivariate normal likelihood at c=-0.5
+  PASS  whitened pairs give the exact bivariate normal likelihood at c=0.95
+  PASS  whitening turns correlated pairs into uncorrelated ones
+  PASS  whitened residuals keep unit variance
+  PASS  primary-model OFV at the reported estimates is -756.647
+  PASS  primary model has 13 parameters
+  PASS  a residual correlation of 1 is rejected rather than crashing
+
 Clearance transformation
   PASS  zero deviates give the typical value
   PASS  clearance is lognormal: exp of a positive deviate raises it

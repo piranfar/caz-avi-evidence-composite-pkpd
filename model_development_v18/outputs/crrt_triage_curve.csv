@@ -1,0 +1,2601 @@
+regimen,scenario,threshold,flagged_pct_of_all,detected_pct_of_below_target
+1.25 g q8h,estimate,0.0,0.0,0.0
+1.25 g q8h,estimate,0.005,0.0,0.0
+1.25 g q8h,estimate,0.01,0.0,0.0
+1.25 g q8h,estimate,0.015,0.0,0.0
+1.25 g q8h,estimate,0.02,0.0,0.0
+1.25 g q8h,estimate,0.025,0.0,0.0
+1.25 g q8h,estimate,0.03,0.0,0.0
+1.25 g q8h,estimate,0.035,0.0,0.0
+1.25 g q8h,estimate,0.04,0.0,0.0
+1.25 g q8h,estimate,0.045,0.0,0.0
+1.25 g q8h,estimate,0.05,0.0,0.0
+1.25 g q8h,estimate,0.055,0.0,0.0
+1.25 g q8h,estimate,0.06,0.0,0.0
+1.25 g q8h,estimate,0.065,0.0,0.0
+1.25 g q8h,estimate,0.07,0.0,0.0
+1.25 g q8h,estimate,0.075,0.0,0.0
+1.25 g q8h,estimate,0.08,0.0,0.0
+1.25 g q8h,estimate,0.085,0.0,0.0
+1.25 g q8h,estimate,0.09,0.0,0.0
+1.25 g q8h,estimate,0.095,0.0,0.0
+1.25 g q8h,estimate,0.1,0.0,0.0
+1.25 g q8h,estimate,0.105,0.0,0.0
+1.25 g q8h,estimate,0.11,0.0,0.0
+1.25 g q8h,estimate,0.115,0.0,0.0
+1.25 g q8h,estimate,0.12,0.0,0.0
+1.25 g q8h,estimate,0.125,0.0,0.0
+1.25 g q8h,estimate,0.13,0.0,0.0
+1.25 g q8h,estimate,0.135,0.0,0.0
+1.25 g q8h,estimate,0.14,0.0,0.0
+1.25 g q8h,estimate,0.145,0.0,0.0
+1.25 g q8h,estimate,0.15,0.0,0.0
+1.25 g q8h,estimate,0.155,0.0,0.0
+1.25 g q8h,estimate,0.16,0.0,0.0
+1.25 g q8h,estimate,0.165,0.0,0.0
+1.25 g q8h,estimate,0.17,0.0,0.0
+1.25 g q8h,estimate,0.175,0.0,0.0
+1.25 g q8h,estimate,0.18,0.0,0.0
+1.25 g q8h,estimate,0.185,0.0,0.0
+1.25 g q8h,estimate,0.19,0.0,0.0
+1.25 g q8h,estimate,0.195,0.0,0.0
+1.25 g q8h,estimate,0.2,0.0,0.0
+1.25 g q8h,estimate,0.205,0.0,0.0
+1.25 g q8h,estimate,0.21,0.0,0.0
+1.25 g q8h,estimate,0.215,0.002,0.048662
+1.25 g q8h,estimate,0.22,0.002,0.048662
+1.25 g q8h,estimate,0.225,0.002,0.048662
+1.25 g q8h,estimate,0.23,0.003,0.072993
+1.25 g q8h,estimate,0.235,0.003,0.072993
+1.25 g q8h,estimate,0.24,0.003,0.072993
+1.25 g q8h,estimate,0.245,0.003,0.072993
+1.25 g q8h,estimate,0.25,0.003,0.072993
+1.25 g q8h,estimate,0.255,0.004,0.097324
+1.25 g q8h,estimate,0.26,0.004,0.097324
+1.25 g q8h,estimate,0.265,0.004,0.097324
+1.25 g q8h,estimate,0.27,0.005,0.097324
+1.25 g q8h,estimate,0.275,0.005,0.097324
+1.25 g q8h,estimate,0.28,0.007,0.145985
+1.25 g q8h,estimate,0.285,0.007,0.145985
+1.25 g q8h,estimate,0.29,0.008,0.170316
+1.25 g q8h,estimate,0.295,0.008,0.170316
+1.25 g q8h,estimate,0.3,0.008,0.170316
+1.25 g q8h,estimate,0.305,0.009,0.194647
+1.25 g q8h,estimate,0.31,0.01,0.218978
+1.25 g q8h,estimate,0.315,0.01,0.218978
+1.25 g q8h,estimate,0.32,0.011,0.243309
+1.25 g q8h,estimate,0.325,0.014,0.26764
+1.25 g q8h,estimate,0.33,0.017,0.316302
+1.25 g q8h,estimate,0.335,0.024,0.364964
+1.25 g q8h,estimate,0.34,0.031,0.486618
+1.25 g q8h,estimate,0.345,0.033,0.486618
+1.25 g q8h,estimate,0.35,0.035,0.510949
+1.25 g q8h,estimate,0.355,0.036,0.53528
+1.25 g q8h,estimate,0.36,0.041,0.632603
+1.25 g q8h,estimate,0.365,0.044,0.705596
+1.25 g q8h,estimate,0.37,0.047,0.754258
+1.25 g q8h,estimate,0.375,0.051,0.80292
+1.25 g q8h,estimate,0.38,0.052,0.80292
+1.25 g q8h,estimate,0.385,0.054,0.827251
+1.25 g q8h,estimate,0.39,0.061,0.973236
+1.25 g q8h,estimate,0.395,0.064,0.973236
+1.25 g q8h,estimate,0.4,0.066,1.021898
+1.25 g q8h,estimate,0.405,0.067,1.046229
+1.25 g q8h,estimate,0.41,0.069,1.094891
+1.25 g q8h,estimate,0.415,0.073,1.143552
+1.25 g q8h,estimate,0.42,0.076,1.192214
+1.25 g q8h,estimate,0.425,0.08,1.265207
+1.25 g q8h,estimate,0.43,0.083,1.289538
+1.25 g q8h,estimate,0.435,0.095,1.386861
+1.25 g q8h,estimate,0.44,0.107,1.532847
+1.25 g q8h,estimate,0.445,0.111,1.557178
+1.25 g q8h,estimate,0.45,0.121,1.63017
+1.25 g q8h,estimate,0.455,0.142,1.849148
+1.25 g q8h,estimate,0.46,0.158,2.092457
+1.25 g q8h,estimate,0.465,0.178,2.384428
+1.25 g q8h,estimate,0.47,0.191,2.506083
+1.25 g q8h,estimate,0.475,0.204,2.70073
+1.25 g q8h,estimate,0.48,0.222,2.871046
+1.25 g q8h,estimate,0.485,0.236,3.114355
+1.25 g q8h,estimate,0.49,0.251,3.333333
+1.25 g q8h,estimate,0.495,0.265,3.430657
+1.25 g q8h,estimate,0.5,0.28,3.600973
+1.25 g q8h,estimate,0.505,0.293,3.77129
+1.25 g q8h,estimate,0.51,0.308,3.892944
+1.25 g q8h,estimate,0.515,0.321,4.111922
+1.25 g q8h,estimate,0.52,0.337,4.257908
+1.25 g q8h,estimate,0.525,0.356,4.525547
+1.25 g q8h,estimate,0.53,0.369,4.59854
+1.25 g q8h,estimate,0.535,0.384,4.841849
+1.25 g q8h,estimate,0.54,0.408,5.182482
+1.25 g q8h,estimate,0.545,0.421,5.304136
+1.25 g q8h,estimate,0.55,0.434,5.450122
+1.25 g q8h,estimate,0.555,0.452,5.620438
+1.25 g q8h,estimate,0.56,0.47,5.839416
+1.25 g q8h,estimate,0.565,0.49,6.034063
+1.25 g q8h,estimate,0.57,0.508,6.253041
+1.25 g q8h,estimate,0.575,0.527,6.350365
+1.25 g q8h,estimate,0.58,0.548,6.49635
+1.25 g q8h,estimate,0.585,0.577,6.76399
+1.25 g q8h,estimate,0.59,0.604,6.958637
+1.25 g q8h,estimate,0.595,0.631,7.250608
+1.25 g q8h,estimate,0.6,0.655,7.445255
+1.25 g q8h,estimate,0.605,0.679,7.615572
+1.25 g q8h,estimate,0.61,0.71,7.980535
+1.25 g q8h,estimate,0.615,0.745,8.345499
+1.25 g q8h,estimate,0.62,0.784,8.710462
+1.25 g q8h,estimate,0.625,0.826,9.124088
+1.25 g q8h,estimate,0.63,0.859,9.440389
+1.25 g q8h,estimate,0.635,0.897,9.805353
+1.25 g q8h,estimate,0.64,0.936,10.194647
+1.25 g q8h,estimate,0.645,0.975,10.510949
+1.25 g q8h,estimate,0.65,1.018,10.875912
+1.25 g q8h,estimate,0.655,1.067,11.240876
+1.25 g q8h,estimate,0.66,1.105,11.654501
+1.25 g q8h,estimate,0.665,1.154,11.995134
+1.25 g q8h,estimate,0.67,1.205,12.287105
+1.25 g q8h,estimate,0.675,1.256,12.652068
+1.25 g q8h,estimate,0.68,1.309,13.090024
+1.25 g q8h,estimate,0.685,1.366,13.406326
+1.25 g q8h,estimate,0.69,1.425,13.625304
+1.25 g q8h,estimate,0.695,1.478,13.892944
+1.25 g q8h,estimate,0.7,1.536,14.428224
+1.25 g q8h,estimate,0.705,1.603,15.060827
+1.25 g q8h,estimate,0.71,1.666,15.644769
+1.25 g q8h,estimate,0.715,1.742,16.131387
+1.25 g q8h,estimate,0.72,1.816,16.715328
+1.25 g q8h,estimate,0.725,1.909,17.29927
+1.25 g q8h,estimate,0.73,2.016,18.126521
+1.25 g q8h,estimate,0.735,2.1,18.515815
+1.25 g q8h,estimate,0.74,2.197,19.19708
+1.25 g q8h,estimate,0.745,2.305,19.805353
+1.25 g q8h,estimate,0.75,2.417,20.462287
+1.25 g q8h,estimate,0.755,2.537,21.046229
+1.25 g q8h,estimate,0.76,2.677,21.89781
+1.25 g q8h,estimate,0.765,2.805,22.530414
+1.25 g q8h,estimate,0.77,2.936,23.090024
+1.25 g q8h,estimate,0.775,3.068,24.06326
+1.25 g q8h,estimate,0.78,3.252,24.963504
+1.25 g q8h,estimate,0.785,3.436,26.155718
+1.25 g q8h,estimate,0.79,3.609,26.788321
+1.25 g q8h,estimate,0.795,3.794,27.785888
+1.25 g q8h,estimate,0.8,3.98,28.588808
+1.25 g q8h,estimate,0.805,4.178,29.270073
+1.25 g q8h,estimate,0.81,4.391,30.291971
+1.25 g q8h,estimate,0.815,4.618,30.997567
+1.25 g q8h,estimate,0.82,4.851,32.043796
+1.25 g q8h,estimate,0.825,5.088,33.041363
+1.25 g q8h,estimate,0.83,5.412,34.452555
+1.25 g q8h,estimate,0.835,5.685,35.304136
+1.25 g q8h,estimate,0.84,6.008,36.399027
+1.25 g q8h,estimate,0.845,6.312,37.712895
+1.25 g q8h,estimate,0.85,6.663,39.075426
+1.25 g q8h,estimate,0.855,7.036,40.389294
+1.25 g q8h,estimate,0.86,7.436,41.776156
+1.25 g q8h,estimate,0.865,7.85,43.138686
+1.25 g q8h,estimate,0.87,8.317,44.549878
+1.25 g q8h,estimate,0.875,8.83,46.326034
+1.25 g q8h,estimate,0.88,9.354,47.591241
+1.25 g q8h,estimate,0.885,9.911,49.075426
+1.25 g q8h,estimate,0.89,10.556,50.924574
+1.25 g q8h,estimate,0.895,11.238,52.554745
+1.25 g q8h,estimate,0.9,11.934,54.184915
+1.25 g q8h,estimate,0.905,12.774,56.20438
+1.25 g q8h,estimate,0.91,13.582,57.931873
+1.25 g q8h,estimate,0.910875,13.737,58.321168
+1.25 g q8h,estimate,0.915,14.452,59.73236
+1.25 g q8h,estimate,0.92,15.493,61.776156
+1.25 g q8h,estimate,0.920567,15.605,61.922141
+1.25 g q8h,estimate,0.925,16.554,63.746959
+1.25 g q8h,estimate,0.929205,17.598,65.060827
+1.25 g q8h,estimate,0.93,17.799,65.279805
+1.25 g q8h,estimate,0.935,19.192,67.493917
+1.25 g q8h,estimate,0.936904,19.762,68.126521
+1.25 g q8h,estimate,0.94,20.734,69.586375
+1.25 g q8h,estimate,0.943766,21.983,71.532847
+1.25 g q8h,estimate,0.945,22.429,72.141119
+1.25 g q8h,estimate,0.949881,24.343,74.914842
+1.25 g q8h,estimate,0.95,24.394,74.987835
+1.25 g q8h,estimate,0.955,26.606,77.177616
+1.25 g q8h,estimate,0.955332,26.758,77.323601
+1.25 g q8h,estimate,0.96,29.097,79.46472
+1.25 g q8h,estimate,0.960189,29.199,79.659367
+1.25 g q8h,estimate,0.964519,31.707,82.116788
+1.25 g q8h,estimate,0.965,32.001,82.408759
+1.25 g q8h,estimate,0.968377,34.333,84.184915
+1.25 g q8h,estimate,0.97,35.52,84.890511
+1.25 g q8h,estimate,0.971816,37.01,86.082725
+1.25 g q8h,estimate,0.974881,39.717,87.639903
+1.25 g q8h,estimate,0.975,39.837,87.712895
+1.25 g q8h,estimate,0.977613,42.372,89.562044
+1.25 g q8h,estimate,0.98,44.891,91.143552
+1.25 g q8h,estimate,0.980047,44.956,91.167883
+1.25 g q8h,estimate,0.982217,47.53,92.262774
+1.25 g q8h,estimate,0.984151,50.087,93.479319
+1.25 g q8h,estimate,0.985,51.288,93.868613
+1.25 g q8h,estimate,0.985875,52.578,94.184915
+1.25 g q8h,estimate,0.987411,55.096,94.914842
+1.25 g q8h,estimate,0.98878,57.581,95.596107
+1.25 g q8h,estimate,0.99,60.014,96.131387
+1.25 g q8h,estimate,0.991087,62.433,96.76399
+1.25 g q8h,estimate,0.992057,64.716,97.420925
+1.25 g q8h,estimate,0.992921,67.058,97.883212
+1.25 g q8h,estimate,0.99369,69.312,98.296837
+1.25 g q8h,estimate,0.994377,71.498,98.467153
+1.25 g q8h,estimate,0.994988,73.525,98.6618
+1.25 g q8h,estimate,0.995,73.568,98.6618
+1.25 g q8h,estimate,0.995533,75.443,98.880779
+1.25 g q8h,estimate,0.996019,77.301,99.051095
+1.25 g q8h,estimate,0.996452,79.025,99.099757
+1.25 g q8h,estimate,0.996838,80.538,99.391727
+1.25 g q8h,estimate,0.997182,82.018,99.440389
+1.25 g q8h,estimate,0.997488,83.317,99.513382
+1.25 g q8h,estimate,0.997761,84.567,99.562044
+1.25 g q8h,estimate,0.998005,85.728,99.610706
+1.25 g q8h,estimate,0.998222,86.864,99.659367
+1.25 g q8h,estimate,0.998415,87.858,99.659367
+1.25 g q8h,estimate,0.998587,88.822,99.708029
+1.25 g q8h,estimate,0.998741,89.774,99.781022
+1.25 g q8h,estimate,0.998878,90.666,99.854015
+1.25 g q8h,estimate,0.999,91.494,99.902676
+1.25 g q8h,estimate,0.999109,92.286,99.902676
+1.25 g q8h,estimate,0.999206,93.039,99.927007
+1.25 g q8h,estimate,0.999292,93.719,99.927007
+1.25 g q8h,estimate,0.999369,94.348,99.951338
+1.25 g q8h,estimate,0.999438,94.921,99.951338
+1.25 g q8h,estimate,0.999499,95.424,99.951338
+1.25 g q8h,estimate,0.999553,95.897,99.975669
+1.25 g q8h,estimate,0.999602,96.355,99.975669
+1.25 g q8h,estimate,0.999645,96.711,99.975669
+1.25 g q8h,estimate,0.999684,97.029,99.975669
+1.25 g q8h,estimate,0.999718,97.323,99.975669
+1.25 g q8h,estimate,0.999749,97.564,99.975669
+1.25 g q8h,estimate,0.999776,97.773,99.975669
+1.25 g q8h,estimate,0.9998,97.986,99.975669
+1.25 g q8h,estimate,0.999822,98.156,99.975669
+1.25 g q8h,estimate,0.999842,98.304,99.975669
+1.25 g q8h,estimate,0.999859,98.427,99.975669
+1.25 g q8h,estimate,0.999874,98.549,99.975669
+1.25 g q8h,estimate,0.999888,98.643,99.975669
+1.25 g q8h,estimate,0.9999,98.76,100.0
+1.25 g q8h,estimate,1.0,100.0,100.0
+1.25 g q8h,upper bound,0.0,0.0,0.0
+1.25 g q8h,upper bound,0.005,0.002,0.047858
+1.25 g q8h,upper bound,0.01,0.002,0.047858
+1.25 g q8h,upper bound,0.015,0.003,0.071788
+1.25 g q8h,upper bound,0.02,0.003,0.071788
+1.25 g q8h,upper bound,0.025,0.004,0.095717
+1.25 g q8h,upper bound,0.03,0.005,0.119646
+1.25 g q8h,upper bound,0.035,0.005,0.119646
+1.25 g q8h,upper bound,0.04,0.006,0.143575
+1.25 g q8h,upper bound,0.045,0.006,0.143575
+1.25 g q8h,upper bound,0.05,0.006,0.143575
+1.25 g q8h,upper bound,0.055,0.006,0.143575
+1.25 g q8h,upper bound,0.06,0.006,0.143575
+1.25 g q8h,upper bound,0.065,0.012,0.263221
+1.25 g q8h,upper bound,0.07,0.022,0.478583
+1.25 g q8h,upper bound,0.075,0.025,0.550371
+1.25 g q8h,upper bound,0.08,0.034,0.765733
+1.25 g q8h,upper bound,0.085,0.035,0.765733
+1.25 g q8h,upper bound,0.09,0.037,0.813592
+1.25 g q8h,upper bound,0.095,0.038,0.837521
+1.25 g q8h,upper bound,0.1,0.042,0.933238
+1.25 g q8h,upper bound,0.105,0.044,0.981096
+1.25 g q8h,upper bound,0.11,0.046,1.028954
+1.25 g q8h,upper bound,0.115,0.047,1.052883
+1.25 g q8h,upper bound,0.12,0.051,1.1486
+1.25 g q8h,upper bound,0.125,0.053,1.196458
+1.25 g q8h,upper bound,0.13,0.054,1.220388
+1.25 g q8h,upper bound,0.135,0.058,1.292175
+1.25 g q8h,upper bound,0.14,0.06,1.340034
+1.25 g q8h,upper bound,0.145,0.065,1.411821
+1.25 g q8h,upper bound,0.15,0.068,1.483609
+1.25 g q8h,upper bound,0.155,0.07,1.531467
+1.25 g q8h,upper bound,0.16,0.076,1.675042
+1.25 g q8h,upper bound,0.165,0.082,1.770759
+1.25 g q8h,upper bound,0.17,0.085,1.842546
+1.25 g q8h,upper bound,0.175,0.091,1.938263
+1.25 g q8h,upper bound,0.18,0.095,2.033979
+1.25 g q8h,upper bound,0.185,0.107,2.2972
+1.25 g q8h,upper bound,0.19,0.113,2.392917
+1.25 g q8h,upper bound,0.195,0.119,2.536492
+1.25 g q8h,upper bound,0.2,0.126,2.703996
+1.25 g q8h,upper bound,0.205,0.133,2.847571
+1.25 g q8h,upper bound,0.21,0.138,2.943288
+1.25 g q8h,upper bound,0.215,0.141,3.015075
+1.25 g q8h,upper bound,0.22,0.147,3.134721
+1.25 g q8h,upper bound,0.225,0.151,3.206509
+1.25 g q8h,upper bound,0.23,0.162,3.421871
+1.25 g q8h,upper bound,0.235,0.173,3.613305
+1.25 g q8h,upper bound,0.24,0.179,3.709021
+1.25 g q8h,upper bound,0.245,0.189,3.924384
+1.25 g q8h,upper bound,0.25,0.198,4.139746
+1.25 g q8h,upper bound,0.255,0.209,4.283321
+1.25 g q8h,upper bound,0.26,0.221,4.450826
+1.25 g q8h,upper bound,0.265,0.228,4.522613
+1.25 g q8h,upper bound,0.27,0.236,4.642259
+1.25 g q8h,upper bound,0.275,0.254,4.977267
+1.25 g q8h,upper bound,0.28,0.266,5.216559
+1.25 g q8h,upper bound,0.285,0.284,5.575497
+1.25 g q8h,upper bound,0.29,0.295,5.719072
+1.25 g q8h,upper bound,0.295,0.312,6.006222
+1.25 g q8h,upper bound,0.3,0.318,6.078009
+1.25 g q8h,upper bound,0.305,0.326,6.245513
+1.25 g q8h,upper bound,0.31,0.339,6.484805
+1.25 g q8h,upper bound,0.315,0.352,6.700168
+1.25 g q8h,upper bound,0.32,0.368,6.91553
+1.25 g q8h,upper bound,0.325,0.381,7.083034
+1.25 g q8h,upper bound,0.33,0.396,7.274468
+1.25 g q8h,upper bound,0.335,0.408,7.394113
+1.25 g q8h,upper bound,0.34,0.425,7.657334
+1.25 g q8h,upper bound,0.345,0.442,7.896626
+1.25 g q8h,upper bound,0.35,0.462,8.279493
+1.25 g q8h,upper bound,0.355,0.478,8.518784
+1.25 g q8h,upper bound,0.36,0.493,8.758076
+1.25 g q8h,upper bound,0.365,0.514,9.117014
+1.25 g q8h,upper bound,0.37,0.527,9.284518
+1.25 g q8h,upper bound,0.375,0.548,9.643455
+1.25 g q8h,upper bound,0.38,0.574,10.050251
+1.25 g q8h,upper bound,0.385,0.591,10.36133
+1.25 g q8h,upper bound,0.39,0.606,10.600622
+1.25 g q8h,upper bound,0.395,0.626,10.863843
+1.25 g q8h,upper bound,0.4,0.642,11.055276
+1.25 g q8h,upper bound,0.405,0.659,11.270639
+1.25 g q8h,upper bound,0.41,0.684,11.701364
+1.25 g q8h,upper bound,0.415,0.704,11.988514
+1.25 g q8h,upper bound,0.42,0.722,12.251735
+1.25 g q8h,upper bound,0.425,0.745,12.538885
+1.25 g q8h,upper bound,0.43,0.772,12.897822
+1.25 g q8h,upper bound,0.435,0.795,13.25676
+1.25 g q8h,upper bound,0.44,0.815,13.567839
+1.25 g q8h,upper bound,0.445,0.836,13.807131
+1.25 g q8h,upper bound,0.45,0.857,14.022493
+1.25 g q8h,upper bound,0.455,0.882,14.381431
+1.25 g q8h,upper bound,0.46,0.906,14.788227
+1.25 g q8h,upper bound,0.465,0.928,14.955731
+1.25 g q8h,upper bound,0.47,0.951,15.242881
+1.25 g q8h,upper bound,0.475,0.974,15.506102
+1.25 g q8h,upper bound,0.48,1.014,16.056473
+1.25 g q8h,upper bound,0.485,1.048,16.606844
+1.25 g q8h,upper bound,0.49,1.082,16.98971
+1.25 g q8h,upper bound,0.495,1.113,17.372577
+1.25 g q8h,upper bound,0.5,1.142,17.755444
+1.25 g q8h,upper bound,0.505,1.181,18.210098
+1.25 g q8h,upper bound,0.51,1.218,18.616894
+1.25 g q8h,upper bound,0.515,1.261,19.167265
+1.25 g q8h,upper bound,0.52,1.3,19.59799
+1.25 g q8h,upper bound,0.525,1.343,20.100503
+1.25 g q8h,upper bound,0.53,1.383,20.45944
+1.25 g q8h,upper bound,0.535,1.415,20.698732
+1.25 g q8h,upper bound,0.54,1.463,21.249103
+1.25 g q8h,upper bound,0.545,1.508,21.727686
+1.25 g q8h,upper bound,0.55,1.547,22.134482
+1.25 g q8h,upper bound,0.555,1.59,22.636994
+1.25 g q8h,upper bound,0.56,1.626,22.972003
+1.25 g q8h,upper bound,0.565,1.673,23.450586
+1.25 g q8h,upper bound,0.57,1.715,23.881311
+1.25 g q8h,upper bound,0.575,1.753,24.240249
+1.25 g q8h,upper bound,0.58,1.811,24.742761
+1.25 g q8h,upper bound,0.585,1.86,25.293132
+1.25 g q8h,upper bound,0.59,1.91,25.867432
+1.25 g q8h,upper bound,0.595,1.973,26.465662
+1.25 g q8h,upper bound,0.6,2.025,26.920316
+1.25 g q8h,upper bound,0.605,2.078,27.398899
+1.25 g q8h,upper bound,0.61,2.136,27.805695
+1.25 g q8h,upper bound,0.615,2.189,28.308208
+1.25 g q8h,upper bound,0.62,2.253,28.858579
+1.25 g q8h,upper bound,0.625,2.31,29.337162
+1.25 g q8h,upper bound,0.63,2.37,29.767887
+1.25 g q8h,upper bound,0.635,2.43,30.222541
+1.25 g q8h,upper bound,0.64,2.49,30.605408
+1.25 g q8h,upper bound,0.645,2.555,31.227566
+1.25 g q8h,upper bound,0.65,2.616,31.849725
+1.25 g q8h,upper bound,0.655,2.688,32.615458
+1.25 g q8h,upper bound,0.66,2.762,33.165829
+1.25 g q8h,upper bound,0.665,2.829,33.668342
+1.25 g q8h,upper bound,0.67,2.889,34.122996
+1.25 g q8h,upper bound,0.675,2.959,34.745154
+1.25 g q8h,upper bound,0.68,3.032,35.367313
+1.25 g q8h,upper bound,0.685,3.11,35.989471
+1.25 g q8h,upper bound,0.69,3.19,36.491984
+1.25 g q8h,upper bound,0.695,3.28,37.114142
+1.25 g q8h,upper bound,0.7,3.378,37.76023
+1.25 g q8h,upper bound,0.705,3.481,38.525963
+1.25 g q8h,upper bound,0.71,3.565,39.100263
+1.25 g q8h,upper bound,0.715,3.68,40.129218
+1.25 g q8h,upper bound,0.72,3.765,40.607801
+1.25 g q8h,upper bound,0.725,3.874,41.397464
+1.25 g q8h,upper bound,0.73,3.983,42.163197
+1.25 g q8h,upper bound,0.735,4.1,42.905001
+1.25 g q8h,upper bound,0.74,4.214,43.50323
+1.25 g q8h,upper bound,0.745,4.332,44.077531
+1.25 g q8h,upper bound,0.75,4.445,44.627901
+1.25 g q8h,upper bound,0.755,4.577,45.53721
+1.25 g q8h,upper bound,0.76,4.699,46.255085
+1.25 g q8h,upper bound,0.765,4.813,46.853314
+1.25 g q8h,upper bound,0.77,4.933,47.499402
+1.25 g q8h,upper bound,0.775,5.059,48.217277
+1.25 g q8h,upper bound,0.78,5.186,48.959081
+1.25 g q8h,upper bound,0.785,5.332,49.605169
+1.25 g q8h,upper bound,0.79,5.518,50.538406
+1.25 g q8h,upper bound,0.795,5.679,51.351998
+1.25 g q8h,upper bound,0.8,5.844,52.237377
+1.25 g q8h,upper bound,0.805,6.027,53.194544
+1.25 g q8h,upper bound,0.81,6.204,54.079923
+1.25 g q8h,upper bound,0.815,6.415,55.03709
+1.25 g q8h,upper bound,0.82,6.6,55.970328
+1.25 g q8h,upper bound,0.825,6.81,56.927495
+1.25 g q8h,upper bound,0.83,7.043,57.717157
+1.25 g q8h,upper bound,0.835,7.276,58.865757
+1.25 g q8h,upper bound,0.84,7.511,59.65542
+1.25 g q8h,upper bound,0.845,7.743,60.540799
+1.25 g q8h,upper bound,0.85,8.01,61.497966
+1.25 g q8h,upper bound,0.855,8.306,62.383345
+1.25 g q8h,upper bound,0.86,8.633,63.436229
+1.25 g q8h,upper bound,0.865,8.894,64.465183
+1.25 g q8h,upper bound,0.87,9.195,65.494137
+1.25 g q8h,upper bound,0.875,9.535,66.690596
+1.25 g q8h,upper bound,0.88,9.866,67.71955
+1.25 g q8h,upper bound,0.885,10.239,68.86815
+1.25 g q8h,upper bound,0.89,10.614,69.777459
+1.25 g q8h,upper bound,0.895,11.038,71.045705
+1.25 g q8h,upper bound,0.9,11.496,72.122517
+1.25 g q8h,upper bound,0.905,11.951,73.366834
+1.25 g q8h,upper bound,0.91,12.508,74.611151
+1.25 g q8h,upper bound,0.910875,12.602,74.730797
+1.25 g q8h,upper bound,0.915,13.033,75.520459
+1.25 g q8h,upper bound,0.92,13.63,76.788705
+1.25 g q8h,upper bound,0.920567,13.693,76.860493
+1.25 g q8h,upper bound,0.925,14.231,77.913376
+1.25 g q8h,upper bound,0.929205,14.817,78.607322
+1.25 g q8h,upper bound,0.93,14.94,78.798756
+1.25 g q8h,upper bound,0.935,15.685,80.043073
+1.25 g q8h,upper bound,0.936904,15.984,80.521656
+1.25 g q8h,upper bound,0.94,16.521,81.311318
+1.25 g q8h,upper bound,0.943766,17.271,82.483848
+1.25 g q8h,upper bound,0.945,17.526,82.69921
+1.25 g q8h,upper bound,0.949881,18.485,83.776023
+1.25 g q8h,upper bound,0.95,18.517,83.799952
+1.25 g q8h,upper bound,0.955,19.7,85.30749
+1.25 g q8h,upper bound,0.955332,19.806,85.379277
+1.25 g q8h,upper bound,0.96,21.085,87.173965
+1.25 g q8h,upper bound,0.960189,21.135,87.221823
+1.25 g q8h,upper bound,0.964519,22.534,88.561857
+1.25 g q8h,upper bound,0.965,22.695,88.75329
+1.25 g q8h,upper bound,0.968377,23.901,89.830103
+1.25 g q8h,upper bound,0.97,24.527,90.18904
+1.25 g q8h,upper bound,0.971816,25.332,90.882986
+1.25 g q8h,upper bound,0.974881,26.745,92.007657
+1.25 g q8h,upper bound,0.975,26.815,92.127303
+1.25 g q8h,upper bound,0.977613,28.169,92.964824
+1.25 g q8h,upper bound,0.98,29.579,93.826274
+1.25 g q8h,upper bound,0.980047,29.601,93.826274
+1.25 g q8h,upper bound,0.982217,31.034,94.663795
+1.25 g q8h,upper bound,0.984151,32.392,95.405599
+1.25 g q8h,upper bound,0.985,33.088,95.549174
+1.25 g q8h,upper bound,0.985875,33.823,95.788466
+1.25 g q8h,upper bound,0.987411,35.256,96.123475
+1.25 g q8h,upper bound,0.98878,36.625,96.458483
+1.25 g q8h,upper bound,0.99,38.054,96.865279
+1.25 g q8h,upper bound,0.991087,39.444,97.272075
+1.25 g q8h,upper bound,0.992057,40.835,97.678871
+1.25 g q8h,upper bound,0.992921,42.257,97.918162
+1.25 g q8h,upper bound,0.99369,43.677,98.109596
+1.25 g q8h,upper bound,0.994377,45.025,98.301029
+1.25 g q8h,upper bound,0.994988,46.406,98.396746
+1.25 g q8h,upper bound,0.995,46.437,98.396746
+1.25 g q8h,upper bound,0.995533,47.729,98.540321
+1.25 g q8h,upper bound,0.996019,49.072,98.683896
+1.25 g q8h,upper bound,0.996452,50.486,98.827471
+1.25 g q8h,upper bound,0.996838,51.822,98.994975
+1.25 g q8h,upper bound,0.997182,53.144,99.066762
+1.25 g q8h,upper bound,0.997488,54.445,99.210337
+1.25 g q8h,upper bound,0.997761,55.738,99.329983
+1.25 g q8h,upper bound,0.998005,57.038,99.401771
+1.25 g q8h,upper bound,0.998222,58.283,99.4257
+1.25 g q8h,upper bound,0.998415,59.488,99.4257
+1.25 g q8h,upper bound,0.998587,60.774,99.497487
+1.25 g q8h,upper bound,0.998741,61.969,99.497487
+1.25 g q8h,upper bound,0.998878,63.193,99.641062
+1.25 g q8h,upper bound,0.999,64.384,99.71285
+1.25 g q8h,upper bound,0.999109,65.587,99.760708
+1.25 g q8h,upper bound,0.999206,66.712,99.784637
+1.25 g q8h,upper bound,0.999292,67.844,99.808567
+1.25 g q8h,upper bound,0.999369,68.955,99.832496
+1.25 g q8h,upper bound,0.999438,70.02,99.880354
+1.25 g q8h,upper bound,0.999499,71.079,99.904283
+1.25 g q8h,upper bound,0.999553,72.156,99.952142
+1.25 g q8h,upper bound,0.999602,73.233,99.952142
+1.25 g q8h,upper bound,0.999645,74.276,99.976071
+1.25 g q8h,upper bound,0.999684,75.228,99.976071
+1.25 g q8h,upper bound,0.999718,76.226,99.976071
+1.25 g q8h,upper bound,0.999749,77.128,99.976071
+1.25 g q8h,upper bound,0.999776,77.996,99.976071
+1.25 g q8h,upper bound,0.9998,78.834,99.976071
+1.25 g q8h,upper bound,0.999822,79.641,100.0
+1.25 g q8h,upper bound,0.999842,80.386,100.0
+1.25 g q8h,upper bound,0.999859,81.153,100.0
+1.25 g q8h,upper bound,0.999874,81.877,100.0
+1.25 g q8h,upper bound,0.999888,82.598,100.0
+1.25 g q8h,upper bound,0.9999,83.27,100.0
+1.25 g q8h,upper bound,1.0,99.982,100.0
+1.25 g q8h,lower bound,0.0,0.0,0.0
+1.25 g q8h,lower bound,0.005,0.0,0.0
+1.25 g q8h,lower bound,0.01,0.0,0.0
+1.25 g q8h,lower bound,0.015,0.0,0.0
+1.25 g q8h,lower bound,0.02,0.0,0.0
+1.25 g q8h,lower bound,0.025,0.0,0.0
+1.25 g q8h,lower bound,0.03,0.0,0.0
+1.25 g q8h,lower bound,0.035,0.0,0.0
+1.25 g q8h,lower bound,0.04,0.0,0.0
+1.25 g q8h,lower bound,0.045,0.0,0.0
+1.25 g q8h,lower bound,0.05,0.0,0.0
+1.25 g q8h,lower bound,0.055,0.0,0.0
+1.25 g q8h,lower bound,0.06,0.0,0.0
+1.25 g q8h,lower bound,0.065,0.0,0.0
+1.25 g q8h,lower bound,0.07,0.0,0.0
+1.25 g q8h,lower bound,0.075,0.0,0.0
+1.25 g q8h,lower bound,0.08,0.0,0.0
+1.25 g q8h,lower bound,0.085,0.0,0.0
+1.25 g q8h,lower bound,0.09,0.0,0.0
+1.25 g q8h,lower bound,0.095,0.0,0.0
+1.25 g q8h,lower bound,0.1,0.0,0.0
+1.25 g q8h,lower bound,0.105,0.0,0.0
+1.25 g q8h,lower bound,0.11,0.0,0.0
+1.25 g q8h,lower bound,0.115,0.0,0.0
+1.25 g q8h,lower bound,0.12,0.0,0.0
+1.25 g q8h,lower bound,0.125,0.0,0.0
+1.25 g q8h,lower bound,0.13,0.0,0.0
+1.25 g q8h,lower bound,0.135,0.0,0.0
+1.25 g q8h,lower bound,0.14,0.0,0.0
+1.25 g q8h,lower bound,0.145,0.0,0.0
+1.25 g q8h,lower bound,0.15,0.0,0.0
+1.25 g q8h,lower bound,0.155,0.0,0.0
+1.25 g q8h,lower bound,0.16,0.0,0.0
+1.25 g q8h,lower bound,0.165,0.0,0.0
+1.25 g q8h,lower bound,0.17,0.0,0.0
+1.25 g q8h,lower bound,0.175,0.0,0.0
+1.25 g q8h,lower bound,0.18,0.0,0.0
+1.25 g q8h,lower bound,0.185,0.0,0.0
+1.25 g q8h,lower bound,0.19,0.0,0.0
+1.25 g q8h,lower bound,0.195,0.0,0.0
+1.25 g q8h,lower bound,0.2,0.0,0.0
+1.25 g q8h,lower bound,0.205,0.0,0.0
+1.25 g q8h,lower bound,0.21,0.0,0.0
+1.25 g q8h,lower bound,0.215,0.0,0.0
+1.25 g q8h,lower bound,0.22,0.0,0.0
+1.25 g q8h,lower bound,0.225,0.0,0.0
+1.25 g q8h,lower bound,0.23,0.0,0.0
+1.25 g q8h,lower bound,0.235,0.0,0.0
+1.25 g q8h,lower bound,0.24,0.0,0.0
+1.25 g q8h,lower bound,0.245,0.0,0.0
+1.25 g q8h,lower bound,0.25,0.0,0.0
+1.25 g q8h,lower bound,0.255,0.0,0.0
+1.25 g q8h,lower bound,0.26,0.0,0.0
+1.25 g q8h,lower bound,0.265,0.0,0.0
+1.25 g q8h,lower bound,0.27,0.0,0.0
+1.25 g q8h,lower bound,0.275,0.0,0.0
+1.25 g q8h,lower bound,0.28,0.0,0.0
+1.25 g q8h,lower bound,0.285,0.0,0.0
+1.25 g q8h,lower bound,0.29,0.0,0.0
+1.25 g q8h,lower bound,0.295,0.0,0.0
+1.25 g q8h,lower bound,0.3,0.0,0.0
+1.25 g q8h,lower bound,0.305,0.0,0.0
+1.25 g q8h,lower bound,0.31,0.0,0.0
+1.25 g q8h,lower bound,0.315,0.0,0.0
+1.25 g q8h,lower bound,0.32,0.0,0.0
+1.25 g q8h,lower bound,0.325,0.0,0.0
+1.25 g q8h,lower bound,0.33,0.0,0.0
+1.25 g q8h,lower bound,0.335,0.0,0.0
+1.25 g q8h,lower bound,0.34,0.0,0.0
+1.25 g q8h,lower bound,0.345,0.0,0.0
+1.25 g q8h,lower bound,0.35,0.0,0.0
+1.25 g q8h,lower bound,0.355,0.0,0.0
+1.25 g q8h,lower bound,0.36,0.0,0.0
+1.25 g q8h,lower bound,0.365,0.0,0.0
+1.25 g q8h,lower bound,0.37,0.0,0.0
+1.25 g q8h,lower bound,0.375,0.0,0.0
+1.25 g q8h,lower bound,0.38,0.0,0.0
+1.25 g q8h,lower bound,0.385,0.0,0.0
+1.25 g q8h,lower bound,0.39,0.0,0.0
+1.25 g q8h,lower bound,0.395,0.0,0.0
+1.25 g q8h,lower bound,0.4,0.0,0.0
+1.25 g q8h,lower bound,0.405,0.0,0.0
+1.25 g q8h,lower bound,0.41,0.0,0.0
+1.25 g q8h,lower bound,0.415,0.0,0.0
+1.25 g q8h,lower bound,0.42,0.0,0.0
+1.25 g q8h,lower bound,0.425,0.0,0.0
+1.25 g q8h,lower bound,0.43,0.0,0.0
+1.25 g q8h,lower bound,0.435,0.0,0.0
+1.25 g q8h,lower bound,0.44,0.0,0.0
+1.25 g q8h,lower bound,0.445,0.0,0.0
+1.25 g q8h,lower bound,0.45,0.0,0.0
+1.25 g q8h,lower bound,0.455,0.0,0.0
+1.25 g q8h,lower bound,0.46,0.0,0.0
+1.25 g q8h,lower bound,0.465,0.0,0.0
+1.25 g q8h,lower bound,0.47,0.0,0.0
+1.25 g q8h,lower bound,0.475,0.0,0.0
+1.25 g q8h,lower bound,0.48,0.001,0.0
+1.25 g q8h,lower bound,0.485,0.001,0.0
+1.25 g q8h,lower bound,0.49,0.001,0.0
+1.25 g q8h,lower bound,0.495,0.001,0.0
+1.25 g q8h,lower bound,0.5,0.001,0.0
+1.25 g q8h,lower bound,0.505,0.001,0.0
+1.25 g q8h,lower bound,0.51,0.001,0.0
+1.25 g q8h,lower bound,0.515,0.001,0.0
+1.25 g q8h,lower bound,0.52,0.001,0.0
+1.25 g q8h,lower bound,0.525,0.001,0.0
+1.25 g q8h,lower bound,0.53,0.001,0.0
+1.25 g q8h,lower bound,0.535,0.001,0.0
+1.25 g q8h,lower bound,0.54,0.001,0.0
+1.25 g q8h,lower bound,0.545,0.003,0.023866
+1.25 g q8h,lower bound,0.55,0.003,0.023866
+1.25 g q8h,lower bound,0.555,0.004,0.023866
+1.25 g q8h,lower bound,0.56,0.004,0.023866
+1.25 g q8h,lower bound,0.565,0.004,0.023866
+1.25 g q8h,lower bound,0.57,0.004,0.023866
+1.25 g q8h,lower bound,0.575,0.004,0.023866
+1.25 g q8h,lower bound,0.58,0.004,0.023866
+1.25 g q8h,lower bound,0.585,0.004,0.023866
+1.25 g q8h,lower bound,0.59,0.004,0.023866
+1.25 g q8h,lower bound,0.595,0.004,0.023866
+1.25 g q8h,lower bound,0.6,0.004,0.023866
+1.25 g q8h,lower bound,0.605,0.004,0.023866
+1.25 g q8h,lower bound,0.61,0.004,0.023866
+1.25 g q8h,lower bound,0.615,0.005,0.047733
+1.25 g q8h,lower bound,0.62,0.005,0.047733
+1.25 g q8h,lower bound,0.625,0.005,0.047733
+1.25 g q8h,lower bound,0.63,0.005,0.047733
+1.25 g q8h,lower bound,0.635,0.007,0.047733
+1.25 g q8h,lower bound,0.64,0.009,0.047733
+1.25 g q8h,lower bound,0.645,0.01,0.071599
+1.25 g q8h,lower bound,0.65,0.01,0.071599
+1.25 g q8h,lower bound,0.655,0.011,0.095465
+1.25 g q8h,lower bound,0.66,0.012,0.119332
+1.25 g q8h,lower bound,0.665,0.014,0.143198
+1.25 g q8h,lower bound,0.67,0.022,0.238663
+1.25 g q8h,lower bound,0.675,0.022,0.238663
+1.25 g q8h,lower bound,0.68,0.024,0.286396
+1.25 g q8h,lower bound,0.685,0.026,0.310263
+1.25 g q8h,lower bound,0.69,0.029,0.334129
+1.25 g q8h,lower bound,0.695,0.031,0.357995
+1.25 g q8h,lower bound,0.7,0.036,0.405728
+1.25 g q8h,lower bound,0.705,0.039,0.477327
+1.25 g q8h,lower bound,0.71,0.043,0.52506
+1.25 g q8h,lower bound,0.715,0.047,0.52506
+1.25 g q8h,lower bound,0.72,0.049,0.52506
+1.25 g q8h,lower bound,0.725,0.055,0.572792
+1.25 g q8h,lower bound,0.73,0.059,0.572792
+1.25 g q8h,lower bound,0.735,0.062,0.620525
+1.25 g q8h,lower bound,0.74,0.065,0.620525
+1.25 g q8h,lower bound,0.745,0.075,0.644391
+1.25 g q8h,lower bound,0.75,0.082,0.644391
+1.25 g q8h,lower bound,0.755,0.089,0.668258
+1.25 g q8h,lower bound,0.76,0.1,0.739857
+1.25 g q8h,lower bound,0.765,0.105,0.763723
+1.25 g q8h,lower bound,0.77,0.115,0.859189
+1.25 g q8h,lower bound,0.775,0.123,0.930788
+1.25 g q8h,lower bound,0.78,0.134,1.002387
+1.25 g q8h,lower bound,0.785,0.15,1.121718
+1.25 g q8h,lower bound,0.79,0.167,1.121718
+1.25 g q8h,lower bound,0.795,0.203,1.264916
+1.25 g q8h,lower bound,0.8,0.271,1.742243
+1.25 g q8h,lower bound,0.805,0.343,1.933174
+1.25 g q8h,lower bound,0.81,0.402,2.147971
+1.25 g q8h,lower bound,0.815,0.452,2.291169
+1.25 g q8h,lower bound,0.82,0.505,2.553699
+1.25 g q8h,lower bound,0.825,0.579,2.863962
+1.25 g q8h,lower bound,0.83,0.632,3.174224
+1.25 g q8h,lower bound,0.835,0.714,3.603819
+1.25 g q8h,lower bound,0.84,0.814,4.128878
+1.25 g q8h,lower bound,0.845,0.924,4.439141
+1.25 g q8h,lower bound,0.85,1.085,4.988067
+1.25 g q8h,lower bound,0.855,1.25,5.823389
+1.25 g q8h,lower bound,0.86,1.452,6.396181
+1.25 g q8h,lower bound,0.865,1.697,7.207637
+1.25 g q8h,lower bound,0.87,1.965,7.899761
+1.25 g q8h,lower bound,0.875,2.344,8.926014
+1.25 g q8h,lower bound,0.88,2.734,10.26253
+1.25 g q8h,lower bound,0.885,3.206,11.789976
+1.25 g q8h,lower bound,0.89,3.779,13.556086
+1.25 g q8h,lower bound,0.895,4.346,15.083532
+1.25 g q8h,lower bound,0.9,5.05,16.539379
+1.25 g q8h,lower bound,0.905,5.767,18.305489
+1.25 g q8h,lower bound,0.91,6.688,20.405728
+1.25 g q8h,lower bound,0.910875,6.863,20.811456
+1.25 g q8h,lower bound,0.915,7.732,22.386635
+1.25 g q8h,lower bound,0.92,8.975,25.202864
+1.25 g q8h,lower bound,0.920567,9.141,25.75179
+1.25 g q8h,lower bound,0.925,10.444,28.186158
+1.25 g q8h,lower bound,0.929205,12.002,31.026253
+1.25 g q8h,lower bound,0.93,12.376,31.885442
+1.25 g q8h,lower bound,0.935,14.979,35.704057
+1.25 g q8h,lower bound,0.936904,16.157,37.25537
+1.25 g q8h,lower bound,0.94,18.396,40.310263
+1.25 g q8h,lower bound,0.943766,21.594,44.701671
+1.25 g q8h,lower bound,0.945,22.724,46.252983
+1.25 g q8h,lower bound,0.949881,27.825,52.434368
+1.25 g q8h,lower bound,0.95,27.959,52.625298
+1.25 g q8h,lower bound,0.955,33.984,59.28401
+1.25 g q8h,lower bound,0.955332,34.439,60.119332
+1.25 g q8h,lower bound,0.96,40.961,66.754177
+1.25 g q8h,lower bound,0.960189,41.223,67.112172
+1.25 g q8h,lower bound,0.964519,48.008,73.26969
+1.25 g q8h,lower bound,0.965,48.817,73.961814
+1.25 g q8h,lower bound,0.968377,55.016,78.75895
+1.25 g q8h,lower bound,0.97,58.282,80.906921
+1.25 g q8h,lower bound,0.971816,62.257,83.818616
+1.25 g q8h,lower bound,0.974881,69.477,87.923628
+1.25 g q8h,lower bound,0.975,69.741,88.114558
+1.25 g q8h,lower bound,0.977613,75.72,91.575179
+1.25 g q8h,lower bound,0.98,81.117,94.105012
+1.25 g q8h,lower bound,0.980047,81.226,94.152745
+1.25 g q8h,lower bound,0.982217,86.17,96.01432
+1.25 g q8h,lower bound,0.984151,90.202,97.494033
+1.25 g q8h,lower bound,0.985,91.97,97.995227
+1.25 g q8h,lower bound,0.985875,93.591,98.424821
+1.25 g q8h,lower bound,0.987411,96.063,99.140811
+1.25 g q8h,lower bound,0.98878,97.586,99.498807
+1.25 g q8h,lower bound,0.99,98.447,99.689737
+1.25 g q8h,lower bound,0.991087,98.964,99.856802
+1.25 g q8h,lower bound,0.992057,99.282,99.904535
+1.25 g q8h,lower bound,0.992921,99.525,99.976134
+1.25 g q8h,lower bound,0.99369,99.693,99.976134
+1.25 g q8h,lower bound,0.994377,99.913,100.0
+1.25 g q8h,lower bound,0.994988,99.997,100.0
+1.25 g q8h,lower bound,0.995,99.997,100.0
+1.25 g q8h,lower bound,0.995533,99.997,100.0
+1.25 g q8h,lower bound,0.996019,99.998,100.0
+1.25 g q8h,lower bound,0.996452,99.999,100.0
+1.25 g q8h,lower bound,0.996838,99.999,100.0
+1.25 g q8h,lower bound,0.997182,99.999,100.0
+1.25 g q8h,lower bound,0.997488,99.999,100.0
+1.25 g q8h,lower bound,0.997761,99.999,100.0
+1.25 g q8h,lower bound,0.998005,99.999,100.0
+1.25 g q8h,lower bound,0.998222,99.999,100.0
+1.25 g q8h,lower bound,0.998415,99.999,100.0
+1.25 g q8h,lower bound,0.998587,99.999,100.0
+1.25 g q8h,lower bound,0.998741,99.999,100.0
+1.25 g q8h,lower bound,0.998878,99.999,100.0
+1.25 g q8h,lower bound,0.999,99.999,100.0
+1.25 g q8h,lower bound,0.999109,99.999,100.0
+1.25 g q8h,lower bound,0.999206,99.999,100.0
+1.25 g q8h,lower bound,0.999292,99.999,100.0
+1.25 g q8h,lower bound,0.999369,99.999,100.0
+1.25 g q8h,lower bound,0.999438,99.999,100.0
+1.25 g q8h,lower bound,0.999499,99.999,100.0
+1.25 g q8h,lower bound,0.999553,99.999,100.0
+1.25 g q8h,lower bound,0.999602,99.999,100.0
+1.25 g q8h,lower bound,0.999645,99.999,100.0
+1.25 g q8h,lower bound,0.999684,99.999,100.0
+1.25 g q8h,lower bound,0.999718,99.999,100.0
+1.25 g q8h,lower bound,0.999749,99.999,100.0
+1.25 g q8h,lower bound,0.999776,99.999,100.0
+1.25 g q8h,lower bound,0.9998,99.999,100.0
+1.25 g q8h,lower bound,0.999822,99.999,100.0
+1.25 g q8h,lower bound,0.999842,99.999,100.0
+1.25 g q8h,lower bound,0.999859,99.999,100.0
+1.25 g q8h,lower bound,0.999874,99.999,100.0
+1.25 g q8h,lower bound,0.999888,100.0,100.0
+1.25 g q8h,lower bound,0.9999,100.0,100.0
+1.25 g q8h,lower bound,1.0,100.0,100.0
+1.25 g q8h,non-RRT value,0.0,0.0,0.0
+1.25 g q8h,non-RRT value,0.005,0.014,0.338491
+1.25 g q8h,non-RRT value,0.01,0.025,0.604449
+1.25 g q8h,non-RRT value,0.015,0.044,1.039652
+1.25 g q8h,non-RRT value,0.02,0.056,1.329787
+1.25 g q8h,non-RRT value,0.025,0.071,1.668279
+1.25 g q8h,non-RRT value,0.03,0.088,2.079304
+1.25 g q8h,non-RRT value,0.035,0.103,2.441973
+1.25 g q8h,non-RRT value,0.04,0.118,2.756286
+1.25 g q8h,non-RRT value,0.045,0.131,3.0706
+1.25 g q8h,non-RRT value,0.05,0.149,3.505803
+1.25 g q8h,non-RRT value,0.055,0.166,3.916828
+1.25 g q8h,non-RRT value,0.06,0.178,4.182785
+1.25 g q8h,non-RRT value,0.065,0.193,4.545455
+1.25 g q8h,non-RRT value,0.07,0.215,5.077369
+1.25 g q8h,non-RRT value,0.075,0.231,5.464217
+1.25 g q8h,non-RRT value,0.08,0.246,5.77853
+1.25 g q8h,non-RRT value,0.085,0.26,6.092843
+1.25 g q8h,non-RRT value,0.09,0.277,6.455513
+1.25 g q8h,non-RRT value,0.095,0.291,6.794004
+1.25 g q8h,non-RRT value,0.1,0.301,7.035783
+1.25 g q8h,non-RRT value,0.105,0.316,7.350097
+1.25 g q8h,non-RRT value,0.11,0.327,7.54352
+1.25 g q8h,non-RRT value,0.115,0.339,7.7853
+1.25 g q8h,non-RRT value,0.12,0.352,8.051257
+1.25 g q8h,non-RRT value,0.125,0.362,8.196325
+1.25 g q8h,non-RRT value,0.13,0.372,8.389749
+1.25 g q8h,non-RRT value,0.135,0.378,8.462282
+1.25 g q8h,non-RRT value,0.14,0.402,8.970019
+1.25 g q8h,non-RRT value,0.145,0.423,9.4294
+1.25 g q8h,non-RRT value,0.15,0.437,9.743714
+1.25 g q8h,non-RRT value,0.155,0.458,10.130561
+1.25 g q8h,non-RRT value,0.16,0.474,10.420696
+1.25 g q8h,non-RRT value,0.165,0.495,10.831721
+1.25 g q8h,non-RRT value,0.17,0.515,11.194391
+1.25 g q8h,non-RRT value,0.175,0.528,11.411992
+1.25 g q8h,non-RRT value,0.18,0.546,11.726306
+1.25 g q8h,non-RRT value,0.185,0.559,11.919729
+1.25 g q8h,non-RRT value,0.19,0.58,12.330754
+1.25 g q8h,non-RRT value,0.195,0.591,12.524178
+1.25 g q8h,non-RRT value,0.2,0.603,12.765957
+1.25 g q8h,non-RRT value,0.205,0.625,13.249516
+1.25 g q8h,non-RRT value,0.21,0.646,13.68472
+1.25 g q8h,non-RRT value,0.215,0.664,14.023211
+1.25 g q8h,non-RRT value,0.22,0.676,14.240812
+1.25 g q8h,non-RRT value,0.225,0.692,14.50677
+1.25 g q8h,non-RRT value,0.23,0.709,14.748549
+1.25 g q8h,non-RRT value,0.235,0.729,15.159574
+1.25 g q8h,non-RRT value,0.24,0.742,15.377176
+1.25 g q8h,non-RRT value,0.245,0.759,15.788201
+1.25 g q8h,non-RRT value,0.25,0.779,16.126692
+1.25 g q8h,non-RRT value,0.255,0.803,16.51354
+1.25 g q8h,non-RRT value,0.26,0.82,16.803675
+1.25 g q8h,non-RRT value,0.265,0.845,17.238878
+1.25 g q8h,non-RRT value,0.27,0.864,17.601547
+1.25 g q8h,non-RRT value,0.275,0.892,18.085106
+1.25 g q8h,non-RRT value,0.28,0.917,18.496132
+1.25 g q8h,non-RRT value,0.285,0.937,18.786267
+1.25 g q8h,non-RRT value,0.29,0.953,19.10058
+1.25 g q8h,non-RRT value,0.295,0.978,19.511605
+1.25 g q8h,non-RRT value,0.3,0.996,19.874275
+1.25 g q8h,non-RRT value,0.305,1.024,20.40619
+1.25 g q8h,non-RRT value,0.31,1.049,20.865571
+1.25 g q8h,non-RRT value,0.315,1.071,21.276596
+1.25 g q8h,non-RRT value,0.32,1.087,21.494197
+1.25 g q8h,non-RRT value,0.325,1.112,22.001934
+1.25 g q8h,non-RRT value,0.33,1.138,22.509671
+1.25 g q8h,non-RRT value,0.335,1.162,22.848162
+1.25 g q8h,non-RRT value,0.34,1.176,23.065764
+1.25 g q8h,non-RRT value,0.345,1.198,23.476789
+1.25 g q8h,non-RRT value,0.35,1.219,23.839458
+1.25 g q8h,non-RRT value,0.355,1.243,24.202128
+1.25 g q8h,non-RRT value,0.36,1.263,24.492263
+1.25 g q8h,non-RRT value,0.365,1.287,24.87911
+1.25 g q8h,non-RRT value,0.37,1.314,25.241779
+1.25 g q8h,non-RRT value,0.375,1.34,25.556093
+1.25 g q8h,non-RRT value,0.38,1.359,25.749516
+1.25 g q8h,non-RRT value,0.385,1.389,26.233075
+1.25 g q8h,non-RRT value,0.39,1.416,26.571567
+1.25 g q8h,non-RRT value,0.395,1.446,26.88588
+1.25 g q8h,non-RRT value,0.4,1.477,27.248549
+1.25 g q8h,non-RRT value,0.405,1.498,27.538685
+1.25 g q8h,non-RRT value,0.41,1.533,28.0706
+1.25 g q8h,non-RRT value,0.415,1.563,28.505803
+1.25 g q8h,non-RRT value,0.42,1.588,28.820116
+1.25 g q8h,non-RRT value,0.425,1.612,29.206963
+1.25 g q8h,non-RRT value,0.43,1.641,29.617988
+1.25 g q8h,non-RRT value,0.435,1.667,30.029014
+1.25 g q8h,non-RRT value,0.44,1.701,30.633462
+1.25 g q8h,non-RRT value,0.445,1.739,31.165377
+1.25 g q8h,non-RRT value,0.45,1.761,31.407157
+1.25 g q8h,non-RRT value,0.455,1.786,31.648936
+1.25 g q8h,non-RRT value,0.46,1.82,32.301741
+1.25 g q8h,non-RRT value,0.465,1.858,32.7853
+1.25 g q8h,non-RRT value,0.47,1.895,33.268859
+1.25 g q8h,non-RRT value,0.475,1.936,33.776596
+1.25 g q8h,non-RRT value,0.48,1.965,34.139265
+1.25 g q8h,non-RRT value,0.485,1.994,34.55029
+1.25 g q8h,non-RRT value,0.49,2.026,34.912959
+1.25 g q8h,non-RRT value,0.495,2.066,35.444874
+1.25 g q8h,non-RRT value,0.5,2.109,35.976789
+1.25 g q8h,non-RRT value,0.505,2.152,36.484526
+1.25 g q8h,non-RRT value,0.51,2.19,36.774662
+1.25 g q8h,non-RRT value,0.515,2.223,37.282398
+1.25 g q8h,non-RRT value,0.52,2.261,37.814313
+1.25 g q8h,non-RRT value,0.525,2.309,38.467118
+1.25 g q8h,non-RRT value,0.53,2.356,39.095745
+1.25 g q8h,non-RRT value,0.535,2.392,39.603482
+1.25 g q8h,non-RRT value,0.54,2.435,40.014507
+1.25 g q8h,non-RRT value,0.545,2.483,40.618956
+1.25 g q8h,non-RRT value,0.55,2.544,41.27176
+1.25 g q8h,non-RRT value,0.555,2.601,41.924565
+1.25 g q8h,non-RRT value,0.56,2.65,42.480658
+1.25 g q8h,non-RRT value,0.565,2.697,42.867505
+1.25 g q8h,non-RRT value,0.57,2.757,43.423598
+1.25 g q8h,non-RRT value,0.575,2.804,43.882979
+1.25 g q8h,non-RRT value,0.58,2.851,44.46325
+1.25 g q8h,non-RRT value,0.585,2.9,45.116054
+1.25 g q8h,non-RRT value,0.59,2.953,45.696325
+1.25 g q8h,non-RRT value,0.595,2.998,46.131528
+1.25 g q8h,non-RRT value,0.6,3.063,46.832689
+1.25 g q8h,non-RRT value,0.605,3.123,47.364603
+1.25 g q8h,non-RRT value,0.61,3.187,47.87234
+1.25 g q8h,non-RRT value,0.615,3.26,48.549323
+1.25 g q8h,non-RRT value,0.62,3.318,49.105416
+1.25 g q8h,non-RRT value,0.625,3.372,49.709865
+1.25 g q8h,non-RRT value,0.63,3.418,50.217602
+1.25 g q8h,non-RRT value,0.635,3.482,50.628627
+1.25 g q8h,non-RRT value,0.64,3.527,51.112186
+1.25 g q8h,non-RRT value,0.645,3.597,51.861702
+1.25 g q8h,non-RRT value,0.65,3.673,52.393617
+1.25 g q8h,non-RRT value,0.655,3.748,53.022244
+1.25 g q8h,non-RRT value,0.66,3.819,53.747582
+1.25 g q8h,non-RRT value,0.665,3.882,54.303675
+1.25 g q8h,non-RRT value,0.67,3.936,54.811412
+1.25 g q8h,non-RRT value,0.675,4.023,55.391683
+1.25 g q8h,non-RRT value,0.68,4.097,55.77853
+1.25 g q8h,non-RRT value,0.685,4.166,56.165377
+1.25 g q8h,non-RRT value,0.69,4.24,56.72147
+1.25 g q8h,non-RRT value,0.695,4.311,57.180851
+1.25 g q8h,non-RRT value,0.7,4.407,57.833656
+1.25 g q8h,non-RRT value,0.705,4.497,58.438104
+1.25 g q8h,non-RRT value,0.71,4.578,59.066731
+1.25 g q8h,non-RRT value,0.715,4.668,59.622824
+1.25 g q8h,non-RRT value,0.72,4.749,60.130561
+1.25 g q8h,non-RRT value,0.725,4.842,60.880077
+1.25 g q8h,non-RRT value,0.73,4.951,61.508704
+1.25 g q8h,non-RRT value,0.735,5.075,62.234043
+1.25 g q8h,non-RRT value,0.74,5.202,63.104449
+1.25 g q8h,non-RRT value,0.745,5.296,63.733075
+1.25 g q8h,non-RRT value,0.75,5.384,64.192456
+1.25 g q8h,non-RRT value,0.755,5.488,64.869439
+1.25 g q8h,non-RRT value,0.76,5.614,65.594778
+1.25 g q8h,non-RRT value,0.765,5.7,66.199226
+1.25 g q8h,non-RRT value,0.77,5.81,66.827853
+1.25 g q8h,non-RRT value,0.775,5.918,67.504836
+1.25 g q8h,non-RRT value,0.78,6.023,68.133462
+1.25 g q8h,non-RRT value,0.785,6.15,68.641199
+1.25 g q8h,non-RRT value,0.79,6.264,69.294004
+1.25 g q8h,non-RRT value,0.795,6.406,69.946809
+1.25 g q8h,non-RRT value,0.8,6.563,70.865571
+1.25 g q8h,non-RRT value,0.805,6.704,71.566731
+1.25 g q8h,non-RRT value,0.81,6.862,72.533849
+1.25 g q8h,non-RRT value,0.815,6.994,73.065764
+1.25 g q8h,non-RRT value,0.82,7.151,73.791103
+1.25 g q8h,non-RRT value,0.825,7.292,74.468085
+1.25 g q8h,non-RRT value,0.83,7.447,75.145068
+1.25 g q8h,non-RRT value,0.835,7.605,75.846228
+1.25 g q8h,non-RRT value,0.84,7.795,76.619923
+1.25 g q8h,non-RRT value,0.845,7.998,77.345261
+1.25 g q8h,non-RRT value,0.85,8.191,78.239845
+1.25 g q8h,non-RRT value,0.855,8.401,79.110251
+1.25 g q8h,non-RRT value,0.86,8.616,79.908124
+1.25 g q8h,non-RRT value,0.865,8.824,80.681818
+1.25 g q8h,non-RRT value,0.87,9.037,81.117021
+1.25 g q8h,non-RRT value,0.875,9.272,81.794004
+1.25 g q8h,non-RRT value,0.88,9.564,82.374275
+1.25 g q8h,non-RRT value,0.885,9.844,83.002901
+1.25 g q8h,non-RRT value,0.89,10.126,83.583172
+1.25 g q8h,non-RRT value,0.895,10.405,84.477756
+1.25 g q8h,non-RRT value,0.9,10.688,84.961315
+1.25 g q8h,non-RRT value,0.905,11.039,85.686654
+1.25 g q8h,non-RRT value,0.91,11.375,86.411992
+1.25 g q8h,non-RRT value,0.910875,11.44,86.532882
+1.25 g q8h,non-RRT value,0.915,11.74,86.968085
+1.25 g q8h,non-RRT value,0.92,12.116,87.645068
+1.25 g q8h,non-RRT value,0.920567,12.156,87.765957
+1.25 g q8h,non-RRT value,0.925,12.484,88.080271
+1.25 g q8h,non-RRT value,0.929205,12.842,88.733075
+1.25 g q8h,non-RRT value,0.93,12.915,88.853965
+1.25 g q8h,non-RRT value,0.935,13.396,89.62766
+1.25 g q8h,non-RRT value,0.936904,13.623,89.893617
+1.25 g q8h,non-RRT value,0.94,13.973,90.473888
+1.25 g q8h,non-RRT value,0.943766,14.435,91.126692
+1.25 g q8h,non-RRT value,0.945,14.573,91.320116
+1.25 g q8h,non-RRT value,0.949881,15.201,92.142166
+1.25 g q8h,non-RRT value,0.95,15.214,92.142166
+1.25 g q8h,non-RRT value,0.955,15.936,92.843327
+1.25 g q8h,non-RRT value,0.955332,15.981,92.940039
+1.25 g q8h,non-RRT value,0.96,16.769,93.858801
+1.25 g q8h,non-RRT value,0.960189,16.801,93.882979
+1.25 g q8h,non-RRT value,0.964519,17.614,94.46325
+1.25 g q8h,non-RRT value,0.965,17.696,94.584139
+1.25 g q8h,non-RRT value,0.968377,18.422,94.946809
+1.25 g q8h,non-RRT value,0.97,18.794,95.04352
+1.25 g q8h,non-RRT value,0.971816,19.253,95.2853
+1.25 g q8h,non-RRT value,0.974881,20.103,95.962282
+1.25 g q8h,non-RRT value,0.975,20.148,95.98646
+1.25 g q8h,non-RRT value,0.977613,20.939,96.445841
+1.25 g q8h,non-RRT value,0.98,21.744,96.760155
+1.25 g q8h,non-RRT value,0.980047,21.765,96.760155
+1.25 g q8h,non-RRT value,0.982217,22.541,97.026112
+1.25 g q8h,non-RRT value,0.984151,23.436,97.243714
+1.25 g q8h,non-RRT value,0.985,23.832,97.461315
+1.25 g q8h,non-RRT value,0.985875,24.302,97.582205
+1.25 g q8h,non-RRT value,0.987411,25.171,97.99323
+1.25 g q8h,non-RRT value,0.98878,26.018,98.11412
+1.25 g q8h,non-RRT value,0.99,26.887,98.283366
+1.25 g q8h,non-RRT value,0.991087,27.766,98.428433
+1.25 g q8h,non-RRT value,0.992057,28.609,98.525145
+1.25 g q8h,non-RRT value,0.992921,29.465,98.718569
+1.25 g q8h,non-RRT value,0.99369,30.365,98.766925
+1.25 g q8h,non-RRT value,0.994377,31.244,98.791103
+1.25 g q8h,non-RRT value,0.994988,32.156,98.93617
+1.25 g q8h,non-RRT value,0.995,32.169,98.93617
+1.25 g q8h,non-RRT value,0.995533,32.997,98.960348
+1.25 g q8h,non-RRT value,0.996019,33.895,99.105416
+1.25 g q8h,non-RRT value,0.996452,34.791,99.226306
+1.25 g q8h,non-RRT value,0.996838,35.669,99.250484
+1.25 g q8h,non-RRT value,0.997182,36.58,99.419729
+1.25 g q8h,non-RRT value,0.997488,37.436,99.492263
+1.25 g q8h,non-RRT value,0.997761,38.336,99.564797
+1.25 g q8h,non-RRT value,0.998005,39.162,99.637331
+1.25 g q8h,non-RRT value,0.998222,40.042,99.709865
+1.25 g q8h,non-RRT value,0.998415,40.898,99.734043
+1.25 g q8h,non-RRT value,0.998587,41.725,99.734043
+1.25 g q8h,non-RRT value,0.998741,42.594,99.734043
+1.25 g q8h,non-RRT value,0.998878,43.413,99.782398
+1.25 g q8h,non-RRT value,0.999,44.219,99.806576
+1.25 g q8h,non-RRT value,0.999109,45.023,99.806576
+1.25 g q8h,non-RRT value,0.999206,45.86,99.806576
+1.25 g q8h,non-RRT value,0.999292,46.698,99.806576
+1.25 g q8h,non-RRT value,0.999369,47.504,99.854932
+1.25 g q8h,non-RRT value,0.999438,48.311,99.87911
+1.25 g q8h,non-RRT value,0.999499,49.107,99.87911
+1.25 g q8h,non-RRT value,0.999553,49.923,99.87911
+1.25 g q8h,non-RRT value,0.999602,50.633,99.903288
+1.25 g q8h,non-RRT value,0.999645,51.423,99.903288
+1.25 g q8h,non-RRT value,0.999684,52.164,99.903288
+1.25 g q8h,non-RRT value,0.999718,52.951,99.903288
+1.25 g q8h,non-RRT value,0.999749,53.673,99.903288
+1.25 g q8h,non-RRT value,0.999776,54.389,99.903288
+1.25 g q8h,non-RRT value,0.9998,55.11,99.903288
+1.25 g q8h,non-RRT value,0.999822,55.827,99.903288
+1.25 g q8h,non-RRT value,0.999842,56.498,99.927466
+1.25 g q8h,non-RRT value,0.999859,57.123,99.927466
+1.25 g q8h,non-RRT value,0.999874,57.841,99.927466
+1.25 g q8h,non-RRT value,0.999888,58.505,99.951644
+1.25 g q8h,non-RRT value,0.9999,59.183,99.951644
+1.25 g q8h,non-RRT value,1.0,99.059,100.0
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.0,0.0,0.0
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.005,0.014,0.26725
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.01,0.038,0.631681
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.015,0.049,0.801749
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.02,0.053,0.898931
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.025,0.056,0.923226
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.03,0.059,0.996113
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.035,0.063,1.068999
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.04,0.069,1.166181
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.045,0.082,1.336249
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.05,0.093,1.530612
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.055,0.107,1.724976
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.06,0.117,1.895044
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.065,0.135,2.162293
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.07,0.15,2.405248
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.075,0.169,2.599611
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.08,0.186,2.81827
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.085,0.204,3.036929
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.09,0.216,3.231293
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.095,0.224,3.328474
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.1,0.237,3.474247
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.105,0.248,3.66861
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.11,0.264,3.790087
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.115,0.279,3.984451
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.12,0.296,4.178814
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.125,0.315,4.373178
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.13,0.336,4.543246
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.135,0.352,4.737609
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.14,0.369,4.883382
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.145,0.378,5.029155
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.15,0.391,5.077745
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.155,0.412,5.272109
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.16,0.423,5.442177
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.165,0.44,5.63654
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.17,0.466,5.928086
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.175,0.487,6.146744
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.18,0.498,6.219631
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.185,0.516,6.389699
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.19,0.528,6.48688
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.195,0.549,6.778426
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.2,0.571,7.045675
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.205,0.59,7.240039
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.21,0.608,7.434402
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.215,0.629,7.628766
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.22,0.64,7.774538
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.225,0.664,8.017493
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.23,0.681,8.187561
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.235,0.695,8.309038
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.24,0.712,8.357629
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.245,0.728,8.527697
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.25,0.761,8.940719
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.255,0.782,9.159378
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.26,0.797,9.353741
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.265,0.82,9.645287
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.27,0.842,9.961127
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.275,0.865,10.082604
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.28,0.88,10.276968
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.285,0.904,10.471331
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.29,0.927,10.617104
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.295,0.955,10.860058
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.3,0.977,10.95724
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.305,1.005,11.175899
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.31,1.028,11.443149
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.315,1.047,11.637512
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.32,1.068,11.904762
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.325,1.091,12.050534
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.33,1.111,12.220603
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.335,1.131,12.390671
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.34,1.151,12.536443
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.345,1.182,12.706511
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.35,1.212,12.973761
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.355,1.238,13.338192
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.36,1.26,13.483965
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.365,1.288,13.605442
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.37,1.312,13.702624
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.375,1.343,13.896987
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.38,1.364,13.969874
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.385,1.393,14.139942
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.39,1.422,14.285714
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.395,1.448,14.382896
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.4,1.472,14.552964
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.405,1.505,14.844509
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.41,1.527,14.990282
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.415,1.56,15.208941
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.42,1.593,15.500486
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.425,1.625,15.670554
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.43,1.652,15.767736
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.435,1.689,15.986395
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.44,1.715,16.253644
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.445,1.745,16.399417
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.45,1.786,16.715258
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.455,1.819,16.933916
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.46,1.852,17.274052
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.465,1.883,17.492711
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.47,1.915,17.759961
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.475,1.954,18.051506
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.48,1.988,18.24587
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.485,2.029,18.56171
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.49,2.069,18.82896
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.495,2.11,19.071914
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.5,2.139,19.217687
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.505,2.174,19.387755
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.51,2.218,19.606414
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.515,2.26,19.752187
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.52,2.295,19.970845
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.525,2.325,20.238095
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.53,2.379,20.626822
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.535,2.426,20.845481
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.54,2.468,21.088435
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.545,2.518,21.404276
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.55,2.56,21.720117
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.555,2.599,21.963071
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.56,2.64,22.108844
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.565,2.682,22.400389
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.57,2.716,22.570457
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.575,2.764,22.813411
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.58,2.826,23.153547
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.585,2.878,23.420797
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.59,2.927,23.688047
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.595,2.978,23.931001
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.6,3.034,24.222546
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.605,3.088,24.4655
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.61,3.133,24.684159
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.615,3.195,25.048591
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.62,3.258,25.242954
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.625,3.313,25.461613
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.63,3.36,25.777454
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.635,3.413,26.020408
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.64,3.482,26.409135
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.645,3.544,26.797862
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.65,3.602,27.137998
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.655,3.66,27.380952
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.66,3.739,27.866861
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.665,3.823,28.328474
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.67,3.896,28.595724
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.675,3.955,28.887269
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.68,4.036,29.397473
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.685,4.103,29.591837
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.69,4.182,29.907677
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.695,4.267,30.272109
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.7,4.329,30.490768
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.705,4.41,30.879495
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.71,4.504,31.195335
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.715,4.589,31.535471
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.72,4.677,31.802721
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.725,4.772,32.28863
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.73,4.855,32.555879
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.735,4.946,32.993197
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.74,5.049,33.503401
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.745,5.134,33.892128
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.75,5.237,34.159378
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.755,5.358,34.645287
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.76,5.472,35.252672
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.765,5.576,35.592809
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.77,5.691,36.005831
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.775,5.788,36.22449
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.78,5.91,36.613217
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.785,6.02,37.123421
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.79,6.139,37.682216
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.795,6.269,38.046647
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.8,6.388,38.483965
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.805,6.524,38.896987
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.81,6.662,39.382896
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.815,6.823,40.014577
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.82,6.983,40.573372
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.825,7.154,41.27794
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.83,7.321,41.86103
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.835,7.495,42.346939
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.84,7.672,43.027211
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.845,7.856,43.610301
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.85,8.044,44.120505
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.855,8.231,44.703596
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.86,8.433,45.310982
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.865,8.66,45.991254
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.87,8.875,46.550049
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.875,9.107,47.351798
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.88,9.359,48.275024
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.885,9.606,49.003887
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.89,9.859,49.538387
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.895,10.133,50.097182
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.9,10.454,50.996113
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.905,10.822,51.992225
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.91,11.162,52.81827
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.910875,11.23,52.988338
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.915,11.526,53.765792
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.92,11.887,54.689018
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.920567,11.932,54.859086
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.925,12.314,55.709427
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.929205,12.674,56.462585
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.93,12.75,56.681244
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.935,13.238,57.677357
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.936904,13.441,58.187561
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.94,13.757,59.037901
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.943766,14.241,60.082604
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.945,14.395,60.447036
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.949881,15.017,61.443149
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.95,15.036,61.54033
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.955,15.759,62.779397
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.955332,15.815,62.852284
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.96,16.572,64.188533
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.960189,16.609,64.285714
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.964519,17.435,65.840622
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.965,17.544,65.913508
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.968377,18.196,66.86103
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.97,18.605,67.517007
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.971816,19.039,68.24587
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.974881,19.937,69.509232
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.975,19.983,69.557823
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.977613,20.774,70.894072
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.98,21.584,71.890185
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.980047,21.604,71.963071
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.982217,22.454,72.789116
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.984151,23.307,73.858115
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.985,23.706,74.198251
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.985875,24.162,74.757046
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.987411,25.03,75.58309
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.98878,25.927,76.676385
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.99,26.826,77.478134
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.991087,27.675,78.838678
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.992057,28.523,79.616132
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.992921,29.442,80.344995
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.99369,30.261,81.341108
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.994377,31.086,82.02138
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.994988,32.005,82.653061
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.995,32.022,82.653061
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.995533,32.927,83.309038
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.996019,33.79,84.062196
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.996452,34.672,84.693878
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.996838,35.588,85.252672
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.997182,36.444,85.981535
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.997488,37.289,86.564626
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.997761,38.145,87.026239
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998005,39.011,87.633625
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998222,39.951,88.289602
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998415,40.755,88.824101
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998587,41.602,89.261419
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998741,42.44,89.820214
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.998878,43.327,90.281827
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999,44.182,90.573372
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999109,45.049,91.180758
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999206,45.869,91.54519
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999292,46.689,91.933916
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999369,47.529,92.152575
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999438,48.302,92.541302
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999499,49.151,92.662779
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999553,49.898,92.832847
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999602,50.764,93.075802
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999645,51.525,93.415938
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999684,52.336,93.683188
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999718,53.103,93.901846
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999749,53.893,94.144801
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999776,54.584,94.436346
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.9998,55.439,94.776482
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999822,56.193,95.068027
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999842,56.968,95.359572
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999859,57.693,95.52964
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999874,58.438,95.918367
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.999888,59.071,95.966958
+1.25 g q8h,"misspecified: model 0.94, truth estimate",0.9999,59.819,96.307094
+1.25 g q8h,"misspecified: model 0.94, truth estimate",1.0,99.353,100.0
+2.5 g q12h,estimate,0.0,0.0,0.0
+2.5 g q12h,estimate,0.005,0.004,0.042239
+2.5 g q12h,estimate,0.01,0.004,0.042239
+2.5 g q12h,estimate,0.015,0.004,0.042239
+2.5 g q12h,estimate,0.02,0.004,0.042239
+2.5 g q12h,estimate,0.025,0.004,0.042239
+2.5 g q12h,estimate,0.03,0.004,0.042239
+2.5 g q12h,estimate,0.035,0.004,0.042239
+2.5 g q12h,estimate,0.04,0.004,0.042239
+2.5 g q12h,estimate,0.045,0.004,0.042239
+2.5 g q12h,estimate,0.05,0.004,0.042239
+2.5 g q12h,estimate,0.055,0.004,0.042239
+2.5 g q12h,estimate,0.06,0.004,0.042239
+2.5 g q12h,estimate,0.065,0.004,0.042239
+2.5 g q12h,estimate,0.07,0.004,0.042239
+2.5 g q12h,estimate,0.075,0.004,0.042239
+2.5 g q12h,estimate,0.08,0.004,0.042239
+2.5 g q12h,estimate,0.085,0.006,0.063358
+2.5 g q12h,estimate,0.09,0.011,0.105597
+2.5 g q12h,estimate,0.095,0.014,0.137276
+2.5 g q12h,estimate,0.1,0.014,0.137276
+2.5 g q12h,estimate,0.105,0.015,0.147835
+2.5 g q12h,estimate,0.11,0.016,0.147835
+2.5 g q12h,estimate,0.115,0.016,0.147835
+2.5 g q12h,estimate,0.12,0.018,0.168955
+2.5 g q12h,estimate,0.125,0.018,0.168955
+2.5 g q12h,estimate,0.13,0.018,0.168955
+2.5 g q12h,estimate,0.135,0.02,0.190074
+2.5 g q12h,estimate,0.14,0.021,0.200634
+2.5 g q12h,estimate,0.145,0.022,0.211193
+2.5 g q12h,estimate,0.15,0.022,0.211193
+2.5 g q12h,estimate,0.155,0.024,0.232313
+2.5 g q12h,estimate,0.16,0.024,0.232313
+2.5 g q12h,estimate,0.165,0.03,0.285111
+2.5 g q12h,estimate,0.17,0.039,0.369588
+2.5 g q12h,estimate,0.175,0.045,0.432946
+2.5 g q12h,estimate,0.18,0.056,0.538543
+2.5 g q12h,estimate,0.185,0.065,0.62302
+2.5 g q12h,estimate,0.19,0.074,0.718057
+2.5 g q12h,estimate,0.195,0.081,0.770855
+2.5 g q12h,estimate,0.2,0.095,0.865892
+2.5 g q12h,estimate,0.205,0.111,0.982049
+2.5 g q12h,estimate,0.21,0.128,1.151003
+2.5 g q12h,estimate,0.215,0.143,1.277719
+2.5 g q12h,estimate,0.22,0.155,1.330517
+2.5 g q12h,estimate,0.225,0.166,1.404435
+2.5 g q12h,estimate,0.23,0.175,1.499472
+2.5 g q12h,estimate,0.235,0.18,1.531151
+2.5 g q12h,estimate,0.24,0.19,1.605069
+2.5 g q12h,estimate,0.245,0.201,1.678986
+2.5 g q12h,estimate,0.25,0.21,1.752904
+2.5 g q12h,estimate,0.255,0.215,1.774023
+2.5 g q12h,estimate,0.26,0.222,1.837381
+2.5 g q12h,estimate,0.265,0.232,1.900739
+2.5 g q12h,estimate,0.27,0.242,1.985216
+2.5 g q12h,estimate,0.275,0.251,2.069694
+2.5 g q12h,estimate,0.28,0.26,2.143611
+2.5 g q12h,estimate,0.285,0.275,2.249208
+2.5 g q12h,estimate,0.29,0.281,2.280887
+2.5 g q12h,estimate,0.295,0.297,2.407603
+2.5 g q12h,estimate,0.3,0.308,2.470961
+2.5 g q12h,estimate,0.305,0.323,2.565998
+2.5 g q12h,estimate,0.31,0.338,2.703273
+2.5 g q12h,estimate,0.315,0.35,2.787751
+2.5 g q12h,estimate,0.32,0.373,2.935586
+2.5 g q12h,estimate,0.325,0.4,3.104541
+2.5 g q12h,estimate,0.33,0.421,3.273495
+2.5 g q12h,estimate,0.335,0.436,3.379092
+2.5 g q12h,estimate,0.34,0.451,3.463569
+2.5 g q12h,estimate,0.345,0.473,3.611404
+2.5 g q12h,estimate,0.35,0.494,3.801478
+2.5 g q12h,estimate,0.355,0.508,3.907075
+2.5 g q12h,estimate,0.36,0.524,4.002112
+2.5 g q12h,estimate,0.365,0.551,4.192186
+2.5 g q12h,estimate,0.37,0.579,4.3717
+2.5 g q12h,estimate,0.375,0.604,4.551214
+2.5 g q12h,estimate,0.38,0.639,4.794087
+2.5 g q12h,estimate,0.385,0.661,4.920803
+2.5 g q12h,estimate,0.39,0.689,5.100317
+2.5 g q12h,estimate,0.395,0.719,5.332629
+2.5 g q12h,estimate,0.4,0.755,5.564942
+2.5 g q12h,estimate,0.405,0.784,5.744456
+2.5 g q12h,estimate,0.41,0.818,6.008448
+2.5 g q12h,estimate,0.415,0.857,6.272439
+2.5 g q12h,estimate,0.42,0.9,6.504752
+2.5 g q12h,estimate,0.425,0.941,6.779303
+2.5 g q12h,estimate,0.43,0.983,7.064414
+2.5 g q12h,estimate,0.435,1.041,7.338965
+2.5 g q12h,estimate,0.44,1.096,7.740232
+2.5 g q12h,estimate,0.445,1.148,8.035903
+2.5 g q12h,estimate,0.45,1.201,8.394931
+2.5 g q12h,estimate,0.455,1.266,8.732841
+2.5 g q12h,estimate,0.46,1.336,9.123548
+2.5 g q12h,estimate,0.465,1.401,9.461457
+2.5 g q12h,estimate,0.47,1.455,9.725449
+2.5 g q12h,estimate,0.475,1.527,10.158395
+2.5 g q12h,estimate,0.48,1.583,10.496304
+2.5 g q12h,estimate,0.485,1.645,10.760296
+2.5 g q12h,estimate,0.49,1.729,11.203801
+2.5 g q12h,estimate,0.495,1.789,11.436114
+2.5 g q12h,estimate,0.5,1.839,11.710665
+2.5 g q12h,estimate,0.505,1.916,12.069694
+2.5 g q12h,estimate,0.51,1.985,12.323126
+2.5 g q12h,estimate,0.515,2.064,12.692714
+2.5 g q12h,estimate,0.52,2.14,13.093981
+2.5 g q12h,estimate,0.525,2.211,13.45301
+2.5 g q12h,estimate,0.53,2.297,13.907075
+2.5 g q12h,estimate,0.535,2.375,14.287223
+2.5 g q12h,estimate,0.54,2.465,14.762408
+2.5 g q12h,estimate,0.545,2.556,15.248152
+2.5 g q12h,estimate,0.55,2.617,15.522703
+2.5 g q12h,estimate,0.555,2.682,15.818374
+2.5 g q12h,estimate,0.56,2.779,16.282999
+2.5 g q12h,estimate,0.565,2.873,16.737064
+2.5 g q12h,estimate,0.57,2.979,17.243928
+2.5 g q12h,estimate,0.575,3.081,17.655755
+2.5 g q12h,estimate,0.58,3.191,18.173178
+2.5 g q12h,estimate,0.585,3.297,18.690602
+2.5 g q12h,estimate,0.59,3.417,19.303062
+2.5 g q12h,estimate,0.595,3.522,19.746568
+2.5 g q12h,estimate,0.6,3.643,20.32735
+2.5 g q12h,estimate,0.605,3.752,20.770855
+2.5 g q12h,estimate,0.61,3.878,21.2566
+2.5 g q12h,estimate,0.615,4.028,21.89018
+2.5 g q12h,estimate,0.62,4.138,22.291447
+2.5 g q12h,estimate,0.625,4.274,22.777191
+2.5 g q12h,estimate,0.63,4.435,23.463569
+2.5 g q12h,estimate,0.635,4.574,23.959873
+2.5 g q12h,estimate,0.64,4.709,24.530095
+2.5 g q12h,estimate,0.645,4.868,25.153115
+2.5 g q12h,estimate,0.65,5.016,25.6283
+2.5 g q12h,estimate,0.655,5.19,26.325238
+2.5 g q12h,estimate,0.66,5.361,26.990496
+2.5 g q12h,estimate,0.665,5.544,27.666315
+2.5 g q12h,estimate,0.67,5.763,28.394931
+2.5 g q12h,estimate,0.675,5.972,29.081309
+2.5 g q12h,estimate,0.68,6.176,29.820486
+2.5 g q12h,estimate,0.685,6.378,30.369588
+2.5 g q12h,estimate,0.69,6.607,31.129884
+2.5 g q12h,estimate,0.695,6.841,31.921859
+2.5 g q12h,estimate,0.7,7.055,32.650475
+2.5 g q12h,estimate,0.705,7.305,33.43189
+2.5 g q12h,estimate,0.71,7.566,34.255544
+2.5 g q12h,estimate,0.715,7.823,35.068638
+2.5 g q12h,estimate,0.72,8.091,35.850053
+2.5 g q12h,estimate,0.725,8.387,36.684266
+2.5 g q12h,estimate,0.73,8.636,37.338965
+2.5 g q12h,estimate,0.735,8.982,38.342133
+2.5 g q12h,estimate,0.74,9.27,39.239704
+2.5 g q12h,estimate,0.745,9.601,40.073918
+2.5 g q12h,estimate,0.75,9.933,41.013728
+2.5 g q12h,estimate,0.755,10.302,41.858501
+2.5 g q12h,estimate,0.76,10.654,42.745512
+2.5 g q12h,estimate,0.765,11.042,43.695882
+2.5 g q12h,estimate,0.77,11.402,44.646251
+2.5 g q12h,estimate,0.775,11.798,45.491024
+2.5 g q12h,estimate,0.78,12.262,46.56811
+2.5 g q12h,estimate,0.785,12.682,47.50792
+2.5 g q12h,estimate,0.79,13.111,48.458289
+2.5 g q12h,estimate,0.795,13.599,49.535375
+2.5 g q12h,estimate,0.8,14.112,50.707497
+2.5 g q12h,estimate,0.805,14.616,51.731785
+2.5 g q12h,estimate,0.81,15.154,52.893347
+2.5 g q12h,estimate,0.815,15.716,54.149947
+2.5 g q12h,estimate,0.82,16.308,55.427666
+2.5 g q12h,estimate,0.825,16.923,56.525871
+2.5 g q12h,estimate,0.83,17.609,57.761352
+2.5 g q12h,estimate,0.835,18.283,58.944034
+2.5 g q12h,estimate,0.84,18.965,60.158395
+2.5 g q12h,estimate,0.845,19.687,61.362196
+2.5 g q12h,estimate,0.85,20.434,62.682154
+2.5 g q12h,estimate,0.855,21.248,63.980993
+2.5 g q12h,estimate,0.86,22.134,65.269271
+2.5 g q12h,estimate,0.865,22.965,66.494192
+2.5 g q12h,estimate,0.87,23.847,67.793031
+2.5 g q12h,estimate,0.875,24.793,68.996832
+2.5 g q12h,estimate,0.88,25.823,70.168955
+2.5 g q12h,estimate,0.885,26.95,71.689546
+2.5 g q12h,estimate,0.89,28.087,73.13622
+2.5 g q12h,estimate,0.895,29.274,74.435058
+2.5 g q12h,estimate,0.9,30.625,75.860612
+2.5 g q12h,estimate,0.905,31.944,77.085533
+2.5 g q12h,estimate,0.91,33.403,78.458289
+2.5 g q12h,estimate,0.910875,33.652,78.732841
+2.5 g q12h,estimate,0.915,34.936,79.936642
+2.5 g q12h,estimate,0.92,36.666,81.531151
+2.5 g q12h,estimate,0.920567,36.871,81.689546
+2.5 g q12h,estimate,0.925,38.435,83.041183
+2.5 g q12h,estimate,0.929205,39.987,84.255544
+2.5 g q12h,estimate,0.93,40.307,84.477297
+2.5 g q12h,estimate,0.935,42.328,85.976769
+2.5 g q12h,estimate,0.936904,43.136,86.430834
+2.5 g q12h,estimate,0.94,44.454,87.18057
+2.5 g q12h,estimate,0.943766,46.132,88.162619
+2.5 g q12h,estimate,0.945,46.689,88.384372
+2.5 g q12h,estimate,0.949881,49.116,89.736008
+2.5 g q12h,estimate,0.95,49.171,89.767687
+2.5 g q12h,estimate,0.955,51.914,91.24604
+2.5 g q12h,estimate,0.955332,52.135,91.277719
+2.5 g q12h,estimate,0.96,54.9,92.397043
+2.5 g q12h,estimate,0.960189,55.014,92.449842
+2.5 g q12h,estimate,0.964519,57.878,93.558606
+2.5 g q12h,estimate,0.965,58.183,93.695882
+2.5 g q12h,estimate,0.968377,60.564,94.487856
+2.5 g q12h,estimate,0.97,61.799,94.973601
+2.5 g q12h,estimate,0.971816,63.239,95.417107
+2.5 g q12h,estimate,0.974881,65.728,96.135164
+2.5 g q12h,estimate,0.975,65.83,96.145723
+2.5 g q12h,estimate,0.977613,68.201,96.747624
+2.5 g q12h,estimate,0.98,70.594,97.265048
+2.5 g q12h,estimate,0.980047,70.64,97.275607
+2.5 g q12h,estimate,0.982217,72.96,97.708553
+2.5 g q12h,estimate,0.984151,75.124,98.12038
+2.5 g q12h,estimate,0.985,76.152,98.321014
+2.5 g q12h,estimate,0.985875,77.211,98.458289
+2.5 g q12h,estimate,0.987411,79.059,98.669483
+2.5 g q12h,estimate,0.98878,80.838,98.965153
+2.5 g q12h,estimate,0.99,82.506,99.155227
+2.5 g q12h,estimate,0.991087,84.013,99.250264
+2.5 g q12h,estimate,0.992057,85.482,99.355861
+2.5 g q12h,estimate,0.992921,86.783,99.514256
+2.5 g q12h,estimate,0.99369,88.037,99.577614
+2.5 g q12h,estimate,0.994377,89.197,99.68321
+2.5 g q12h,estimate,0.994988,90.266,99.778247
+2.5 g q12h,estimate,0.995,90.291,99.778247
+2.5 g q12h,estimate,0.995533,91.216,99.831045
+2.5 g q12h,estimate,0.996019,92.025,99.852165
+2.5 g q12h,estimate,0.996452,92.84,99.873284
+2.5 g q12h,estimate,0.996838,93.536,99.904963
+2.5 g q12h,estimate,0.997182,94.159,99.936642
+2.5 g q12h,estimate,0.997488,94.752,99.957761
+2.5 g q12h,estimate,0.997761,95.238,99.968321
+2.5 g q12h,estimate,0.998005,95.669,99.968321
+2.5 g q12h,estimate,0.998222,96.066,99.968321
+2.5 g q12h,estimate,0.998415,96.44,99.978881
+2.5 g q12h,estimate,0.998587,96.81,99.978881
+2.5 g q12h,estimate,0.998741,97.145,99.978881
+2.5 g q12h,estimate,0.998878,97.44,99.98944
+2.5 g q12h,estimate,0.999,97.703,99.98944
+2.5 g q12h,estimate,0.999109,97.958,99.98944
+2.5 g q12h,estimate,0.999206,98.171,100.0
+2.5 g q12h,estimate,0.999292,98.384,100.0
+2.5 g q12h,estimate,0.999369,98.542,100.0
+2.5 g q12h,estimate,0.999438,98.691,100.0
+2.5 g q12h,estimate,0.999499,98.82,100.0
+2.5 g q12h,estimate,0.999553,98.941,100.0
+2.5 g q12h,estimate,0.999602,99.047,100.0
+2.5 g q12h,estimate,0.999645,99.144,100.0
+2.5 g q12h,estimate,0.999684,99.231,100.0
+2.5 g q12h,estimate,0.999718,99.296,100.0
+2.5 g q12h,estimate,0.999749,99.36,100.0
+2.5 g q12h,estimate,0.999776,99.427,100.0
+2.5 g q12h,estimate,0.9998,99.461,100.0
+2.5 g q12h,estimate,0.999822,99.493,100.0
+2.5 g q12h,estimate,0.999842,99.538,100.0
+2.5 g q12h,estimate,0.999859,99.579,100.0
+2.5 g q12h,estimate,0.999874,99.6,100.0
+2.5 g q12h,estimate,0.999888,99.63,100.0
+2.5 g q12h,estimate,0.9999,99.663,100.0
+2.5 g q12h,estimate,1.0,100.0,100.0
+2.5 g q12h,upper bound,0.0,0.0,0.0
+2.5 g q12h,upper bound,0.005,0.018,0.19274
+2.5 g q12h,upper bound,0.01,0.018,0.19274
+2.5 g q12h,upper bound,0.015,0.018,0.19274
+2.5 g q12h,upper bound,0.02,0.034,0.364065
+2.5 g q12h,upper bound,0.025,0.045,0.48185
+2.5 g q12h,upper bound,0.03,0.058,0.610344
+2.5 g q12h,upper bound,0.035,0.067,0.706714
+2.5 g q12h,upper bound,0.04,0.084,0.878038
+2.5 g q12h,upper bound,0.045,0.094,0.974408
+2.5 g q12h,upper bound,0.05,0.115,1.199272
+2.5 g q12h,upper bound,0.055,0.123,1.284934
+2.5 g q12h,upper bound,0.06,0.129,1.349181
+2.5 g q12h,upper bound,0.065,0.135,1.40272
+2.5 g q12h,upper bound,0.07,0.142,1.466966
+2.5 g q12h,upper bound,0.075,0.156,1.616875
+2.5 g q12h,upper bound,0.08,0.175,1.7882
+2.5 g q12h,upper bound,0.085,0.199,2.023771
+2.5 g q12h,upper bound,0.09,0.212,2.141557
+2.5 g q12h,upper bound,0.095,0.224,2.259343
+2.5 g q12h,upper bound,0.1,0.25,2.516329
+2.5 g q12h,upper bound,0.105,0.27,2.709069
+2.5 g q12h,upper bound,0.11,0.29,2.90181
+2.5 g q12h,upper bound,0.115,0.324,3.212335
+2.5 g q12h,upper bound,0.12,0.353,3.490738
+2.5 g q12h,upper bound,0.125,0.381,3.737017
+2.5 g q12h,upper bound,0.13,0.417,4.047543
+2.5 g q12h,upper bound,0.135,0.45,4.336653
+2.5 g q12h,upper bound,0.14,0.474,4.561516
+2.5 g q12h,upper bound,0.145,0.499,4.818503
+2.5 g q12h,upper bound,0.15,0.527,5.043367
+2.5 g q12h,upper bound,0.155,0.567,5.439555
+2.5 g q12h,upper bound,0.16,0.579,5.535925
+2.5 g q12h,upper bound,0.165,0.609,5.814327
+2.5 g q12h,upper bound,0.17,0.635,6.028483
+2.5 g q12h,upper bound,0.175,0.663,6.296177
+2.5 g q12h,upper bound,0.18,0.694,6.606703
+2.5 g q12h,upper bound,0.185,0.724,6.874398
+2.5 g q12h,upper bound,0.19,0.75,7.088553
+2.5 g q12h,upper bound,0.195,0.776,7.313417
+2.5 g q12h,upper bound,0.2,0.806,7.559696
+2.5 g q12h,upper bound,0.205,0.835,7.784559
+2.5 g q12h,upper bound,0.21,0.863,7.977299
+2.5 g q12h,upper bound,0.215,0.892,8.202163
+2.5 g q12h,upper bound,0.22,0.922,8.448442
+2.5 g q12h,upper bound,0.225,0.959,8.780383
+2.5 g q12h,upper bound,0.23,0.986,9.015955
+2.5 g q12h,upper bound,0.235,1.025,9.32648
+2.5 g q12h,upper bound,0.24,1.06,9.562052
+2.5 g q12h,upper bound,0.245,1.097,9.872577
+2.5 g q12h,upper bound,0.25,1.135,10.183103
+2.5 g q12h,upper bound,0.255,1.168,10.482921
+2.5 g q12h,upper bound,0.26,1.199,10.664953
+2.5 g q12h,upper bound,0.265,1.237,10.932648
+2.5 g q12h,upper bound,0.27,1.274,11.253882
+2.5 g q12h,upper bound,0.275,1.318,11.607238
+2.5 g q12h,upper bound,0.28,1.365,11.917764
+2.5 g q12h,upper bound,0.285,1.409,12.260413
+2.5 g q12h,upper bound,0.29,1.45,12.581647
+2.5 g q12h,upper bound,0.295,1.501,12.935004
+2.5 g q12h,upper bound,0.3,1.555,13.309776
+2.5 g q12h,upper bound,0.305,1.599,13.620302
+2.5 g q12h,upper bound,0.31,1.65,13.995074
+2.5 g q12h,upper bound,0.315,1.696,14.337724
+2.5 g q12h,upper bound,0.32,1.749,14.755327
+2.5 g q12h,upper bound,0.325,1.816,15.269301
+2.5 g q12h,upper bound,0.33,1.868,15.654781
+2.5 g q12h,upper bound,0.335,1.922,16.008138
+2.5 g q12h,upper bound,0.34,1.984,16.511404
+2.5 g q12h,upper bound,0.345,2.041,16.929007
+2.5 g q12h,upper bound,0.35,2.107,17.421565
+2.5 g q12h,upper bound,0.355,2.164,17.849877
+2.5 g q12h,upper bound,0.36,2.231,18.353143
+2.5 g q12h,upper bound,0.365,2.288,18.663668
+2.5 g q12h,upper bound,0.37,2.346,19.027733
+2.5 g q12h,upper bound,0.375,2.411,19.47746
+2.5 g q12h,upper bound,0.38,2.471,19.852233
+2.5 g q12h,upper bound,0.385,2.537,20.355498
+2.5 g q12h,upper bound,0.39,2.6,20.762394
+2.5 g q12h,upper bound,0.395,2.662,21.212121
+2.5 g q12h,upper bound,0.4,2.733,21.619017
+2.5 g q12h,upper bound,0.405,2.812,22.111575
+2.5 g q12h,upper bound,0.41,2.878,22.518471
+2.5 g q12h,upper bound,0.415,2.944,22.914659
+2.5 g q12h,upper bound,0.42,3.01,23.321555
+2.5 g q12h,upper bound,0.425,3.071,23.717743
+2.5 g q12h,upper bound,0.43,3.149,24.231716
+2.5 g q12h,upper bound,0.435,3.22,24.638612
+2.5 g q12h,upper bound,0.44,3.307,25.195417
+2.5 g q12h,upper bound,0.445,3.4,25.8593
+2.5 g q12h,upper bound,0.45,3.485,26.383981
+2.5 g q12h,upper bound,0.455,3.578,26.812293
+2.5 g q12h,upper bound,0.46,3.668,27.326266
+2.5 g q12h,upper bound,0.465,3.751,27.818824
+2.5 g q12h,upper bound,0.47,3.827,28.279259
+2.5 g q12h,upper bound,0.475,3.929,28.782525
+2.5 g q12h,upper bound,0.48,4.018,29.275083
+2.5 g q12h,upper bound,0.485,4.133,29.906842
+2.5 g q12h,upper bound,0.49,4.228,30.3994
+2.5 g q12h,upper bound,0.495,4.313,30.881251
+2.5 g q12h,upper bound,0.5,4.404,31.256023
+2.5 g q12h,upper bound,0.505,4.497,31.823536
+2.5 g q12h,upper bound,0.51,4.602,32.423172
+2.5 g q12h,upper bound,0.515,4.709,33.022808
+2.5 g q12h,upper bound,0.52,4.814,33.665275
+2.5 g q12h,upper bound,0.525,4.929,34.297034
+2.5 g q12h,upper bound,0.53,5.028,34.811008
+2.5 g q12h,upper bound,0.535,5.136,35.37852
+2.5 g q12h,upper bound,0.54,5.27,36.095942
+2.5 g q12h,upper bound,0.545,5.374,36.599208
+2.5 g q12h,upper bound,0.55,5.5,37.209551
+2.5 g q12h,upper bound,0.555,5.64,37.819895
+2.5 g q12h,upper bound,0.56,5.771,38.440947
+2.5 g q12h,upper bound,0.565,5.89,39.029875
+2.5 g q12h,upper bound,0.57,6.023,39.640218
+2.5 g q12h,upper bound,0.575,6.132,40.132777
+2.5 g q12h,upper bound,0.58,6.283,40.764536
+2.5 g q12h,upper bound,0.585,6.422,41.246386
+2.5 g q12h,upper bound,0.59,6.535,41.717529
+2.5 g q12h,upper bound,0.595,6.664,42.285041
+2.5 g q12h,upper bound,0.6,6.808,43.002463
+2.5 g q12h,upper bound,0.605,6.954,43.634222
+2.5 g q12h,upper bound,0.61,7.095,44.255274
+2.5 g q12h,upper bound,0.615,7.254,44.908448
+2.5 g q12h,upper bound,0.62,7.38,45.43313
+2.5 g q12h,upper bound,0.625,7.528,46.064889
+2.5 g q12h,upper bound,0.63,7.68,46.664525
+2.5 g q12h,upper bound,0.635,7.824,47.232038
+2.5 g q12h,upper bound,0.64,7.979,47.79955
+2.5 g q12h,upper bound,0.645,8.14,48.388478
+2.5 g q12h,upper bound,0.65,8.332,48.934575
+2.5 g q12h,upper bound,0.655,8.488,49.58775
+2.5 g q12h,upper bound,0.66,8.665,50.230217
+2.5 g q12h,upper bound,0.665,8.834,50.872684
+2.5 g q12h,upper bound,0.67,8.995,51.311704
+2.5 g q12h,upper bound,0.675,9.197,52.136203
+2.5 g q12h,upper bound,0.68,9.391,52.800086
+2.5 g q12h,upper bound,0.685,9.566,53.335475
+2.5 g q12h,upper bound,0.69,9.743,53.828033
+2.5 g q12h,upper bound,0.695,9.934,54.395546
+2.5 g q12h,upper bound,0.7,10.135,55.112967
+2.5 g q12h,upper bound,0.705,10.332,55.755434
+2.5 g q12h,upper bound,0.71,10.549,56.419317
+2.5 g q12h,upper bound,0.715,10.77,57.083199
+2.5 g q12h,upper bound,0.72,10.992,57.618589
+2.5 g q12h,upper bound,0.725,11.212,58.33601
+2.5 g q12h,upper bound,0.73,11.464,59.06414
+2.5 g q12h,upper bound,0.735,11.71,59.695899
+2.5 g q12h,upper bound,0.74,11.964,60.338366
+2.5 g q12h,upper bound,0.745,12.216,60.991541
+2.5 g q12h,upper bound,0.75,12.465,61.6233
+2.5 g q12h,upper bound,0.755,12.737,62.426384
+2.5 g q12h,upper bound,0.76,13.012,63.143806
+2.5 g q12h,upper bound,0.765,13.269,63.722026
+2.5 g q12h,upper bound,0.77,13.56,64.450155
+2.5 g q12h,upper bound,0.775,13.832,65.114038
+2.5 g q12h,upper bound,0.78,14.126,65.831459
+2.5 g q12h,upper bound,0.785,14.446,66.548881
+2.5 g q12h,upper bound,0.79,14.742,67.137809
+2.5 g q12h,upper bound,0.795,15.083,67.833815
+2.5 g q12h,upper bound,0.8,15.413,68.561945
+2.5 g q12h,upper bound,0.805,15.766,69.418567
+2.5 g q12h,upper bound,0.81,16.088,70.061034
+2.5 g q12h,upper bound,0.815,16.432,70.703501
+2.5 g q12h,upper bound,0.82,16.823,71.560124
+2.5 g q12h,upper bound,0.825,17.279,72.341792
+2.5 g q12h,upper bound,0.83,17.714,73.059214
+2.5 g q12h,upper bound,0.835,18.143,73.808759
+2.5 g q12h,upper bound,0.84,18.575,74.547596
+2.5 g q12h,upper bound,0.845,19.042,75.286433
+2.5 g q12h,upper bound,0.85,19.564,76.282257
+2.5 g q12h,upper bound,0.855,20.049,76.967555
+2.5 g q12h,upper bound,0.86,20.606,77.90984
+2.5 g q12h,upper bound,0.865,21.178,78.852125
+2.5 g q12h,upper bound,0.87,21.734,79.719456
+2.5 g q12h,upper bound,0.875,22.299,80.490417
+2.5 g q12h,upper bound,0.88,22.952,81.347039
+2.5 g q12h,upper bound,0.885,23.708,82.278617
+2.5 g q12h,upper bound,0.89,24.381,82.963915
+2.5 g q12h,upper bound,0.895,25.124,83.649213
+2.5 g q12h,upper bound,0.9,25.901,84.452297
+2.5 g q12h,upper bound,0.905,26.703,85.330335
+2.5 g q12h,upper bound,0.91,27.546,86.069172
+2.5 g q12h,upper bound,0.910875,27.704,86.229789
+2.5 g q12h,upper bound,0.915,28.43,86.797302
+2.5 g q12h,upper bound,0.92,29.408,87.718171
+2.5 g q12h,upper bound,0.920567,29.522,87.814541
+2.5 g q12h,upper bound,0.925,30.402,88.574794
+2.5 g q12h,upper bound,0.929205,31.322,89.281508
+2.5 g q12h,upper bound,0.93,31.497,89.452832
+2.5 g q12h,upper bound,0.935,32.697,90.277332
+2.5 g q12h,upper bound,0.936904,33.203,90.630689
+2.5 g q12h,upper bound,0.94,33.986,91.133954
+2.5 g q12h,upper bound,0.943766,35.011,91.819253
+2.5 g q12h,upper bound,0.945,35.342,91.979869
+2.5 g q12h,upper bound,0.949881,36.831,92.900739
+2.5 g q12h,upper bound,0.95,36.867,92.911447
+2.5 g q12h,upper bound,0.955,38.599,93.725238
+2.5 g q12h,upper bound,0.955332,38.71,93.778777
+2.5 g q12h,upper bound,0.96,40.39,94.592569
+2.5 g q12h,upper bound,0.960189,40.465,94.656816
+2.5 g q12h,upper bound,0.964519,42.274,95.245744
+2.5 g q12h,upper bound,0.965,42.49,95.331406
+2.5 g q12h,upper bound,0.968377,44.026,95.898919
+2.5 g q12h,upper bound,0.97,44.777,96.048827
+2.5 g q12h,upper bound,0.971816,45.695,96.252275
+2.5 g q12h,upper bound,0.974881,47.384,96.734126
+2.5 g q12h,upper bound,0.975,47.462,96.734126
+2.5 g q12h,upper bound,0.977613,49.082,97.108898
+2.5 g q12h,upper bound,0.98,50.757,97.462255
+2.5 g q12h,upper bound,0.980047,50.783,97.462255
+2.5 g q12h,upper bound,0.982217,52.489,97.772781
+2.5 g q12h,upper bound,0.984151,54.143,98.094014
+2.5 g q12h,upper bound,0.985,54.925,98.233216
+2.5 g q12h,upper bound,0.985875,55.792,98.351001
+2.5 g q12h,upper bound,0.987411,57.42,98.682942
+2.5 g q12h,upper bound,0.98878,59.014,98.843559
+2.5 g q12h,upper bound,0.99,60.52,98.993468
+2.5 g q12h,upper bound,0.991087,62.097,99.121962
+2.5 g q12h,upper bound,0.992057,63.722,99.271871
+2.5 g q12h,upper bound,0.992921,65.221,99.378948
+2.5 g q12h,upper bound,0.99369,66.707,99.464611
+2.5 g q12h,upper bound,0.994377,68.139,99.507442
+2.5 g q12h,upper bound,0.994988,69.537,99.625228
+2.5 g q12h,upper bound,0.995,69.567,99.625228
+2.5 g q12h,upper bound,0.995533,70.848,99.657351
+2.5 g q12h,upper bound,0.996019,72.093,99.700182
+2.5 g q12h,upper bound,0.996452,73.346,99.721598
+2.5 g q12h,upper bound,0.996838,74.576,99.743013
+2.5 g q12h,upper bound,0.997182,75.665,99.764429
+2.5 g q12h,upper bound,0.997488,76.804,99.775137
+2.5 g q12h,upper bound,0.997761,77.884,99.796552
+2.5 g q12h,upper bound,0.998005,78.859,99.828675
+2.5 g q12h,upper bound,0.998222,79.834,99.860799
+2.5 g q12h,upper bound,0.998415,80.735,99.871507
+2.5 g q12h,upper bound,0.998587,81.633,99.882214
+2.5 g q12h,upper bound,0.998741,82.5,99.892922
+2.5 g q12h,upper bound,0.998878,83.32,99.914338
+2.5 g q12h,upper bound,0.999,84.052,99.914338
+2.5 g q12h,upper bound,0.999109,84.847,99.914338
+2.5 g q12h,upper bound,0.999206,85.596,99.925046
+2.5 g q12h,upper bound,0.999292,86.237,99.935753
+2.5 g q12h,upper bound,0.999369,86.946,99.935753
+2.5 g q12h,upper bound,0.999438,87.541,99.957169
+2.5 g q12h,upper bound,0.999499,88.19,99.967877
+2.5 g q12h,upper bound,0.999553,88.763,99.967877
+2.5 g q12h,upper bound,0.999602,89.339,99.967877
+2.5 g q12h,upper bound,0.999645,89.912,99.978584
+2.5 g q12h,upper bound,0.999684,90.452,99.978584
+2.5 g q12h,upper bound,0.999718,91.005,99.989292
+2.5 g q12h,upper bound,0.999749,91.497,99.989292
+2.5 g q12h,upper bound,0.999776,91.969,99.989292
+2.5 g q12h,upper bound,0.9998,92.435,99.989292
+2.5 g q12h,upper bound,0.999822,92.879,99.989292
+2.5 g q12h,upper bound,0.999842,93.263,100.0
+2.5 g q12h,upper bound,0.999859,93.657,100.0
+2.5 g q12h,upper bound,0.999874,94.027,100.0
+2.5 g q12h,upper bound,0.999888,94.41,100.0
+2.5 g q12h,upper bound,0.9999,94.744,100.0
+2.5 g q12h,upper bound,1.0,99.998,100.0
+2.5 g q12h,lower bound,0.0,0.0,0.0
+2.5 g q12h,lower bound,0.005,0.002,0.021055
+2.5 g q12h,lower bound,0.01,0.002,0.021055
+2.5 g q12h,lower bound,0.015,0.002,0.021055
+2.5 g q12h,lower bound,0.02,0.002,0.021055
+2.5 g q12h,lower bound,0.025,0.002,0.021055
+2.5 g q12h,lower bound,0.03,0.002,0.021055
+2.5 g q12h,lower bound,0.035,0.002,0.021055
+2.5 g q12h,lower bound,0.04,0.002,0.021055
+2.5 g q12h,lower bound,0.045,0.002,0.021055
+2.5 g q12h,lower bound,0.05,0.002,0.021055
+2.5 g q12h,lower bound,0.055,0.002,0.021055
+2.5 g q12h,lower bound,0.06,0.002,0.021055
+2.5 g q12h,lower bound,0.065,0.002,0.021055
+2.5 g q12h,lower bound,0.07,0.002,0.021055
+2.5 g q12h,lower bound,0.075,0.002,0.021055
+2.5 g q12h,lower bound,0.08,0.002,0.021055
+2.5 g q12h,lower bound,0.085,0.002,0.021055
+2.5 g q12h,lower bound,0.09,0.002,0.021055
+2.5 g q12h,lower bound,0.095,0.002,0.021055
+2.5 g q12h,lower bound,0.1,0.002,0.021055
+2.5 g q12h,lower bound,0.105,0.002,0.021055
+2.5 g q12h,lower bound,0.11,0.002,0.021055
+2.5 g q12h,lower bound,0.115,0.002,0.021055
+2.5 g q12h,lower bound,0.12,0.002,0.021055
+2.5 g q12h,lower bound,0.125,0.002,0.021055
+2.5 g q12h,lower bound,0.13,0.002,0.021055
+2.5 g q12h,lower bound,0.135,0.002,0.021055
+2.5 g q12h,lower bound,0.14,0.002,0.021055
+2.5 g q12h,lower bound,0.145,0.002,0.021055
+2.5 g q12h,lower bound,0.15,0.002,0.021055
+2.5 g q12h,lower bound,0.155,0.002,0.021055
+2.5 g q12h,lower bound,0.16,0.002,0.021055
+2.5 g q12h,lower bound,0.165,0.002,0.021055
+2.5 g q12h,lower bound,0.17,0.002,0.021055
+2.5 g q12h,lower bound,0.175,0.002,0.021055
+2.5 g q12h,lower bound,0.18,0.002,0.021055
+2.5 g q12h,lower bound,0.185,0.002,0.021055
+2.5 g q12h,lower bound,0.19,0.002,0.021055
+2.5 g q12h,lower bound,0.195,0.002,0.021055
+2.5 g q12h,lower bound,0.2,0.002,0.021055
+2.5 g q12h,lower bound,0.205,0.003,0.021055
+2.5 g q12h,lower bound,0.21,0.003,0.021055
+2.5 g q12h,lower bound,0.215,0.003,0.021055
+2.5 g q12h,lower bound,0.22,0.003,0.021055
+2.5 g q12h,lower bound,0.225,0.003,0.021055
+2.5 g q12h,lower bound,0.23,0.003,0.021055
+2.5 g q12h,lower bound,0.235,0.003,0.021055
+2.5 g q12h,lower bound,0.24,0.003,0.021055
+2.5 g q12h,lower bound,0.245,0.003,0.021055
+2.5 g q12h,lower bound,0.25,0.003,0.021055
+2.5 g q12h,lower bound,0.255,0.003,0.021055
+2.5 g q12h,lower bound,0.26,0.003,0.021055
+2.5 g q12h,lower bound,0.265,0.003,0.021055
+2.5 g q12h,lower bound,0.27,0.003,0.021055
+2.5 g q12h,lower bound,0.275,0.003,0.021055
+2.5 g q12h,lower bound,0.28,0.004,0.031582
+2.5 g q12h,lower bound,0.285,0.004,0.031582
+2.5 g q12h,lower bound,0.29,0.004,0.031582
+2.5 g q12h,lower bound,0.295,0.004,0.031582
+2.5 g q12h,lower bound,0.3,0.004,0.031582
+2.5 g q12h,lower bound,0.305,0.004,0.031582
+2.5 g q12h,lower bound,0.31,0.004,0.031582
+2.5 g q12h,lower bound,0.315,0.004,0.031582
+2.5 g q12h,lower bound,0.32,0.004,0.031582
+2.5 g q12h,lower bound,0.325,0.004,0.031582
+2.5 g q12h,lower bound,0.33,0.004,0.031582
+2.5 g q12h,lower bound,0.335,0.004,0.031582
+2.5 g q12h,lower bound,0.34,0.004,0.031582
+2.5 g q12h,lower bound,0.345,0.004,0.031582
+2.5 g q12h,lower bound,0.35,0.004,0.031582
+2.5 g q12h,lower bound,0.355,0.004,0.031582
+2.5 g q12h,lower bound,0.36,0.004,0.031582
+2.5 g q12h,lower bound,0.365,0.004,0.031582
+2.5 g q12h,lower bound,0.37,0.004,0.031582
+2.5 g q12h,lower bound,0.375,0.004,0.031582
+2.5 g q12h,lower bound,0.38,0.006,0.052637
+2.5 g q12h,lower bound,0.385,0.006,0.052637
+2.5 g q12h,lower bound,0.39,0.007,0.063165
+2.5 g q12h,lower bound,0.395,0.008,0.073692
+2.5 g q12h,lower bound,0.4,0.01,0.084219
+2.5 g q12h,lower bound,0.405,0.011,0.084219
+2.5 g q12h,lower bound,0.41,0.015,0.094747
+2.5 g q12h,lower bound,0.415,0.016,0.105274
+2.5 g q12h,lower bound,0.42,0.018,0.105274
+2.5 g q12h,lower bound,0.425,0.019,0.105274
+2.5 g q12h,lower bound,0.43,0.019,0.105274
+2.5 g q12h,lower bound,0.435,0.019,0.105274
+2.5 g q12h,lower bound,0.44,0.019,0.105274
+2.5 g q12h,lower bound,0.445,0.02,0.105274
+2.5 g q12h,lower bound,0.45,0.023,0.136857
+2.5 g q12h,lower bound,0.455,0.023,0.136857
+2.5 g q12h,lower bound,0.46,0.025,0.136857
+2.5 g q12h,lower bound,0.465,0.026,0.136857
+2.5 g q12h,lower bound,0.47,0.028,0.147384
+2.5 g q12h,lower bound,0.475,0.029,0.157911
+2.5 g q12h,lower bound,0.48,0.029,0.157911
+2.5 g q12h,lower bound,0.485,0.029,0.157911
+2.5 g q12h,lower bound,0.49,0.03,0.168439
+2.5 g q12h,lower bound,0.495,0.031,0.178966
+2.5 g q12h,lower bound,0.5,0.031,0.178966
+2.5 g q12h,lower bound,0.505,0.031,0.178966
+2.5 g q12h,lower bound,0.51,0.033,0.200021
+2.5 g q12h,lower bound,0.515,0.034,0.200021
+2.5 g q12h,lower bound,0.52,0.034,0.200021
+2.5 g q12h,lower bound,0.525,0.034,0.200021
+2.5 g q12h,lower bound,0.53,0.037,0.221076
+2.5 g q12h,lower bound,0.535,0.038,0.231603
+2.5 g q12h,lower bound,0.54,0.068,0.36846
+2.5 g q12h,lower bound,0.545,0.094,0.452679
+2.5 g q12h,lower bound,0.55,0.114,0.557953
+2.5 g q12h,lower bound,0.555,0.14,0.684283
+2.5 g q12h,lower bound,0.56,0.15,0.705337
+2.5 g q12h,lower bound,0.565,0.165,0.747447
+2.5 g q12h,lower bound,0.57,0.186,0.884304
+2.5 g q12h,lower bound,0.575,0.212,1.010633
+2.5 g q12h,lower bound,0.58,0.239,1.136962
+2.5 g q12h,lower bound,0.585,0.259,1.231709
+2.5 g q12h,lower bound,0.59,0.283,1.336983
+2.5 g q12h,lower bound,0.595,0.324,1.473839
+2.5 g q12h,lower bound,0.6,0.373,1.694915
+2.5 g q12h,lower bound,0.605,0.401,1.852827
+2.5 g q12h,lower bound,0.61,0.432,1.937046
+2.5 g q12h,lower bound,0.615,0.47,2.105485
+2.5 g q12h,lower bound,0.62,0.499,2.231814
+2.5 g q12h,lower bound,0.625,0.532,2.337088
+2.5 g q12h,lower bound,0.63,0.574,2.494999
+2.5 g q12h,lower bound,0.635,0.628,2.726603
+2.5 g q12h,lower bound,0.64,0.678,2.937151
+2.5 g q12h,lower bound,0.645,0.74,3.158227
+2.5 g q12h,lower bound,0.65,0.798,3.347721
+2.5 g q12h,lower bound,0.655,0.868,3.600379
+2.5 g q12h,lower bound,0.66,0.935,3.779345
+2.5 g q12h,lower bound,0.665,1.008,4.010949
+2.5 g q12h,lower bound,0.67,1.072,4.21097
+2.5 g q12h,lower bound,0.675,1.163,4.516265
+2.5 g q12h,lower bound,0.68,1.264,4.884725
+2.5 g q12h,lower bound,0.685,1.385,5.305822
+2.5 g q12h,lower bound,0.69,1.495,5.663754
+2.5 g q12h,lower bound,0.695,1.619,6.053269
+2.5 g q12h,lower bound,0.7,1.752,6.474366
+2.5 g q12h,lower bound,0.705,1.903,6.979682
+2.5 g q12h,lower bound,0.71,2.069,7.484998
+2.5 g q12h,lower bound,0.715,2.241,7.906095
+2.5 g q12h,lower bound,0.72,2.446,8.432467
+2.5 g q12h,lower bound,0.725,2.652,9.074639
+2.5 g q12h,lower bound,0.73,2.854,9.664175
+2.5 g q12h,lower bound,0.735,3.065,10.190546
+2.5 g q12h,lower bound,0.74,3.247,10.569534
+2.5 g q12h,lower bound,0.745,3.475,11.232761
+2.5 g q12h,lower bound,0.75,3.681,11.664386
+2.5 g q12h,lower bound,0.755,3.912,12.274976
+2.5 g q12h,lower bound,0.76,4.161,12.853985
+2.5 g q12h,lower bound,0.765,4.445,13.559322
+2.5 g q12h,lower bound,0.77,4.723,14.254132
+2.5 g q12h,lower bound,0.775,5.042,15.022634
+2.5 g q12h,lower bound,0.78,5.367,15.685862
+2.5 g q12h,lower bound,0.785,5.73,16.570165
+2.5 g q12h,lower bound,0.79,6.154,17.422887
+2.5 g q12h,lower bound,0.795,6.597,18.433519
+2.5 g q12h,lower bound,0.8,7.098,19.286241
+2.5 g q12h,lower bound,0.805,7.63,20.402148
+2.5 g q12h,lower bound,0.81,8.248,21.623329
+2.5 g q12h,lower bound,0.815,8.935,22.918202
+2.5 g q12h,lower bound,0.82,9.647,24.455206
+2.5 g q12h,lower bound,0.825,10.386,25.971155
+2.5 g q12h,lower bound,0.83,11.19,27.518686
+2.5 g q12h,lower bound,0.835,12.093,29.371513
+2.5 g q12h,lower bound,0.84,13.062,31.09801
+2.5 g q12h,lower bound,0.845,14.072,32.592905
+2.5 g q12h,lower bound,0.85,15.22,34.624697
+2.5 g q12h,lower bound,0.855,16.524,36.65649
+2.5 g q12h,lower bound,0.86,18.009,39.06727
+2.5 g q12h,lower bound,0.865,19.462,41.372776
+2.5 g q12h,lower bound,0.87,21.086,43.773029
+2.5 g q12h,lower bound,0.875,22.805,45.752184
+2.5 g q12h,lower bound,0.88,24.691,48.0998
+2.5 g q12h,lower bound,0.885,26.813,50.742183
+2.5 g q12h,lower bound,0.89,29.014,53.352985
+2.5 g q12h,lower bound,0.895,31.568,56.279608
+2.5 g q12h,lower bound,0.9,34.448,59.637857
+2.5 g q12h,lower bound,0.905,37.544,62.785556
+2.5 g q12h,lower bound,0.91,40.807,66.070113
+2.5 g q12h,lower bound,0.910875,41.39,66.680703
+2.5 g q12h,lower bound,0.915,44.15,69.291504
+2.5 g q12h,lower bound,0.92,47.667,72.407622
+2.5 g q12h,lower bound,0.920567,48.082,72.860301
+2.5 g q12h,lower bound,0.925,51.476,75.513212
+2.5 g q12h,lower bound,0.929205,54.884,78.113486
+2.5 g q12h,lower bound,0.93,55.502,78.513528
+2.5 g q12h,lower bound,0.935,59.878,81.850721
+2.5 g q12h,lower bound,0.936904,61.661,82.913991
+2.5 g q12h,lower bound,0.94,64.652,84.872092
+2.5 g q12h,lower bound,0.943766,68.354,87.188125
+2.5 g q12h,lower bound,0.945,69.518,87.9461
+2.5 g q12h,lower bound,0.949881,74.198,90.420044
+2.5 g q12h,lower bound,0.95,74.332,90.493736
+2.5 g q12h,lower bound,0.955,78.859,92.599221
+2.5 g q12h,lower bound,0.955332,79.156,92.746605
+2.5 g q12h,lower bound,0.96,83.246,94.536267
+2.5 g q12h,lower bound,0.960189,83.41,94.588904
+2.5 g q12h,lower bound,0.964519,87.123,96.010106
+2.5 g q12h,lower bound,0.965,87.5,96.146963
+2.5 g q12h,lower bound,0.968377,90.251,97.157596
+2.5 g q12h,lower bound,0.97,91.581,97.768186
+2.5 g q12h,lower bound,0.971816,92.993,98.315612
+2.5 g q12h,lower bound,0.974881,95.478,99.063059
+2.5 g q12h,lower bound,0.975,95.577,99.073587
+2.5 g q12h,lower bound,0.977613,97.32,99.505211
+2.5 g q12h,lower bound,0.98,98.339,99.71576
+2.5 g q12h,lower bound,0.980047,98.351,99.726287
+2.5 g q12h,lower bound,0.982217,98.941,99.821034
+2.5 g q12h,lower bound,0.984151,99.334,99.926308
+2.5 g q12h,lower bound,0.985,99.452,99.926308
+2.5 g q12h,lower bound,0.985875,99.573,99.936835
+2.5 g q12h,lower bound,0.987411,99.751,99.968418
+2.5 g q12h,lower bound,0.98878,99.856,99.978945
+2.5 g q12h,lower bound,0.99,99.915,99.989473
+2.5 g q12h,lower bound,0.991087,99.954,99.989473
+2.5 g q12h,lower bound,0.992057,99.992,100.0
+2.5 g q12h,lower bound,0.992921,99.997,100.0
+2.5 g q12h,lower bound,0.99369,99.998,100.0
+2.5 g q12h,lower bound,0.994377,99.999,100.0
+2.5 g q12h,lower bound,0.994988,99.999,100.0
+2.5 g q12h,lower bound,0.995,99.999,100.0
+2.5 g q12h,lower bound,0.995533,100.0,100.0
+2.5 g q12h,lower bound,0.996019,100.0,100.0
+2.5 g q12h,lower bound,0.996452,100.0,100.0
+2.5 g q12h,lower bound,0.996838,100.0,100.0
+2.5 g q12h,lower bound,0.997182,100.0,100.0
+2.5 g q12h,lower bound,0.997488,100.0,100.0
+2.5 g q12h,lower bound,0.997761,100.0,100.0
+2.5 g q12h,lower bound,0.998005,100.0,100.0
+2.5 g q12h,lower bound,0.998222,100.0,100.0
+2.5 g q12h,lower bound,0.998415,100.0,100.0
+2.5 g q12h,lower bound,0.998587,100.0,100.0
+2.5 g q12h,lower bound,0.998741,100.0,100.0
+2.5 g q12h,lower bound,0.998878,100.0,100.0
+2.5 g q12h,lower bound,0.999,100.0,100.0
+2.5 g q12h,lower bound,0.999109,100.0,100.0
+2.5 g q12h,lower bound,0.999206,100.0,100.0
+2.5 g q12h,lower bound,0.999292,100.0,100.0
+2.5 g q12h,lower bound,0.999369,100.0,100.0
+2.5 g q12h,lower bound,0.999438,100.0,100.0
+2.5 g q12h,lower bound,0.999499,100.0,100.0
+2.5 g q12h,lower bound,0.999553,100.0,100.0
+2.5 g q12h,lower bound,0.999602,100.0,100.0
+2.5 g q12h,lower bound,0.999645,100.0,100.0
+2.5 g q12h,lower bound,0.999684,100.0,100.0
+2.5 g q12h,lower bound,0.999718,100.0,100.0
+2.5 g q12h,lower bound,0.999749,100.0,100.0
+2.5 g q12h,lower bound,0.999776,100.0,100.0
+2.5 g q12h,lower bound,0.9998,100.0,100.0
+2.5 g q12h,lower bound,0.999822,100.0,100.0
+2.5 g q12h,lower bound,0.999842,100.0,100.0
+2.5 g q12h,lower bound,0.999859,100.0,100.0
+2.5 g q12h,lower bound,0.999874,100.0,100.0
+2.5 g q12h,lower bound,0.999888,100.0,100.0
+2.5 g q12h,lower bound,0.9999,100.0,100.0
+2.5 g q12h,lower bound,1.0,100.0,100.0
+2.5 g q12h,non-RRT value,0.0,0.0,0.0
+2.5 g q12h,non-RRT value,0.005,0.027,0.286017
+2.5 g q12h,non-RRT value,0.01,0.067,0.709746
+2.5 g q12h,non-RRT value,0.015,0.076,0.805085
+2.5 g q12h,non-RRT value,0.02,0.096,1.016949
+2.5 g q12h,non-RRT value,0.025,0.231,2.383475
+2.5 g q12h,non-RRT value,0.03,0.265,2.733051
+2.5 g q12h,non-RRT value,0.035,0.302,3.103814
+2.5 g q12h,non-RRT value,0.04,0.338,3.474576
+2.5 g q12h,non-RRT value,0.045,0.37,3.802966
+2.5 g q12h,non-RRT value,0.05,0.396,4.057203
+2.5 g q12h,non-RRT value,0.055,0.435,4.449153
+2.5 g q12h,non-RRT value,0.06,0.472,4.819915
+2.5 g q12h,non-RRT value,0.065,0.508,5.158898
+2.5 g q12h,non-RRT value,0.07,0.549,5.582627
+2.5 g q12h,non-RRT value,0.075,0.606,6.165254
+2.5 g q12h,non-RRT value,0.08,0.638,6.483051
+2.5 g q12h,non-RRT value,0.085,0.673,6.84322
+2.5 g q12h,non-RRT value,0.09,0.705,7.17161
+2.5 g q12h,non-RRT value,0.095,0.75,7.605932
+2.5 g q12h,non-RRT value,0.1,0.778,7.870763
+2.5 g q12h,non-RRT value,0.105,0.814,8.199153
+2.5 g q12h,non-RRT value,0.11,0.859,8.654661
+2.5 g q12h,non-RRT value,0.115,0.902,9.057203
+2.5 g q12h,non-RRT value,0.12,0.941,9.438559
+2.5 g q12h,non-RRT value,0.125,0.976,9.713983
+2.5 g q12h,non-RRT value,0.13,1.021,10.116525
+2.5 g q12h,non-RRT value,0.135,1.054,10.402542
+2.5 g q12h,non-RRT value,0.14,1.107,10.900424
+2.5 g q12h,non-RRT value,0.145,1.144,11.260593
+2.5 g q12h,non-RRT value,0.15,1.188,11.641949
+2.5 g q12h,non-RRT value,0.155,1.245,12.129237
+2.5 g q12h,non-RRT value,0.16,1.288,12.510593
+2.5 g q12h,non-RRT value,0.165,1.322,12.807203
+2.5 g q12h,non-RRT value,0.17,1.365,13.167373
+2.5 g q12h,non-RRT value,0.175,1.418,13.644068
+2.5 g q12h,non-RRT value,0.18,1.487,14.237288
+2.5 g q12h,non-RRT value,0.185,1.548,14.788136
+2.5 g q12h,non-RRT value,0.19,1.608,15.286017
+2.5 g q12h,non-RRT value,0.195,1.682,15.974576
+2.5 g q12h,non-RRT value,0.2,1.742,16.419492
+2.5 g q12h,non-RRT value,0.205,1.801,16.875
+2.5 g q12h,non-RRT value,0.21,1.859,17.362288
+2.5 g q12h,non-RRT value,0.215,1.92,17.849576
+2.5 g q12h,non-RRT value,0.22,1.975,18.294492
+2.5 g q12h,non-RRT value,0.225,2.034,18.760593
+2.5 g q12h,non-RRT value,0.23,2.091,19.247881
+2.5 g q12h,non-RRT value,0.235,2.15,19.67161
+2.5 g q12h,non-RRT value,0.24,2.206,20.127119
+2.5 g q12h,non-RRT value,0.245,2.269,20.677966
+2.5 g q12h,non-RRT value,0.25,2.322,21.101695
+2.5 g q12h,non-RRT value,0.255,2.375,21.514831
+2.5 g q12h,non-RRT value,0.26,2.425,21.917373
+2.5 g q12h,non-RRT value,0.265,2.486,22.383475
+2.5 g q12h,non-RRT value,0.27,2.558,22.987288
+2.5 g q12h,non-RRT value,0.275,2.612,23.411017
+2.5 g q12h,non-RRT value,0.28,2.673,23.877119
+2.5 g q12h,non-RRT value,0.285,2.728,24.290254
+2.5 g q12h,non-RRT value,0.29,2.798,24.788136
+2.5 g q12h,non-RRT value,0.295,2.853,25.264831
+2.5 g q12h,non-RRT value,0.3,2.925,25.836864
+2.5 g q12h,non-RRT value,0.305,2.995,26.334746
+2.5 g q12h,non-RRT value,0.31,3.059,26.800847
+2.5 g q12h,non-RRT value,0.315,3.132,27.319915
+2.5 g q12h,non-RRT value,0.32,3.196,27.775424
+2.5 g q12h,non-RRT value,0.325,3.268,28.220339
+2.5 g q12h,non-RRT value,0.33,3.341,28.739407
+2.5 g q12h,non-RRT value,0.335,3.405,29.216102
+2.5 g q12h,non-RRT value,0.34,3.471,29.735169
+2.5 g q12h,non-RRT value,0.345,3.548,30.286017
+2.5 g q12h,non-RRT value,0.35,3.613,30.730932
+2.5 g q12h,non-RRT value,0.355,3.672,31.080508
+2.5 g q12h,non-RRT value,0.36,3.744,31.599576
+2.5 g q12h,non-RRT value,0.365,3.825,32.182203
+2.5 g q12h,non-RRT value,0.37,3.9,32.701271
+2.5 g q12h,non-RRT value,0.375,3.957,33.135593
+2.5 g q12h,non-RRT value,0.38,4.022,33.506356
+2.5 g q12h,non-RRT value,0.385,4.087,33.908898
+2.5 g q12h,non-RRT value,0.39,4.159,34.353814
+2.5 g q12h,non-RRT value,0.395,4.234,34.756356
+2.5 g q12h,non-RRT value,0.4,4.312,35.370763
+2.5 g q12h,non-RRT value,0.405,4.393,35.858051
+2.5 g q12h,non-RRT value,0.41,4.46,36.302966
+2.5 g q12h,non-RRT value,0.415,4.542,36.853814
+2.5 g q12h,non-RRT value,0.42,4.615,37.351695
+2.5 g q12h,non-RRT value,0.425,4.7,37.891949
+2.5 g q12h,non-RRT value,0.43,4.775,38.411017
+2.5 g q12h,non-RRT value,0.435,4.869,38.961864
+2.5 g q12h,non-RRT value,0.44,4.946,39.353814
+2.5 g q12h,non-RRT value,0.445,5.015,39.713983
+2.5 g q12h,non-RRT value,0.45,5.115,40.370763
+2.5 g q12h,non-RRT value,0.455,5.212,40.974576
+2.5 g q12h,non-RRT value,0.46,5.294,41.461864
+2.5 g q12h,non-RRT value,0.465,5.374,41.90678
+2.5 g q12h,non-RRT value,0.47,5.469,42.447034
+2.5 g q12h,non-RRT value,0.475,5.563,43.029661
+2.5 g q12h,non-RRT value,0.48,5.664,43.485169
+2.5 g q12h,non-RRT value,0.485,5.764,44.014831
+2.5 g q12h,non-RRT value,0.49,5.849,44.417373
+2.5 g q12h,non-RRT value,0.495,5.939,44.96822
+2.5 g q12h,non-RRT value,0.5,6.036,45.497881
+2.5 g q12h,non-RRT value,0.505,6.138,46.006356
+2.5 g q12h,non-RRT value,0.51,6.228,46.472458
+2.5 g q12h,non-RRT value,0.515,6.329,46.896186
+2.5 g q12h,non-RRT value,0.52,6.45,47.521186
+2.5 g q12h,non-RRT value,0.525,6.57,48.326271
+2.5 g q12h,non-RRT value,0.53,6.694,48.961864
+2.5 g q12h,non-RRT value,0.535,6.801,49.555085
+2.5 g q12h,non-RRT value,0.54,6.917,50.127119
+2.5 g q12h,non-RRT value,0.545,7.036,50.646186
+2.5 g q12h,non-RRT value,0.55,7.149,51.271186
+2.5 g q12h,non-RRT value,0.555,7.263,51.769068
+2.5 g q12h,non-RRT value,0.56,7.366,52.245763
+2.5 g q12h,non-RRT value,0.565,7.477,52.860169
+2.5 g q12h,non-RRT value,0.57,7.593,53.411017
+2.5 g q12h,non-RRT value,0.575,7.7,53.887712
+2.5 g q12h,non-RRT value,0.58,7.839,54.523305
+2.5 g q12h,non-RRT value,0.585,7.982,55.116525
+2.5 g q12h,non-RRT value,0.59,8.106,55.709746
+2.5 g q12h,non-RRT value,0.595,8.235,56.302966
+2.5 g q12h,non-RRT value,0.6,8.339,56.631356
+2.5 g q12h,non-RRT value,0.605,8.446,57.086864
+2.5 g q12h,non-RRT value,0.61,8.579,57.711864
+2.5 g q12h,non-RRT value,0.615,8.725,58.220339
+2.5 g q12h,non-RRT value,0.62,8.857,58.760593
+2.5 g q12h,non-RRT value,0.625,8.974,59.226695
+2.5 g q12h,non-RRT value,0.63,9.115,59.819915
+2.5 g q12h,non-RRT value,0.635,9.269,60.444915
+2.5 g q12h,non-RRT value,0.64,9.414,60.95339
+2.5 g q12h,non-RRT value,0.645,9.554,61.472458
+2.5 g q12h,non-RRT value,0.65,9.683,61.949153
+2.5 g q12h,non-RRT value,0.655,9.829,62.595339
+2.5 g q12h,non-RRT value,0.66,9.968,63.061441
+2.5 g q12h,non-RRT value,0.665,10.133,63.654661
+2.5 g q12h,non-RRT value,0.67,10.283,64.173729
+2.5 g q12h,non-RRT value,0.675,10.442,64.745763
+2.5 g q12h,non-RRT value,0.68,10.583,65.095339
+2.5 g q12h,non-RRT value,0.685,10.758,65.688559
+2.5 g q12h,non-RRT value,0.69,10.922,66.21822
+2.5 g q12h,non-RRT value,0.695,11.083,66.853814
+2.5 g q12h,non-RRT value,0.7,11.251,67.341102
+2.5 g q12h,non-RRT value,0.705,11.416,67.838983
+2.5 g q12h,non-RRT value,0.71,11.596,68.347458
+2.5 g q12h,non-RRT value,0.715,11.767,68.908898
+2.5 g q12h,non-RRT value,0.72,11.962,69.480932
+2.5 g q12h,non-RRT value,0.725,12.168,70.148305
+2.5 g q12h,non-RRT value,0.73,12.356,70.730932
+2.5 g q12h,non-RRT value,0.735,12.539,71.21822
+2.5 g q12h,non-RRT value,0.74,12.748,71.716102
+2.5 g q12h,non-RRT value,0.745,12.962,72.319915
+2.5 g q12h,non-RRT value,0.75,13.176,72.891949
+2.5 g q12h,non-RRT value,0.755,13.382,73.411017
+2.5 g q12h,non-RRT value,0.76,13.589,73.972458
+2.5 g q12h,non-RRT value,0.765,13.832,74.618644
+2.5 g q12h,non-RRT value,0.77,14.046,75.148305
+2.5 g q12h,non-RRT value,0.775,14.275,75.667373
+2.5 g q12h,non-RRT value,0.78,14.493,76.112288
+2.5 g q12h,non-RRT value,0.785,14.735,76.716102
+2.5 g q12h,non-RRT value,0.79,14.989,77.351695
+2.5 g q12h,non-RRT value,0.795,15.262,77.79661
+2.5 g q12h,non-RRT value,0.8,15.548,78.305085
+2.5 g q12h,non-RRT value,0.805,15.816,78.824153
+2.5 g q12h,non-RRT value,0.81,16.078,79.438559
+2.5 g q12h,non-RRT value,0.815,16.393,80.222458
+2.5 g q12h,non-RRT value,0.82,16.673,80.836864
+2.5 g q12h,non-RRT value,0.825,16.95,81.355932
+2.5 g q12h,non-RRT value,0.83,17.261,81.769068
+2.5 g q12h,non-RRT value,0.835,17.576,82.330508
+2.5 g q12h,non-RRT value,0.84,17.883,82.817797
+2.5 g q12h,non-RRT value,0.845,18.206,83.283898
+2.5 g q12h,non-RRT value,0.85,18.571,83.866525
+2.5 g q12h,non-RRT value,0.855,18.923,84.470339
+2.5 g q12h,non-RRT value,0.86,19.316,85.127119
+2.5 g q12h,non-RRT value,0.865,19.703,85.646186
+2.5 g q12h,non-RRT value,0.87,20.11,86.175847
+2.5 g q12h,non-RRT value,0.875,20.536,86.641949
+2.5 g q12h,non-RRT value,0.88,20.962,87.224576
+2.5 g q12h,non-RRT value,0.885,21.42,87.754237
+2.5 g q12h,non-RRT value,0.89,21.918,88.262712
+2.5 g q12h,non-RRT value,0.895,22.399,88.78178
+2.5 g q12h,non-RRT value,0.9,22.926,89.332627
+2.5 g q12h,non-RRT value,0.905,23.458,89.96822
+2.5 g q12h,non-RRT value,0.91,24.042,90.65678
+2.5 g q12h,non-RRT value,0.910875,24.156,90.773305
+2.5 g q12h,non-RRT value,0.915,24.638,91.144068
+2.5 g q12h,non-RRT value,0.92,25.281,91.694915
+2.5 g q12h,non-RRT value,0.920567,25.363,91.726695
+2.5 g q12h,non-RRT value,0.925,25.967,92.161017
+2.5 g q12h,non-RRT value,0.929205,26.605,92.489407
+2.5 g q12h,non-RRT value,0.93,26.702,92.552966
+2.5 g q12h,non-RRT value,0.935,27.528,93.072034
+2.5 g q12h,non-RRT value,0.936904,27.845,93.305085
+2.5 g q12h,non-RRT value,0.94,28.34,93.633475
+2.5 g q12h,non-RRT value,0.943766,29.087,94.07839
+2.5 g q12h,non-RRT value,0.945,29.305,94.205508
+2.5 g q12h,non-RRT value,0.949881,30.31,94.745763
+2.5 g q12h,non-RRT value,0.95,30.336,94.766949
+2.5 g q12h,non-RRT value,0.955,31.394,95.349576
+2.5 g q12h,non-RRT value,0.955332,31.473,95.444915
+2.5 g q12h,non-RRT value,0.96,32.587,95.911017
+2.5 g q12h,non-RRT value,0.960189,32.63,95.911017
+2.5 g q12h,non-RRT value,0.964519,33.787,96.313559
+2.5 g q12h,non-RRT value,0.965,33.915,96.345339
+2.5 g q12h,non-RRT value,0.968377,34.961,96.599576
+2.5 g q12h,non-RRT value,0.97,35.477,96.716102
+2.5 g q12h,non-RRT value,0.971816,36.14,96.970339
+2.5 g q12h,non-RRT value,0.974881,37.284,97.319915
+2.5 g q12h,non-RRT value,0.975,37.338,97.330508
+2.5 g q12h,non-RRT value,0.977613,38.432,97.605932
+2.5 g q12h,non-RRT value,0.98,39.523,97.902542
+2.5 g q12h,non-RRT value,0.980047,39.544,97.923729
+2.5 g q12h,non-RRT value,0.982217,40.748,98.262712
+2.5 g q12h,non-RRT value,0.984151,41.898,98.506356
+2.5 g q12h,non-RRT value,0.985,42.426,98.559322
+2.5 g q12h,non-RRT value,0.985875,43.008,98.633475
+2.5 g q12h,non-RRT value,0.987411,44.147,98.855932
+2.5 g q12h,non-RRT value,0.98878,45.244,99.004237
+2.5 g q12h,non-RRT value,0.99,46.399,99.131356
+2.5 g q12h,non-RRT value,0.991087,47.544,99.237288
+2.5 g q12h,non-RRT value,0.992057,48.622,99.34322
+2.5 g q12h,non-RRT value,0.992921,49.748,99.427966
+2.5 g q12h,non-RRT value,0.99369,50.796,99.480932
+2.5 g q12h,non-RRT value,0.994377,51.85,99.544492
+2.5 g q12h,non-RRT value,0.994988,52.943,99.639831
+2.5 g q12h,non-RRT value,0.995,52.963,99.639831
+2.5 g q12h,non-RRT value,0.995533,53.992,99.67161
+2.5 g q12h,non-RRT value,0.996019,55.024,99.724576
+2.5 g q12h,non-RRT value,0.996452,56.016,99.788136
+2.5 g q12h,non-RRT value,0.996838,57.06,99.819915
+2.5 g q12h,non-RRT value,0.997182,58.063,99.841102
+2.5 g q12h,non-RRT value,0.997488,59.05,99.862288
+2.5 g q12h,non-RRT value,0.997761,59.93,99.872881
+2.5 g q12h,non-RRT value,0.998005,60.833,99.872881
+2.5 g q12h,non-RRT value,0.998222,61.75,99.894068
+2.5 g q12h,non-RRT value,0.998415,62.592,99.894068
+2.5 g q12h,non-RRT value,0.998587,63.437,99.904661
+2.5 g q12h,non-RRT value,0.998741,64.349,99.915254
+2.5 g q12h,non-RRT value,0.998878,65.152,99.915254
+2.5 g q12h,non-RRT value,0.999,65.972,99.925847
+2.5 g q12h,non-RRT value,0.999109,66.797,99.936441
+2.5 g q12h,non-RRT value,0.999206,67.573,99.936441
+2.5 g q12h,non-RRT value,0.999292,68.344,99.936441
+2.5 g q12h,non-RRT value,0.999369,69.151,99.957627
+2.5 g q12h,non-RRT value,0.999438,69.867,99.957627
+2.5 g q12h,non-RRT value,0.999499,70.569,99.957627
+2.5 g q12h,non-RRT value,0.999553,71.268,99.957627
+2.5 g q12h,non-RRT value,0.999602,72.001,99.957627
+2.5 g q12h,non-RRT value,0.999645,72.725,99.957627
+2.5 g q12h,non-RRT value,0.999684,73.437,99.96822
+2.5 g q12h,non-RRT value,0.999718,74.144,99.96822
+2.5 g q12h,non-RRT value,0.999749,74.857,99.96822
+2.5 g q12h,non-RRT value,0.999776,75.546,99.978814
+2.5 g q12h,non-RRT value,0.9998,76.256,99.989407
+2.5 g q12h,non-RRT value,0.999822,76.975,99.989407
+2.5 g q12h,non-RRT value,0.999842,77.706,99.989407
+2.5 g q12h,non-RRT value,0.999859,78.391,99.989407
+2.5 g q12h,non-RRT value,0.999874,79.146,99.989407
+2.5 g q12h,non-RRT value,0.999888,79.823,99.989407
+2.5 g q12h,non-RRT value,0.9999,80.629,99.989407
+2.5 g q12h,non-RRT value,1.0,99.972,100.0
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.0,0.0,0.0
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.005,0.031,0.321302
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.01,0.044,0.417693
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.015,0.087,0.792546
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.02,0.138,1.199529
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.025,0.179,1.542251
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.03,0.221,1.863554
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.035,0.27,2.238406
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.04,0.301,2.495448
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.045,0.334,2.73107
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.05,0.377,3.020242
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.055,0.408,3.202313
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.06,0.44,3.427225
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.065,0.472,3.662847
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.07,0.511,3.898468
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.075,0.543,4.15551
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.08,0.585,4.466103
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.085,0.624,4.701724
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.09,0.666,4.969476
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.095,0.709,5.205098
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.1,0.746,5.46214
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.105,0.788,5.719182
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.11,0.838,6.040484
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.115,0.894,6.468887
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.12,0.951,6.85445
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.125,1.009,7.175752
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.13,1.066,7.529185
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.135,1.124,7.936168
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.14,1.177,8.17179
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.145,1.24,8.568063
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.15,1.284,8.921495
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.155,1.336,9.199957
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.16,1.385,9.467709
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.165,1.428,9.681911
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.17,1.479,9.938953
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.175,1.537,10.281675
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.18,1.594,10.581557
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.185,1.647,10.860019
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.19,1.692,11.127771
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.195,1.744,11.449074
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.2,1.805,11.813216
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.205,1.865,12.091678
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.21,1.92,12.37014
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.215,1.98,12.702153
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.22,2.027,12.991325
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.225,2.081,13.259077
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.23,2.12,13.451858
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.235,2.174,13.7089
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.24,2.231,14.083753
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.245,2.284,14.383635
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.25,2.325,14.576416
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.255,2.378,14.865589
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.26,2.423,15.07979
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.265,2.486,15.326122
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.27,2.547,15.615294
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.275,2.608,15.840206
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.28,2.679,16.150798
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.285,2.732,16.38642
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.29,2.787,16.664882
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.295,2.85,17.018314
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.3,2.904,17.264646
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.305,2.97,17.564528
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.31,3.027,17.78944
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.315,3.081,17.982221
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.32,3.15,18.239263
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.325,3.232,18.571276
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.33,3.297,18.828317
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.335,3.372,19.2353
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.34,3.448,19.620863
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.345,3.525,19.931455
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.35,3.591,20.199207
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.355,3.654,20.477669
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.36,3.733,20.831102
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.365,3.789,21.056014
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.37,3.854,21.291635
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.375,3.954,21.677198
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.38,4.021,21.92353
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.385,4.098,22.169862
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.39,4.174,22.512584
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.395,4.238,22.812467
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.4,4.318,23.187319
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.405,4.41,23.605012
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.41,4.485,23.926315
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.415,4.58,24.236907
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.42,4.66,24.62247
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.425,4.735,24.954482
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.43,4.81,25.222234
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.435,4.904,25.586377
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.44,4.982,25.886259
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.445,5.069,26.228981
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.45,5.14,26.486023
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.455,5.228,26.882296
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.46,5.299,27.171468
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.465,5.376,27.44993
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.47,5.446,27.760523
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.475,5.548,28.135375
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.48,5.648,28.510228
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.485,5.727,28.75656
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.49,5.812,28.981472
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.495,5.907,29.302774
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.5,5.995,29.656206
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.505,6.086,29.934669
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.51,6.191,30.384492
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.515,6.294,30.791475
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.52,6.401,31.112777
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.525,6.494,31.391239
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.53,6.583,31.776802
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.535,6.686,32.183785
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.54,6.786,32.505087
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.545,6.888,32.81568
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.55,6.998,33.094142
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.555,7.093,33.447574
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.56,7.191,33.768877
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.565,7.301,34.20799
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.57,7.422,34.572132
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.575,7.547,34.968405
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.58,7.663,35.311128
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.585,7.775,35.64314
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.59,7.899,35.996573
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.595,8.016,36.275035
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.6,8.119,36.703438
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.605,8.237,37.174681
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.61,8.352,37.517404
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.615,8.474,37.870836
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.62,8.603,38.170719
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.625,8.727,38.438471
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.63,8.867,38.845454
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.635,9.002,39.198886
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.64,9.147,39.637999
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.645,9.301,40.087823
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.65,9.429,40.419835
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.655,9.551,40.719717
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.66,9.69,41.008889
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.665,9.827,41.373032
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.67,9.991,41.940666
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.675,10.154,42.369069
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.68,10.307,42.936703
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.685,10.462,43.268716
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.69,10.623,43.7828
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.695,10.802,44.232623
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.7,10.963,44.693156
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.705,11.125,45.100139
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.71,11.302,45.560673
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.715,11.471,45.999786
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.72,11.666,46.406769
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.725,11.839,46.738781
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.73,12.036,47.284995
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.735,12.225,47.702688
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.74,12.424,48.270322
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.745,12.612,48.762986
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.75,12.826,49.26636
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.755,13.041,49.748313
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.76,13.254,50.133876
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.765,13.481,50.65867
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.77,13.695,51.022812
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.775,13.918,51.536896
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.78,14.107,51.890329
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.785,14.331,52.447253
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.79,14.589,53.036307
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.795,14.853,53.48613
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.8,15.103,53.946664
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.805,15.392,54.578558
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.81,15.681,55.060512
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.815,15.968,55.424655
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.82,16.262,56.067259
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.825,16.568,56.570633
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.83,16.884,56.999036
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.835,17.211,57.58809
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.84,17.619,58.327086
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.845,17.973,58.991111
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.85,18.355,59.580165
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.855,18.773,60.23348
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.86,19.155,60.983185
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.865,19.581,61.58295
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.87,20.019,62.279105
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.875,20.418,62.932419
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.88,20.895,63.585734
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.885,21.381,64.153368
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.89,21.859,64.795973
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.895,22.373,65.70633
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.9,22.893,66.402485
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.905,23.488,67.280711
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.91,24.133,68.158938
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.910875,24.224,68.233908
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.915,24.748,68.790832
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.92,25.395,69.690479
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.920567,25.46,69.701189
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.925,26.111,70.686516
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.929205,26.757,71.532612
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.93,26.873,71.703973
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.935,27.707,72.742851
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.936904,28.031,73.042733
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.94,28.54,73.578237
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.943766,29.253,74.349363
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.945,29.504,74.617115
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.949881,30.496,75.613152
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.95,30.522,75.623862
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.955,31.589,76.67345
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.955332,31.66,76.71629
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.96,32.782,77.840848
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.960189,32.834,77.894399
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.964519,34.042,78.986827
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.965,34.18,79.168898
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.968377,35.273,80.132805
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.97,35.798,80.539788
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.971816,36.472,81.107422
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.974881,37.676,82.017779
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.975,37.727,82.039199
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.977613,38.881,82.885295
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.98,39.996,83.60287
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.980047,40.025,83.62429
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.982217,41.214,84.459677
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.984151,42.387,85.370033
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.985,42.94,85.809146
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.985875,43.544,86.2911
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.987411,44.617,86.976545
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.98878,45.728,87.587019
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.99,46.815,88.143943
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.991087,47.921,88.807968
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.992057,48.936,89.461283
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.992921,50.07,90.007497
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.99369,51.104,90.553711
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.994377,52.207,91.132055
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.994988,53.242,91.571168
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.995,53.265,91.592589
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.995533,54.282,92.085252
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.996019,55.318,92.610046
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.996452,56.313,93.017029
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.996838,57.391,93.306201
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.997182,58.328,93.595373
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.997488,59.368,93.959516
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.997761,60.254,94.216558
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998005,61.231,94.49502
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998222,62.133,94.784192
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998415,63.154,95.159045
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998587,64.104,95.362536
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998741,65.065,95.576738
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.998878,65.97,95.737389
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999,66.911,95.962301
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999109,67.861,96.272893
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999206,68.753,96.551355
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999292,69.645,96.797687
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999369,70.486,97.022598
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999438,71.348,97.19396
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999499,72.093,97.386741
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999553,72.863,97.547392
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999602,73.615,97.697333
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999645,74.415,97.868694
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999684,75.134,97.997215
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999718,75.832,98.072186
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999749,76.544,98.179287
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999776,77.181,98.286387
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.9998,77.867,98.414908
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999822,78.487,98.489879
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999842,79.059,98.58627
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999859,79.68,98.66124
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999874,80.22,98.768341
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.999888,80.873,98.854022
+2.5 g q12h,"misspecified: model 0.94, truth estimate",0.9999,81.431,98.928992
+2.5 g q12h,"misspecified: model 0.94, truth estimate",1.0,99.88,100.0

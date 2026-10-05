@@ -1,0 +1,16 @@
+     rho role                                             CV  accuracy   sens   spec    PPV    NPV falseRe
+  0.9400 source-model value                               0%    94.08% 97.23% 77.00% 95.83% 83.62%  3.574%
+  0.9400 source-model value                              10%    93.52% 96.75% 75.91% 95.62% 81.14%  3.743%
+  0.9400 source-model value                              20%    92.12% 95.46% 73.97% 95.22% 75.00%  4.044%
+  0.8154 CRRT estimate, upper profile-likelihood bound    0%    90.12% 96.45% 55.63% 92.21% 74.22%  6.885%
+  0.8154 CRRT estimate, upper profile-likelihood bound   10%    89.84% 96.15% 55.48% 92.16% 72.60%  6.908%
+  0.8154 CRRT estimate, upper profile-likelihood bound   20%    89.07% 95.29% 55.23% 92.06% 68.28%  6.947%
+  0.5884 CRRT estimate                                    0%    86.48% 97.22% 28.57% 88.01% 65.54% 11.172%
+  0.5884 CRRT estimate                                   10%    86.42% 97.10% 28.84% 88.04% 64.84% 11.129%
+  0.5884 CRRT estimate                                   20%    86.26% 96.77% 29.57% 88.11% 62.95% 11.016%
+  0.2061 CRRT estimate, lower profile-likelihood bound    0%    84.79% 98.38% 11.34% 85.71% 56.35% 13.837%
+  0.2061 CRRT estimate, lower profile-likelihood bound   10%    84.78% 98.36% 11.35% 85.71% 56.15% 13.836%
+  0.2061 CRRT estimate, lower profile-likelihood bound   20%    84.74% 98.36% 11.10% 85.68% 55.62% 13.875%
+
+control row rho=0.94, CV=0 reproduces the published values: yes
+wrote ..\outputs\table5_estimated_rho_rows.csv

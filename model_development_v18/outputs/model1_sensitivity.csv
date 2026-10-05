@@ -1,7 +1,9 @@
 analysis,variant,corr_CL,ofv,note
-reference,as fitted,0.7031,-722.356,infusion duration read as hours from the dataset
-infusion duration,all 1 h,0.7812,-716.04,tests the categorical-versus-hours ambiguity in the source
-infusion duration,all 2 h,0.7436,-646.831,tests the categorical-versus-hours ambiguity in the source
-infusion duration,all 3 h,0.7648,-524.047,tests the categorical-versus-hours ambiguity in the source
-residual error,shared across analytes,0.7044,-722.125,dOFV +0.23 on 1 df
-leave-one-subject-out,range over 21 refits,0.651 to 0.756,,median 0.700; most influential subject 7
+reference,as fitted,0.588391,-756.647169,4 deviates; residual correlation between the 2 drugs in the same sample
+infusion duration,all 1 h,0.685882,-748.669391,tests the categorical-versus-hours ambiguity in the source
+infusion duration,all 2 h,0.595336,-714.591679,tests the categorical-versus-hours ambiguity in the source
+infusion duration,all 3 h,0.451661,-654.750989,tests the categorical-versus-hours ambiguity in the source
+variance structure,shared volume deviate,0.655887,-752.587895,dOFV +4.06 on 1 df against the reference
+variance structure,"3 deviates, no residual correlation",0.703099,-722.355815,dOFV +34.29 on 2 df against the reference
+residual error,SD shared across drugs,0.588337,-756.483871,dOFV +0.16 on 1 df
+leave-one-subject-out,range over 21 refits,0.511484 to 0.652770,,median 0.587205; most influential subject 5

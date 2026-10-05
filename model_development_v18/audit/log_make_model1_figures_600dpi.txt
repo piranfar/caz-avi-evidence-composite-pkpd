@@ -1,0 +1,6 @@
+diagnostics rows 238  |  vpc rows 16
+  Ceftazidime  n= 119  CWRES mean -0.065  SD 1.002
+  Avibactam    n= 119  CWRES mean +0.067  SD 1.002
+  VPC: 206 of 238 observations inside the simulated 90% interval (86.6%)
+  wrote Figure7_model1_goodness_of_fit.png and Figure7_model1_goodness_of_fit.pdf
+  wrote Figure8_model1_visual_predictive_check.png and Figure8_model1_visual_predictive_check.pdf

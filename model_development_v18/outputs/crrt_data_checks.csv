@@ -1,0 +1,27 @@
+check,value,n,note
+sampling_schedule_matches_published,20,21,"patients whose deposited sampling times equal the published schedule for their infusion-duration category; differing: patient 3 (category 2, times [0.0, 2.0, 3.0, 4.0, 5.0, 8.0])"
+patients_with_1h_sample,3,21,samples at 1 h after the start of infusion
+caz_any_sample_gt104_patients,19,21,"total ceftazidime, any sampling time"
+caz_trough_gt104_patients,1,21,total ceftazidime at 0 h
+caz_interval_average_gt104_patients,10,21,"total ceftazidime, linear-trapezoid average over 0-8 h"
+caz_interval_average_median_mg_L,102.9375,21,range 59.687500-139.312500
+cl_ratio_avi_caz_median,1.295711,21,range 0.823028-1.663202; empirical Bayes clearances
+spearman_urine_output_vs_log_cl_ratio,0.207345,21,P = 0.367137; 95% CI -0.259181 to 0.595419 (Fieller)
+spearman_serum_creatinine_vs_log_cl_ratio,-0.007792,21,P = 0.973258; 95% CI -0.448976 to 0.436447 (Fieller)
+mannwhitney_modality_code_cl_ratio_p,0.518686,21,"code 0: n = 15, median ratio 1.300697; code 1: n = 6, median ratio 1.147241"
+urine_output_24h_median_mL,66.0,21,below 100 mL: 13; at most 170 mL: 17
+caz_trough_0h_median_mg_L,62.0,21,"total ceftazidime, pre-dose (0 h) sample; range 41.000000-111.000000"
+avi_trough_0h_median_mg_L,13.5,21,"total avibactam, pre-dose (0 h) sample; range 8.000000-20.000000"
+avi_min_any_sample_mg_L,8.0,119,"total; deposited values are rounded; Li et al report a lowest avibactam Cmin of 7.89 mg/L, free 7.258800 mg/L = 1.814700 times the 4-mg/L target"
+deposited_values_multiple_of_0_5_mg_L,238,238,concentrations of both drugs that are exact multiples of 0.5 mg/L
+nca_corr_log_cl,0.560041,21,"non-compartmental clearances (dose / AUC 0-8 h, linear trapezoid); Fisher 95% interval 0.169279 to 0.798645"
+gatti2023_occasion_corr_log_cl,0.598404,17,"8 patients; patient-cluster bootstrap 95% interval 0.287120 to 0.817804 (20000 of 20000 resamples usable, seed SEED + 2); excludes 0.94: yes"
+gatti2023_within_patient_corr_log_cl,0.819175,13,4 patients with 2 or more occasions; log clearances centered on each patient's mean; Fisher 95% interval for a partial correlation 0.391447 to 0.955816
+gatti2023_patient_mean_corr_log_cl,-0.337899,8,correlation of per-patient mean log clearances; Fisher 95% interval -0.842068 to 0.481399
+gatti2023_leave_one_occasion_out_range,0.470556,17,minimum shown; maximum 0.681984; dropped occasion at the minimum: patient 8
+gatti2023_leave_one_patient_out_range,0.549651,8,minimum shown; maximum 0.681984
+gatti2023_within_patient_corr_cl_caz_vs_effluent,0.664318,13,"log ceftazidime clearance against log total effluent flow, both centered on each patient's mean"
+gatti2023_within_patient_corr_cl_avi_vs_effluent,0.787124,13,"log avibactam clearance against log total effluent flow, both centered on each patient's mean"
+gatti2023_within_patient_partial_corr_given_effluent,0.642646,13,within-patient correlation of the 2 log clearances after adjusting for log total effluent flow
+gatti2023_between_patient_anova_caz_p,0.980724,17,"one-way ANOVA of log ceftazidime clearance by patient, F = 0.188223"
+gatti2023_between_patient_anova_avi_p,0.88283,17,"one-way ANOVA of log avibactam clearance by patient, F = 0.395267"

@@ -1,0 +1,9 @@
+regimen,analysis,fu_avi_true,fu_avi_classifier,below_target_pct,registrational_attainment_pct,false_reassurance
+2.5 g q8h,attainment,0.730000,,0.060000,100.000000,
+1.25 g q8h,attainment,0.730000,,21.425000,100.000000,
+0.94 g q12h,attainment,0.730000,,99.981000,100.000000,
+2.5 g q12h,attainment,0.730000,,26.761000,100.000000,
+1.25 g q8h,"classification, recalibrated",0.730000,0.730000,21.528000,,15.959000
+1.25 g q8h,"classification, not recalibrated",0.730000,0.920000,21.415000,,21.244000
+2.5 g q12h,"classification, recalibrated",0.730000,0.730000,26.763000,,16.702000
+2.5 g q12h,"classification, not recalibrated",0.730000,0.920000,26.723000,,25.266000

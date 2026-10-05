@@ -18,22 +18,28 @@ POPULATION — READ BEFORE USING ANY RESULT
     Only the correlation is carried downstream, and only as a sensitivity bound —
     never as a replacement value for rho.
 
-VARIANCE STRUCTURE — and why it was reduced
-    A first fit estimated the ceftazidime/avibactam VOLUME correlation at exactly
-    1.000, a boundary value and the signature of an overparameterised variance
-    model. The structure below imposes that boundary as a constraint rather than
-    estimating it: a SINGLE shared volume deviate, scaled by its own omega for each
-    analyte. This is also the more defensible model mechanistically, since both
-    agents distribute into extracellular water, so a patient with an expanded
-    volume has it for both. One parameter fewer, no boundary, Omega well conditioned.
+VARIANCE STRUCTURE
+    Both drugs are measured in the same pre-filter sample at the same times, so the
+    model carries a correlation c between the 2 drugs' residual errors in each sample.
+    Without it, a sample-level error shared by both drugs (sampling time, handling,
+    dilution) can only be absorbed by the random effects, which biases the clearance
+    correlation. With c in the model:
 
-        z = [z_CL_caz, z_CL_avi, z_V_shared],  corr(z1, z2) = r_cl, z3 independent
+        z = [z_CL_caz, z_CL_avi, z_V_caz, z_V_avi]
+        corr(z1, z2) = r_cl (the quantity of interest), corr(z3, z4) = r_v
         CL_caz = th1 exp(w1 z1)      CL_avi = th2 exp(w2 z2)
-        V_caz  = th3 exp(w3 z3)      V_avi  = th4 exp(w4 z3)
+        V_caz  = th3 exp(w3 z3)      V_avi  = th4 exp(w4 z4)
+        log C_obs = log C_pred + eps,  sd(eps) = sigma_drug,  corr(eps_caz, eps_avi) = c
 
-    Omega is therefore the CORRELATION matrix of standard-normal deviates; the
-    magnitudes enter in log_pred. That keeps Omega well conditioned and makes the
-    estimated correlation directly interpretable.
+    Reduction rule for the volume deviates: share them (one deviate scaled for each
+    drug) only when their estimated correlation sits at the 1.0 boundary. Without c it
+    did (r_v = 1.000), which is why an earlier version shared them; with c it does not
+    (r_v about 0.70), so they are estimated separately. build_omega (3 deviates, shared
+    volume) is kept for that comparison and for the tests.
+
+    Omega is the CORRELATION matrix of standard-normal deviates; the magnitudes enter
+    in log_pred. That keeps Omega well conditioned and makes the estimated correlation
+    directly interpretable.
 
 DATA
     Li C, Wang Y, Chen F, Huang L, Dong J, Fan W, Yue H, Ge Y.
@@ -46,7 +52,9 @@ ESTIMATION
     estimation with the Laplace approximation; the individual objective is a
     penalised nonlinear least-squares problem solved by Levenberg-Marquardt, and
     the curvature at the mode uses the Gauss-Newton form H = 2 (J'J/sigma^2 + Omega^-1),
-    the standard FOCE approximation, which is what makes the fit tractable.
+    the standard FOCE approximation, which is what makes the fit tractable. The paired
+    residuals are whitened before they enter the objective (see whiten()), which is the
+    exact bivariate normal likelihood for each sample.
     Fully deterministic: no random number generation anywhere in estimation.
 """
 from __future__ import annotations
@@ -138,9 +146,12 @@ def css_superposition(t, cl, v, dose_mg, t_inf, tau=TAU, n=80):
 
 
 def log_pred(subj, theta, z, w):
-    """Stacked log predictions for both analytes, in the order caz then avi."""
+    """Stacked log predictions for both analytes, in the order caz then avi.
+
+    With 3 deviates the 2 volumes share z[2]; with 4, z[3] is the avibactam volume deviate.
+    """
     cl = (theta[0] * np.exp(w[0] * z[0]), theta[1] * np.exp(w[1] * z[1]))
-    v = (theta[2] * np.exp(w[2] * z[2]), theta[3] * np.exp(w[3] * z[2]))
+    v = (theta[2] * np.exp(w[2] * z[2]), theta[3] * np.exp(w[3] * z[3 if len(z) > 3 else 2]))
     return np.concatenate([
         np.log(np.clip(css(subj.times[a], cl[j], v[j], DOSE[a], subj.t_inf), 1e-10, None))
         for j, a in enumerate(ANALYTES)])
@@ -153,6 +164,26 @@ def obs_vector(subj):
 def sigma_vector(subj, sigma):
     return np.concatenate([np.full(len(subj.times[a]), sigma[j])
                            for j, a in enumerate(ANALYTES)])
+
+
+def whiten(v, n_caz, c):
+    """Remove the correlation c between the 2 drugs' standardized residuals in the same sample.
+
+    Both drugs are measured in each sample, so the rows are paired: row i of ceftazidime and
+    row n_caz + i of avibactam come from the same tube. The avibactam rows are replaced by
+    their residual on the ceftazidime rows, (b - c a) / sqrt(1 - c^2), which turns the paired
+    bivariate normal into 2 independent standard normals. Works on vectors and on Jacobians.
+    """
+    if c == 0.0:
+        return v
+    a, b = v[:n_caz], v[n_caz:]
+    return np.concatenate([a, (b - c * a) / np.sqrt(1.0 - c * c)])
+
+
+def residual_correlation(params, n_omega):
+    """Residual correlation between the 2 drugs (tanh scale), or 0 when it is not in the model."""
+    k = 4 + n_omega + 2
+    return float(np.tanh(params[k])) if len(params) > k else 0.0
 
 
 # ------------------------------------------------------ variance structure ---
@@ -171,36 +202,54 @@ def build_omega_diag(p):
     return np.eye(N_ETA), np.exp(p[:4]), 0.0, 1.0
 
 
+def build_omega4(p):
+    """Separate volume deviates: p = [log w1..w4, z_cl, z_v]; volume correlation tanh(z_v)."""
+    w = np.exp(p[:4])
+    r_cl, r_v = float(np.tanh(p[4])), float(np.tanh(p[5]))
+    om = np.eye(4)
+    om[0, 1] = om[1, 0] = r_cl
+    om[2, 3] = om[3, 2] = r_v
+    return om, w, r_cl, r_v
+
+
 # ------------------------------------------------------------ likelihood -----
 
-def laplace_subject(subj, theta, w, om, om_inv, om_chol_inv, sigma, z0):
-    """Individual objective at the empirical-Bayes mode, plus the Laplace term."""
+def laplace_subject(subj, theta, w, om, om_inv, om_chol_inv, sigma, z0, c=0.0):
+    """Individual objective at the empirical-Bayes mode, plus the Laplace term.
+
+    c is the correlation between the 2 drugs' residual errors in the same sample.
+    """
     y = obs_vector(subj)
     sig = sigma_vector(subj, sigma)
+    n_caz, n_eta = len(subj.times["caz"]), len(z0)
+    if c != 0.0:
+        assert np.array_equal(subj.times["caz"], subj.times["avi"]), subj.sid
 
     def residuals(z):
-        return np.concatenate([(y - log_pred(subj, theta, z, w)) / sig, om_chol_inv @ z])
+        return np.concatenate([whiten((y - log_pred(subj, theta, z, w)) / sig, n_caz, c),
+                               om_chol_inv @ z])
 
     sol = least_squares(residuals, z0, method="lm", xtol=1e-10, ftol=1e-10, max_nfev=300)
     z = sol.x
 
     base = log_pred(subj, theta, z, w)
-    J = np.empty((len(y), N_ETA))
+    J = np.empty((len(y), n_eta))
     h = 1e-5
-    for a in range(N_ETA):
+    for a in range(n_eta):
         e = z.copy()
         e[a] += h
         J[:, a] = (log_pred(subj, theta, e, w) - base) / h
-    Js = J / sig[:, None]
+    Js = whiten(J / sig[:, None], n_caz, c)
     H = Js.T @ Js + om_inv
 
-    r_obs = (y - base) / sig
+    r_obs = whiten((y - base) / sig, n_caz, c)
     _, logdet_om = np.linalg.slogdet(om)
     sign_h, logdet_h = np.linalg.slogdet(H)
     if sign_h <= 0:
         logdet_h = 60.0
     ofv_i = (float(r_obs @ r_obs) + float(z @ om_inv @ z)
-             + 2.0 * float(np.sum(np.log(sig))) + logdet_om + logdet_h)
+             + 2.0 * float(np.sum(np.log(sig))) + n_caz * np.log(1.0 - c * c)
+             + logdet_om + logdet_h)
     return ofv_i, z
 
 
@@ -208,6 +257,9 @@ def ofv(params, subjects, omega_builder, n_omega, cache):
     theta = np.exp(params[:4])
     om, w, _, _ = omega_builder(params[4:4 + n_omega])
     sigma = np.exp(params[4 + n_omega:4 + n_omega + 2])
+    c = residual_correlation(params, n_omega)
+    if abs(c) >= 0.999:
+        return 1e10
     try:
         om_inv = np.linalg.inv(om)
         om_chol_inv = np.linalg.inv(np.linalg.cholesky(om))
@@ -216,7 +268,7 @@ def ofv(params, subjects, omega_builder, n_omega, cache):
     total = 0.0
     for s in subjects:
         val, z = laplace_subject(s, theta, w, om, om_inv, om_chol_inv, sigma,
-                                 cache.get(s.sid, np.zeros(N_ETA)))
+                                 cache.get(s.sid, np.zeros(om.shape[0])), c)
         cache[s.sid] = z
         total += val
     return total if np.isfinite(total) else 1e10
@@ -324,6 +376,24 @@ def structural_self_check():
 
 # ------------------------------------------------------------------ main -----
 
+# Primary model: 4 deviates plus the residual correlation (13 parameters).
+# Layout: [log th1..th4, log w1..w4, atanh r_cl, atanh r_v, log sigma_caz, log sigma_avi, atanh c]
+P0 = np.array([np.log(2.576), np.log(3.228), np.log(20.06), np.log(27.36),
+               np.log(0.205), np.log(0.139), np.log(0.267), np.log(0.194),
+               np.arctanh(0.59), np.arctanh(0.70),
+               np.log(0.0997), np.log(0.0932), np.arctanh(0.63)])
+N_OMEGA = 6
+IDX_RHO, IDX_RV, IDX_C = 8, 9, 12
+
+
+def unpack(x):
+    """theta, Omega, w, r_cl, r_v, sigma, c for a 13-parameter vector of the primary model."""
+    theta = np.exp(x[:4])
+    om, w, r_cl, r_v = build_omega4(x[4:4 + N_OMEGA])
+    sigma = np.exp(x[4 + N_OMEGA:6 + N_OMEGA])
+    return theta, om, w, r_cl, r_v, sigma, residual_correlation(x, N_OMEGA)
+
+
 def main():
     structural_self_check()
     subjects = load()
@@ -333,82 +403,59 @@ def main():
     print("=" * 78)
     print(f"  subjects {len(subjects)}   observations {nobs} "
           f"({nobs / len(subjects) / 2:.1f} per analyte per subject)")
-    print("  POPULATION: CRRT, intermittent 8-hourly infusion - NOT the primary scenario")
-    print("  Variance model reduced to a shared volume deviate; the 4-deviate model")
-    print("  estimated the volume correlation at the 1.000 boundary.")
+    print("  4 deviates (separate volume deviates) and a residual correlation between the")
+    print("  2 drugs measured in the same sample")
     print()
 
-    p0 = np.array([np.log(2.57), np.log(3.22), np.log(20.0), np.log(27.0),
-                   np.log(0.20), np.log(0.14), np.log(0.27), np.log(0.20),
-                   0.9,
-                   np.log(0.10), np.log(0.093)])
-    full, cache = fit(subjects, build_omega, 5,
-                      "full model (cross-drug clearance correlation estimated)", p0)
-    null, _ = fit(subjects, build_omega_diag, 4,
-                  "null model (correlation fixed at zero)",
-                  np.concatenate([full.x[:8], full.x[9:]]))
-
-    theta = np.exp(full.x[:4])
-    om, w, r_cl, _ = build_omega(full.x[4:9])
-    sigma = np.exp(full.x[9:11])
-    se, _ = standard_errors(full.x, subjects, build_omega, 5)
+    full, cache = fit(subjects, build_omega4, N_OMEGA,
+                      "full model (cross-drug clearance correlation estimated)", P0)
+    null, _ = fit(subjects, build_omega4, N_OMEGA, "null model (clearance correlation fixed at zero)",
+                  full.x, fixed={IDX_RHO: 0.0})
+    theta, om, w, r_cl, r_v, sigma, c = unpack(full.x)
+    se, cov = standard_errors(full.x, subjects, build_omega4, N_OMEGA)
 
     print()
     print("=" * 78)
     print("RESULTS")
     print("=" * 78)
-    names = ["CL ceftazidime (L/h)", "CL avibactam (L/h)",
-             "V ceftazidime (L)", "V avibactam (L)"]
+    names = ["CL ceftazidime (L/h)", "CL avibactam (L/h)", "V ceftazidime (L)", "V avibactam (L)"]
     print()
     print("  Fixed effects            estimate     RSE")
     for i, nm in enumerate(names):
         print(f"    {nm:24} {theta[i]:8.3f}  {100 * se[i]:6.1f}%")
-
     print()
     print("  Between-subject variability")
-    for i, nm in enumerate(["CL ceftazidime", "CL avibactam",
-                            "V ceftazidime", "V avibactam"]):
-        cv = 100 * np.sqrt(np.exp(w[i] ** 2) - 1)
-        print(f"    {nm:24} omega {w[i]:6.4f}   CV {cv:5.1f}%")
-
+    for i, nm in enumerate(["CL ceftazidime", "CL avibactam", "V ceftazidime", "V avibactam"]):
+        print(f"    {nm:24} omega {w[i]:6.4f}   CV {100 * np.sqrt(np.exp(w[i] ** 2) - 1):5.1f}%")
     print()
     print("  CROSS-DRUG CLEARANCE CORRELATION  <-- the quantity of interest")
-    z, sz = full.x[8], se[8]
-    print(f"    corr(eta_CL_caz, eta_CL_avi) = {r_cl:.3f}")
+    z, sz = full.x[IDX_RHO], se[IDX_RHO]
+    print(f"    corr(eta_CL_caz, eta_CL_avi) = {r_cl:.4f}")
     lo = hi = float("nan")
     if np.isfinite(sz):
         lo, hi = float(np.tanh(z - 1.96 * sz)), float(np.tanh(z + 1.96 * sz))
-        print(f"    95% CI  {lo:.3f} to {hi:.3f}   (Fisher z scale, SE {sz:.3f})")
-        verdict = "EXCLUDES" if hi < 0.94 else "INCLUDES"
-        print(f"    The interval {verdict} the assumed value of 0.94.")
-    print("    corr(eta_V_caz, eta_V_avi) = 1 by construction (shared volume deviate)")
-
+        print(f"    Wald 95% CI on the Fisher z scale {lo:.3f} to {hi:.3f} (SE {sz:.3f}); "
+              f"the profile-likelihood interval is in model1_finalise.py")
+    print(f"    corr(eta_V_caz, eta_V_avi) = {r_v:.4f}")
+    print(f"    residual correlation in the same sample = {c:.4f}")
     print()
     print("  Residual error (proportional)")
-    print(f"    ceftazidime {100 * sigma[0]:6.1f}%      avibactam {100 * sigma[1]:6.1f}%")
+    print(f"    ceftazidime {100 * sigma[0]:6.2f}%      avibactam {100 * sigma[1]:6.2f}%")
 
     d_ofv = null.fun - full.fun
     p_lrt = chi2.sf(max(d_ofv, 0.0), 1)
     print()
     print("  Model comparison (likelihood ratio, 1 df: the clearance correlation)")
-    print(f"    OFV full {full.fun:9.2f}   OFV null {null.fun:9.2f}"
-          f"   dOFV {d_ofv:7.2f}   p = {p_lrt:.4g}")
-    print(f"    BIC full {full.fun + 11 * np.log(nobs):9.2f}"
-          f"   BIC null {null.fun + 10 * np.log(nobs):9.2f}")
+    print(f"    OFV full {full.fun:9.4f}   OFV null {null.fun:9.4f}   dOFV {d_ofv:7.3f}   p = {p_lrt:.4g}")
 
     etas = np.array([cache[s.sid] for s in subjects])
     print()
     print("  Shrinkage of the standard-normal deviates")
-    for i, nm in enumerate(["z CL ceftazidime", "z CL avibactam", "z V shared"]):
+    for i, nm in enumerate(["z CL ceftazidime", "z CL avibactam", "z V ceftazidime", "z V avibactam"]):
         print(f"    {nm:24} {100 * (1 - etas[:, i].std(ddof=1)):6.1f}%")
     print()
     print("  Empirical correlation of the individual clearance deviates: "
           f"{np.corrcoef(etas[:, 0], etas[:, 1])[0, 1]:.3f}")
-
-    print()
-    print("  Comparison with the assumed value")
-    print("    Cojutti 2024 (non-RRT, continuous infusion): rho = 0.940  (RSE 23.8%)")
-    print(f"    This model   (CRRT, intermittent infusion) : rho = {r_cl:.3f}")
 
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, "model1_joint_popk_parameters.csv")
@@ -416,41 +463,46 @@ def main():
         wcsv = csv.writer(fh, lineterminator="\n")
         wcsv.writerow(["parameter", "estimate", "rse_pct", "ci_low", "ci_high", "note"])
         for i, nm in enumerate(names):
-            wcsv.writerow([nm, f"{theta[i]:.4f}", f"{100 * se[i]:.1f}", "", "",
-                           "CRRT cohort, intermittent infusion; does not transfer "
-                           "to the primary scenario"])
-        for i, nm in enumerate(["omega_CL_caz", "omega_CL_avi",
-                                "omega_V_caz", "omega_V_avi"]):
-            wcsv.writerow([nm, f"{w[i]:.4f}", "", "", "",
-                           f"CV {100 * np.sqrt(np.exp(w[i] ** 2) - 1):.1f}%"])
-        wcsv.writerow(["corr_CL_caz_avi", f"{r_cl:.4f}", "",
-                       f"{lo:.4f}" if np.isfinite(lo) else "",
-                       f"{hi:.4f}" if np.isfinite(hi) else "",
-                       "CROSS-DRUG clearance correlation; assumed 0.94 in the primary model"])
-        wcsv.writerow(["corr_V_caz_avi", "1.0000", "", "", "",
-                       "fixed by construction: shared volume deviate"])
-        wcsv.writerow(["sigma_prop_caz", f"{sigma[0]:.4f}", "", "", "",
-                       "proportional residual error"])
-        wcsv.writerow(["sigma_prop_avi", f"{sigma[1]:.4f}", "", "", "",
-                       "proportional residual error"])
-        wcsv.writerow(["OFV_full", f"{full.fun:.3f}", "", "", "", ""])
-        wcsv.writerow(["OFV_null_no_crossdrug", f"{null.fun:.3f}", "", "", "", ""])
-        wcsv.writerow(["dOFV", f"{d_ofv:.3f}", "", "", "",
-                       f"likelihood ratio, 1 df, p = {p_lrt:.4g}"])
+            wcsv.writerow([nm, f"{theta[i]:.6f}", f"{100 * se[i]:.1f}", "", "", ""])
+        for i, nm in enumerate(["omega_CL_caz", "omega_CL_avi", "omega_V_caz", "omega_V_avi"]):
+            wcsv.writerow([nm, f"{w[i]:.6f}", "", "", "", f"CV {100 * np.sqrt(np.exp(w[i] ** 2) - 1):.1f}%"])
+        wcsv.writerow(["corr_CL_caz_avi", f"{r_cl:.6f}", "", f"{lo:.6f}" if np.isfinite(lo) else "",
+                       f"{hi:.6f}" if np.isfinite(hi) else "", "Wald interval on the Fisher z scale"])
+        wcsv.writerow(["corr_V_caz_avi", f"{r_v:.6f}", "", "", "", "separate volume deviates"])
+        wcsv.writerow(["sigma_prop_caz", f"{sigma[0]:.6f}", "", "", "", "proportional residual error"])
+        wcsv.writerow(["sigma_prop_avi", f"{sigma[1]:.6f}", "", "", "", "proportional residual error"])
+        wcsv.writerow(["corr_residual_caz_avi", f"{c:.6f}", "", "", "",
+                       "correlation of the 2 drugs' residual errors in the same sample"])
+        wcsv.writerow(["OFV_full", f"{full.fun:.6f}", "", "", "", ""])
+        wcsv.writerow(["OFV_null_no_crossdrug", f"{null.fun:.6f}", "", "", "", ""])
+        wcsv.writerow(["dOFV", f"{d_ofv:.6f}", "", "", "", f"likelihood ratio, 1 df, p = {p_lrt:.4g}"])
     print()
     print(f"  wrote {path}")
+
+    # Estimates and their asymptotic covariance on the estimation scale (log, log, Fisher z, log,
+    # Fisher z), from the finite-difference Hessian of the OFV. crrt_parameter_uncertainty.py
+    # draws parameter vectors from this distribution.
+    cpath = os.path.join(OUT, "model1_parameter_covariance.csv")
+    labels = ["log_CL_caz", "log_CL_avi", "log_V_caz", "log_V_avi", "log_omega_CL_caz", "log_omega_CL_avi",
+              "log_omega_V_caz", "log_omega_V_avi", "atanh_corr_CL", "atanh_corr_V", "log_sigma_caz",
+              "log_sigma_avi", "atanh_corr_residual"]
+    with open(cpath, "w", newline="", encoding="utf-8") as fh:
+        wcsv = csv.writer(fh, lineterminator="\n")
+        wcsv.writerow(["parameter", "estimate"] + labels)
+        for i, nm in enumerate(labels):
+            row = [f"{v:.10g}" for v in cov[i]] if cov is not None else [""] * len(labels)
+            wcsv.writerow([nm, f"{full.x[i]:.10f}"] + row)
+    print(f"  wrote {cpath}")
 
     ipath = os.path.join(OUT, "model1_individual_parameters.csv")
     with open(ipath, "w", newline="", encoding="utf-8") as fh:
         wcsv = csv.writer(fh, lineterminator="\n")
-        wcsv.writerow(["subjectID", "z_CL_caz", "z_CL_avi", "z_V_shared",
+        wcsv.writerow(["subjectID", "z_CL_caz", "z_CL_avi", "z_V_caz", "z_V_avi",
                        "CL_caz_L_h", "CL_avi_L_h", "V_caz_L", "V_avi_L"])
         for s, e in zip(subjects, etas):
-            wcsv.writerow([s.sid] + [f"{x:.5f}" for x in e] + [
-                f"{theta[0] * np.exp(w[0] * e[0]):.4f}",
-                f"{theta[1] * np.exp(w[1] * e[1]):.4f}",
-                f"{theta[2] * np.exp(w[2] * e[2]):.4f}",
-                f"{theta[3] * np.exp(w[3] * e[2]):.4f}"])
+            wcsv.writerow([s.sid] + [f"{x:.6f}" for x in e] + [
+                f"{theta[0] * np.exp(w[0] * e[0]):.6f}", f"{theta[1] * np.exp(w[1] * e[1]):.6f}",
+                f"{theta[2] * np.exp(w[2] * e[2]):.6f}", f"{theta[3] * np.exp(w[3] * e[3]):.6f}"])
     print(f"  wrote {ipath}")
     return 0
 

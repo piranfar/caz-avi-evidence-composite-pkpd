@@ -113,7 +113,7 @@ its exposure ceiling, and documents that 21/112 patients exceeded it on 24 occas
 **It is not** patient-level data — Table 2 is a model summary, not a per-patient listing. The
 correlation ρ = 0.94 is a single fitted population parameter with a 23.8% RSE, from one centre, in one
 retrospective cohort, with V fixed. That is precisely why this project fitted Model 1 independently
-rather than adopting 0.94 on faith, and precisely why the two estimates (0.94 here, 0.703 in Model 1's
+rather than adopting 0.94 on faith, and precisely why the two estimates (0.94 here, 0.588 in Model 1's
 CRRT cohort) are reported as **separate scenarios and never pooled** — different populations, different
 infusion modes, different structural assumptions.
 

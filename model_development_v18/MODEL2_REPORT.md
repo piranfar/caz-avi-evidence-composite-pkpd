@@ -10,6 +10,10 @@ primary simulation. **Not a pharmacokinetic model**; it adds no pharmacokinetic 
 **Run:** 2,000 outer draws × 20,000 virtual subjects, seed 20260811; monitoring analysis
 1,000 draws.
 
+**Model 1 input.** Model 2 was run with the earlier Model 1 estimate, ρ = 0.703, from the model without
+the residual correlation. The current estimate is 0.588 (95% CI 0.206 to 0.815; `MODEL1_REPORT.md`, section 0).
+Model 2 has not been rerun; rows labelled "0.703 (Model 1)" refer to the earlier estimate.
+
 ---
 
 > ## ⚠ CORRECTION — the C1 correlation sampler was biased; affected results were rerun

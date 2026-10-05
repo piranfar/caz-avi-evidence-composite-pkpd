@@ -1,0 +1,16 @@
+seed,regimen,scenario,below_target_pct,wrongly_reassured_pct,detected_pct_at_0_9,flagged_pct_at_0_9,flag_ratio_min,flag_ratio_max
+20261012,1.25 g q8h,estimate,4.117,3.981,52.902599,11.306,nan,nan
+20261012,1.25 g q8h,non-RRT value,4.202,2.634,82.317944,10.351,nan,nan
+20261012,1.25 g q8h,"ratio, estimate to non-RRT value",nan,nan,nan,nan,2.919984,3.070074
+20261013,1.25 g q8h,estimate,4.249,4.109,53.518475,11.915,nan,nan
+20261013,1.25 g q8h,non-RRT value,4.227,2.628,84.078543,10.522,nan,nan
+20261013,1.25 g q8h,"ratio, estimate to non-RRT value",nan,nan,nan,nan,2.958449,3.29655
+20261014,1.25 g q8h,estimate,4.162,4.054,54.132629,11.706,nan,nan
+20261014,1.25 g q8h,non-RRT value,4.125,2.601,83.127273,10.605,nan,nan
+20261014,1.25 g q8h,"ratio, estimate to non-RRT value",nan,nan,nan,nan,2.870635,3.151822
+20261015,1.25 g q8h,estimate,4.214,4.099,54.010441,11.69,nan,nan
+20261015,1.25 g q8h,non-RRT value,4.207,2.654,82.600428,10.475,nan,nan
+20261015,1.25 g q8h,"ratio, estimate to non-RRT value",nan,nan,nan,nan,2.795717,3.154236
+20261016,1.25 g q8h,estimate,4.191,4.077,53.185397,11.299,nan,nan
+20261016,1.25 g q8h,non-RRT value,4.129,2.609,83.773311,10.705,nan,nan
+20261016,1.25 g q8h,"ratio, estimate to non-RRT value",nan,nan,nan,nan,2.834264,3.139475

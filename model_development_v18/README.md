@@ -8,6 +8,8 @@ checksum against `FILE_INVENTORY.csv` after every change in this directory.
 **Status, updated 12 August 2026:**
 - Phases 1–3 (audit, data-availability review, model-selection decision): **complete.**
 - **Model 1** (joint clearance-correlation estimate): **complete and finalised** — see `MODEL1_REPORT.md`.
+  Updated October 2026: residual correlation between the two drugs added; ρ = 0.588.
+- **CRRT analysis** (virtual CRRT population, ceftazidime-only classification): see `CRRT_ANALYSIS.md`.
 - **Model 2** (HU-JAM decision-analytic layer, all four uncertainty layers): **complete** — see
   `MODEL2_REPORT.md`.
 - **Software packaging (R6):** **complete** — see `SOFTWARE.md`.
@@ -33,7 +35,8 @@ checksum against `FILE_INVENTORY.csv` after every change in this directory.
 | 5 | `DATA_AVAILABILITY_MATRIX.csv` | 8 studies × 35 evidence fields, each classified A–F (Phase 2; still authoritative for those 8) |
 | 5b | **`data_external/README.md`** | index of all **16** archived sources, what each is for, and an honest accounting of what the collection did and did not buy |
 | 6 | `MODEL_DEVELOPMENT_DECISION.md` | Which model was selected, and why |
-| 7 | **`MODEL1_REPORT.md`** | The clearance-correlation estimate: 0.703, excludes the assumed 0.94 |
+| 7 | **`MODEL1_REPORT.md`** | The clearance-correlation estimate: 0.588 (95% CI 0.206 to 0.815), excludes the assumed 0.94 |
+| 7b | **`CRRT_ANALYSIS.md`** | The CRRT analysis: virtual population, joint target attainment, ceftazidime-only classification; run order and outputs |
 | 8 | **`MODEL2_REPORT.md`** | The decision layer: value of information, misselection/regret, triage |
 | 9 | `SOFTWARE.md` | The installable package, and how to adapt it to another drug pair |
 | 10 | `NOVELTY_ROUTES.md` | Further analysis routes considered, and their status |
@@ -49,7 +52,8 @@ model_development_v18/
 ├── PHASE2_DATA_AVAILABILITY_REPORT.md, DATA_AVAILABILITY_MATRIX.csv
 │                                     Phase 2: real patient-data availability
 ├── MODEL_DEVELOPMENT_DECISION.md    Phase 3: which model, and why
-├── MODEL1_REPORT.md                 Model 1: the clearance-correlation estimate (FINAL)
+├── MODEL1_REPORT.md                 Model 1: the clearance-correlation estimate
+├── CRRT_ANALYSIS.md                 the CRRT analysis built on Model 1: run order, inputs, outputs
 ├── MODEL2_REPORT.md                 Model 2: the decision-analytic layer
 ├── MODEL2_SPECIFICATION.md          Model 2's design, written before implementation
 ├── SOFTWARE.md                      the installable package (R6)
@@ -71,7 +75,11 @@ model_development_v18/
 │   │                                 Model 2's four uncertainty layers and analyses
 │   ├── joint_popk_nlme.py, model1_finalise.py, model1_sbc.py, model1_design_analysis.py
 │   │                                 Model 1: fitting, diagnostics, validation, design analysis
-│   ├── test_model1.py               119 checks
+│   ├── crrt_virtual_tdm.py, crrt_supplementary_analyses.py, crrt_parameter_uncertainty.py,
+│   │   table5_estimated_rho_rows.py  the CRRT analysis (see CRRT_ANALYSIS.md)
+│   ├── make_tdm_figures.py, make_model1_figures_600dpi.py
+│   │                                 figures of the CRRT analysis and print renders of Model 1
+│   ├── test_model1.py               140 checks
 │   ├── test_model2.py               44 checks: decision-layer identities, samplers, interface
 │   ├── clearance_correlation_analysis.py, external_aggregate_check_BenitezCano.py
 │   │                                 the two-dataset correlation analysis and the external check
@@ -81,7 +89,7 @@ model_development_v18/
 │       └── mic_distributions.csv    RECOVERED, not original — see below
 │
 ├── outputs/                         every frozen, machine-readable result — one CSV per analysis
-├── figures/                         Model 1 goodness-of-fit and visual predictive check
+├── figures/                         Model 1 goodness-of-fit and visual predictive check; CRRT figures
 │
 ├── data_external/
 │   ├── Gatti2023_JCritCare_154301_CC-BY-NC-ND.pdf, Gatti2023_individual_patient_data.csv

@@ -1,4 +1,4 @@
-scenario,n_replicates,rho_true,mean_estimate,bias,relative_bias_pct,sd,rmse,p2.5,p97.5,pct_below_0.94
-correctly specified,25,0.7031,0.7212,0.0181,2.57,0.1202,0.1191,0.4565,0.8806,100.0
-two-compartment truth,25,0.7031,0.724,0.0209,2.97,0.1245,0.1237,0.4496,0.8901,100.0
-"correct, rho = 0.94",25,0.94,0.9499,0.0099,1.05,0.0285,0.0296,0.9055,1.0,40.0
+scenario,n_replicates,rho_true,mean_estimate,bias,bias_mcse,relative_bias_pct,sd,rmse,p2_5,p97_5,pct_below_0_94,lrt_type1_pct,lrt_type1_mcse,note
+correctly specified,50,0.588391,0.584160,-0.004231,0.023090,-0.719022,0.163268,0.161683,0.240494,0.868329,100.000000,,,
+"correct, rho = 0.94",50,0.940000,0.935665,-0.004335,0.005651,-0.461134,0.039962,0.039797,0.845620,0.987625,46.000000,6.000000,3.358571,
+two-compartment truth,50,0.588391,0.565559,-0.022832,0.023662,-3.880450,0.167318,0.167203,0.170809,0.804048,100.000000,,,2-compartment minus correct mean estimate -0.018602 (SE 0.033061)

@@ -342,6 +342,51 @@ def test_numerical_sanity():
                 subjects, M.build_omega, 5, {}) >= 1e9)
 
 
+def test_primary_model():
+    print("\nModel 1 primary model (4 deviates, residual correlation)")
+    for r_cl, r_v in ((0.0, 0.0), (0.59, 0.70), (-0.4, 0.9), (0.94, 0.2)):
+        p = np.array([np.log(0.2), np.log(0.14), np.log(0.27), np.log(0.19),
+                      np.arctanh(r_cl), np.arctanh(r_v)])
+        om, w, rc, rv = M.build_omega4(p)
+        check(f"build_omega4 round-trips r_cl={r_cl}, r_v={r_v}", approx(rc, r_cl, 1e-9) and approx(rv, r_v, 1e-9))
+        check(f"build_omega4 is a positive definite correlation matrix at r_cl={r_cl}, r_v={r_v}",
+              bool(np.all(np.linalg.eigvalsh(om) > 0)) and np.allclose(np.diag(om), 1.0) and np.allclose(om, om.T))
+        check(f"clearance and volume blocks are uncorrelated at r_cl={r_cl}, r_v={r_v}",
+              np.allclose(om[:2, 2:], 0.0))
+
+    # Whitening plus n log(1 - c^2) must equal -2 log of the exact bivariate normal density of each pair.
+    from scipy.stats import multivariate_normal
+    rng = np.random.default_rng(7)
+    for c in (0.0, 0.3, 0.63, -0.5, 0.95):
+        a, b = rng.standard_normal(6), rng.standard_normal(6)
+        v = M.whiten(np.concatenate([a, b]), 6, c)
+        ours = float(v @ v) + 6 * np.log(1.0 - c * c)
+        exact = -2.0 * sum(multivariate_normal(mean=[0, 0], cov=[[1, c], [c, 1]]).logpdf([x, y]) for x, y in zip(a, b))
+        check(f"whitened pairs give the exact bivariate normal likelihood at c={c}",
+              approx(ours, exact - 6 * 2.0 * np.log(2.0 * np.pi), 1e-9), f"{ours:.9f} vs {exact:.9f}")
+    z = rng.standard_normal((2, 200_000))
+    c = 0.63
+    pair = np.vstack([z[0], c * z[0] + np.sqrt(1 - c * c) * z[1]])
+    v = M.whiten(np.concatenate([pair[0], pair[1]]), pair.shape[1], c)
+    n = pair.shape[1]
+    check("whitening turns correlated pairs into uncorrelated ones",
+          abs(float(np.corrcoef(v[:n], v[n:])[0, 1])) < 0.01)
+    check("whitened residuals keep unit variance", abs(float(np.std(v[n:])) - 1.0) < 0.01)
+
+    # The primary-model objective at the reported estimates.
+    path = os.path.join(os.path.dirname(HERE), "outputs", "model1_parameter_covariance.csv")
+    if os.path.exists(path):
+        import csv as _csv
+        with open(path, encoding="utf-8") as fh:
+            x = np.array([float(r["estimate"]) for r in _csv.DictReader(fh)])
+        val = M.ofv(x, M.load(), M.build_omega4, M.N_OMEGA, {})
+        check("primary-model OFV at the reported estimates is -756.647", abs(val - (-756.6472)) < 1e-3,
+              f"got {val:.4f}")
+        check("primary model has 13 parameters", x.size == 13)
+    check("a residual correlation of 1 is rejected rather than crashing",
+          M.ofv(np.concatenate([M.P0[:12], [40.0]]), M.load(), M.build_omega4, M.N_OMEGA, {}) >= 1e9)
+
+
 def main():
     print("=" * 70)
     print("MODEL 1 AND PRIMARY-MODEL TEST SUITE")
@@ -349,6 +394,7 @@ def main():
     test_structural()
     test_dose_and_rate()
     test_variance_structure()
+    test_primary_model()
     test_clearance_transformation()
     test_free_vs_total()
     test_renal_classes()
