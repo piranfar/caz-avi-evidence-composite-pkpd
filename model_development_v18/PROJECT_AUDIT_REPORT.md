@@ -90,13 +90,10 @@ reproduce_primary_run.py      core model; constants carry inline provenance comm
         └── cazavi_analyses.py    population draw, scenario engine, CFR, convergence,
                 │                 multiseed, OAT sensitivity, Latin-hypercube PSA
                 │
-                ├── reviewer_response_analyses.py   avibactam-threshold sweep, renal boundary
                 ├── prescriptive_analyses.py        individualised dose, decision grid
                 ├── structural_uncertainty.py       four alternative population PK models
                 ├── dose_escalation_analyses.py     escalation, resistance-suppression targets
                 ├── scope_extension_analyses.py     ARC subgroup, protein binding, population CFR
-                ├── critique_response.py            window identity, RRT exclusion, variance
-                ├── critique2_response.py           free-vs-total, second assay, weighting
                 ├── v10_analyses.py                 penetration dependence and variability
                 ├── make_structural_figure.py       Supplementary Figure S12
                 └── make_v9_figures.py
@@ -167,7 +164,7 @@ citation for it exists anywhere** in the manuscript, its reference list, or the 
 be sourced or removed. Its weights are recoverable by inversion but that establishes what was used,
 not where it came from.
 
-**5 — Moderate. Figures 2 and 3 are 220 dpi**, below Elsevier's 300 dpi minimum for combination
+**5 — Moderate. Figures 2 and 3 are 220 dpi**, below the usual 300 dpi minimum for combination
 artwork. Both are matplotlib outputs and Figure 2 regenerates bit-identically, so this is a one-line
 `dpi=` change affecting no number.
 

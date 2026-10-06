@@ -17,7 +17,7 @@ A. Is the therapeutic window a simulation result?
      61–90     within licensed at MIC 8:  79.3%  median  5.98 g/day  (2 distinct values -> genuine)
      91–120    within licensed at MIC 8:  67.5%  median  7.57 g/day  (2 distinct values -> genuine)
      121–150   within licensed at MIC 8:  56.6%  median  8.98 g/day  (2 distinct values -> genuine)
-  wrote    30 rows  outputs\critique_a_window_identity.csv
+  wrote    30 rows  data\processed\robustness_a_window_identity.csv
 
 B. Does excluding EKFC < 15 (who would be on RRT) overturn the ordering?
    cohort      class      licensed exceed   dose 90%  dose ceiling  exceed there  ceiling first
@@ -33,7 +33,7 @@ B. Does excluding EKFC < 15 (who would be on RRT) overturn the ordering?
    EKFC >= 15  121–150              6.89%      19.75        13.125         35.8%            yes
    all EKFC     population exceedance  9.83%   ceiling binds first in 5/5 classes
    EKFC >= 15   population exceedance  8.46%   ceiling binds first in 5/5 classes
-  wrote    10 rows  outputs\critique_b_rrt_exclusion.csv
+  wrote    10 rows  data\processed\robustness_b_rrt_exclusion.csv
 
 C. Is the ordering a drug property or a variance property?
    CV  10.0%  ceiling binds first in 1/5 classes   exceedance at the attaining dose   0.0– 22.1%
@@ -43,7 +43,7 @@ C. Is the ordering a drug property or a variance property?
    CV  67.9%  ceiling binds first in 5/5 classes   exceedance at the attaining dose  35.8– 48.7%
    VERDICT: if the ordering disappears at low CV it is a variance result,
             not a statement about ceftazidime–avibactam.
-  wrote     5 rows  outputs\critique_c_variance.csv
+  wrote     5 rows  data\processed\robustness_c_variance.csv
 
 D. How far can the ceiling and the cut-off move before the ordering fails?
      ceiling | cut 5% | cut 15% | cut 30%
@@ -53,7 +53,7 @@ D. How far can the ceiling and the cut-off move before the ordering fails?
         200  |   5/5   |   1/5   |   0/5  
         300  |   1/5   |   0/5   |   0/5  
         500  |   1/5   |   0/5   |   0/5  
-  wrote    18 rows  outputs\critique_d_ceiling_sensitivity.csv
+  wrote    18 rows  data\processed\robustness_d_ceiling_sensitivity.csv
 
 E. Under rho = 0.94, what does the second assay add?
    rho 0.94  predicting avibactam status from measured ceftazidime misclassifies  6.17% of subjects   (AVI:CAZ Css ratio CV 34.3%)
@@ -62,7 +62,7 @@ E. Under rho = 0.94, what does the second assay add?
    rho 0.00  predicting avibactam status from measured ceftazidime misclassifies 22.84% of subjects   (AVI:CAZ Css ratio CV 118.4%)
    VERDICT: a low misclassification rate at rho = 0.94 means the paper's own
             correlation makes the second assay largely predictable.
-  wrote     4 rows  outputs\critique_e_second_assay.csv
+  wrote     4 rows  data\processed\robustness_e_second_assay.csv
 
 F. Avibactam in renal impairment, given it carries no ceiling
    class    reg     median CAZ  median AVI   p95 AVI   AVI/CAZ
@@ -74,4 +74,4 @@ F. Avibactam in renal impairment, given it carries no ceiling
    The licensed regimens are renally adjusted, which is why avibactam does not
    run away in the low classes; the asymmetry is that no published avibactam
    exposure limit exists to test against.
-  wrote     5 rows  outputs\critique_f_avibactam_exposure.csv
+  wrote     5 rows  data\processed\robustness_f_avibactam_exposure.csv

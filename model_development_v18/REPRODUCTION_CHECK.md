@@ -51,9 +51,9 @@ Four files are missing:
 | `data/reference/cfr_summary_primary_three.csv` | `--verify` | calibration check |
 
 Because `cazavi_analyses.py` is imported by ten downstream scripts
-(`critique_response`, `critique2_response`, `dose_escalation_analyses`, `make_structural_figure`,
-`make_v9_figures`, `prescriptive_analyses`, `reviewer_response_analyses`, `scope_extension_analyses`,
-`structural_uncertainty`, `v10_analyses`), **the entire secondary analysis suite is dead on arrival**
+(`dose_escalation_analyses`, `make_structural_figure`, `make_v9_figures`, `prescriptive_analyses`,
+`robustness_checks`, `scope_extension_analyses`, `structural_uncertainty`, `target_checks`,
+`threshold_analyses`, `v10_analyses`), **the entire secondary analysis suite is dead on arrival**
 for anyone who downloads this package. Only `reproduce_primary_run.py` and `add_icu_elf_scenario.py`
 are self-contained.
 
@@ -164,16 +164,19 @@ largest being a rounding-level difference in `median_css_caz` in the dose-escala
 
 | Script | Exit | Outputs regenerated | Result |
 |---|---|---|---|
-| `reviewer_response_analyses.py` | 0 | 5 | all reproduce |
+| `threshold_analyses.py` | 0 | 5 | all reproduce |
 | `scope_extension_analyses.py` | 0 | 4 | all reproduce |
 | `prescriptive_analyses.py` | 0 | 7 | all reproduce |
 | `dose_escalation_analyses.py` | 0 | 5 | all reproduce |
 | `structural_uncertainty.py` | 0 | 8 | all reproduce |
-| `critique_response.py` | 0 | 6 | all reproduce |
-| `critique2_response.py` | 0 | 4 | all reproduce |
+| `robustness_checks.py` | 0 | 6 | all reproduce |
+| `target_checks.py` | 0 | 4 | all reproduce |
 | `v10_analyses.py` | 0 | 3 | all reproduce |
 | `add_icu_elf_scenario.py` | 0 | 4 | all reproduce |
 | `avibactam_evidence_table.py` | 0 | 1 | all reproduce |
+
+The threshold, robustness and target scripts and their outputs are named as in `src/cazavi/` and
+`data/processed/` of this repository.
 
 `structural_uncertainty.py` reproduces the manuscript's structural range verbatim:
 population-weighted joint CFR **M1 84.3%, M2 94.5%, M3 84.3%, M4 70.2%** — the reported 70.2-94.5%.
@@ -228,7 +231,7 @@ nevertheless a real portability defect and the one-line fix (`encoding="utf-8"`)
 | Figure 5 | 2100 × 1120 | 300 dpi |
 | Figure 6 | 2100 × 1240 | 300 dpi |
 
-**Figures 2 and 3 are below the 300 dpi minimum** Elsevier specifies for combination artwork. Both
+**Figures 2 and 3 are below the 300 dpi minimum** usual for combination artwork. Both
 are matplotlib outputs and Figure 2 regenerates bit-identically, so both can be re-emitted at 300 or
 600 dpi with a one-line `dpi=` change and no change to any number.
 
@@ -274,12 +277,12 @@ representative verifications:
 | Joint PTA at MIC 4 = 67.1-88.3% | `primary_pta_results.csv`, 5 selected | 67.2-88.3 ✓ (see below) |
 | Daily dose 1.71 → 8.94 g/day at MIC 8 | `individualised_attainment.csv` | ✓ |
 | Within 10 g/day cap 99.2% → 57.2% | `individualised_attainment.csv` | ✓ |
-| PPV 95.8%, NPV 83.6%, false reassurance 3.6% | `critique2_second_assay_operating.csv` | ✓ |
+| PPV 95.8%, NPV 83.6%, false reassurance 3.6% | `targets_second_assay_operating.csv` | ✓ |
 | 5.9% misclassified | derived as 100 − 94.1 accuracy | ✓ |
 | Population-weighted joint CFR 84.3% (plasma) | `lung_penetration_icu_trial_summary.csv` | ✓ |
 | ELF scenarios 45.9 / 44.0 / 26.7% | `lung_penetration_icu_trial_summary.csv` | ✓ |
 | Structural CFR range 70.2-94.5% | `structural_uncertainty_cfr.csv` | ✓ |
-| Free-vs-total: +2.0-3.0 pp; MIC 8 ≤ 0.1 pp | `critique2_free_vs_total.csv` | ✓ |
+| Free-vs-total: +2.0-3.0 pp; MIC 8 ≤ 0.1 pp | `targets_free_vs_total.csv` | ✓ |
 
 **One rounding discrepancy, immaterial.** Results §3.1 states joint PTA at MIC 4 ranged from
 **67.1%** to 88.3%; the frozen table gives **67.2%** for R1 (Table 1 also prints 67.1%). A 0.1 pp

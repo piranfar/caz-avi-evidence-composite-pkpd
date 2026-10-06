@@ -1,9 +1,9 @@
-  wrote    75 rows  outputs\avi_threshold_sweep_pta.csv
-  wrote    25 rows  outputs\avi_threshold_sweep_cfr.csv
-  wrote    15 rows  outputs\avi_threshold_limiting_component.csv
-  wrote     5 rows  outputs\rrt_floor_sensitivity.csv
-  wrote     5 rows  outputs\monte_carlo_precision.csv
-  wrote    11 rows  outputs\full_regimen_grid.csv
+  wrote    75 rows  data\processed\avi_threshold_sweep_pta.csv
+  wrote    25 rows  data\processed\avi_threshold_sweep_cfr.csv
+  wrote    15 rows  data\processed\avi_threshold_limiting_component.csv
+  wrote     5 rows  data\processed\rrt_floor_sensitivity.csv
+  wrote     5 rows  data\processed\monte_carlo_precision.csv
+  wrote    11 rows  data\processed\full_regimen_grid.csv
 
 avibactam threshold: limiting component and joint PTA
     CT  MIC  AVI lim  CAZ lim      joint PTA range

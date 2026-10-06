@@ -93,7 +93,7 @@ def log_ticks(lim, want=(3, 6)):
 
 def figure7(diag):
     """Observed vs population and individual predictions, and CWRES against time."""
-    # 190 mm is Elsevier's double-column width; 7.48 in is the same in inches.
+    # 190 mm double-column width; 7.48 in is the same in inches.
     fig, ax = plt.subplots(2, 3, figsize=(7.48, 4.7))
     panel = iter("ABCDEF")
     for r, an in enumerate(ANALYTES):

@@ -25,8 +25,7 @@ deliberately absent. What does carry over, and is applied:
   * identity never by colour alone -- every series also carries a distinct line style and
     marker, so the figures survive greyscale printing, which journals still do
 
-Output: 600 dpi TIFF/PNG for review plus vector PDF for production, which is what OUP asks
-for. Sized to 89 mm single-column.
+Output: 600 dpi TIFF/PNG plus vector PDF, sized to 89 mm single-column.
 
 Writes only into model_development_v18/.
 """
@@ -59,7 +58,7 @@ DATA = os.path.join(HERE, "..", "outputs")
 BLUE, ORANGE = "#2a78d6", "#eb6834"
 INK, MUTED = "#0b0b0b", "#52514e"
 MM = 1.0 / 25.4
-SINGLE_COL = 89 * MM          # OUP single column
+SINGLE_COL = 89 * MM          # single column
 
 # Sequential ramp for the ORDERED assay-imprecision variable (light -> dark, one hue).
 SEQ = ["#a8c8ee", "#6ea3e3", "#2a78d6", "#14508f"]

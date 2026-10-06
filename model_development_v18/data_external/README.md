@@ -112,9 +112,9 @@ CAZ–AVI clearance correlation (Cojutti's 0.94). Model 1's 0.588 comes from a C
 comparable. Knowing that Li 2019 declined to compute one strengthens the *argument* about the gap; it
 does not fill it.
 
-**4. Most of the output is provenance, not science.** These folders make the project defensible under
-review and traceable end to end. That is real value for a manuscript facing reviewers, and it should
-not be mistaken for new findings.
+**4. Most of the output is provenance, not science.** These folders make the project defensible and
+traceable end to end. That is real value for a manuscript, and it should not be mistaken for new
+findings.
 
 > **Superseded in part on 12 August 2026.** The sentence originally here — "They do not change a single
 > number in any result" — was true when written and is no longer. The JAC sweep found that the ELF
@@ -148,7 +148,7 @@ things no earlier round did:
    archived only the two endpoints without knowing they were opposing sides. It supplies both a
    citation that the question is contested and an unanswered objection the project can answer.
 2. **A structural limitation in Model 2** (MICi coupling, §5.1 of `MODEL2_REPORT.md`) — against the
-   project's interest, and better self-reported than reviewer-discovered.
+   project's interest, and better self-reported than discovered by others.
 3. **A result-level error in the ELF scenarios** (§5.2) that flips a stated conclusion.
 
 The lesson is narrower than "keep archiving": ad-hoc retrieval had indeed exhausted itself, but a

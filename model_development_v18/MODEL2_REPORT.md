@@ -212,7 +212,7 @@ are unchanged.)
 clearance and about thirty times more than resolving the correlation.**
 
 This is the manuscript's central claim restated in decision-theoretic terms, and it is a stronger
-form of it. The current paper shows that *changing* the target changes the answer — which a reviewer
+form of it. The current paper shows that *changing* the target changes the answer — which a reader
 may fairly call arithmetic. This shows that, among everything not currently known, the target is the
 thing most worth finding out. It converts a sensitivity observation into a research-prioritisation
 statement.
@@ -694,7 +694,7 @@ concentration→MIC-shift relationship that this project has not obtained (Tam 2
 and doing so would change the target definition that the entire Bologna evidence chain — including the
 outcome evidence in Gatti 2025 — is built on, so the comparison to that literature would break.
 
-**It should be stated in the manuscript as a limitation**, not left for a reviewer to raise. Reading
+**It should be stated in the manuscript as a limitation**, not left for a reader to raise. Reading
 Tam et al. 2022 is the obvious next step if it is to be addressed rather than acknowledged.
 
 ---

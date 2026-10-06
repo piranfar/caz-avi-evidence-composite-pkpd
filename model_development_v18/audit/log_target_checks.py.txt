@@ -7,7 +7,7 @@
    R12  91–120         88.4%      90.6%     2.2         68.1%          68.2%
    R13  121–150        81.2%      84.2%     3.0         57.2%          57.3%
    Reading 4 mg/L as a total rather than a free concentration raises avibactam attainment by 2.0–3.0 pp.
-  wrote     5 rows  outputs\critique2_free_vs_total.csv
+  wrote     5 rows  data\processed\targets_free_vs_total.csv
 
 2. What 'limiting component' means, under three definitions
       MIC   (a) marginal   (b) attribution     (c) dose   agree
@@ -23,7 +23,7 @@
        32    ceftazidime       ceftazidime  ceftazidime  5/5
        64    ceftazidime       ceftazidime  ceftazidime  5/5
    The three definitions agree in 55 of 55 regimen-MIC cells.
-  wrote    55 rows  outputs\critique2_limiting_definitions.csv
+  wrote    55 rows  data\processed\targets_limiting_definitions.csv
 
 3. What a second assay is worth, with assay error and proper operating characteristics
      rho  assay CV  accuracy    sens    spec     PPV     NPV  false reassurance
@@ -39,7 +39,7 @@
     0.00        0%     84.5%   98.3%   10.5%   85.5%   53.0%              14.0%
     0.00       10%     84.5%   98.3%   10.5%   85.5%   53.0%              14.0%
     0.00       20%     84.5%   98.3%   10.5%   85.5%   53.0%              14.0%
-  wrote    12 rows  outputs\critique2_second_assay_operating.csv
+  wrote    12 rows  data\processed\targets_second_assay_operating.csv
 
 4. Does the population CFR depend on the synthetic within-class draw?
    class weights: 0–30 0.150/0.032  31–60 0.160/0.208  61–90 0.179/0.246  91–120 0.309/0.185  121–150 0.203/0.329
@@ -47,4 +47,4 @@
    INDIA2022_OXA48_KP           source-cohort weights  82.0%   continuous draw  82.7%   Δ +0.7 pp
    LEE2022_KPC_KP               source-cohort weights  84.3%   continuous draw  85.1%   Δ +0.8 pp
    LEE2022_OXA_KP               source-cohort weights  83.9%   continuous draw  84.6%   Δ +0.7 pp
-  wrote     4 rows  outputs\critique2_population_weighting.csv
+  wrote     4 rows  data\processed\targets_population_weighting.csv

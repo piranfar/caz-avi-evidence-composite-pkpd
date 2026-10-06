@@ -35,7 +35,7 @@ The current central claim is:
 
 > *"The choice of avibactam target had a major effect on the estimated target attainment."*
 
-A fair reviewer will observe that this is close to arithmetic. If you raise a threshold, fewer
+A fair reader will observe that this is close to arithmetic. If you raise a threshold, fewer
 patients clear it. The 20.29 pp sensitivity to the avibactam target is a real and well-executed
 result, but it demonstrates that the model is sensitive to its own input — not that anything about
 ceftazidime-avibactam was previously unknown.
@@ -211,8 +211,8 @@ bodies of work facing the same ceiling actually did, and what transfers.*
 
 ## 1. The problem class
 
-Every input is a published summary statistic any reviewer can look up, and the primary output is a
-Monte Carlo target-attainment simulation — a genre reviewers rate as competent-but-ordinary. Part I
+Every input is a published summary statistic any reader can look up, and the primary output is a
+Monte Carlo target-attainment simulation — a genre readers rate as competent-but-ordinary. Part I
 §1 diagnoses this correctly and concludes that adding model components makes it worse. It is right.
 But it leaves open what makes it *better*.
 

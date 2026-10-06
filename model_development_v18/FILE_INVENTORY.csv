@@ -7,7 +7,6 @@ Figures/Figure_5_fig_individualised_dose_redesigned.png,.png,151686,2026-08-04 1
 Figures/Figure_6_fig_second_assay_redesigned.png,.png,181602,2026-08-04 15:01:32,7efb182d238a62cc4ac77fd1942a466d3ec3ba69d2db0ef1b853a9dcaad45399
 Supplementary_Tables_S1-S21_v13.xlsx,.xlsx,70406,2026-08-04 18:43:58,958d49265a9852144183fe3b33b23cd69559cef65f49965bf502035f6077e106
 revision_support/NARRATIVE_v8_DRAFT.md,.md,24354,2026-08-03 00:59:18,95eff2f0b34db6fdc7a87a605f4f0206fb664c8501f6dd808cdec115da2e8854
-revision_support/REVIEWER_RESPONSE.md,.md,2041,2026-08-02 20:09:09,3a2f1042df0594ca2f7fd5ce4cb621073ac79174b9c059fd3944fe1e291f3b88
 revision_support/TRACK_A_REDLINE.md,.md,10757,2026-08-02 14:46:43,1f7629db2edabcc2f148c6a711e1e60de283d61fe893cef7bd9c836c0e6183fc
 revision_support/TRACK_B_CHANGELOG.md,.md,1608,2026-08-02 15:02:40,8857040fabc0ebb6fae7c2a9d782a45f652e9a359a0e57ef89c3cd71f4b65e4e
 revision_support/TRACK_B_DRAFT.md,.md,21352,2026-08-02 14:54:58,ba71f719df7d342b65711e54fe80ea7f826796b62b08b10479e81c2b89aba299
@@ -16,7 +15,6 @@ revision_support/add_icu_elf_scenario.py,.py,10438,2026-08-04 16:49:40,a3f0bb539
 revision_support/add_supplementary_table1.mjs,.mjs,4646,2026-08-03 19:34:40,c8bfb2842ce543625ab2f744ab4569dccd145862b9b29bff6778bd8651e516f3
 revision_support/apply_dose_escalation.py,.py,15045,2026-08-02 23:01:28,7fadd5f884224c28183db0df7d5a9408e0f36074db1b2423cd956ec78aac09ee
 revision_support/apply_figure_plan.py,.py,8614,2026-08-02 15:06:19,40e5dca0221bde14825f3744f3bd87b9f7afb8a3e6728f9872448bc0175f062d
-revision_support/apply_reviewer_response.py,.py,38815,2026-08-02 20:09:08,5e8282a29b5a85a6d38b627292423f960f4f0b69b064fa87938c4f43d85d78ed
 revision_support/apply_track_a.py,.py,19916,2026-08-02 14:46:43,7571653f71f71bf340f57aa8fc197a901fba66589e634ef5f4dfbd66c77ee682
 revision_support/apply_track_b.py,.py,31939,2026-08-02 16:41:36,c5ff7354a0da1ea69af42bae542051c04993cd52eb33538bf2a8d22832b226a1
 revision_support/apply_v10.py,.py,28087,2026-08-03 03:15:38,000661e86a3b224eea529ebbc5692c6484ae2a161c618899055b840ec989f9a7
@@ -26,8 +24,6 @@ revision_support/apply_voice_revision.py,.py,26635,2026-08-02 21:35:13,e52652e5a
 revision_support/avibactam_evidence_table.py,.py,7156,2026-08-02 23:08:31,0a2bc058811c0c91527d34d30673563138afb4477cdfe0370657de9a69423ce0
 revision_support/build_persian_docx.py,.py,4879,2026-08-02 21:58:18,db4662f3f14cd85f5f89571a8320f317a6fa1e50c3adf83ebc514301b3ec87d2
 revision_support/cazavi_analyses.py,.py,26013,2026-08-03 04:41:27,880e5f7d2198c13db0a8ce508d05d5e9ef3e9115e253ebf08324ccf8d7cc19bf
-revision_support/critique2_response.py,.py,13206,2026-08-03 03:03:33,6d3d254106286e63c317385f1cefb1aeffd78f61a07360624beb82333dfb5900
-revision_support/critique_response.py,.py,13776,2026-08-03 02:11:33,f285791acba2add12fb4e5891a693889abd6ec87aa710a46d73e0056ff5f1615
 revision_support/dose_escalation_analyses.py,.py,8766,2026-08-02 22:58:45,4384d5bd7f42088b4a985c17e88ebf00152d0e0b44dcbd9e8431b24ca0955ea8
 revision_support/extend_supplementary_v7.py,.py,17331,2026-08-03 01:14:43,2ad7d55839a23e580595ffc0bb25507290e0f4907d897b6ea16dd23df6603d8e
 revision_support/figures/fig_avi_evidence.png,.png,164841,2026-08-02 23:11:06,eb00ab7beebe4972c0c1c4d5b02f124b1d09d5ff06a4718e9884c0a92912202c
@@ -72,16 +68,6 @@ revision_support/outputs/avi_threshold_sweep_pta.csv,.csv,3954,2026-08-02 20:04:
 revision_support/outputs/avibactam_threshold_evidence.csv,.csv,2599,2026-08-02 23:08:41,9b42f91ecf44bfec3cc7495373825179830442746696110ef378b7fad8ac7b5c
 revision_support/outputs/cfr_all_distributions.csv,.csv,6994,2026-08-02 15:11:26,715df60e2b65b42f73c8512595840f2b973d7ae536837635bd31df96058cf751
 revision_support/outputs/convergence_summary.csv,.csv,503,2026-08-02 15:11:27,2f817fd0c7d09929c26d8a9ba2b03923824a6140ca804c289eb9945bcae6a491
-revision_support/outputs/critique2_free_vs_total.csv,.csv,384,2026-08-03 04:34:26,f07a7545216a1ad307b92ec229e4bcf348331775f1cc1c5fb3eff05bb21ac0f0
-revision_support/outputs/critique2_limiting_definitions.csv,.csv,4450,2026-08-03 04:34:26,b66628fe57c2c0936f72162d13a57e16a854ece011c422a3d2bf222ab1c0b179
-revision_support/outputs/critique2_population_weighting.csv,.csv,208,2026-08-03 04:34:26,4f8fa73346114c9f298be7ba8ec71c0661b0802bd16a24b88b55fc17d0bca931
-revision_support/outputs/critique2_second_assay_operating.csv,.csv,662,2026-08-03 04:34:26,00a52915fa27824d4a236c62e7ff53b4d36c3df8f052c55bd6ee69e9dc299d5c
-revision_support/outputs/critique_a_window_identity.csv,.csv,693,2026-08-03 02:11:55,9ac80d31c9bb95c1d3f0dc8ff229173a0e33bacdd6270db80d36ba95f66818ea
-revision_support/outputs/critique_b_rrt_exclusion.csv,.csv,575,2026-08-03 02:11:55,bbd326c90df42a5656f64d11e1b857b3156943856de4ff6a69f9a31f6170476b
-revision_support/outputs/critique_c_variance.csv,.csv,170,2026-08-03 02:11:55,6201f9534a8d9bdd1806083d7b5346bfbc3323fe6d4583f2c653e872a344d650
-revision_support/outputs/critique_d_ceiling_sensitivity.csv,.csv,310,2026-08-03 02:11:56,c61f181381310704bc9ff28eea54b7b9cd659e4c8e378a59d591044e7ce01580
-revision_support/outputs/critique_e_second_assay.csv,.csv,176,2026-08-03 02:11:56,f9303782c6047055b7855a0c45504b5b14ce36b10b173b53ee6e09c0f48a84dc
-revision_support/outputs/critique_f_avibactam_exposure.csv,.csv,247,2026-08-03 02:11:56,f2b2af4060f608265a2a022ce4f7a9eadd5e4e44f6f39d7ae65bc2c965949c4d
 revision_support/outputs/decision_grid.csv,.csv,2696,2026-08-03 04:34:25,d2c16e9f48c1b677dd0467e6a22182849a20938b8f91eb3f6538a0152852d7b2
 revision_support/outputs/dose_escalation_crossings.csv,.csv,366,2026-08-02 22:58:55,b0a7d1f41cc7b1d069a7c7054ec0eead9c00f9e950d27220425cbfabfe46c8b8
 revision_support/outputs/dose_escalation_mic4.csv,.csv,5565,2026-08-02 22:58:55,96a92ca5ff003d1eb332afec92f044348b15ae57a4c8a0dae1ea3ca0539bb887
@@ -134,7 +120,6 @@ revision_support/prescriptive_analyses.py,.py,16520,2026-08-03 02:38:37,c5353120
 revision_support/primary_pta_results.csv,.csv,6954,2026-08-03 00:27:10,485829a34c8adb9ae1c5e4e89f7b9c19dbb58876e3c887df2605b31f83de36ae
 revision_support/rebuild_supplementary.py,.py,16665,2026-08-02 15:18:08,f1aabec7bd37cbf467fd2b8432087a9319d9e0bf5ffc7817b8e4bbfb9cef19ff
 revision_support/reproduce_primary_run.py,.py,7967,2026-08-02 14:12:10,7abc2ffcb066c3c1c0ce088c6e8d0b8e436845149f807d0df060d7b215d8d807
-revision_support/reviewer_response_analyses.py,.py,9657,2026-08-02 21:21:21,6fd9c2b9b3aeff5215a7e56a532bd28def25d300c1766f4c2461ec564b639e7c
 revision_support/scope_extension_analyses.py,.py,12226,2026-08-03 04:34:10,a2060ce907d1277bbe5a886c46ed434f31a96946077862a6439b9ca8f6c02c80
 revision_support/structural_uncertainty.py,.py,26365,2026-08-03 00:29:43,e488efaf5a0981e7f6ca6a68e0ee7f0bff362f589b48c90f253bb036394f2b96
 revision_support/supplementary-style.png,.png,182586,2026-08-03 19:31:50,05391f83b18012a568c1599dd9cd7539f2b9154142e4332b145634369b5d36ca

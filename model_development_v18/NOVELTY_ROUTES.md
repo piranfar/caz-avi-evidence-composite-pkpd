@@ -37,7 +37,7 @@ unestimated everywhere.*
 
 **Why this is the highest ceiling.** It converts a drug-specific analysis into a methodological
 contribution with class-wide reach, and it reframes the finding from "this number looks wrong" to
-"this number is missing, and its absence has consequences." Reviewers reward the second far more.
+"this number is missing, and its absence has consequences." Readers value the second far more.
 
 **What it needs.** Verification, currently under way, across ceftazidime/avibactam,
 ceftolozane/tazobactam, meropenem/vaborbactam, imipenem/relebactam, aztreonam/avibactam,
