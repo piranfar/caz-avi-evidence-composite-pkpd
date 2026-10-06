@@ -1,0 +1,93 @@
+quantity,value,note
+median_patient_sd_circuit_caz,0.321861,residual SD
+between_patient_sd_circuit_caz,0.315930,residual SD
+error_share_of_variance_circuit_caz,0.985509,residual SD
+median_patient_sd_total_nca_caz,0.116719,residual SD
+between_patient_sd_total_nca_caz,0.611560,residual SD
+error_share_of_variance_total_nca_caz,0.040126,residual SD
+median_patient_sd_other_caz,0.400439,residual SD
+between_patient_sd_other_caz,0.486592,residual SD
+error_share_of_variance_other_caz,0.698501,residual SD
+median_patient_sd_other_ebe_caz,0.321861,residual SD
+between_patient_sd_other_ebe_caz,0.443639,residual SD
+error_share_of_variance_other_ebe_caz,0.499783,residual SD
+replicates_with_circuit_share_above_1_caz,0.933000,residual SD
+median_circuit_share_caz,0.762600,residual SD; 95% interval of the median 0.663671 to 0.838232
+median_circuit_share_ebe_caz,0.754682,residual SD; empirical Bayes total as denominator (as in crrt_extracorporeal_components.csv); 95% interval of the median 0.671784 to 0.820365
+median_patient_sd_circuit_avi,0.291515,residual SD
+between_patient_sd_circuit_avi,0.307056,residual SD
+error_share_of_variance_circuit_avi,0.837943,residual SD
+median_patient_sd_total_nca_avi,0.134928,residual SD
+between_patient_sd_total_nca_avi,0.522148,residual SD
+error_share_of_variance_total_nca_avi,0.071904,residual SD
+median_patient_sd_other_avi,0.386590,residual SD
+between_patient_sd_other_avi,0.436075,residual SD
+error_share_of_variance_other_avi,0.803004,residual SD
+median_patient_sd_other_ebe_avi,0.291515,residual SD
+between_patient_sd_other_ebe_avi,0.397934,residual SD
+error_share_of_variance_other_ebe_avi,0.498916,residual SD
+replicates_with_circuit_share_above_1_avi,0.349500,residual SD
+median_circuit_share_avi,0.645424,residual SD; 95% interval of the median 0.598344 to 0.721447
+median_circuit_share_ebe_avi,0.655772,residual SD; empirical Bayes total as denominator (as in crrt_extracorporeal_components.csv); 95% interval of the median 0.604132 to 0.703499
+corr_circuit,0.595713,residual SD; patients and errors resampled: 95% interval 0.160634 to 0.893339
+corr_total_nca,0.540687,residual SD; patients and errors resampled: 95% interval 0.215676 to 0.816682
+corr_other,0.403160,residual SD; patients and errors resampled: 95% interval -0.072355 to 0.836498
+corr_other_ebe,0.441055,residual SD; patients and errors resampled: 95% interval -0.024697 to 0.827703
+cv_circuit_caz,0.164501,residual SD; patients and errors resampled: 95% interval 0.136971 to 0.336721
+cv_circuit_avi,0.144543,residual SD; patients and errors resampled: 95% interval 0.118579 to 0.272708
+cv_total_nca_caz,0.233153,residual SD; patients and errors resampled: 95% interval 0.161236 to 0.297631
+cv_total_nca_avi,0.160835,residual SD; patients and errors resampled: 95% interval 0.103715 to 0.208543
+cv_other_caz,0.692694,residual SD; patients and errors resampled: 95% interval 0.492626 to 1.536149
+cv_other_avi,0.388603,residual SD; patients and errors resampled: 95% interval 0.304119 to 0.753093
+cv_other_ebe_caz,0.628891,residual SD; patients and errors resampled: 95% interval 0.435783 to 1.190954
+cv_other_ebe_avi,0.351836,residual SD; patients and errors resampled: 95% interval 0.260613 to 0.585549
+corr_circuit_minus_corr_other,0.119753,residual SD; 95% interval -0.417432 to 0.716615
+corr_circuit_minus_corr_other_ebe,0.113418,residual SD; 95% interval -0.409090 to 0.673460
+cv_circuit_minus_cv_total_caz,-0.007508,residual SD; 95% interval -0.117130 to 0.131659
+cv_circuit_minus_cv_total_avi,0.026115,residual SD; 95% interval -0.061877 to 0.130300
+median_patient_sd_circuit_caz,0.157493,half the residual SD
+between_patient_sd_circuit_caz,0.315930,half the residual SD
+error_share_of_variance_circuit_caz,0.247701,half the residual SD
+median_patient_sd_total_nca_caz,0.057518,half the residual SD
+between_patient_sd_total_nca_caz,0.611560,half the residual SD
+error_share_of_variance_total_nca_caz,0.010114,half the residual SD
+median_patient_sd_other_caz,0.201298,half the residual SD
+between_patient_sd_other_caz,0.486592,half the residual SD
+error_share_of_variance_other_caz,0.176222,half the residual SD
+median_patient_sd_other_ebe_caz,0.157493,half the residual SD
+between_patient_sd_other_ebe_caz,0.443639,half the residual SD
+error_share_of_variance_other_ebe_caz,0.125617,half the residual SD
+replicates_with_circuit_share_above_1_caz,0.714500,half the residual SD
+median_circuit_share_caz,0.762600,half the residual SD; 95% interval of the median 0.704912 to 0.807411
+median_circuit_share_ebe_caz,0.754682,half the residual SD; empirical Bayes total as denominator (as in crrt_extracorporeal_components.csv); 95% interval of the median 0.706894 to 0.793526
+median_patient_sd_circuit_avi,0.146000,half the residual SD
+between_patient_sd_circuit_avi,0.307056,half the residual SD
+error_share_of_variance_circuit_avi,0.210687,half the residual SD
+median_patient_sd_total_nca_avi,0.068746,half the residual SD
+between_patient_sd_total_nca_avi,0.522148,half the residual SD
+error_share_of_variance_total_nca_avi,0.018146,half the residual SD
+median_patient_sd_other_avi,0.197952,half the residual SD
+between_patient_sd_other_avi,0.436075,half the residual SD
+error_share_of_variance_other_avi,0.202098,half the residual SD
+median_patient_sd_other_ebe_avi,0.146000,half the residual SD
+between_patient_sd_other_ebe_avi,0.397934,half the residual SD
+error_share_of_variance_other_ebe_avi,0.125445,half the residual SD
+replicates_with_circuit_share_above_1_avi,0.047500,half the residual SD
+median_circuit_share_avi,0.645424,half the residual SD; 95% interval of the median 0.623524 to 0.699108
+median_circuit_share_ebe_avi,0.655772,half the residual SD; empirical Bayes total as denominator (as in crrt_extracorporeal_components.csv); 95% interval of the median 0.628152 to 0.690943
+corr_circuit,0.595713,half the residual SD; patients and errors resampled: 95% interval 0.156483 to 0.877068
+corr_total_nca,0.540687,half the residual SD; patients and errors resampled: 95% interval 0.242885 to 0.820937
+corr_other,0.403160,half the residual SD; patients and errors resampled: 95% interval -0.015454 to 0.791618
+corr_other_ebe,0.441055,half the residual SD; patients and errors resampled: 95% interval 0.034140 to 0.793078
+cv_circuit_caz,0.164501,half the residual SD; patients and errors resampled: 95% interval 0.113564 to 0.245970
+cv_circuit_avi,0.144543,half the residual SD; patients and errors resampled: 95% interval 0.102025 to 0.207036
+cv_total_nca_caz,0.233153,half the residual SD; patients and errors resampled: 95% interval 0.160616 to 0.284263
+cv_total_nca_avi,0.160835,half the residual SD; patients and errors resampled: 95% interval 0.103401 to 0.205825
+cv_other_caz,0.692694,half the residual SD; patients and errors resampled: 95% interval 0.466201 to 1.077171
+cv_other_avi,0.388603,half the residual SD; patients and errors resampled: 95% interval 0.268552 to 0.587793
+cv_other_ebe_caz,0.628891,half the residual SD; patients and errors resampled: 95% interval 0.416252 to 0.914310
+cv_other_ebe_avi,0.351836,half the residual SD; patients and errors resampled: 95% interval 0.242462 to 0.501385
+corr_circuit_minus_corr_other,0.156226,half the residual SD; 95% interval -0.390375 to 0.710884
+corr_circuit_minus_corr_other_ebe,0.130112,half the residual SD; 95% interval -0.408401 to 0.659092
+cv_circuit_minus_cv_total_caz,-0.050018,half the residual SD; 95% interval -0.137609 to 0.037747
+cv_circuit_minus_cv_total_avi,-0.004184,half the residual SD; 95% interval -0.071160 to 0.068945

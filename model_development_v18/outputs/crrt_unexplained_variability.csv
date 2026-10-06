@@ -1,0 +1,7 @@
+population,quantity,estimate,ci_low,ci_high,note
+CRRT (Model 1),unexplained_cv_cl_avi_pct,11.283610,7.872837,15.180433,500 draws from the asymptotic covariance (as crrt_parameter_uncertainty.py); 2.5th-97.5th percentiles
+CRRT (Model 1),cv_cl_avi_pct,13.978360,9.829548,19.032694,500 draws from the asymptotic covariance (as crrt_parameter_uncertainty.py); 2.5th-97.5th percentiles
+CRRT (Model 1),variance_explained_rho2,0.346204,0.030264,0.664526,500 draws from the asymptotic covariance (as crrt_parameter_uncertainty.py); 2.5th-97.5th percentiles
+without RRT (Cojutti et al),unexplained_cv_cl_avi_pct,23.575210,0.000000,64.495486,"Cojutti et al: rho 0.94 (relative standard error 23.8%), Wald 95% interval 0.501509 to 1.378491, capped at 1; avibactam clearance CV 76.91% held at its estimate"
+without RRT (Cojutti et al),variance_explained_rho2,0.883600,0.251511,1.000000,"Cojutti et al: rho 0.94 (relative standard error 23.8%), Wald 95% interval 0.501509 to 1.378491, capped at 1; avibactam clearance CV 76.91% held at its estimate"
+without RRT (Cojutti et al),rho,0.940000,0.501509,1.000000,"Cojutti et al: rho 0.94 (relative standard error 23.8%), Wald 95% interval 0.501509 to 1.378491, capped at 1; avibactam clearance CV 76.91% held at its estimate"

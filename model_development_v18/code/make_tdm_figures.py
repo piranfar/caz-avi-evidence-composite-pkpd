@@ -100,9 +100,23 @@ def figure1():
     r_n = float(summ["corr_cl_noncircuit_caz_avi"]["value"])
     assert abs(r_c - np.corrcoef(*pts["cl_crrt"])[0, 1]) < 1e-6 and abs(r_n - np.corrcoef(*pts["cl_noncircuit"])[0, 1]) < 1e-6
     assert len(comp) == 21 and min(pts["cl_noncircuit"][0].min(), pts["cl_noncircuit"][1].min()) > 0
-    d.plot(*pts["cl_crrt"], "o", mfc=DARK, mec=DARK, ms=4, label=f"Circuit (r = {r_c:.2f})")
-    d.plot(*pts["cl_noncircuit"], "^", mfc="white", mec=MID, ms=4, mew=0.8, label=f"Outside the circuit (r = {r_n:.2f})")
-    lo, hi = 0.0, 3.0
+    # 5th-95th percentiles of each patient's components under measurement error (crrt_circuit_uncertainty.py)
+    unc = {(x["subjectID"], x["drug"]): x for x in rows(os.path.join(OUT, "crrt_circuit_uncertainty.csv"))}
+    for key, ukey in (("cl_crrt", "circuit"), ("cl_noncircuit", "other_ebe")):
+        ex = []
+        for j, drug in enumerate(("caz", "avi")):
+            u = [unc[(x["subjectID"], drug)] for x in comp]
+            mid = np.array([float(v[f"{ukey}_l_h"]) for v in u])
+            assert np.allclose(mid, pts[key][j], atol=1e-5), (key, drug)
+            ex.append([mid - np.array([float(v[f"{ukey}_p5"]) for v in u]),
+                       np.array([float(v[f"{ukey}_p95"]) for v in u]) - mid])
+        d.errorbar(*pts[key], xerr=ex[0], yerr=ex[1], fmt="none", ecolor=LIGHT if key == "cl_crrt" else MID,
+                   elinewidth=0.5, alpha=0.8, zorder=1)
+    d.plot(*pts["cl_crrt"], "o", mfc=DARK, mec=DARK, ms=4, label=f"Circuit (r = {r_c:.2f})", zorder=3)
+    d.plot(*pts["cl_noncircuit"], "^", mfc="white", mec=MID, ms=4, mew=0.8, label=f"Outside the circuit (r = {r_n:.2f})",
+           zorder=3)
+    lo, hi = -0.6, 3.2
+    d.axhline(0, color=LIGHT, lw=0.5); d.axvline(0, color=LIGHT, lw=0.5)
     d.plot((lo, hi), (lo, hi), color=MID, lw=0.7, ls="--")
     d.set_xlim(lo, hi); d.set_ylim(lo, hi)
     d.set_xlabel("Ceftazidime clearance (L/h)"); d.set_ylabel("Avibactam clearance (L/h)")
@@ -195,12 +209,21 @@ def figure2():
     c.bar(x, est, w, color=DARK, label=f"Ceftazidime trough, ρ = {sim.RHO_EST:.2f}")
     c.bar(x + w, r94, w, color="white", edgecolor=DARK, lw=0.6, hatch="////", label="Ceftazidime trough, ρ = 0.94")
     c.errorbar(x, est, yerr=[np.array(est) - lo, np.array(hi) - est], fmt="none", ecolor=MID, capsize=2.5, lw=0.8)
+    # the same quantities with all 6 random-effect correlations (crrt_covariance_sensitivity.py, model "full")
+    cs = rows(os.path.join(OUT, "crrt_covariance_sensitivity.csv"))
+    def full(reg, scen, key):
+        return next(float(x_[key]) for x_ in cs if x_["model"] == "full" and x_["regimen"] == reg and x_["scenario"] == scen)
+    for xs, vals in ((x - w, [full(g, "estimate", "below_target_pct") for g in crrt]),
+                     (x, [full(g, "estimate", "wrongly_reassured_pct") for g in crrt]),
+                     (x + w, [full(g, "rho 0.94", "wrongly_reassured_pct") for g in crrt])):
+        c.plot(xs, vals, "D", mfc="white", mec=DARK, ms=3.4, mew=0.8, zorder=5)
+    c.plot([], [], "D", mfc="white", mec=DARK, ms=3.4, mew=0.8, label="All 6 correlations")
     for xs, vals, tops in ((x - w, nomeas, nomeas), (x, est, hi), (x + w, r94, r94)):
         for xi, v, t in zip(xs, vals, tops):
             c.text(xi, t + 0.25, "<0.1" if v < 0.1 else f"{v:.1f}", ha="center", fontsize=6)
-    c.set_xticks(x, groups, fontsize=7); c.set_ylim(0, 12.5)
+    c.set_xticks(x, groups, fontsize=7); c.set_ylim(0, 14)
     c.set_ylabel("Wrongly reassured (% of patients)")
-    c.legend(frameon=False, loc="upper left", fontsize=6.3)
+    c.legend(frameon=False, loc="upper right", fontsize=6.3)
 
     # D: what a stricter decision threshold buys, at the estimated and at the non-RRT correlation.
     tc = rows(os.path.join(OUT, "crrt_triage_curve.csv"))

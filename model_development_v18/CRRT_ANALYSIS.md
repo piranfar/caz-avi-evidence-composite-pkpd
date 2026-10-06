@@ -44,6 +44,14 @@ what it means for monitoring that measures ceftazidime only. The analysis is bui
   residual correlation written as the conditional likelihood of avibactam given ceftazidime in the same sample;
   every fit starts from the same neutral values and is restarted from its own estimates until the OFV changes by
   less than 0.001. The closed-form concentrations are checked against an ODE solution with steady-state dosing.
+- Measurement error in circuit and other clearance (step 18): every prefilter and postfilter concentration gets
+  rounding noise of ±0.25 mg/L and a log-normal error with Model 1's residual SD, correlated between the 2 drugs
+  in the same tube; 2,000 replicates, and half the residual SD as a sensitivity analysis (the residual SD also
+  contains model misfit, so it bounds the measurement error from above).
+- Calibrated interval (step 17): the cutoff is the 95th percentile of the OFV change at the true ρ in the 500
+  datasets simulated at the estimate (step 15), in place of 3.841.
+- Weight category (step 16): the deposited category w (0 to 3) multiplies clearance by exp(b_CL (w − 1.5)) and
+  volume by exp(b_V (w − 1.5)) for both drugs.
 - Covariance structures: primary (ρ and the volume correlation), Ka (adds the clearance-volume correlation within
   each drug), Kb (all 6 correlations, parameterized by C-vine partial correlations so that every parameter
   vector gives a valid matrix).
@@ -69,16 +77,20 @@ From `model_development_v18/code/`. Paths are resolved relative to each script.
 | 13 | `model1_bayes_numpyro.py` | `model1_bayes_summary.csv` | about 1 min; needs NumPyro 0.21 and JAX 0.11 (`pip install numpyro==0.21.0 jax==0.11.1`) |
 | 14 | `Rscript model1_nlmixr2.R` | `model1_nlmixr2.csv` | about 6 min; needs R 4.6.1 with nlmixr2 7.0.1 (nlmixr2est 7.1.0, rxode2 5.1.7) and Rtools45 (`install.packages("nlmixr2")`) |
 | 15 | `model1_sbc_coverage.py --reps 500` | `model1_sbc_coverage_replicates.csv`, `model1_sbc_coverage_summary.csv` | about 7 h with 14 processes; resumes from the stored replicates |
-| 16 | `make_tdm_figures.py` | `figures/TDM_Figure1_joint_model.pdf`/`.tif`, `figures/TDM_Figure2_virtual_crrt.pdf`/`.tif` | under 1 min |
-| 16 | `make_model1_figures_600dpi.py` | `figures/Figure7_model1_goodness_of_fit.pdf`/`.png`, `figures/Figure8_model1_visual_predictive_check.pdf`/`.png` | under 1 min |
+| 16 | `model1_weight_covariate.py` | `model1_weight_covariate.csv` | about 10 min |
+| 17 | `model1_profile_checks.py` | `model1_calibrated_interval.csv`, `model1_infusion_profile.csv` | about 10 min |
+| 18 | `crrt_circuit_uncertainty.py` | `crrt_circuit_uncertainty.csv`, `crrt_circuit_uncertainty_summary.csv` | under 1 min |
+| 19 | `crrt_unexplained_variability.py` | `crrt_unexplained_variability.csv` | under 1 min |
+| 20 | `make_tdm_figures.py` | `figures/TDM_Figure1_joint_model.pdf`/`.tif`, `figures/TDM_Figure2_virtual_crrt.pdf`/`.tif` | under 1 min |
+| 20 | `make_model1_figures_600dpi.py` | `figures/Figure7_model1_goodness_of_fit.pdf`/`.png`, `figures/Figure8_model1_visual_predictive_check.pdf`/`.png` | under 1 min |
 | | `test_model1.py` | 140 checks; no output files | under 1 min |
 
-Steps 11 and 12 read the outputs of step 10, and step 16 reads those of steps 8 and 10. Run times are for a
+Steps 11, 12 and 16 read the outputs of step 10, step 17 those of steps 9 and 15, steps 18 and 19 those of steps 1, 6 and 8, and step 20 those of steps 8, 10, 11 and 18. Run times are for a
 16-thread Windows 11 machine. Scripts that fit many models use parallel processes; the environment variables
-`SIM_WORKERS` (steps 3, 6 and 15) and `REFIT_WORKERS` (steps 9 and 10) set how many. Results do not depend on
+`SIM_WORKERS` (steps 3, 6 and 15) and `REFIT_WORKERS` (steps 9, 10, 16 and 17) set how many. Results do not depend on
 them, because every replicate, parameter draw and fit has its own random stream or starting point.
 
-Run with Python 3.14.7, NumPy 2.5.0, SciPy 1.18.0 and Matplotlib 3.11.1. Rerunning steps 1 to 9, 11, 12, 14 and 16
+Run with Python 3.14.7, NumPy 2.5.0, SciPy 1.18.0 and Matplotlib 3.11.1. Rerunning steps 1 to 9, 11, 12, 14 and 16 to 20
 reproduces their CSVs byte for byte (step 3 from its stored replicates), except the `seconds` columns, which
 record run time. The figures are identical except that each PDF carries its own creation date. Logs of the
 rerun of steps 1 to 7 are in `audit/log_<step>.txt`.
@@ -95,6 +107,7 @@ rerun of steps 1 to 7 are in `audit/log_<step>.txt`.
 | Avibactam unbound fraction 0.73 | SEED + 4 |
 | Avibactam trough given a measured ceftazidime trough | SEED + 5 |
 | Monitoring under the full covariance structure | SEED + 6 |
+| Measurement error in circuit and other clearance (2,000 + 2,000 replicates per SD) | SEED + 7 |
 | Monte Carlo replication of the classifier | SEED + 10 to SEED + 14 |
 | Rounding noise (20 datasets); Hamiltonian Monte Carlo | 20261005 |
 
