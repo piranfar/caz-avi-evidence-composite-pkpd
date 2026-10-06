@@ -1,0 +1,7 @@
+model,analyte,pct_obs_within_sim_90,n_obs,pct_trough_within_sim_90,n_trough,sd_log_trough_0h_observed,sd_log_trough_0h_sim_median,sd_log_trough_0h_sim_p5,sd_log_trough_0h_sim_p95
+primary,caz,88.235294,119,97.619048,42,0.261064,0.345671,0.250622,0.458204
+primary,avi,84.873950,119,88.095238,42,0.245997,0.235997,0.176110,0.306496
+primary,both,86.554622,238,92.857143,84,,,,
+full,caz,89.075630,119,85.714286,42,0.261064,0.221124,0.164806,0.277576
+full,avi,85.714286,119,83.333333,42,0.245997,0.169086,0.126559,0.216900
+full,both,87.394958,238,84.523810,84,,,,

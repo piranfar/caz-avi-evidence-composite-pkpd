@@ -1,10 +1,11 @@
 """Two multi-panel greyscale figures for the CRRT analysis.
 
 Figure 1 (joint model): A observed vs individual prediction; B CWRES vs time;
-                        C profile likelihood of rho; D individual clearances, with the published
-                          clearances of a second CRRT cohort (Gatti et al 2023) overlaid.
+                        C profile likelihood of rho; D circuit and non-circuit clearance of each patient,
+                          ceftazidime against avibactam (outputs/crrt_extracorporeal_components.csv).
 Figure 2 (virtual CRRT population): A free avibactam trough by regimen with observed troughs;
-                        B joint attainment vs MIC; C percentage wrongly reassured;
+                        B joint attainment vs MIC; C percentage wrongly reassured, at the estimated
+                          correlation and at 0.94;
                         D patients below the avibactam target identified vs patients flagged,
                           as the decision threshold varies (outputs/crrt_triage_curve.csv).
 Writes PDF (vector) and TIFF (1200 dpi) to figures/.
@@ -78,43 +79,34 @@ def figure1():
     r_ = np.array([float(x["rho"]) for x in pl]); dofv = np.array([float(x["delta_ofv"]) for x in pl])
     top = float(np.ceil(1.1 * dofv[r_ <= 0.96].max() / 2.0) * 2.0)
     c.axvspan(sim.RHO_LO, sim.RHO_HI, color=LIGHT, alpha=0.5, lw=0)
-    c.plot(r_, dofv, "o-", color=DARK, ms=3, lw=0.9)
+    c.plot(r_, dofv, "o-", color=DARK, ms=3, lw=0.9, label="Primary model")
+    kb = sorted((float(x["rho"]), float(x["delta_ofv"])) for x in rows(os.path.join(OUT, "model1_covariance_profile.csv"))
+                if x["structure"] == "Kb")
+    c.plot([p[0] for p in kb], [p[1] for p in kb], "s--", color=MID, ms=2.8, lw=0.8, mfc="white",
+           label="All 6 correlations")
+    c.legend(frameon=False, loc="upper left", fontsize=6.5)
     c.axhline(3.84, color=MID, ls="--", lw=0.7)
     c.axvline(0.94, color=DARK, ls=":", lw=0.9)
     c.text(0.925, 0.92 * top, "0.94", ha="right", fontsize=7)
     c.set_xlim(0, 1); c.set_ylim(0, top)
     c.set_xlabel("Clearance correlation (ρ)"); c.set_ylabel("ΔOFV")
 
-    ip = rows(os.path.join(OUT, "model1_individual_parameters.csv"))
-    xc = np.array([float(x["CL_caz_L_h"]) for x in ip]); ya = np.array([float(x["CL_avi_L_h"]) for x in ip])
-    d.plot(xc, ya, "o", mfc=DARK, mec=DARK, ms=4, label=f"This analysis (n = {len(ip)})")
-    # Second CRRT cohort: published clearances, 17 occasions in 8 patients (Gatti et al 2023, Table 2).
-    g = [x for x in rows(os.path.join(ROOT, "data_external", "Gatti2023_individual_patient_data.csv"))
-         if x["record_type"] == "tdm"]
-    gc = np.array([float(x["caz_cl_l_h"]) for x in g]); ga = np.array([float(x["avi_cl_l_h"]) for x in g])
-    d.plot(gc, ga, "^", mfc="white", mec=MID, ms=4, mew=0.8,
-           label=f"Second cohort ({len(g)} occasions, {len({x['id_case'] for x in g})} patients)")
-    chk = {x["check"]: x for x in rows(os.path.join(OUT, "crrt_data_checks.csv"))}
-    r2 = float(chk["gatti2023_occasion_corr_log_cl"]["value"])
-    assert abs(r2 - np.corrcoef(np.log(gc), np.log(ga))[0, 1]) < 1e-6
-    lo2, hi2 = (float(v) for v in re.search(r"interval ([0-9.]+) to ([0-9.]+)",
-                                             chk["gatti2023_occasion_corr_log_cl"]["note"]).groups())
-    d.set_xscale("log"); d.set_yscale("log")
-    d.set_xlabel("Ceftazidime clearance (L/h)"); d.set_ylabel("Avibactam clearance (L/h)")
-    lo, hi = 1.5, 7.0
-    d.set_xlim(lo, hi); d.set_ylim(lo, hi)
+    comp = [x for x in rows(os.path.join(OUT, "crrt_extracorporeal_components.csv")) if float(x["quf_l_h"]) == 0.0]
+    summ = {x["quantity"]: x for x in rows(os.path.join(OUT, "crrt_extracorporeal_summary.csv"))
+            if x["note"].startswith("net ultrafiltration 0.0 L/h")}
+    pts = {k: (np.array([float(x[f"{k}_caz_l_h"]) for x in comp]), np.array([float(x[f"{k}_avi_l_h"]) for x in comp]))
+           for k in ("cl_crrt", "cl_noncircuit")}
+    r_c = float(summ["corr_cl_crrt_caz_avi"]["value"])
+    r_n = float(summ["corr_cl_noncircuit_caz_avi"]["value"])
+    assert abs(r_c - np.corrcoef(*pts["cl_crrt"])[0, 1]) < 1e-6 and abs(r_n - np.corrcoef(*pts["cl_noncircuit"])[0, 1]) < 1e-6
+    assert len(comp) == 21 and min(pts["cl_noncircuit"][0].min(), pts["cl_noncircuit"][1].min()) > 0
+    d.plot(*pts["cl_crrt"], "o", mfc=DARK, mec=DARK, ms=4, label=f"Circuit (r = {r_c:.2f})")
+    d.plot(*pts["cl_noncircuit"], "^", mfc="white", mec=MID, ms=4, mew=0.8, label=f"Outside the circuit (r = {r_n:.2f})")
+    lo, hi = 0.0, 3.0
     d.plot((lo, hi), (lo, hi), color=MID, lw=0.7, ls="--")
-    d.text(0.04, 0.95, f"ρ = {sim.RHO_EST:.2f} (95% CI {sim.RHO_LO:.2f}–{sim.RHO_HI:.2f})",
-           transform=d.transAxes, fontsize=6.5, va="top")
-    d.text(0.04, 0.88, f"r = {r2:.2f} (95% CI {lo2:.2f}–{hi2:.2f})", transform=d.transAxes, fontsize=6.5,
-           va="top", color=MID)
-    d.legend(frameon=False, loc="lower right", fontsize=6.2)
-    for ax in (d,):
-        ax.xaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
-        ax.yaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
-        ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
-        ax.yaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
-        ax.set_xticks([2, 3, 4, 6]); ax.set_yticks([2, 3, 4, 6])
+    d.set_xlim(lo, hi); d.set_ylim(lo, hi)
+    d.set_xlabel("Ceftazidime clearance (L/h)"); d.set_ylabel("Avibactam clearance (L/h)")
+    d.legend(frameon=False, loc="upper left", fontsize=6.5)
     for ax, s in zip((a, b, c, d), "ABCD"):
         label(ax, s)
     fig.tight_layout()
@@ -188,32 +180,27 @@ def figure2():
     def val(reg, scen, key):
         return next(float(x[key]) for x in cls if x["regimen"] == reg and x["scenario"] == scen
                     and float(x["omega_scale"]) == 1.0)
-    t5 = next(x for x in rows(os.path.join(OUT, "table5_estimated_rho_rows.csv"))
-              if x["rho"] == "0.94" and x["assay_cv_pct"] == "10")
     crrt = ORDER[:3]
-    groups = [f"CRRT\n{g}" for g in crrt] + ["No RRT\ncontinuous\ninfusion"]
-    nomeas = [val(g, "estimate", "missed_by_population_prior") for g in crrt] + \
-             [100 - float(t5["prevalence_attaining_pct"])]
-    est = [val(g, "estimate", "false_reassurance") for g in crrt] + [float(t5["false_reassurance_pct"])]
+    groups = [g.replace(" q", "\nq") for g in crrt]
+    nomeas = [val(g, "estimate", "missed_by_population_prior") for g in crrt]
+    est = [val(g, "estimate", "false_reassurance") for g in crrt]
+    r94 = [val(g, "non-RRT value", "false_reassurance") for g in crrt]
     # Range across the 95% CI of rho: min and max over the estimate and both bounds (not always monotone).
     span = [[val(g, s, "false_reassurance") for s in ("estimate", "upper bound", "lower bound")] for g in crrt]
     lo = [min(v) for v in span]
     hi = [max(v) for v in span]
-    k = len(crrt)
-    x = np.arange(k + 1)
-    w = 0.38
-    c.bar(x - w / 2, nomeas, w, color=LIGHT, edgecolor=DARK, lw=0.6, label="No measurement")
-    c.bar(x + w / 2, est, w, color=DARK, label="Ceftazidime trough measured")
-    c.errorbar(x[:k] + w / 2, est[:k], yerr=[np.array(est[:k]) - lo, np.array(hi) - est[:k]],
-               fmt="none", ecolor=MID, capsize=2.5, lw=0.8)
-    for xi, v in zip(x - w / 2, nomeas):
-        c.text(xi, v + 0.35, "<0.1" if v < 0.1 else f"{v:.1f}", ha="center", fontsize=6)
-    for i, (xi, v) in enumerate(zip(x + w / 2, est)):
-        top = hi[i] if i < k else v
-        c.text(xi, top + 0.35, "<0.1" if v < 0.1 else f"{v:.1f}", ha="center", fontsize=6)
-    c.set_xticks(x, groups, fontsize=6.5); c.set_ylim(0, 18)
+    x = np.arange(len(crrt))
+    w = 0.26
+    c.bar(x - w, nomeas, w, color=LIGHT, edgecolor=DARK, lw=0.6, label="No measurement")
+    c.bar(x, est, w, color=DARK, label=f"Ceftazidime trough, ρ = {sim.RHO_EST:.2f}")
+    c.bar(x + w, r94, w, color="white", edgecolor=DARK, lw=0.6, hatch="////", label="Ceftazidime trough, ρ = 0.94")
+    c.errorbar(x, est, yerr=[np.array(est) - lo, np.array(hi) - est], fmt="none", ecolor=MID, capsize=2.5, lw=0.8)
+    for xs, vals, tops in ((x - w, nomeas, nomeas), (x, est, hi), (x + w, r94, r94)):
+        for xi, v, t in zip(xs, vals, tops):
+            c.text(xi, t + 0.25, "<0.1" if v < 0.1 else f"{v:.1f}", ha="center", fontsize=6)
+    c.set_xticks(x, groups, fontsize=7); c.set_ylim(0, 12.5)
     c.set_ylabel("Wrongly reassured (% of patients)")
-    c.legend(frameon=False, loc="upper left", fontsize=6.5)
+    c.legend(frameon=False, loc="upper left", fontsize=6.3)
 
     # D: what a stricter decision threshold buys, at the estimated and at the non-RRT correlation.
     tc = rows(os.path.join(OUT, "crrt_triage_curve.csv"))

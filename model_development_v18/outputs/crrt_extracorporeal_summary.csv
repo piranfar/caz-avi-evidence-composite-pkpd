@@ -1,0 +1,67 @@
+quantity,value,n,note
+cl_crrt_mL_min_CVVHD_caz,30.662390,15,net ultrafiltration 0.0 L/h; SD 5.568545; Li et al 33.98 (SD 5.62); ratio 0.902366
+cl_crrt_mL_min_CVVHD_avi,34.343353,15,net ultrafiltration 0.0 L/h; SD 5.338253; Li et al 35.53 (SD 7.79); ratio 0.966602
+cl_crrt_mL_min_CVVH_caz,35.375307,6,net ultrafiltration 0.0 L/h; SD 2.244748; Li et al 40.8 (SD 2.14); ratio 0.867042
+cl_crrt_mL_min_CVVH_avi,38.060353,6,net ultrafiltration 0.0 L/h; SD 3.622953; Li et al 43.19 (SD 2.94); ratio 0.881231
+circuit_share_median_caz,0.754682,21,net ultrafiltration 0.0 L/h; range 0.540254-0.995348
+cl_crrt_sd_l_h_caz,0.315930,21,net ultrafiltration 0.0 L/h; mean 1.920536
+cl_noncircuit_sd_l_h_caz,0.443639,21,net ultrafiltration 0.0 L/h; mean 0.705431
+cl_total_ebe_sd_l_h_caz,0.561385,21,net ultrafiltration 0.0 L/h; mean 2.625967
+circuit_share_median_avi,0.655772,21,net ultrafiltration 0.0 L/h; range 0.509321-0.835846
+cl_crrt_sd_l_h_avi,0.307056,21,net ultrafiltration 0.0 L/h; mean 2.124321
+cl_noncircuit_sd_l_h_avi,0.397934,21,net ultrafiltration 0.0 L/h; mean 1.131021
+cl_total_ebe_sd_l_h_avi,0.468732,21,net ultrafiltration 0.0 L/h; mean 3.255343
+corr_cl_crrt_caz_avi,0.595713,21,"net ultrafiltration 0.0 L/h; Pearson, Fisher 95% interval 0.220802 to 0.817241; Spearman 0.588312"
+corr_cl_noncircuit_caz_avi,0.441055,21,"net ultrafiltration 0.0 L/h; Pearson, Fisher 95% interval 0.011562 to 0.733155; Spearman 0.436364"
+corr_cl_total_ebe_caz_avi,0.575618,21,"net ultrafiltration 0.0 L/h; Pearson, Fisher 95% interval 0.191514 to 0.806824; Spearman 0.658442"
+corr_cl_total_nca_caz_avi,0.540687,21,"net ultrafiltration 0.0 L/h; Pearson, Fisher 95% interval 0.142180 to 0.788367; Spearman 0.602597"
+modality_cl_crrt_caz_p,0.044855,21,"net ultrafiltration 0.0 L/h; CVVH median 2.092705, CVVHD median 1.805722 L/h; Mann-Whitney"
+modality_cl_noncircuit_caz_p,0.470183,21,"net ultrafiltration 0.0 L/h; CVVH median 0.709172, CVVHD median 0.593454 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_caz,-0.124147,21,net ultrafiltration 0.0 L/h
+modality_cl_crrt_avi_p,0.178055,21,"net ultrafiltration 0.0 L/h; CVVH median 2.226107, CVVHD median 2.115892 L/h; Mann-Whitney"
+modality_cl_noncircuit_avi_p,0.790985,21,"net ultrafiltration 0.0 L/h; CVVH median 1.164978, CVVHD median 1.168902 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_avi,0.486838,21,net ultrafiltration 0.0 L/h
+cl_crrt_mL_min_CVVHD_caz,31.860452,15,net ultrafiltration 0.1 L/h; SD 5.509468; Li et al 33.98 (SD 5.62); ratio 0.937624
+cl_crrt_mL_min_CVVHD_avi,35.487298,15,net ultrafiltration 0.1 L/h; SD 5.295691; Li et al 35.53 (SD 7.79); ratio 0.998798
+cl_crrt_mL_min_CVVH_caz,36.999076,6,net ultrafiltration 0.1 L/h; SD 2.204012; Li et al 40.8 (SD 2.14); ratio 0.906840
+cl_crrt_mL_min_CVVH_avi,39.629567,6,net ultrafiltration 0.1 L/h; SD 3.555126; Li et al 43.19 (SD 2.94); ratio 0.917563
+circuit_share_median_caz,0.784565,21,net ultrafiltration 0.1 L/h; range 0.564177-1.028020
+cl_crrt_sd_l_h_caz,0.318174,21,net ultrafiltration 0.1 L/h; mean 1.999718
+cl_noncircuit_sd_l_h_caz,0.441128,21,net ultrafiltration 0.1 L/h; mean 0.626249
+cl_total_ebe_sd_l_h_caz,0.561385,21,net ultrafiltration 0.1 L/h; mean 2.625967
+circuit_share_median_avi,0.680337,21,net ultrafiltration 0.1 L/h; range 0.530889-0.861248
+cl_crrt_sd_l_h_avi,0.308680,21,net ultrafiltration 0.1 L/h; mean 2.200248
+cl_noncircuit_sd_l_h_avi,0.397039,21,net ultrafiltration 0.1 L/h; mean 1.055094
+cl_total_ebe_sd_l_h_avi,0.468732,21,net ultrafiltration 0.1 L/h; mean 3.255343
+corr_cl_crrt_caz_avi,0.612994,21,"net ultrafiltration 0.1 L/h; Pearson, Fisher 95% interval 0.246541 to 0.826085; Spearman 0.612987"
+corr_cl_noncircuit_caz_avi,0.438207,21,"net ultrafiltration 0.1 L/h; Pearson, Fisher 95% interval 0.008033 to 0.731518; Spearman 0.472727"
+corr_cl_total_ebe_caz_avi,0.575618,21,"net ultrafiltration 0.1 L/h; Pearson, Fisher 95% interval 0.191514 to 0.806824; Spearman 0.658442"
+corr_cl_total_nca_caz_avi,0.540687,21,"net ultrafiltration 0.1 L/h; Pearson, Fisher 95% interval 0.142180 to 0.788367; Spearman 0.602597"
+modality_cl_crrt_caz_p,0.036451,21,"net ultrafiltration 0.1 L/h; CVVH median 2.190125, CVVHD median 1.875384 L/h; Mann-Whitney"
+modality_cl_noncircuit_caz_p,0.569291,21,"net ultrafiltration 0.1 L/h; CVVH median 0.614317, CVVHD median 0.523792 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_caz,-0.086448,21,net ultrafiltration 0.1 L/h
+modality_cl_crrt_avi_p,0.153693,21,"net ultrafiltration 0.1 L/h; CVVH median 2.321589, CVVHD median 2.180907 L/h; Mann-Whitney"
+modality_cl_noncircuit_avi_p,0.969851,21,"net ultrafiltration 0.1 L/h; CVVH median 1.067273, CVVHD median 1.105145 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_avi,0.445239,21,net ultrafiltration 0.1 L/h
+cl_crrt_mL_min_CVVHD_caz,33.058513,15,net ultrafiltration 0.2 L/h; SD 5.451212; Li et al 33.98 (SD 5.62); ratio 0.972881
+cl_crrt_mL_min_CVVHD_avi,36.631244,15,net ultrafiltration 0.2 L/h; SD 5.253899; Li et al 35.53 (SD 7.79); ratio 1.030995
+cl_crrt_mL_min_CVVH_caz,38.622844,6,net ultrafiltration 0.2 L/h; SD 2.163329; Li et al 40.8 (SD 2.14); ratio 0.946638
+cl_crrt_mL_min_CVVH_avi,41.198782,6,net ultrafiltration 0.2 L/h; SD 3.487341; Li et al 43.19 (SD 2.94); ratio 0.953896
+circuit_share_median_caz,0.814448,21,net ultrafiltration 0.2 L/h; range 0.588101-1.060692
+cl_crrt_sd_l_h_caz,0.320906,21,net ultrafiltration 0.2 L/h; mean 2.078899
+cl_noncircuit_sd_l_h_caz,0.438969,21,net ultrafiltration 0.2 L/h; mean 0.547068
+cl_total_ebe_sd_l_h_caz,0.561385,21,net ultrafiltration 0.2 L/h; mean 2.625967
+circuit_share_median_avi,0.709912,21,net ultrafiltration 0.2 L/h; range 0.547745-0.886651
+cl_crrt_sd_l_h_avi,0.310805,21,net ultrafiltration 0.2 L/h; mean 2.276175
+cl_noncircuit_sd_l_h_avi,0.396541,21,net ultrafiltration 0.2 L/h; mean 0.979167
+cl_total_ebe_sd_l_h_avi,0.468732,21,net ultrafiltration 0.2 L/h; mean 3.255343
+corr_cl_crrt_caz_avi,0.630849,21,"net ultrafiltration 0.2 L/h; Pearson, Fisher 95% interval 0.273691 to 0.835113; Spearman 0.616883"
+corr_cl_noncircuit_caz_avi,0.436241,21,"net ultrafiltration 0.2 L/h; Pearson, Fisher 95% interval 0.005603 to 0.730387; Spearman 0.468831"
+corr_cl_total_ebe_caz_avi,0.575618,21,"net ultrafiltration 0.2 L/h; Pearson, Fisher 95% interval 0.191514 to 0.806824; Spearman 0.658442"
+corr_cl_total_nca_caz_avi,0.540687,21,"net ultrafiltration 0.2 L/h; Pearson, Fisher 95% interval 0.142180 to 0.788367; Spearman 0.602597"
+modality_cl_crrt_caz_p,0.029264,21,"net ultrafiltration 0.2 L/h; CVVH median 2.287545, CVVHD median 1.945046 L/h; Mann-Whitney"
+modality_cl_noncircuit_caz_p,0.733304,21,"net ultrafiltration 0.2 L/h; CVVH median 0.519462, CVVHD median 0.454130 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_caz,-0.090348,21,net ultrafiltration 0.2 L/h
+modality_cl_crrt_avi_p,0.094833,21,"net ultrafiltration 0.2 L/h; CVVH median 2.417071, CVVHD median 2.245922 L/h; Mann-Whitney"
+modality_cl_noncircuit_avi_p,0.969851,21,"net ultrafiltration 0.2 L/h; CVVH median 0.969568, CVVHD median 1.041389 L/h; Mann-Whitney"
+spearman_urine_vs_noncircuit_avi,0.445239,21,net ultrafiltration 0.2 L/h

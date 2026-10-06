@@ -1,0 +1,30 @@
+population,regimen,scenario,rho,band,quantity,value,total
+CRRT (Model 1),,estimate,0.588391,,unexplained_cv_cl_avi_pct,11.283617,13.978369
+CRRT (Model 1),,lower bound,0.206075,,unexplained_cv_cl_avi_pct,13.675522,13.978369
+CRRT (Model 1),,upper bound,0.815449,,unexplained_cv_cl_avi_pct,8.065042,13.978369
+CRRT (Model 1),,0.94,0.940000,,unexplained_cv_cl_avi_pct,4.748683,13.978369
+without RRT (Cojutti et al),,source model,0.940000,,unexplained_cv_cl_avi_pct,23.575210,76.910000
+CRRT (Model 1),2.5 g q8h,estimate,0.588391,all patients,free_avi_trough_p5_p95_mg_L,8.180537,16.747287
+CRRT (Model 1),2.5 g q8h,estimate,0.588391,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,8.886343,15.781882
+CRRT (Model 1),2.5 g q8h,estimate,0.588391,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,7.281635,13.518474
+CRRT (Model 1),2.5 g q8h,lower bound,0.206075,all patients,free_avi_trough_p5_p95_mg_L,8.186736,16.740306
+CRRT (Model 1),2.5 g q8h,lower bound,0.206075,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,8.335783,16.560642
+CRRT (Model 1),2.5 g q8h,lower bound,0.206075,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,7.532859,15.459083
+CRRT (Model 1),2.5 g q8h,upper bound,0.815449,all patients,free_avi_trough_p5_p95_mg_L,8.174971,16.759307
+CRRT (Model 1),2.5 g q8h,upper bound,0.815449,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,9.426935,14.938830
+CRRT (Model 1),2.5 g q8h,upper bound,0.815449,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,7.357735,12.259944
+CRRT (Model 1),2.5 g q8h,0.94,0.940000,all patients,free_avi_trough_p5_p95_mg_L,8.165203,16.749853
+CRRT (Model 1),2.5 g q8h,0.94,0.940000,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,9.953623,14.251779
+CRRT (Model 1),2.5 g q8h,0.94,0.940000,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,7.515135,11.272484
+CRRT (Model 1),1.25 g q8h,estimate,0.588391,all patients,free_avi_trough_p5_p95_mg_L,4.081045,8.366597
+CRRT (Model 1),1.25 g q8h,estimate,0.588391,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,4.426701,7.912285
+CRRT (Model 1),1.25 g q8h,estimate,0.588391,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,3.650383,6.773811
+CRRT (Model 1),1.25 g q8h,lower bound,0.206075,all patients,free_avi_trough_p5_p95_mg_L,4.090244,8.360507
+CRRT (Model 1),1.25 g q8h,lower bound,0.206075,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,4.185374,8.266631
+CRRT (Model 1),1.25 g q8h,lower bound,0.206075,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,3.795680,7.732378
+CRRT (Model 1),1.25 g q8h,upper bound,0.815449,all patients,free_avi_trough_p5_p95_mg_L,4.088208,8.369627
+CRRT (Model 1),1.25 g q8h,upper bound,0.815449,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,4.736150,7.481745
+CRRT (Model 1),1.25 g q8h,upper bound,0.815449,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,3.669655,6.110063
+CRRT (Model 1),1.25 g q8h,0.94,0.940000,all patients,free_avi_trough_p5_p95_mg_L,4.090179,8.376052
+CRRT (Model 1),1.25 g q8h,0.94,0.940000,"measured ceftazidime trough, 47.5th-52.5th percentile",free_avi_trough_p5_p95_mg_L,4.999918,7.148437
+CRRT (Model 1),1.25 g q8h,0.94,0.940000,"measured ceftazidime trough, 7.5th-12.5th percentile",free_avi_trough_p5_p95_mg_L,3.771161,5.647835

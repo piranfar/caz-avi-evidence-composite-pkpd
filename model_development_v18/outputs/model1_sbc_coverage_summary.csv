@@ -1,0 +1,3 @@
+scenario,n_replicates,rho_true,mean_estimate,bias,bias_mcse,coverage_95_profile_pct,coverage_mcse,reject_094_pct,reject_094_mcse,dofv_094_p50,dofv_094_p90,dofv_094_p95,dofv_094_p99,dofv_094_max,n_at_or_above_observed,observed_dofv_094,empirical_p_observed,median_seconds
+"correct, rho = 0.94",500,0.940000,0.938326,-0.001674,0.001769,93.400000,1.110351,6.600000,1.110351,0.549442,3.280268,4.446215,7.367005,11.605102,0,18.064778,0.001996,314.739144
+correctly specified,500,0.588391,0.573541,-0.014850,0.007817,90.600000,1.305098,,,,,,,,,18.064778,,250.494958

@@ -13,6 +13,14 @@ therapy, built from published evidence with explicit provenance labelling.
 > methodological transparency. It is not a dosing guideline and must not be used
 > for patient-level decisions.
 
+## CRRT clearance correlation analysis
+
+A second analysis, in `model_development_v18/`, estimates the correlation between ceftazidime and
+avibactam clearance during continuous renal replacement therapy from openly deposited individual
+patient data (21 patients), separates circuit from other clearance, and asks how often monitoring that
+measures ceftazidime only misjudges avibactam exposure. Data, run order, random streams and outputs:
+[`model_development_v18/CRRT_ANALYSIS.md`](model_development_v18/CRRT_ANALYSIS.md).
+
 ## What the analysis finds
 
 1. The single most influential quantity in the model is not pharmacokinetic. The

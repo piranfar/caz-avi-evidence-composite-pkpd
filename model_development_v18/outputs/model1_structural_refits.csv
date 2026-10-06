@@ -1,0 +1,3 @@
+model,n_par,df,ofv,dofv_vs_primary,p_value,rho,r_v,c,extra,rounds,converged,seconds
+modality on both clearances,15,2,-760.313609,3.666440,0.159898,0.540105,0.711824,0.623486,cl_caz_cvvh_vs_cvvhd 1.201886; cl_avi_cvvh_vs_cvvhd 1.094645,3,True,468.996777
+infusion duration = f x category,14,1,-756.647169,-0.000000,1.000000,0.588392,0.703379,0.626564,f 1.000000,2,True,303.130432
