@@ -15,5 +15,5 @@ keywords:
   - antimicrobial pharmacometrics
 repository-code: "https://github.com/piranfar/caz-avi-evidence-composite-pkpd"
 license: MIT
-version: "2.2.0"
-date-released: "2026-10-05"
+version: "2.2.1"
+date-released: "2026-10-06"

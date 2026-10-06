@@ -27,7 +27,8 @@ what it means for monitoring that measures ceftazidime only. The analysis is bui
 
 - Targets: free ceftazidime trough at least 4 × MIC; free avibactam trough at least 4 mg/L. Also recorded:
   free avibactam above 1 mg/L for 50% of the interval (registrational target), and total ceftazidime above
-  104 mg/L (exposure screen).
+  104 mg/L, a threshold defined for continuous infusion, compared with the interval-average and trough
+  concentrations.
 - Unbound fractions 0.85 (ceftazidime) and 0.92 (avibactam); 0.73 for avibactam as a sensitivity analysis.
 - Regimens, 2-h infusions: 2.5 g every 8 h, 2.5 g every 12 h, 1.25 g every 8 h, 0.94 g every 12 h;
   100,000 virtual patients each.
@@ -55,6 +56,10 @@ what it means for monitoring that measures ceftazidime only. The analysis is bui
 - Covariance structures: primary (ρ and the volume correlation), Ka (adds the clearance-volume correlation within
   each drug), Kb (all 6 correlations, parameterized by C-vine partial correlations so that every parameter
   vector gives a valid matrix).
+- ρ is estimated as tanh of an unbounded parameter, so it is free between −1 and 1. The profile of step 2 covers
+  0.05 to 0.96 and ρ = 0; step 22 adds −0.25, −0.5 and −0.75 (ρ fixed, all other parameters re-estimated).
+- Refit without the 1-hour infusions (step 21): the primary model refitted from the primary estimates to the 18
+  patients with 2- or 3-hour infusions; within them, ρ is then fixed at 0.94 and at 0.
 
 ## Run order
 
@@ -83,14 +88,16 @@ From `model_development_v18/code/`. Paths are resolved relative to each script.
 | 19 | `crrt_unexplained_variability.py` | `crrt_unexplained_variability.csv` | under 1 min |
 | 20 | `make_tdm_figures.py` | `figures/TDM_Figure1_joint_model.pdf`/`.tif`, `figures/TDM_Figure2_virtual_crrt.pdf`/`.tif` | under 1 min |
 | 20 | `make_model1_figures_600dpi.py` | `figures/Figure7_model1_goodness_of_fit.pdf`/`.png`, `figures/Figure8_model1_visual_predictive_check.pdf`/`.png` | under 1 min |
+| 21 | `model1_without_1h_infusions.py` | `model1_without_1h_infusions.csv` | about 4 min |
+| 22 | `model1_profile_negative.py` | `model1_profile_negative.csv` | about 2 min |
 | | `test_model1.py` | 140 checks; no output files | under 1 min |
 
-Steps 11, 12 and 16 read the outputs of step 10, step 17 those of steps 9 and 15, steps 18 and 19 those of steps 1, 6 and 8, and step 20 those of steps 8, 10, 11 and 18. Run times are for a
+Steps 11, 12 and 16 read the outputs of step 10, step 17 those of steps 9 and 15, steps 18 and 19 those of steps 1, 6 and 8, step 20 those of steps 8, 10, 11 and 18, and steps 21 and 22 those of steps 1 and 2. Run times are for a
 16-thread Windows 11 machine. Scripts that fit many models use parallel processes; the environment variables
-`SIM_WORKERS` (steps 3, 6 and 15) and `REFIT_WORKERS` (steps 9, 10, 16 and 17) set how many. Results do not depend on
+`SIM_WORKERS` (steps 3, 6 and 15) and `REFIT_WORKERS` (steps 9, 10, 16, 17 and 22) set how many. Results do not depend on
 them, because every replicate, parameter draw and fit has its own random stream or starting point.
 
-Run with Python 3.14.7, NumPy 2.5.0, SciPy 1.18.0 and Matplotlib 3.11.1. Rerunning steps 1 to 9, 11, 12, 14 and 16 to 20
+Run with Python 3.14.7, NumPy 2.5.0, SciPy 1.18.0 and Matplotlib 3.11.1. Rerunning steps 1 to 9, 11, 12, 14 and 16 to 22
 reproduces their CSVs byte for byte (step 3 from its stored replicates), except the `seconds` columns, which
 record run time. The figures are identical except that each PDF carries its own creation date. Logs of the
 rerun of steps 1 to 7 are in `audit/log_<step>.txt`.

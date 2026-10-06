@@ -1,0 +1,2 @@
+analysis,patients_excluded,n_patients,n_obs,ofv,rho,r_v,c,cl_caz,cl_avi,v_caz,v_avi,omega_cl_caz,omega_cl_avi,dofv_rho_094,dofv_rho_0,rounds,converged,seconds
+primary model without the patients with 1-hour infusions,5 8 19,18,196,-619.822420,0.425730,0.617078,0.574331,2.511021,3.111066,19.220215,25.748442,0.194007,0.097561,19.164345,2.809982,2,True,256.508222
